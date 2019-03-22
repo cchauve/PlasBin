@@ -1,0 +1,249 @@
+
+Gurobi 7.5.2 (linux64) logging started Thu Mar 21 01:06:43 2019
+
+Changed value of parameter LogFile to /home/aniket/python_scripts/Plasmids/exp/2019-03-21__iterative_with_questionable/output/sample_116/1.1.0/nplasmids_1/MILP/m.log
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 2400.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 3359 rows, 976 columns and 13914 nonzeros
+Variable types: 259 continuous, 717 integer (373 binary)
+Coefficient statistics:
+  Matrix range     [2e-01, 1e+06]
+  Objective range  [1e+00, 6e+05]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e-01, 1e+06]
+Presolve removed 2700 rows and 605 columns
+Presolve time: 0.01s
+Presolved: 659 rows, 371 columns, 2181 nonzeros
+Variable types: 79 continuous, 292 integer (214 binary)
+Found heuristic solution: objective -896.1258466
+
+Root relaxation: objective -1.233101e+05, 16 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -123310.10    0    3 -896.12585 -123310.10      -     -    0s
+H    0     0                    -122634.9585 -123310.10  0.55%     -    0s
+
+Cutting planes:
+  Cover: 1
+  Flow cover: 1
+
+Explored 1 nodes (67 simplex iterations) in 0.03 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 2: -122635 -896.126 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -1.226349584951e+05, best bound -1.226349584951e+05, gap 0.0000%
+
+Gurobi 7.5.2 (linux64) logging started Thu Mar 21 01:06:43 2019
+
+Changed value of parameter LogFile to /home/aniket/python_scripts/Plasmids/exp/2019-03-21__iterative_with_questionable/output/sample_116/1.1.0/nplasmids_1/MILP/m.log
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 2400.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 2999 rows, 871 columns and 11722 nonzeros
+Variable types: 232 continuous, 639 integer (331 binary)
+Coefficient statistics:
+  Matrix range     [1e-01, 1e+06]
+  Objective range  [1e+00, 2e+05]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e-01, 1e+06]
+Presolve removed 2348 rows and 503 columns
+Presolve time: 0.01s
+Presolved: 651 rows, 368 columns, 2155 nonzeros
+Variable types: 78 continuous, 290 integer (213 binary)
+Found heuristic solution: objective -896.1258466
+
+Root relaxation: objective -5.652000e+04, 170 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0    -56520.00000 -56520.000  0.00%     -    0s
+
+Explored 0 nodes (170 simplex iterations) in 0.02 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 2: -56520 -896.126 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -5.652000000000e+04, best bound -5.652000000000e+04, gap 0.0000%
+
+Gurobi 7.5.2 (linux64) logging started Thu Mar 21 01:06:43 2019
+
+Changed value of parameter LogFile to /home/aniket/python_scripts/Plasmids/exp/2019-03-21__iterative_with_questionable/output/sample_116/1.1.0/nplasmids_1/MILP/m.log
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 2400.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 2999 rows, 871 columns and 11722 nonzeros
+Variable types: 232 continuous, 639 integer (331 binary)
+Coefficient statistics:
+  Matrix range     [1e-01, 1e+06]
+  Objective range  [1e+00, 2e+05]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e-01, 1e+06]
+Presolve removed 2345 rows and 503 columns
+Presolve time: 0.01s
+Presolved: 654 rows, 368 columns, 2165 nonzeros
+Variable types: 78 continuous, 290 integer (213 binary)
+Found heuristic solution: objective -896.1258466
+
+Root relaxation: objective -5.369196e+04, 46 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -53691.959    0    7 -896.12585 -53691.959  5892%     -    0s
+H    0     0                    -53483.01376 -53691.959  0.39%     -    0s
+     0     0     cutoff    0      -53483.014 -53483.014  0.00%     -    0s
+
+Cutting planes:
+  Cover: 1
+  Clique: 1
+  Flow cover: 2
+
+Explored 1 nodes (228 simplex iterations) in 0.03 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 2: -53483 -896.126 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -5.348301376269e+04, best bound -5.348301376269e+04, gap 0.0000%
+
+Gurobi 7.5.2 (linux64) logging started Thu Mar 21 01:06:43 2019
+
+Changed value of parameter LogFile to /home/aniket/python_scripts/Plasmids/exp/2019-03-21__iterative_with_questionable/output/sample_116/1.1.0/nplasmids_1/MILP/m.log
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 2400.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 2920 rows, 848 columns and 11261 nonzeros
+Variable types: 226 continuous, 622 integer (322 binary)
+Coefficient statistics:
+  Matrix range     [1e-01, 1e+06]
+  Objective range  [1e+00, 2e+05]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e-01, 1e+06]
+Presolve removed 2306 rows and 490 columns
+Presolve time: 0.02s
+Presolved: 614 rows, 358 columns, 2030 nonzeros
+Variable types: 76 continuous, 282 integer (207 binary)
+Found heuristic solution: objective -896.1258466
+
+Root relaxation: objective -1.840780e+03, 45 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -1840.7796    0   13 -896.12585 -1840.7796   105%     -    0s
+
+Explored 0 nodes (175 simplex iterations) in 0.03 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 1: -896.126 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -8.961258465732e+02, best bound -8.961258465732e+02, gap 0.0000%
+
+Gurobi 7.5.2 (linux64) logging started Thu Mar 21 01:06:43 2019
+
+Changed value of parameter LogFile to /home/aniket/python_scripts/Plasmids/exp/2019-03-21__iterative_with_questionable/output/sample_116/1.1.0/nplasmids_1/MILP/m.log
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 2400.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 2879 rows, 836 columns and 11026 nonzeros
+Variable types: 223 continuous, 613 integer (317 binary)
+Coefficient statistics:
+  Matrix range     [1e-01, 1e+06]
+  Objective range  [1e+00, 2e+05]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e-01, 1e+06]
+Presolve removed 2315 rows and 488 columns
+Presolve time: 0.02s
+Presolved: 564 rows, 348 columns, 1832 nonzeros
+Variable types: 74 continuous, 274 integer (274 binary)
+Found heuristic solution: objective -86.0497177
+Found heuristic solution: objective -537.8942284
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 2: -537.894 -86.0497 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -5.378942284400e+02, best bound -5.378942284400e+02, gap 0.0000%
+
+Gurobi 7.5.2 (linux64) logging started Thu Mar 21 01:06:43 2019
+
+Changed value of parameter LogFile to /home/aniket/python_scripts/Plasmids/exp/2019-03-21__iterative_with_questionable/output/sample_116/1.1.0/nplasmids_1/MILP/m.log
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 2400.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 2838 rows, 824 columns and 10794 nonzeros
+Variable types: 220 continuous, 604 integer (312 binary)
+Coefficient statistics:
+  Matrix range     [1e-01, 1e+06]
+  Objective range  [1e+00, 2e+05]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e-01, 1e+06]
+Presolve removed 2306 rows and 487 columns
+Presolve time: 0.01s
+Presolved: 532 rows, 337 columns, 1679 nonzeros
+Variable types: 72 continuous, 265 integer (265 binary)
+Found heuristic solution: objective -86.0497177
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 1: -86.0497 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -8.604971767052e+01, best bound -8.604971767052e+01, gap 0.0000%
+
+Gurobi 7.5.2 (linux64) logging started Thu Mar 21 01:06:43 2019
+
+Changed value of parameter LogFile to /home/aniket/python_scripts/Plasmids/exp/2019-03-21__iterative_with_questionable/output/sample_116/1.1.0/nplasmids_1/MILP/m.log
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 2400.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 2795 rows, 812 columns and 10555 nonzeros
+Variable types: 217 continuous, 595 integer (307 binary)
+Coefficient statistics:
+  Matrix range     [2e-01, 1e+06]
+  Objective range  [1e+00, 2e+05]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e-01, 1e+06]
+Presolve removed 1072 rows and 0 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 1 (of 4 available processors)
+
+Solution count 0
+
+Model is infeasible or unbounded
+Best objective -, best bound -, gap -
+Presolve removed 1072 rows and 0 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 1 (of 4 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+      Constraints           Bounds       Runtime
+     Min       Max       Min      Max
+------------------------------------------------
+        0     2372         0      505         0s
+       76       76         0        0         2s
+
+IIS computed: 76 constraints, 0 bounds
+IIS runtime: 2.17 seconds
+Warning: linear constraint 0 and linear constraint 1 have the same name "extr_ubd"

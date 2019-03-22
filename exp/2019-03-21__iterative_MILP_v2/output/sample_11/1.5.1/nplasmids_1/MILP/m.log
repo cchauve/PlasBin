@@ -1,0 +1,1371 @@
+
+Gurobi 7.5.2 (linux64) logging started Thu Mar 21 00:47:13 2019
+
+Changed value of parameter LogFile to /home/aniket/python_scripts/Plasmids/exp/2019-03-21__iterative_with_questionable/output/sample_11/1.5.1/nplasmids_1/MILP/m.log
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 2400.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 3374 rows, 981 columns and 14006 nonzeros
+Variable types: 259 continuous, 722 integer (378 binary)
+Coefficient statistics:
+  Matrix range     [2e-01, 1e+06]
+  Objective range  [6e-04, 7e+05]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [9e-01, 1e+06]
+Presolve removed 2703 rows and 597 columns
+Presolve time: 0.03s
+Presolved: 671 rows, 384 columns, 2328 nonzeros
+Variable types: 79 continuous, 305 integer (227 binary)
+
+Root relaxation: objective -9.769148e+05, 362 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -976914.85    0   53          - -976914.85      -     -    0s
+     0     0 -758390.64    0   92          - -758390.64      -     -    0s
+     0     0 -741893.12    0   88          - -741893.12      -     -    0s
+     0     0 -741367.27    0  107          - -741367.27      -     -    0s
+     0     0 -711686.92    0  114          - -711686.92      -     -    0s
+     0     0 -706243.56    0  114          - -706243.56      -     -    0s
+     0     0 -704702.58    0  115          - -704702.58      -     -    0s
+     0     0 -704587.11    0  119          - -704587.11      -     -    0s
+     0     0 -704580.17    0  119          - -704580.17      -     -    0s
+     0     0 -685915.88    0  113          - -685915.88      -     -    0s
+     0     0 -685019.55    0  115          - -685019.55      -     -    0s
+     0     0 -685003.66    0  115          - -685003.66      -     -    0s
+     0     0 -679441.58    0  109          - -679441.58      -     -    0s
+     0     0 -677583.29    0  136          - -677583.29      -     -    0s
+     0     0 -672904.99    0  109          - -672904.99      -     -    0s
+     0     0 -669958.94    0  110          - -669958.94      -     -    0s
+     0     0 -669816.93    0  131          - -669816.93      -     -    0s
+     0     0 -669804.63    0  133          - -669804.63      -     -    0s
+     0     0 -662698.75    0  112          - -662698.75      -     -    0s
+     0     0 -660015.41    0  115          - -660015.41      -     -    0s
+     0     0 -658933.55    0  113          - -658933.55      -     -    0s
+     0     0 -658744.97    0  135          - -658744.97      -     -    0s
+     0     0 -658644.27    0  115          - -658644.27      -     -    0s
+     0     0 -656477.72    0  116          - -656477.72      -     -    0s
+     0     0 -656367.77    0  131          - -656367.77      -     -    0s
+     0     0 -655353.11    0   96          - -655353.11      -     -    0s
+H    0     0                    -393032.8221 -655353.11  66.7%     -    0s
+H    0     0                    -555859.3302 -655353.11  17.9%     -    0s
+H    0     0                    -595549.7715 -655353.11  10.0%     -    0s
+     0     0 -653436.62    0   98 -595549.77 -653436.62  9.72%     -    0s
+     0     0 -650712.92    0  123 -595549.77 -650712.92  9.26%     -    0s
+     0     0 -648104.52    0  130 -595549.77 -648104.52  8.82%     -    0s
+     0     0 -646789.05    0  130 -595549.77 -646789.05  8.60%     -    0s
+     0     0 -646605.32    0  148 -595549.77 -646605.32  8.57%     -    0s
+     0     0 -646561.71    0  146 -595549.77 -646561.71  8.57%     -    0s
+     0     0 -643965.65    0  133 -595549.77 -643965.65  8.13%     -    0s
+     0     0 -642445.45    0  131 -595549.77 -642445.45  7.87%     -    0s
+     0     0 -642177.26    0  130 -595549.77 -642177.26  7.83%     -    0s
+     0     0 -642079.33    0  137 -595549.77 -642079.33  7.81%     -    0s
+     0     0 -640645.52    0  143 -595549.77 -640645.52  7.57%     -    0s
+     0     0 -639908.84    0  127 -595549.77 -639908.84  7.45%     -    0s
+     0     0 -639727.17    0  114 -595549.77 -639727.17  7.42%     -    0s
+     0     0 -639514.96    0  115 -595549.77 -639514.96  7.38%     -    0s
+     0     0 -639491.25    0  115 -595549.77 -639491.25  7.38%     -    0s
+     0     0 -639207.20    0  137 -595549.77 -639207.20  7.33%     -    0s
+     0     0 -639207.20    0  135 -595549.77 -639207.20  7.33%     -    0s
+     0     2 -639207.20    0  135 -595549.77 -639207.20  7.33%     -    0s
+*   78     2              15    -615878.5613 -618078.69  0.36%  21.3    0s
+
+Cutting planes:
+  Gomory: 1
+  Cover: 78
+  Implied bound: 1
+  Clique: 9
+  MIR: 29
+  Flow cover: 25
+  Zero half: 7
+
+Explored 81 nodes (3595 simplex iterations) in 0.29 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 4: -615879 -595550 -555859 -393033 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -6.158785612510e+05, best bound -6.158785612510e+05, gap 0.0000%
+
+Gurobi 7.5.2 (linux64) logging started Thu Mar 21 00:47:13 2019
+
+Changed value of parameter LogFile to /home/aniket/python_scripts/Plasmids/exp/2019-03-21__iterative_with_questionable/output/sample_11/1.5.1/nplasmids_1/MILP/m.log
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 2400.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 3094 rows, 900 columns and 12285 nonzeros
+Variable types: 238 continuous, 662 integer (346 binary)
+Coefficient statistics:
+  Matrix range     [2e-01, 1e+06]
+  Objective range  [1e-03, 2e+05]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [4e-01, 1e+06]
+Presolve removed 2429 rows and 518 columns
+Presolve time: 0.02s
+Presolved: 665 rows, 382 columns, 2309 nonzeros
+Variable types: 78 continuous, 304 integer (227 binary)
+
+Root relaxation: objective -5.341784e+05, 388 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -534178.40    0   60          - -534178.40      -     -    0s
+     0     0 -398750.96    0  103          - -398750.96      -     -    0s
+     0     0 -395298.93    0  109          - -395298.93      -     -    0s
+     0     0 -395136.77    0  111          - -395136.77      -     -    0s
+     0     0 -395030.42    0  110          - -395030.42      -     -    0s
+     0     0 -394865.39    0  108          - -394865.39      -     -    0s
+     0     0 -378067.16    0  100          - -378067.16      -     -    0s
+     0     0 -374866.98    0  101          - -374866.98      -     -    0s
+     0     0 -374847.36    0  103          - -374847.36      -     -    0s
+     0     0 -370582.15    0  113          - -370582.15      -     -    0s
+     0     0 -370252.41    0  122          - -370252.41      -     -    0s
+     0     0 -370217.60    0  117          - -370217.60      -     -    0s
+     0     0 -368780.21    0  127          - -368780.21      -     -    0s
+     0     0 -367944.85    0  133          - -367944.85      -     -    0s
+     0     0 -367585.78    0  117          - -367585.78      -     -    0s
+     0     0 -367527.58    0  151          - -367527.58      -     -    0s
+     0     0 -366701.46    0  127          - -366701.46      -     -    0s
+     0     0 -365894.73    0  129          - -365894.73      -     -    0s
+     0     0 -364110.44    0  127          - -364110.44      -     -    0s
+     0     0 -363893.98    0  128          - -363893.98      -     -    0s
+     0     0 -363756.39    0  126          - -363756.39      -     -    0s
+     0     0 -363610.06    0  123          - -363610.06      -     -    0s
+     0     0 -363413.30    0  125          - -363413.30      -     -    0s
+     0     0 -363391.73    0  127          - -363391.73      -     -    0s
+     0     0 -362921.09    0  141          - -362921.09      -     -    0s
+     0     0 -362761.17    0  153          - -362761.17      -     -    0s
+     0     0 -362524.96    0  151          - -362524.96      -     -    0s
+     0     0 -362518.33    0  141          - -362518.33      -     -    0s
+     0     0 -362160.77    0  133          - -362160.77      -     -    0s
+H    0     0                    -4143.860594 -362160.77  8640%     -    0s
+H    0     0                    -16658.12437 -362160.77  2074%     -    0s
+     0     2 -362160.77    0  133 -16658.124 -362160.77  2074%     -    0s
+H   29    12                    -260722.1052 -359106.43  37.7%  20.3    0s
+*   47    16              20    -284428.4227 -359106.43  26.3%  18.6    0s
+*  349    22              25    -285846.3358 -313431.21  9.65%  10.9    0s
+*  354    18              24    -289495.4784 -313431.21  8.27%  10.9    0s
+*  369    15              27    -291332.9791 -309052.02  6.08%  10.8    0s
+
+Cutting planes:
+  Gomory: 7
+  Cover: 77
+  Implied bound: 4
+  Clique: 9
+  MIR: 30
+  Flow cover: 25
+  Zero half: 6
+
+Explored 437 nodes (6048 simplex iterations) in 0.34 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 7: -291333 -289495 -285846 ... -4143.86
+No other solutions better than -291333
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -2.913329790805e+05, best bound -2.913329790805e+05, gap 0.0000%
+
+Gurobi 7.5.2 (linux64) logging started Thu Mar 21 00:47:14 2019
+
+Changed value of parameter LogFile to /home/aniket/python_scripts/Plasmids/exp/2019-03-21__iterative_with_questionable/output/sample_11/1.5.1/nplasmids_1/MILP/m.log
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 2400.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 3012 rows, 876 columns and 11800 nonzeros
+Variable types: 232 continuous, 644 integer (336 binary)
+Coefficient statistics:
+  Matrix range     [2e-01, 1e+06]
+  Objective range  [1e-03, 2e+05]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [4e-01, 1e+06]
+Presolve removed 2367 rows and 507 columns
+Presolve time: 0.02s
+Presolved: 645 rows, 369 columns, 2233 nonzeros
+Variable types: 76 continuous, 293 integer (218 binary)
+
+Root relaxation: objective -3.081803e+05, 344 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -308180.34    0   56          - -308180.34      -     -    0s
+     0     0 -247812.29    0   82          - -247812.29      -     -    0s
+     0     0 -239751.85    0   86          - -239751.85      -     -    0s
+     0     0 -239529.02    0   87          - -239529.02      -     -    0s
+     0     0 -224717.65    0   83          - -224717.65      -     -    0s
+     0     0 -221811.69    0   90          - -221811.69      -     -    0s
+     0     0 -221533.95    0   98          - -221533.95      -     -    0s
+     0     0 -221449.09    0   89          - -221449.09      -     -    0s
+     0     0 -221437.39    0   90          - -221437.39      -     -    0s
+     0     0 -219238.53    0   88          - -219238.53      -     -    0s
+     0     0 -216975.85    0   94          - -216975.85      -     -    0s
+     0     0 -216613.90    0   96          - -216613.90      -     -    0s
+     0     0 -216612.34    0   98          - -216612.34      -     -    0s
+     0     0 -215512.58    0   96          - -215512.58      -     -    0s
+     0     0 -215447.00    0   97          - -215447.00      -     -    0s
+     0     0 -215433.21    0   96          - -215433.21      -     -    0s
+     0     0 -215034.50    0   95          - -215034.50      -     -    0s
+H    0     0                    -14745.35145 -215034.50  1358%     -    0s
+H    0     0                    -112705.1603 -215034.50  90.8%     -    0s
+H    0     0                    -115967.1047 -215034.50  85.4%     -    0s
+     0     2 -215034.50    0   95 -115967.10 -215034.50  85.4%     -    0s
+H   65    45                    -122447.3741 -198773.59  62.3%  17.2    0s
+H  116    75                    -124069.5911 -193679.60  56.1%  16.3    0s
+*  150    85              13    -126075.2586 -185647.58  47.3%  14.5    0s
+*  194    89              18    -129313.6110 -182778.61  41.3%  15.0    0s
+H  199    33                    -158231.3713 -182778.61  15.5%  15.0    0s
+H  268     0                    -163000.4678 -170484.16  4.59%  14.2    0s
+
+Cutting planes:
+  Gomory: 8
+  Cover: 73
+  Implied bound: 14
+  Clique: 8
+  MIR: 38
+  Flow cover: 21
+  Zero half: 5
+
+Explored 292 nodes (4829 simplex iterations) in 0.23 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 9: -163000 -158231 -129314 ... -14745.4
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -1.630004677732e+05, best bound -1.630004677732e+05, gap 0.0000%
+
+Gurobi 7.5.2 (linux64) logging started Thu Mar 21 00:47:14 2019
+
+Changed value of parameter LogFile to /home/aniket/python_scripts/Plasmids/exp/2019-03-21__iterative_with_questionable/output/sample_11/1.5.1/nplasmids_1/MILP/m.log
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 2400.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 2930 rows, 852 columns and 11322 nonzeros
+Variable types: 226 continuous, 626 integer (326 binary)
+Coefficient statistics:
+  Matrix range     [2e-01, 1e+06]
+  Objective range  [1e-03, 2e+05]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-01, 1e+06]
+Presolve removed 2304 rows and 496 columns
+Presolve time: 0.02s
+Presolved: 626 rows, 356 columns, 2157 nonzeros
+Variable types: 74 continuous, 282 integer (209 binary)
+
+Root relaxation: objective -2.060532e+05, 456 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -206053.16    0  102          - -206053.16      -     -    0s
+     0     0 -182781.22    0   80          - -182781.22      -     -    0s
+     0     0 -179507.13    0   80          - -179507.13      -     -    0s
+     0     0 -177742.17    0   87          - -177742.17      -     -    0s
+     0     0 -176810.30    0   83          - -176810.30      -     -    0s
+     0     0 -176675.19    0   82          - -176675.19      -     -    0s
+     0     0 -159359.11    0   90          - -159359.11      -     -    0s
+     0     0 -157194.98    0  111          - -157194.98      -     -    0s
+     0     0 -156312.23    0   98          - -156312.23      -     -    0s
+     0     0 -156132.19    0   96          - -156132.19      -     -    0s
+     0     0 -153108.19    0  108          - -153108.19      -     -    0s
+     0     0 -149979.07    0   98          - -149979.07      -     -    0s
+     0     0 -149974.83    0  103          - -149974.83      -     -    0s
+     0     0 -146263.14    0  119          - -146263.14      -     -    0s
+     0     0 -145639.93    0  121          - -145639.93      -     -    0s
+     0     0 -145526.84    0  124          - -145526.84      -     -    0s
+     0     0 -145513.59    0  128          - -145513.59      -     -    0s
+     0     0 -144267.64    0  148          - -144267.64      -     -    0s
+     0     0 -143980.95    0  125          - -143980.95      -     -    0s
+     0     0 -143925.57    0  114          - -143925.57      -     -    0s
+     0     0 -143920.37    0  125          - -143920.37      -     -    0s
+     0     0 -143414.84    0  128          - -143414.84      -     -    0s
+     0     0 -143402.08    0  131          - -143402.08      -     -    0s
+     0     0 -142546.39    0  131          - -142546.39      -     -    0s
+     0     0 -142181.82    0  136          - -142181.82      -     -    0s
+     0     0 -142122.39    0  136          - -142122.39      -     -    0s
+     0     0 -142114.94    0  136          - -142114.94      -     -    0s
+     0     0 -141945.27    0  118          - -141945.27      -     -    0s
+     0     0 -141885.29    0  116          - -141885.29      -     -    0s
+     0     0 -141878.39    0  116          - -141878.39      -     -    0s
+     0     0 -141328.45    0  140          - -141328.45      -     -    0s
+     0     0 -141247.70    0  122          - -141247.70      -     -    0s
+     0     0 -141215.75    0  139          - -141215.75      -     -    0s
+     0     0 -141215.73    0  139          - -141215.73      -     -    0s
+     0     0 -141095.08    0  143          - -141095.08      -     -    0s
+H    0     0                    -109433.9241 -141095.08  28.9%     -    0s
+     0     2 -140496.22    0  132 -109433.92 -140496.22  28.4%     -    0s
+*   63    33               8    -113187.2564 -122694.05  8.40%  22.4    0s
+H   70    20                    -115555.0415 -122391.34  5.92%  20.5    0s
+*   79     7               5    -115561.2426 -121492.80  5.13%  21.5    0s
+
+Cutting planes:
+  Gomory: 5
+  Cover: 69
+  Implied bound: 6
+  Clique: 4
+  MIR: 42
+  Flow cover: 25
+  Zero half: 8
+
+Explored 102 nodes (3313 simplex iterations) in 0.25 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 4: -115561 -115555 -113187 -109434 
+No other solutions better than -115561
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -1.155612425914e+05, best bound -1.155612425914e+05, gap 0.0000%
+
+Gurobi 7.5.2 (linux64) logging started Thu Mar 21 00:47:14 2019
+
+Changed value of parameter LogFile to /home/aniket/python_scripts/Plasmids/exp/2019-03-21__iterative_with_questionable/output/sample_11/1.5.1/nplasmids_1/MILP/m.log
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 2400.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 2889 rows, 840 columns and 11086 nonzeros
+Variable types: 223 continuous, 617 integer (321 binary)
+Coefficient statistics:
+  Matrix range     [2e-01, 1e+06]
+  Objective range  [1e-03, 2e+05]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-01, 1e+06]
+Presolve removed 2273 rows and 491 columns
+Presolve time: 0.02s
+Presolved: 616 rows, 349 columns, 2121 nonzeros
+Variable types: 73 continuous, 276 integer (204 binary)
+
+Root relaxation: objective -1.372346e+05, 478 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -137234.62    0  109          - -137234.62      -     -    0s
+     0     0 -114919.51    0   88          - -114919.51      -     -    0s
+     0     0 -114636.86    0   88          - -114636.86      -     -    0s
+     0     0 -114578.32    0   89          - -114578.32      -     -    0s
+     0     0 -114575.11    0   89          - -114575.11      -     -    0s
+     0     0 -109757.41    0   96          - -109757.41      -     -    0s
+H    0     0                    -34688.62191 -109757.41   216%     -    0s
+     0     0 -108116.46    0  104 -34688.622 -108116.46   212%     -    0s
+     0     0 -106696.98    0   96 -34688.622 -106696.98   208%     -    0s
+     0     0 -106215.73    0   94 -34688.622 -106215.73   206%     -    0s
+     0     0 -106067.03    0  103 -34688.622 -106067.03   206%     -    0s
+     0     0 -106067.02    0  105 -34688.622 -106067.02   206%     -    0s
+     0     0 -102523.84    0   91 -34688.622 -102523.84   196%     -    0s
+H    0     0                    -61100.47382 -102523.84  67.8%     -    0s
+     0     0 -102103.44    0   99 -61100.474 -102103.44  67.1%     -    0s
+     0     0 -101803.94    0  112 -61100.474 -101803.94  66.6%     -    0s
+     0     0 -101726.17    0  114 -61100.474 -101726.17  66.5%     -    0s
+     0     0 -101723.17    0  116 -61100.474 -101723.17  66.5%     -    0s
+     0     0 -99900.845    0  120 -61100.474 -99900.845  63.5%     -    0s
+     0     0 -99650.281    0  116 -61100.474 -99650.281  63.1%     -    0s
+     0     0 -99636.677    0  119 -61100.474 -99636.677  63.1%     -    0s
+     0     0 -94832.578    0   89 -61100.474 -94832.578  55.2%     -    0s
+     0     0 -94289.166    0   94 -61100.474 -94289.166  54.3%     -    0s
+     0     0 -94023.969    0  105 -61100.474 -94023.969  53.9%     -    0s
+     0     0 -93965.973    0  105 -61100.474 -93965.973  53.8%     -    0s
+     0     0 -93949.157    0  105 -61100.474 -93949.157  53.8%     -    0s
+     0     0 -93183.099    0  124 -61100.474 -93183.099  52.5%     -    0s
+     0     0 -92956.806    0  131 -61100.474 -92956.806  52.1%     -    0s
+     0     0 -92876.822    0  136 -61100.474 -92876.822  52.0%     -    0s
+     0     0 -92863.667    0  136 -61100.474 -92863.667  52.0%     -    0s
+     0     0 -92204.114    0  128 -61100.474 -92204.114  50.9%     -    0s
+     0     0 -92012.145    0  124 -61100.474 -92012.145  50.6%     -    0s
+     0     0 -91969.456    0  128 -61100.474 -91969.456  50.5%     -    0s
+     0     0 -91963.667    0  128 -61100.474 -91963.667  50.5%     -    0s
+     0     0 -91841.737    0  134 -61100.474 -91841.737  50.3%     -    0s
+     0     0 -91721.903    0  121 -61100.474 -91721.903  50.1%     -    0s
+     0     0 -91710.330    0  120 -61100.474 -91710.330  50.1%     -    0s
+     0     0 -91542.883    0  120 -61100.474 -91542.883  49.8%     -    0s
+     0     0 -91500.927    0  128 -61100.474 -91500.927  49.8%     -    0s
+     0     0 -91428.979    0  127 -61100.474 -91428.979  49.6%     -    0s
+     0     0 -91405.138    0  121 -61100.474 -91405.138  49.6%     -    0s
+     0     0 -91400.333    0  129 -61100.474 -91400.333  49.6%     -    0s
+     0     0 -91252.131    0  136 -61100.474 -91252.131  49.3%     -    0s
+     0     0 -91143.800    0  136 -61100.474 -91143.800  49.2%     -    0s
+     0     0 -91141.552    0  130 -61100.474 -91141.552  49.2%     -    0s
+     0     0 -91007.361    0  120 -61100.474 -91007.361  48.9%     -    0s
+     0     0 -90799.171    0  137 -61100.474 -90799.171  48.6%     -    0s
+     0     0 -90741.707    0  125 -61100.474 -90741.707  48.5%     -    0s
+     0     0 -90417.763    0  143 -61100.474 -90417.763  48.0%     -    0s
+     0     0 -90214.122    0  142 -61100.474 -90214.122  47.6%     -    0s
+     0     0 -90187.930    0  152 -61100.474 -90187.930  47.6%     -    0s
+     0     0 -90162.779    0  152 -61100.474 -90162.779  47.6%     -    0s
+     0     0 -90155.166    0  152 -61100.474 -90155.166  47.6%     -    0s
+     0     0 -88301.395    0  147 -61100.474 -88301.395  44.5%     -    0s
+     0     0 -87585.846    0  144 -61100.474 -87585.846  43.3%     -    0s
+     0     0 -87545.443    0  133 -61100.474 -87545.443  43.3%     -    0s
+     0     0 -87306.260    0  115 -61100.474 -87306.260  42.9%     -    0s
+     0     0 -87266.547    0  129 -61100.474 -87266.547  42.8%     -    0s
+     0     0 -87257.609    0  136 -61100.474 -87257.609  42.8%     -    0s
+     0     0 -86684.897    0  125 -61100.474 -86684.897  41.9%     -    0s
+     0     0 -86431.280    0  144 -61100.474 -86431.280  41.5%     -    0s
+     0     0 -86354.135    0  142 -61100.474 -86354.135  41.3%     -    0s
+     0     0 -86269.674    0  142 -61100.474 -86269.674  41.2%     -    0s
+     0     0 -86269.136    0  148 -61100.474 -86269.136  41.2%     -    0s
+     0     0 -86107.923    0  142 -61100.474 -86107.923  40.9%     -    0s
+     0     0 -86075.565    0  138 -61100.474 -86075.565  40.9%     -    0s
+     0     0 -86065.024    0  135 -61100.474 -86065.024  40.9%     -    0s
+     0     0 -85792.746    0  146 -61100.474 -85792.746  40.4%     -    0s
+H    0     0                    -63659.92999 -85792.746  34.8%     -    0s
+     0     0 -85749.381    0  155 -63659.930 -85749.381  34.7%     -    0s
+     0     0 -85740.954    0  142 -63659.930 -85740.954  34.7%     -    0s
+     0     0 -85655.995    0  147 -63659.930 -85655.995  34.6%     -    0s
+     0     2 -85655.995    0  147 -63659.930 -85655.995  34.6%     -    0s
+*   38    11               9    -71370.86492 -80420.599  12.7%  34.9    0s
+
+Cutting planes:
+  Gomory: 3
+  Cover: 71
+  Implied bound: 5
+  Clique: 3
+  MIR: 56
+  Flow cover: 33
+  GUB cover: 1
+  Zero half: 10
+
+Explored 60 nodes (3811 simplex iterations) in 0.36 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 4: -71370.9 -63659.9 -61100.5 -34688.6 
+No other solutions better than -71370.9
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -7.137086492211e+04, best bound -7.137086492211e+04, gap 0.0000%
+
+Gurobi 7.5.2 (linux64) logging started Thu Mar 21 00:47:15 2019
+
+Changed value of parameter LogFile to /home/aniket/python_scripts/Plasmids/exp/2019-03-21__iterative_with_questionable/output/sample_11/1.5.1/nplasmids_1/MILP/m.log
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 2400.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 2848 rows, 828 columns and 10851 nonzeros
+Variable types: 220 continuous, 608 integer (316 binary)
+Coefficient statistics:
+  Matrix range     [1e-01, 1e+06]
+  Objective range  [1e-03, 2e+05]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e-01, 1e+06]
+Presolve removed 2241 rows and 484 columns
+Presolve time: 0.02s
+Presolved: 607 rows, 344 columns, 2086 nonzeros
+Variable types: 72 continuous, 272 integer (201 binary)
+
+Root relaxation: objective -1.012412e+05, 447 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -101241.21    0  101          - -101241.21      -     -    0s
+     0     0 -76443.293    0   87          - -76443.293      -     -    0s
+     0     0 -76403.915    0   88          - -76403.915      -     -    0s
+     0     0 -75013.038    0   86          - -75013.038      -     -    0s
+     0     0 -74851.994    0   89          - -74851.994      -     -    0s
+     0     0 -74845.886    0   90          - -74845.886      -     -    0s
+     0     0 -69637.986    0   76          - -69637.986      -     -    0s
+     0     0 -66664.039    0   75          - -66664.039      -     -    0s
+     0     0 -66239.826    0   84          - -66239.826      -     -    0s
+     0     0 -64175.331    0   85          - -64175.331      -     -    0s
+     0     0 -63352.742    0   87          - -63352.742      -     -    0s
+     0     0 -63306.554    0   88          - -63306.554      -     -    0s
+     0     0 -62120.828    0   81          - -62120.828      -     -    0s
+     0     0 -61472.030    0  110          - -61472.030      -     -    0s
+     0     0 -61381.301    0  115          - -61381.301      -     -    0s
+     0     0 -61381.120    0  115          - -61381.120      -     -    0s
+     0     0 -60656.118    0  102          - -60656.118      -     -    0s
+     0     0 -60598.346    0  127          - -60598.346      -     -    0s
+     0     0 -60595.802    0  138          - -60595.802      -     -    0s
+     0     0 -59711.008    0  107          - -59711.008      -     -    0s
+H    0     0                    -18643.45750 -59711.008   220%     -    0s
+     0     0 -59524.592    0  107 -18643.458 -59524.592   219%     -    0s
+     0     0 -59479.603    0  107 -18643.458 -59479.603   219%     -    0s
+     0     0 -59477.284    0  107 -18643.458 -59477.284   219%     -    0s
+     0     0 -58990.164    0  123 -18643.458 -58990.164   216%     -    0s
+     0     0 -58840.977    0  128 -18643.458 -58840.977   216%     -    0s
+     0     0 -58751.305    0  129 -18643.458 -58751.305   215%     -    0s
+     0     0 -58737.709    0  111 -18643.458 -58737.709   215%     -    0s
+     0     0 -58068.379    0  103 -18643.458 -58068.379   211%     -    0s
+     0     0 -57958.088    0  137 -18643.458 -57958.088   211%     -    0s
+     0     0 -57926.976    0  118 -18643.458 -57926.976   211%     -    0s
+     0     0 -57831.285    0  131 -18643.458 -57831.285   210%     -    0s
+     0     0 -57802.501    0  131 -18643.458 -57802.501   210%     -    0s
+     0     0 -57802.501    0  131 -18643.458 -57802.501   210%     -    0s
+     0     0 -57658.573    0  136 -18643.458 -57658.573   209%     -    0s
+     0     0 -57606.011    0  136 -18643.458 -57606.011   209%     -    0s
+     0     0 -57562.093    0  137 -18643.458 -57562.093   209%     -    0s
+     0     0 -57552.252    0  132 -18643.458 -57552.252   209%     -    0s
+     0     0 -57515.899    0  125 -18643.458 -57515.899   209%     -    0s
+H    0     0                    -26021.92372 -57515.899   121%     -    0s
+     0     2 -57515.899    0  125 -26021.924 -57515.899   121%     -    0s
+H   20    11                    -33631.94648 -54529.168  62.1%  32.0    0s
+*   53    23              11    -37271.53124 -50827.161  36.4%  23.2    0s
+*   78    23              17    -37417.80000 -48500.979  29.6%  20.7    0s
+*   91    18               9    -43752.67060 -48500.979  10.9%  19.8    0s
+
+Cutting planes:
+  Gomory: 4
+  Cover: 67
+  Implied bound: 10
+  Clique: 2
+  MIR: 26
+  StrongCG: 1
+  Flow cover: 32
+  GUB cover: 1
+  Zero half: 12
+
+Explored 119 nodes (3272 simplex iterations) in 0.24 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 6: -43752.7 -37417.8 -37271.5 ... -18643.5
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -4.375267060141e+04, best bound -4.375267060141e+04, gap 0.0000%
+
+Gurobi 7.5.2 (linux64) logging started Thu Mar 21 00:47:15 2019
+
+Changed value of parameter LogFile to /home/aniket/python_scripts/Plasmids/exp/2019-03-21__iterative_with_questionable/output/sample_11/1.5.1/nplasmids_1/MILP/m.log
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 2400.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 2766 rows, 804 columns and 10392 nonzeros
+Variable types: 214 continuous, 590 integer (306 binary)
+Coefficient statistics:
+  Matrix range     [7e-02, 1e+06]
+  Objective range  [1e-03, 2e+05]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [7e-02, 1e+06]
+Presolve removed 2174 rows and 469 columns
+Presolve time: 0.02s
+Presolved: 592 rows, 335 columns, 2030 nonzeros
+Variable types: 70 continuous, 265 integer (196 binary)
+
+Root relaxation: objective -8.072379e+04, 521 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -80723.793    0   98          - -80723.793      -     -    0s
+     0     0 -55640.115    0   86          - -55640.115      -     -    0s
+     0     0 -54906.662    0   78          - -54906.662      -     -    0s
+     0     0 -54825.711    0   82          - -54825.711      -     -    0s
+     0     0 -53512.385    0   81          - -53512.385      -     -    0s
+     0     0 -51722.412    0   84          - -51722.412      -     -    0s
+     0     0 -51712.183    0   75          - -51712.183      -     -    0s
+     0     0 -51709.436    0   81          - -51709.436      -     -    0s
+     0     0 -50196.199    0   76          - -50196.199      -     -    0s
+     0     0 -49133.813    0   82          - -49133.813      -     -    0s
+     0     0 -48999.638    0  100          - -48999.638      -     -    0s
+     0     0 -48994.975    0  100          - -48994.975      -     -    0s
+     0     0 -47503.675    0  103          - -47503.675      -     -    0s
+H    0     0                    -13778.35738 -47503.675   245%     -    0s
+     0     0 -46709.024    0   80 -13778.357 -46709.024   239%     -    0s
+     0     0 -46633.462    0   96 -13778.357 -46633.462   238%     -    0s
+     0     0 -46573.281    0  119 -13778.357 -46573.281   238%     -    0s
+     0     0 -46572.065    0  119 -13778.357 -46572.065   238%     -    0s
+     0     0 -45506.031    0  116 -13778.357 -45506.031   230%     -    0s
+     0     0 -45308.157    0  116 -13778.357 -45308.157   229%     -    0s
+     0     0 -45297.874    0  107 -13778.357 -45297.874   229%     -    0s
+     0     0 -45063.572    0  130 -13778.357 -45063.572   227%     -    0s
+H    0     0                    -19473.97467 -45063.572   131%     -    0s
+     0     0 -44827.960    0  125 -19473.975 -44827.960   130%     -    0s
+     0     0 -44602.487    0  125 -19473.975 -44602.487   129%     -    0s
+     0     0 -44572.929    0  124 -19473.975 -44572.929   129%     -    0s
+     0     0 -44558.859    0  126 -19473.975 -44558.859   129%     -    0s
+     0     0 -44314.408    0  119 -19473.975 -44314.408   128%     -    0s
+     0     0 -44252.429    0  119 -19473.975 -44252.429   127%     -    0s
+     0     0 -44218.636    0  119 -19473.975 -44218.636   127%     -    0s
+     0     0 -44214.070    0  119 -19473.975 -44214.070   127%     -    0s
+     0     0 -43983.232    0  106 -19473.975 -43983.232   126%     -    0s
+     0     0 -43645.512    0  107 -19473.975 -43645.512   124%     -    0s
+     0     0 -43467.862    0  114 -19473.975 -43467.862   123%     -    0s
+     0     0 -43460.329    0  109 -19473.975 -43460.329   123%     -    0s
+     0     0 -43274.240    0  118 -19473.975 -43274.240   122%     -    0s
+     0     0 -43187.309    0  116 -19473.975 -43187.309   122%     -    0s
+     0     0 -43163.509    0  118 -19473.975 -43163.509   122%     -    0s
+     0     0 -43163.499    0  118 -19473.975 -43163.499   122%     -    0s
+     0     0 -43142.175    0  121 -19473.975 -43142.175   122%     -    0s
+     0     0 -43083.092    0  115 -19473.975 -43083.092   121%     -    0s
+     0     0 -43080.393    0  117 -19473.975 -43080.393   121%     -    0s
+     0     0 -43032.269    0  125 -19473.975 -43032.269   121%     -    0s
+     0     0 -43032.269    0  125 -19473.975 -43032.269   121%     -    0s
+H    0     0                    -19475.97467 -43032.269   121%     -    0s
+     0     2 -43032.269    0  125 -19475.975 -43032.269   121%     -    0s
+H   51    32                    -20619.72220 -38315.934  85.8%  22.7    0s
+H   65    32                    -22284.87238 -35593.118  59.7%  23.0    0s
+H  109    27                    -27300.39608 -34972.486  28.1%  21.9    0s
+
+Cutting planes:
+  Gomory: 2
+  Cover: 68
+  Implied bound: 4
+  Clique: 2
+  MIR: 20
+  StrongCG: 1
+  Flow cover: 45
+  Zero half: 21
+
+Explored 177 nodes (4738 simplex iterations) in 0.29 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 6: -27300.4 -22284.9 -20619.7 ... -13778.4
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -2.730039608455e+04, best bound -2.730039608455e+04, gap 0.0000%
+
+Gurobi 7.5.2 (linux64) logging started Thu Mar 21 00:47:15 2019
+
+Changed value of parameter LogFile to /home/aniket/python_scripts/Plasmids/exp/2019-03-21__iterative_with_questionable/output/sample_11/1.5.1/nplasmids_1/MILP/m.log
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 2400.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 2725 rows, 792 columns and 10164 nonzeros
+Variable types: 211 continuous, 581 integer (301 binary)
+Coefficient statistics:
+  Matrix range     [7e-02, 1e+06]
+  Objective range  [1e-03, 2e+05]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [7e-02, 1e+06]
+Presolve removed 2142 rows and 463 columns
+Presolve time: 0.01s
+Presolved: 583 rows, 329 columns, 1992 nonzeros
+Variable types: 69 continuous, 260 integer (192 binary)
+
+Root relaxation: objective -6.283758e+04, 466 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -62837.578    0  106          - -62837.578      -     -    0s
+     0     0 -43768.249    0   91          - -43768.249      -     -    0s
+     0     0 -43651.130    0   95          - -43651.130      -     -    0s
+     0     0 -43636.241    0   97          - -43636.241      -     -    0s
+     0     0 -43636.046    0   97          - -43636.046      -     -    0s
+     0     0 -37922.404    0   94          - -37922.404      -     -    0s
+     0     0 -37019.410    0  103          - -37019.410      -     -    0s
+     0     0 -36828.224    0  110          - -36828.224      -     -    0s
+     0     0 -36823.721    0  105          - -36823.721      -     -    0s
+     0     0 -34424.919    0  110          - -34424.919      -     -    0s
+H    0     0                    -14199.97372 -34424.919   142%     -    0s
+     0     0 -34045.058    0  117 -14199.974 -34045.058   140%     -    0s
+     0     0 -33885.408    0  112 -14199.974 -33885.408   139%     -    0s
+     0     0 -33796.901    0  117 -14199.974 -33796.901   138%     -    0s
+     0     0 -33796.606    0  112 -14199.974 -33796.606   138%     -    0s
+     0     0 -33494.119    0  117 -14199.974 -33494.119   136%     -    0s
+     0     0 -33021.284    0  115 -14199.974 -33021.284   133%     -    0s
+     0     0 -32680.263    0  103 -14199.974 -32680.263   130%     -    0s
+     0     0 -32487.956    0  116 -14199.974 -32487.956   129%     -    0s
+     0     0 -32439.100    0  125 -14199.974 -32439.100   128%     -    0s
+     0     0 -32428.936    0  147 -14199.974 -32428.936   128%     -    0s
+     0     0 -32226.049    0  107 -14199.974 -32226.049   127%     -    0s
+     0     0 -32188.165    0  136 -14199.974 -32188.165   127%     -    0s
+     0     0 -32182.473    0  135 -14199.974 -32182.473   127%     -    0s
+     0     0 -32145.244    0  124 -14199.974 -32145.244   126%     -    0s
+     0     0 -32145.244    0  124 -14199.974 -32145.244   126%     -    0s
+     0     2 -32145.244    0  124 -14199.974 -32145.244   126%     -    0s
+*   20     9              10    -24735.00016 -31374.775  26.8%  20.8    0s
+
+Cutting planes:
+  Gomory: 1
+  Cover: 66
+  Clique: 4
+  MIR: 24
+  Flow cover: 25
+  Zero half: 11
+
+Explored 115 nodes (2710 simplex iterations) in 0.20 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 2: -24735 -14200 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -2.473500016497e+04, best bound -2.473500016497e+04, gap 0.0000%
+
+Gurobi 7.5.2 (linux64) logging started Thu Mar 21 00:47:15 2019
+
+Changed value of parameter LogFile to /home/aniket/python_scripts/Plasmids/exp/2019-03-21__iterative_with_questionable/output/sample_11/1.5.1/nplasmids_1/MILP/m.log
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 2400.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 2643 rows, 768 columns and 9717 nonzeros
+Variable types: 205 continuous, 563 integer (291 binary)
+Coefficient statistics:
+  Matrix range     [7e-02, 1e+06]
+  Objective range  [1e-03, 2e+05]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [7e-02, 1e+06]
+Presolve removed 2077 rows and 450 columns
+Presolve time: 0.01s
+Presolved: 566 rows, 318 columns, 1920 nonzeros
+Variable types: 67 continuous, 251 integer (185 binary)
+
+Root relaxation: objective -5.181737e+04, 446 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -51817.372    0  104          - -51817.372      -     -    0s
+     0     0 -33127.037    0   82          - -33127.037      -     -    0s
+     0     0 -32770.781    0   82          - -32770.781      -     -    0s
+     0     0 -32613.057    0   82          - -32613.057      -     -    0s
+     0     0 -32592.672    0   82          - -32592.672      -     -    0s
+     0     0 -32555.798    0   82          - -32555.798      -     -    0s
+     0     0 -28785.688    0   84          - -28785.688      -     -    0s
+     0     0 -28010.702    0   93          - -28010.702      -     -    0s
+     0     0 -27918.989    0  108          - -27918.989      -     -    0s
+     0     0 -27908.150    0  108          - -27908.150      -     -    0s
+     0     0 -27901.034    0  104          - -27901.034      -     -    0s
+     0     0 -27028.068    0  108          - -27028.068      -     -    0s
+     0     0 -26511.864    0  116          - -26511.864      -     -    0s
+     0     0 -26482.386    0  115          - -26482.386      -     -    0s
+     0     0 -26481.757    0  117          - -26481.757      -     -    0s
+     0     0 -25693.155    0  112          - -25693.155      -     -    0s
+     0     0 -25291.891    0  109          - -25291.891      -     -    0s
+     0     0 -25274.370    0  105          - -25274.370      -     -    0s
+     0     0 -25247.446    0  114          - -25247.446      -     -    0s
+     0     0 -25241.175    0  115          - -25241.175      -     -    0s
+     0     0 -25040.033    0  116          - -25040.033      -     -    0s
+H    0     0                    -16014.51716 -25040.033  56.4%     -    0s
+     0     0 -24998.095    0  129 -16014.517 -24998.095  56.1%     -    0s
+     0     0 -24939.652    0  129 -16014.517 -24939.652  55.7%     -    0s
+     0     0 -24939.261    0  129 -16014.517 -24939.261  55.7%     -    0s
+     0     0 -24790.127    0  122 -16014.517 -24790.127  54.8%     -    0s
+     0     0 -24768.726    0  122 -16014.517 -24768.726  54.7%     -    0s
+     0     0 -24695.996    0  122 -16014.517 -24695.996  54.2%     -    0s
+     0     0 -24686.515    0  122 -16014.517 -24686.515  54.2%     -    0s
+     0     0 -24579.185    0  131 -16014.517 -24579.185  53.5%     -    0s
+     0     0 -24558.007    0  137 -16014.517 -24558.007  53.3%     -    0s
+     0     0 -24558.007    0  137 -16014.517 -24558.007  53.3%     -    0s
+     0     0 -24538.329    0  140 -16014.517 -24538.329  53.2%     -    0s
+     0     2 -24538.329    0  140 -16014.517 -24538.329  53.2%     -    0s
+*   28     9              10    -17646.55957 -24404.132  38.3%  22.4    0s
+H   40    11                    -18822.27270 -23963.706  27.3%  22.7    0s
+
+Cutting planes:
+  Gomory: 3
+  Cover: 60
+  Clique: 6
+  MIR: 20
+  Flow cover: 17
+  Zero half: 7
+
+Explored 69 nodes (2324 simplex iterations) in 0.20 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 3: -18822.3 -17646.6 -16014.5 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -1.882227270066e+04, best bound -1.882227270066e+04, gap 0.0000%
+
+Gurobi 7.5.2 (linux64) logging started Thu Mar 21 00:47:16 2019
+
+Changed value of parameter LogFile to /home/aniket/python_scripts/Plasmids/exp/2019-03-21__iterative_with_questionable/output/sample_11/1.5.1/nplasmids_1/MILP/m.log
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 2400.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 2521 rows, 733 columns and 9067 nonzeros
+Variable types: 196 continuous, 537 integer (277 binary)
+Coefficient statistics:
+  Matrix range     [6e-02, 1e+06]
+  Objective range  [1e-03, 2e+05]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [6e-02, 1e+06]
+Presolve removed 1986 rows and 433 columns
+Presolve time: 0.01s
+Presolved: 535 rows, 300 columns, 1807 nonzeros
+Variable types: 64 continuous, 236 integer (173 binary)
+Found heuristic solution: objective -1127.307074
+
+Root relaxation: objective -4.275269e+04, 436 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -42752.690    0  104 -1127.3071 -42752.690  3692%     -    0s
+     0     0 -26732.367    0   69 -1127.3071 -26732.367  2271%     -    0s
+H    0     0                    -8174.023462 -26732.367   227%     -    0s
+     0     0 -26504.865    0   47 -8174.0235 -26504.865   224%     -    0s
+     0     0 -25339.926    0   70 -8174.0235 -25339.926   210%     -    0s
+     0     0 -25339.926    0   70 -8174.0235 -25339.926   210%     -    0s
+     0     0 -23400.695    0   74 -8174.0235 -23400.695   186%     -    0s
+     0     0 -22143.692    0   85 -8174.0235 -22143.692   171%     -    0s
+     0     0 -22095.212    0   90 -8174.0235 -22095.212   170%     -    0s
+     0     0 -21341.586    0   87 -8174.0235 -21341.586   161%     -    0s
+     0     0 -21332.766    0   87 -8174.0235 -21332.766   161%     -    0s
+     0     0 -19383.945    0   96 -8174.0235 -19383.945   137%     -    0s
+     0     0 -19294.180    0  101 -8174.0235 -19294.180   136%     -    0s
+     0     0 -18761.464    0   82 -8174.0235 -18761.464   130%     -    0s
+     0     0 -18686.881    0   87 -8174.0235 -18686.881   129%     -    0s
+     0     0 -18684.771    0   87 -8174.0235 -18684.771   129%     -    0s
+     0     0 -18529.198    0   91 -8174.0235 -18529.198   127%     -    0s
+     0     0 -18480.016    0  105 -8174.0235 -18480.016   126%     -    0s
+     0     0 -18398.607    0  103 -8174.0235 -18398.607   125%     -    0s
+     0     0 -18397.497    0  103 -8174.0235 -18397.497   125%     -    0s
+     0     0 -18327.066    0  101 -8174.0235 -18327.066   124%     -    0s
+     0     0 -18326.903    0  102 -8174.0235 -18326.903   124%     -    0s
+     0     0 -18306.712    0   99 -8174.0235 -18306.712   124%     -    0s
+H    0     0                    -9740.913831 -18306.712  87.9%     -    0s
+H    0     0                    -12776.58224 -18306.712  43.3%     -    0s
+     0     2 -18296.510    0   98 -12776.582 -18296.510  43.2%     -    0s
+*   20    11              10    -13027.52427 -18094.574  38.9%  12.3    0s
+*   35    12               8    -13176.14298 -17014.475  29.1%  12.1    0s
+
+Cutting planes:
+  Gomory: 4
+  Cover: 56
+  Implied bound: 1
+  Clique: 8
+  MIR: 24
+  Flow cover: 16
+  Zero half: 8
+
+Explored 90 nodes (1975 simplex iterations) in 0.17 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 6: -13176.1 -13027.5 -12776.6 ... -1127.31
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -1.317614297983e+04, best bound -1.317614297983e+04, gap 0.0000%
+
+Gurobi 7.5.2 (linux64) logging started Thu Mar 21 00:47:16 2019
+
+Changed value of parameter LogFile to /home/aniket/python_scripts/Plasmids/exp/2019-03-21__iterative_with_questionable/output/sample_11/1.5.1/nplasmids_1/MILP/m.log
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 2400.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 2234 rows, 649 columns and 7608 nonzeros
+Variable types: 175 continuous, 474 integer (242 binary)
+Coefficient statistics:
+  Matrix range     [9e-02, 1e+06]
+  Objective range  [1e-03, 2e+05]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [9e-02, 1e+06]
+Presolve removed 1771 rows and 395 columns
+Presolve time: 0.01s
+Presolved: 463 rows, 254 columns, 1552 nonzeros
+Variable types: 57 continuous, 197 integer (141 binary)
+Found heuristic solution: objective -4974.235367
+
+Root relaxation: objective -3.291053e+04, 388 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -32910.528    0   78 -4974.2354 -32910.528   562%     -    0s
+     0     0 -24502.848    0   46 -4974.2354 -24502.848   393%     -    0s
+     0     0 -23948.065    0   51 -4974.2354 -23948.065   381%     -    0s
+     0     0 -23870.545    0   46 -4974.2354 -23870.545   380%     -    0s
+     0     0 -23869.214    0   56 -4974.2354 -23869.214   380%     -    0s
+     0     0 -19938.650    0   48 -4974.2354 -19938.650   301%     -    0s
+H    0     0                    -9783.408895 -19938.650   104%     -    0s
+     0     0 -19904.339    0   45 -9783.4089 -19904.339   103%     -    0s
+     0     0 -19876.471    0   61 -9783.4089 -19876.471   103%     -    0s
+     0     0 -19868.241    0   52 -9783.4089 -19868.241   103%     -    0s
+     0     0 -19221.698    0   63 -9783.4089 -19221.698  96.5%     -    0s
+     0     0 -19203.456    0   54 -9783.4089 -19203.456  96.3%     -    0s
+     0     0 -19198.478    0   73 -9783.4089 -19198.478  96.2%     -    0s
+     0     0 -19090.283    0   71 -9783.4089 -19090.283  95.1%     -    0s
+H    0     0                    -13309.67120 -19090.283  43.4%     -    0s
+H    0     0                    -17171.05252 -19090.283  11.2%     -    0s
+     0     0 -18383.499    0   53 -17171.053 -18383.499  7.06%     -    0s
+     0     0 -18372.291    0   65 -17171.053 -18372.291  7.00%     -    0s
+     0     0 -18371.142    0   67 -17171.053 -18371.142  6.99%     -    0s
+     0     0 -18260.370    0   82 -17171.053 -18260.370  6.34%     -    0s
+     0     0 -18249.160    0   63 -17171.053 -18249.160  6.28%     -    0s
+     0     0 -18237.168    0   51 -17171.053 -18237.168  6.21%     -    0s
+     0     0 -18205.704    0   26 -17171.053 -18205.704  6.03%     -    0s
+     0     0 -18129.035    0    4 -17171.053 -18129.035  5.58%     -    0s
+H    0     0                    -17228.80174 -18129.035  5.23%     -    0s
+*    0     0               0    -17228.89952 -17228.900  0.00%     -    0s
+
+Explored 1 nodes (1046 simplex iterations) in 0.09 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 6: -17228.9 -17228.8 -17171.1 ... -4974.24
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -1.722889951930e+04, best bound -1.722889951930e+04, gap 0.0000%
+
+Gurobi 7.5.2 (linux64) logging started Thu Mar 21 00:47:16 2019
+
+Changed value of parameter LogFile to /home/aniket/python_scripts/Plasmids/exp/2019-03-21__iterative_with_questionable/output/sample_11/1.5.1/nplasmids_1/MILP/m.log
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 2400.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 2193 rows, 637 columns and 7406 nonzeros
+Variable types: 172 continuous, 465 integer (237 binary)
+Coefficient statistics:
+  Matrix range     [9e-02, 1e+06]
+  Objective range  [1e-03, 2e+05]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [9e-02, 1e+06]
+Presolve removed 1745 rows and 391 columns
+Presolve time: 0.01s
+Presolved: 448 rows, 246 columns, 1493 nonzeros
+Variable types: 55 continuous, 191 integer (137 binary)
+Found heuristic solution: objective -5472.310529
+
+Root relaxation: objective -2.351539e+04, 366 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -23515.389    0   80 -5472.3105 -23515.389   330%     -    0s
+     0     0 -15109.032    0   71 -5472.3105 -15109.032   176%     -    0s
+     0     0 -14721.527    0   65 -5472.3105 -14721.527   169%     -    0s
+     0     0 -14582.456    0   59 -5472.3105 -14582.456   166%     -    0s
+     0     0 -14582.456    0   59 -5472.3105 -14582.456   166%     -    0s
+     0     0 -14010.198    0   70 -5472.3105 -14010.198   156%     -    0s
+H    0     0                    -8097.118936 -14010.198  73.0%     -    0s
+     0     0 -13776.011    0   81 -8097.1189 -13776.011  70.1%     -    0s
+     0     0 -13611.641    0   76 -8097.1189 -13611.641  68.1%     -    0s
+     0     0 -13606.441    0   80 -8097.1189 -13606.441  68.0%     -    0s
+     0     0 -13557.110    0   80 -8097.1189 -13557.110  67.4%     -    0s
+     0     0 -13521.771    0   75 -8097.1189 -13521.771  67.0%     -    0s
+     0     0 -13518.923    0   78 -8097.1189 -13518.923  67.0%     -    0s
+     0     0 -13500.994    0   89 -8097.1189 -13500.994  66.7%     -    0s
+H    0     0                    -8103.320008 -13500.994  66.6%     -    0s
+     0     0 -13496.016    0   84 -8103.3200 -13496.016  66.5%     -    0s
+     0     0 -13457.990    0   84 -8103.3200 -13457.990  66.1%     -    0s
+     0     0 -13457.990    0   83 -8103.3200 -13457.990  66.1%     -    0s
+     0     2 -13457.990    0   83 -8103.3200 -13457.990  66.1%     -    0s
+*   51    15               5    -8203.667041 -12222.238  49.0%  20.5    0s
+*   88    18              18    -9007.861639 -10709.651  18.9%  16.9    0s
+*  108    17              17    -9146.767750 -10494.509  14.7%  15.1    0s
+*  124     6              13    -9152.714639 -10405.468  13.7%  14.5    0s
+
+Cutting planes:
+  Gomory: 11
+  Cover: 50
+  Implied bound: 6
+  Clique: 3
+  MIR: 18
+  Flow cover: 25
+  Zero half: 3
+
+Explored 155 nodes (2745 simplex iterations) in 0.13 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 7: -9152.71 -9146.77 -9007.86 ... -5472.31
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -9.152714638873e+03, best bound -9.152714638873e+03, gap 0.0000%
+
+Gurobi 7.5.2 (linux64) logging started Thu Mar 21 00:47:16 2019
+
+Changed value of parameter LogFile to /home/aniket/python_scripts/Plasmids/exp/2019-03-21__iterative_with_questionable/output/sample_11/1.5.1/nplasmids_1/MILP/m.log
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 2400.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 2149 rows, 624 columns and 7193 nonzeros
+Variable types: 169 continuous, 455 integer (231 binary)
+Coefficient statistics:
+  Matrix range     [7e-02, 1e+06]
+  Objective range  [1e-03, 2e+05]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [7e-02, 1e+06]
+Presolve removed 1716 rows and 388 columns
+Presolve time: 0.01s
+Presolved: 433 rows, 236 columns, 1443 nonzeros
+Variable types: 54 continuous, 182 integer (129 binary)
+Found heuristic solution: objective -3858.443708
+
+Root relaxation: objective -1.778472e+04, 329 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -17784.717    0   49 -3858.4437 -17784.717   361%     -    0s
+     0     0 -11762.160    0   50 -3858.4437 -11762.160   205%     -    0s
+     0     0 -11322.117    0   62 -3858.4437 -11322.117   193%     -    0s
+     0     0 -11319.202    0   66 -3858.4437 -11319.202   193%     -    0s
+     0     0 -11317.815    0   66 -3858.4437 -11317.815   193%     -    0s
+     0     0 -10442.875    0   69 -3858.4437 -10442.875   171%     -    0s
+H    0     0                    -7206.128933 -10442.875  44.9%     -    0s
+     0     0 -10417.023    0   66 -7206.1289 -10417.023  44.6%     -    0s
+     0     0 -10215.935    0   62 -7206.1289 -10215.935  41.8%     -    0s
+     0     0 -10165.232    0   74 -7206.1289 -10165.232  41.1%     -    0s
+     0     0 -10046.902    0   70 -7206.1289 -10046.902  39.4%     -    0s
+     0     0 -10024.856    0   70 -7206.1289 -10024.856  39.1%     -    0s
+     0     0 -10019.869    0   62 -7206.1289 -10019.869  39.0%     -    0s
+     0     0 -9829.7741    0   60 -7206.1289 -9829.7741  36.4%     -    0s
+     0     0 -9827.5444    0   58 -7206.1289 -9827.5444  36.4%     -    0s
+     0     0 -9815.9772    0   64 -7206.1289 -9815.9772  36.2%     -    0s
+     0     0 -9812.5135    0   72 -7206.1289 -9812.5135  36.2%     -    0s
+     0     0 -9812.4544    0   72 -7206.1289 -9812.4544  36.2%     -    0s
+     0     0 -9776.5236    0   62 -7206.1289 -9776.5236  35.7%     -    0s
+H    0     0                    -7699.689969 -9776.5236  27.0%     -    0s
+     0     0 -9775.5398    0   62 -7699.6900 -9775.5398  27.0%     -    0s
+     0     0 -9746.3665    0   64 -7699.6900 -9746.3665  26.6%     -    0s
+     0     0 -9746.3665    0   64 -7699.6900 -9746.3665  26.6%     -    0s
+     0     0 -9745.8905    0   64 -7699.6900 -9745.8905  26.6%     -    0s
+     0     0 -9745.8905    0   64 -7699.6900 -9745.8905  26.6%     -    0s
+H    0     0                    -7708.052158 -9745.8905  26.4%     -    0s
+     0     0 -9745.8905    0   21 -7708.0522 -9745.8905  26.4%     -    0s
+     0     0 -9307.7715    0   52 -7708.0522 -9307.7715  20.8%     -    0s
+     0     0 -9139.5156    0   44 -7708.0522 -9139.5156  18.6%     -    0s
+     0     0 -9096.9127    0   57 -7708.0522 -9096.9127  18.0%     -    0s
+     0     0 -9096.7708    0   57 -7708.0522 -9096.7708  18.0%     -    0s
+     0     0 -8927.0573    0   62 -7708.0522 -8927.0573  15.8%     -    0s
+     0     0 -8888.5793    0   62 -7708.0522 -8888.5793  15.3%     -    0s
+     0     0 -8888.4331    0   67 -7708.0522 -8888.4331  15.3%     -    0s
+     0     0 -8733.5451    0   52 -7708.0522 -8733.5451  13.3%     -    0s
+     0     0 -8697.8186    0   54 -7708.0522 -8697.8186  12.8%     -    0s
+     0     0 -8665.8727    0   58 -7708.0522 -8665.8727  12.4%     -    0s
+     0     0 -8663.4105    0   58 -7708.0522 -8663.4105  12.4%     -    0s
+     0     0 -8663.4105    0   58 -7708.0522 -8663.4105  12.4%     -    0s
+     0     0 -8612.8030    0   57 -7708.0522 -8612.8030  11.7%     -    0s
+     0     0 -8612.5664    0   52 -7708.0522 -8612.5664  11.7%     -    0s
+     0     0 -8561.7861    0   59 -7708.0522 -8561.7861  11.1%     -    0s
+     0     0 -8544.5834    0   58 -7708.0522 -8544.5834  10.9%     -    0s
+     0     0 -8497.8691    0   52 -7708.0522 -8497.8691  10.2%     -    0s
+H    0     0                    -7712.818440 -8497.8691  10.2%     -    0s
+     0     0 -8497.8691    0   32 -7712.8184 -8497.8691  10.2%     -    0s
+     0     0 -8492.6273    0   35 -7712.8184 -8492.6273  10.1%     -    0s
+     0     0 -8379.0815    0   38 -7712.8184 -8379.0815  8.64%     -    0s
+     0     0 -8263.0499    0   20 -7712.8184 -8263.0499  7.13%     -    0s
+     0     0 -8191.8125    0   30 -7712.8184 -8191.8125  6.21%     -    0s
+     0     0 -8188.0966    0   30 -7712.8184 -8188.0966  6.16%     -    0s
+     0     0 -8089.8754    0   33 -7712.8184 -8089.8754  4.89%     -    0s
+     0     0 -8072.0995    0   33 -7712.8184 -8072.0995  4.66%     -    0s
+     0     0 -8012.0528    0   33 -7712.8184 -8012.0528  3.88%     -    0s
+     0     0 -8010.5181    0   34 -7712.8184 -8010.5181  3.86%     -    0s
+     0     0 -8001.0266    0   34 -7712.8184 -8001.0266  3.74%     -    0s
+     0     0 -7996.0542    0   22 -7712.8184 -7996.0542  3.67%     -    0s
+     0     0 -7996.0542    0   22 -7712.8184 -7996.0542  3.67%     -    0s
+     0     0 -7989.5145    0   35 -7712.8184 -7989.5145  3.59%     -    0s
+     0     0 -7935.7552    0   24 -7712.8184 -7935.7552  2.89%     -    0s
+     0     0 -7901.5842    0   25 -7712.8184 -7901.5842  2.45%     -    0s
+     0     0 -7901.0319    0   24 -7712.8184 -7901.0319  2.44%     -    0s
+     0     0 -7901.0319    0   24 -7712.8184 -7901.0319  2.44%     -    0s
+     0     0 -7873.6720    0   22 -7712.8184 -7873.6720  2.09%     -    0s
+     0     0 -7872.3226    0   23 -7712.8184 -7872.3226  2.07%     -    0s
+     0     0 -7866.1134    0   23 -7712.8184 -7866.1134  1.99%     -    0s
+     0     0 -7866.0646    0   24 -7712.8184 -7866.0646  1.99%     -    0s
+     0     0 -7865.8566    0   25 -7712.8184 -7865.8566  1.98%     -    0s
+     0     0 -7865.7482    0   24 -7712.8184 -7865.7482  1.98%     -    0s
+     0     0 -7865.7482    0   24 -7712.8184 -7865.7482  1.98%     -    0s
+     0     0 -7838.7129    0   15 -7712.8184 -7838.7129  1.63%     -    0s
+
+Cutting planes:
+  Implied bound: 1
+  MIR: 6
+  Flow cover: 5
+
+Explored 1 nodes (1392 simplex iterations) in 0.19 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 5: -7712.82 -7708.05 -7699.69 ... -3858.44
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -7.712818440241e+03, best bound -7.712818440241e+03, gap 0.0000%
+
+Gurobi 7.5.2 (linux64) logging started Thu Mar 21 00:47:16 2019
+
+Changed value of parameter LogFile to /home/aniket/python_scripts/Plasmids/exp/2019-03-21__iterative_with_questionable/output/sample_11/1.5.1/nplasmids_1/MILP/m.log
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 2400.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 2108 rows, 612 columns and 6997 nonzeros
+Variable types: 166 continuous, 446 integer (226 binary)
+Coefficient statistics:
+  Matrix range     [7e-02, 1e+06]
+  Objective range  [1e-03, 2e+05]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [7e-02, 1e+06]
+Presolve removed 1691 rows and 384 columns
+Presolve time: 0.01s
+Presolved: 417 rows, 228 columns, 1389 nonzeros
+Variable types: 52 continuous, 176 integer (125 binary)
+Found heuristic solution: objective -2406.906365
+
+Root relaxation: objective -1.473592e+04, 299 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -14735.920    0   64 -2406.9064 -14735.920   512%     -    0s
+     0     0 -10319.937    0   68 -2406.9064 -10319.937   329%     -    0s
+H    0     0                    -3422.059251 -10319.937   202%     -    0s
+     0     0 -10039.968    0   60 -3422.0593 -10039.968   193%     -    0s
+     0     0 -9775.1383    0   61 -3422.0593 -9775.1383   186%     -    0s
+     0     0 -9738.8317    0   62 -3422.0593 -9738.8317   185%     -    0s
+     0     0 -9138.1676    0   66 -3422.0593 -9138.1676   167%     -    0s
+H    0     0                    -4504.023674 -9138.1676   103%     -    0s
+     0     0 -9041.8172    0   31 -4504.0237 -9041.8172   101%     -    0s
+     0     0 -9039.0089    0   31 -4504.0237 -9039.0089   101%     -    0s
+     0     0 -8732.5108    0   46 -4504.0237 -8732.5108  93.9%     -    0s
+     0     0 -8666.9423    0   50 -4504.0237 -8666.9423  92.4%     -    0s
+     0     0 -8618.8048    0   48 -4504.0237 -8618.8048  91.4%     -    0s
+     0     0 -8563.4000    0   59 -4504.0237 -8563.4000  90.1%     -    0s
+     0     0 -8514.7550    0   69 -4504.0237 -8514.7550  89.0%     -    0s
+     0     0 -8505.0711    0   74 -4504.0237 -8505.0711  88.8%     -    0s
+     0     0 -8504.9593    0   69 -4504.0237 -8504.9593  88.8%     -    0s
+     0     0 -8492.8997    0   75 -4504.0237 -8492.8997  88.6%     -    0s
+H    0     0                    -4506.909170 -8492.8997  88.4%     -    0s
+     0     0 -8492.4352    0   74 -4506.9092 -8492.4352  88.4%     -    0s
+     0     0 -8484.4881    0   65 -4506.9092 -8484.4881  88.3%     -    0s
+     0     0 -8484.4551    0   65 -4506.9092 -8484.4551  88.3%     -    0s
+     0     0 -8479.2443    0   73 -4506.9092 -8479.2443  88.1%     -    0s
+     0     0 -8461.2045    0   71 -4506.9092 -8461.2045  87.7%     -    0s
+     0     0 -8460.1551    0   68 -4506.9092 -8460.1551  87.7%     -    0s
+     0     0 -8330.9723    0   80 -4506.9092 -8330.9723  84.8%     -    0s
+H    0     0                    -4643.931060 -8330.9723  79.4%     -    0s
+     0     0 -8302.8201    0   74 -4643.9311 -8302.8201  78.8%     -    0s
+     0     0 -8298.4201    0   86 -4643.9311 -8298.4201  78.7%     -    0s
+     0     0 -8297.6937    0   77 -4643.9311 -8297.6937  78.7%     -    0s
+     0     0 -8278.4434    0   83 -4643.9311 -8278.4434  78.3%     -    0s
+     0     0 -8274.1520    0   74 -4643.9311 -8274.1520  78.2%     -    0s
+     0     0 -8274.1520    0   74 -4643.9311 -8274.1520  78.2%     -    0s
+     0     0 -8268.0956    0   53 -4643.9311 -8268.0956  78.0%     -    0s
+     0     0 -8268.0956    0   53 -4643.9311 -8268.0956  78.0%     -    0s
+H    0     0                    -4735.028982 -8268.0956  74.6%     -    0s
+     0     2 -8268.0956    0   53 -4735.0290 -8268.0956  74.6%     -    0s
+*   11     3               5    -4743.485026 -7867.1661  65.9%  11.9    0s
+*   19    10               4    -4873.230467 -7473.5670  53.4%  16.4    0s
+*   35    12               8    -5815.185574 -7244.8141  24.6%  12.9    0s
+
+Cutting planes:
+  Gomory: 2
+  Cover: 42
+  Implied bound: 7
+  Clique: 2
+  MIR: 17
+  Flow cover: 19
+  Zero half: 4
+
+Explored 119 nodes (2101 simplex iterations) in 0.15 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 9: -5815.19 -4873.23 -4743.49 ... -2406.91
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -5.815185574207e+03, best bound -5.815185574207e+03, gap 0.0000%
+
+Gurobi 7.5.2 (linux64) logging started Thu Mar 21 00:47:17 2019
+
+Changed value of parameter LogFile to /home/aniket/python_scripts/Plasmids/exp/2019-03-21__iterative_with_questionable/output/sample_11/1.5.1/nplasmids_1/MILP/m.log
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 2400.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 2064 rows, 599 columns and 6788 nonzeros
+Variable types: 163 continuous, 436 integer (220 binary)
+Coefficient statistics:
+  Matrix range     [7e-02, 1e+06]
+  Objective range  [1e-03, 2e+05]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [7e-02, 1e+06]
+Presolve removed 1692 rows and 382 columns
+Presolve time: 0.01s
+Presolved: 372 rows, 217 columns, 1195 nonzeros
+Variable types: 50 continuous, 167 integer (167 binary)
+Found heuristic solution: objective -2804.892177
+
+Root relaxation: objective -9.464312e+03, 255 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -9464.3120    0   30 -2804.8922 -9464.3120   237%     -    0s
+     0     0 -8295.5405    0   17 -2804.8922 -8295.5405   196%     -    0s
+     0     0 -7494.8790    0   20 -2804.8922 -7494.8790   167%     -    0s
+     0     0 -7213.6504    0   24 -2804.8922 -7213.6504   157%     -    0s
+     0     0 -7209.3252    0   24 -2804.8922 -7209.3252   157%     -    0s
+     0     0 -6749.0187    0   41 -2804.8922 -6749.0187   141%     -    0s
+H    0     0                    -4520.141913 -6749.0187  49.3%     -    0s
+H    0     0                    -4551.263372 -6749.0187  48.3%     -    0s
+     0     0 -6437.7113    0   43 -4551.2634 -6437.7113  41.4%     -    0s
+     0     0 -6383.8911    0   51 -4551.2634 -6383.8911  40.3%     -    0s
+     0     0 -6375.8215    0   47 -4551.2634 -6375.8215  40.1%     -    0s
+     0     0 -6375.0924    0   47 -4551.2634 -6375.0924  40.1%     -    0s
+     0     0 -6361.7630    0   43 -4551.2634 -6361.7630  39.8%     -    0s
+H    0     0                    -4598.124486 -6361.7630  38.4%     -    0s
+     0     0 -6361.5280    0   45 -4598.1245 -6361.5280  38.4%     -    0s
+     0     0 -6327.2093    0   40 -4598.1245 -6327.2093  37.6%     -    0s
+     0     0 -6324.0587    0   40 -4598.1245 -6324.0587  37.5%     -    0s
+     0     0 -6317.5086    0   38 -4598.1245 -6317.5086  37.4%     -    0s
+     0     0 -6314.3211    0   39 -4598.1245 -6314.3211  37.3%     -    0s
+     0     0 -6314.1029    0   40 -4598.1245 -6314.1029  37.3%     -    0s
+     0     0 -6303.9719    0   43 -4598.1245 -6303.9719  37.1%     -    0s
+     0     0 -6289.9106    0   43 -4598.1245 -6289.9106  36.8%     -    0s
+     0     0 -6287.5570    0   47 -4598.1245 -6287.5570  36.7%     -    0s
+     0     0 -6287.2373    0   47 -4598.1245 -6287.2373  36.7%     -    0s
+     0     0 -6283.8092    0   43 -4598.1245 -6283.8092  36.7%     -    0s
+     0     0 -6277.9216    0   47 -4598.1245 -6277.9216  36.5%     -    0s
+     0     0 -6273.2144    0   43 -4598.1245 -6273.2144  36.4%     -    0s
+     0     0 -6272.7590    0   47 -4598.1245 -6272.7590  36.4%     -    0s
+     0     0 -6228.1556    0   47 -4598.1245 -6228.1556  35.4%     -    0s
+     0     0 -6204.5980    0   50 -4598.1245 -6204.5980  34.9%     -    0s
+     0     0 -6200.4425    0   60 -4598.1245 -6200.4425  34.8%     -    0s
+     0     0 -6200.4425    0   60 -4598.1245 -6200.4425  34.8%     -    0s
+     0     2 -6200.4425    0   60 -4598.1245 -6200.4425  34.8%     -    0s
+*   12     4               6    -4735.146376 -5605.8885  18.4%  10.8    0s
+*   21     1               6    -4775.485401 -5544.9912  16.1%   8.7    0s
+*   22     1               5    -4781.498101 -5544.9912  16.0%   8.7    0s
+
+Cutting planes:
+  Gomory: 2
+  Cover: 30
+  Implied bound: 2
+  Clique: 7
+  MIR: 8
+  Flow cover: 10
+  Zero half: 8
+
+Explored 26 nodes (775 simplex iterations) in 0.08 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 7: -4781.5 -4775.49 -4735.15 ... -2804.89
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -4.781498101080e+03, best bound -4.781498101080e+03, gap 0.0000%
+
+Gurobi 7.5.2 (linux64) logging started Thu Mar 21 00:47:17 2019
+
+Changed value of parameter LogFile to /home/aniket/python_scripts/Plasmids/exp/2019-03-21__iterative_with_questionable/output/sample_11/1.5.1/nplasmids_1/MILP/m.log
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 2400.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 1982 rows, 575 columns and 6405 nonzeros
+Variable types: 157 continuous, 418 integer (210 binary)
+Coefficient statistics:
+  Matrix range     [7e-02, 1e+06]
+  Objective range  [1e-03, 2e+05]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [7e-02, 1e+06]
+Presolve removed 1685 rows and 388 columns
+Presolve time: 0.01s
+Presolved: 297 rows, 187 columns, 934 nonzeros
+Variable types: 42 continuous, 145 integer (145 binary)
+
+Root relaxation: objective -4.969740e+03, 252 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -4969.7398    0   20          - -4969.7398      -     -    0s
+     0     0 -4408.0056    0   32          - -4408.0056      -     -    0s
+H    0     0                    -2247.612526 -4408.0056  96.1%     -    0s
+H    0     0                    -2863.167296 -4408.0056  54.0%     -    0s
+     0     0 -4343.8989    0   37 -2863.1673 -4343.8989  51.7%     -    0s
+     0     0 -4305.8161    0    2 -2863.1673 -4305.8161  50.4%     -    0s
+*    0     0               0    -4181.406389 -4181.4064  0.00%     -    0s
+
+Cutting planes:
+  Gomory: 5
+  Cover: 10
+  Implied bound: 9
+  Clique: 2
+  MIR: 1
+  Flow cover: 5
+
+Explored 1 nodes (328 simplex iterations) in 0.02 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 3: -4181.41 -2863.17 -2247.61 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -4.181406388958e+03, best bound -4.181406388958e+03, gap 0.0000%
+
+Gurobi 7.5.2 (linux64) logging started Thu Mar 21 00:47:17 2019
+
+Changed value of parameter LogFile to /home/aniket/python_scripts/Plasmids/exp/2019-03-21__iterative_with_questionable/output/sample_11/1.5.1/nplasmids_1/MILP/m.log
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 2400.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 1865 rows, 541 columns and 5875 nonzeros
+Variable types: 148 continuous, 393 integer (197 binary)
+Coefficient statistics:
+  Matrix range     [7e-02, 1e+06]
+  Objective range  [1e-03, 2e+05]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [7e-02, 1e+06]
+Presolve removed 1576 rows and 360 columns
+Presolve time: 0.01s
+Presolved: 289 rows, 181 columns, 904 nonzeros
+Variable types: 41 continuous, 140 integer (140 binary)
+
+Root relaxation: objective -3.271178e+03, 278 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -3271.1784    0   19          - -3271.1784      -     -    0s
+     0     0 -3113.0836    0   28          - -3113.0836      -     -    0s
+     0     0 -3094.1563    0   41          - -3094.1563      -     -    0s
+     0     0 -3050.4666    0   44          - -3050.4666      -     -    0s
+H    0     0                    -1958.163753 -3050.4666  55.8%     -    0s
+     0     0 -3022.6834    0   36 -1958.1638 -3022.6834  54.4%     -    0s
+     0     0 -3019.3261    0   39 -1958.1638 -3019.3261  54.2%     -    0s
+     0     0 -3017.8543    0   37 -1958.1638 -3017.8543  54.1%     -    0s
+     0     0 -3017.8543    0   37 -1958.1638 -3017.8543  54.1%     -    0s
+     0     0 -3010.3082    0   31 -1958.1638 -3010.3082  53.7%     -    0s
+H    0     0                    -1963.749933 -3010.3082  53.3%     -    0s
+H    0     0                    -2944.010727 -3010.3082  2.25%     -    0s
+     0     0 -3007.0187    0   52 -2944.0107 -3007.0187  2.14%     -    0s
+     0     0 -3006.8916    0   55 -2944.0107 -3006.8916  2.14%     -    0s
+     0     0 -3006.8063    0   55 -2944.0107 -3006.8063  2.13%     -    0s
+     0     0 -3002.6556    0   35 -2944.0107 -3002.6556  1.99%     -    0s
+     0     0 -3002.3548    0   35 -2944.0107 -3002.3548  1.98%     -    0s
+     0     0 -3002.3406    0   42 -2944.0107 -3002.3406  1.98%     -    0s
+     0     0 -3002.3288    0   44 -2944.0107 -3002.3288  1.98%     -    0s
+     0     0 -3002.3288    0   44 -2944.0107 -3002.3288  1.98%     -    0s
+     0     0 -3002.3288    0   44 -2944.0107 -3002.3288  1.98%     -    0s
+     0     0 -3002.3288    0   44 -2944.0107 -3002.3288  1.98%     -    0s
+     0     0 -3002.3288    0   11 -2944.0107 -3002.3288  1.98%     -    0s
+     0     0 -3002.3288    0   44 -2944.0107 -3002.3288  1.98%     -    0s
+     0     0 -3002.3288    0   33 -2944.0107 -3002.3288  1.98%     -    0s
+     0     0 -3002.3288    0   36 -2944.0107 -3002.3288  1.98%     -    0s
+     0     0 -3002.3288    0   35 -2944.0107 -3002.3288  1.98%     -    0s
+     0     0 -3001.2784    0   37 -2944.0107 -3001.2784  1.95%     -    0s
+     0     0 -3001.2784    0   37 -2944.0107 -3001.2784  1.95%     -    0s
+     0     0 -3000.9326    0   29 -2944.0107 -3000.9326  1.93%     -    0s
+
+Cutting planes:
+  Gomory: 2
+  MIR: 16
+  Flow cover: 4
+
+Explored 1 nodes (767 simplex iterations) in 0.06 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 3: -2944.01 -1963.75 -1958.16 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -2.944010726649e+03, best bound -2.944010726649e+03, gap 0.0000%
+
+Gurobi 7.5.2 (linux64) logging started Thu Mar 21 00:47:17 2019
+
+Changed value of parameter LogFile to /home/aniket/python_scripts/Plasmids/exp/2019-03-21__iterative_with_questionable/output/sample_11/1.5.1/nplasmids_1/MILP/m.log
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 2400.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 1791 rows, 519 columns and 5550 nonzeros
+Variable types: 142 continuous, 377 integer (189 binary)
+Coefficient statistics:
+  Matrix range     [6e-02, 1e+06]
+  Objective range  [1e-03, 2e+05]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [6e-02, 1e+06]
+Presolve removed 1513 rows and 345 columns
+Presolve time: 0.01s
+Presolved: 278 rows, 174 columns, 873 nonzeros
+Variable types: 39 continuous, 135 integer (135 binary)
+
+Root relaxation: objective -2.761403e+03, 166 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -2761.4025    0    4          - -2761.4025      -     -    0s
+H    0     0                    -2754.826209 -2761.4025  0.24%     -    0s
+     0     0 -2757.5003    0    2 -2754.8262 -2757.5003  0.10%     -    0s
+     0     0     cutoff    0      -2754.8262 -2754.8262  0.00%     -    0s
+
+Explored 1 nodes (225 simplex iterations) in 0.02 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 1: -2754.83 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -2.754826208538e+03, best bound -2.754826208538e+03, gap 0.0000%
