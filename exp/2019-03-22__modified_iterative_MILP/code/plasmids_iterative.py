@@ -48,6 +48,7 @@ if not os.path.exists(output_folder):
     os.makedirs(output_folder)
 #output_filename = argv[6]
 output_filename = 'putative_plasmids.fasta'
+questionable_filename = 'questionable_plasmids.fasta'
 score_filename = 'MILP_objective.csv'
 
 #-----------------------------------------------
@@ -91,10 +92,12 @@ for c in contigs_dict:
 contigs_dict = plasmids_preprocessing.get_gene_coverage(mapping_file, contigs_dict)
 
 output_file = open(os.path.join(output_folder, output_filename), "w")
+questionable_file = open(os.path.join(output_folder, questionable_filename), "w")
 score_file = open(os.path.join(output_folder, score_filename), "w")
 logfile_3 = open(os.path.join(output_folder,'circ_sequences.log'),"w")
 
 n_iter = 0
+q_iter = 0
 
 while len(seeds_set) > 0:
 	#-----------------------------------------------
@@ -394,6 +397,9 @@ while len(seeds_set) > 0:
 						
 			print("\n", i, "th circular constraint satisfied\n")
 			i += 1
+
+		if i >= 50:
+			break	
 #_______________
 
 	print('Obj:', m.objVal)
@@ -421,7 +427,9 @@ while len(seeds_set) > 0:
 
 
 	output_file = open(os.path.join(output_folder, output_filename), "a")
-	#questionable_file = open(os.path.join(output_folder, questionable), "a")
+	questionable_file = open(os.path.join(output_folder, questionable_filename), "a")
+	score_file = open(os.path.join(output_folder, score_filename), "a")
+
 
 	solution_links = {}		
 	solution_seq = {}
@@ -443,8 +451,23 @@ while len(seeds_set) > 0:
 		if plasmid_length[p] >= 1500 and plasmid_gd[p] >= 0.3:
 			output_file.write(">plasmid_"+str(n_iter)+"\t"+"length="+str(plasmid_length[p])+"\t"+"gene_density="+str(plasmid_gd[p])+"\t"+"mean_read_depth="+str(mean_rd[p].x)+"\n")
 			output_file.write(solution_seq[p]+"\n")
+
+			rd_sum, gd_sum, GC_sum = 0, 0, 0
+			for p in diff:
+				for c in diff[p]:
+					rd_sum += alpha1*contigs_dict[c]['Length']*counted_diff[p][c].x
+					#expr.addTerms(alpha1*contigs_dict[c]['Length'], counted_diff[p][c])
+					gd_sum += -alpha2*contigs_dict[c]['Gene_coverage']*contigs_dict[c]['Length']*counted_rd[p][c].x
+					#expr.addTerms(-alpha2*contigs_dict[c]['Gene_coverage']*contigs_dict[c]['Length'], counted_rd[p][c])
+					GC_sum += -alpha3*(GC_mean-contigs_dict[c]['GC_cont'])*counted_ln[p][c].x
+					#expr.addTerms(-alpha3*(GC_mean-contigs_dict[c]['GC_cont']), counted_ln[p][c])
+			score_file.write("plasmid_"+str(n_iter)+"\t"+str(m.objVal)+"\t"+str(rd_sum)+"\t"+str(gd_sum)+"\t"+str(GC_sum)+"\n")
 			n_iter += 1
-				
+		else:
+			questionable_file.write(">plasmid_"+str(q_iter)+"\t"+"length="+str(plasmid_length[p])+"\t"+"gene_density="+str(plasmid_gd[p])+"\t"+"mean_read_depth="+str(mean_rd[p].x)+"\n")	
+			questionable_file.write(solution_seq[p]+"\n")
+			q_iter += 1	
+
 	#Updating assembly graph and formulation
 	for p in contigs:
 		for c in contigs[p]:

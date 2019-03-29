@@ -1,0 +1,37 @@
+##### general information #####
+number of reference chromosomes: 1
+	CP020835.1: 4888773 nt
+number of reference plasmids: 1
+	CP020836.1: 37362 nt
+
+##### ILP (MILP_putative) #####
+number of predicted plasmids: 2
+	plasmid_0: 199780 nt
+	plasmid_1: 1780 nt
+
+> predicted plasmid covers <proportion> of reference plasmid
+	CP020836.1
+plasmid_0	0.036668272576414536
+plasmid_1	0.033295862105882985
+
+> reference plasmid covers <proportion> of predicted plasmid
+	plasmid_0	plasmid_1
+CP020836.1	0.003498848733606968	0.35730337078651686
+
+> in total, how much of predicted plasmid is covered by reference plasmids
+plasmid	proportion
+plasmid_0	0.003499
+plasmid_1	0.357303
+
+> in total, how much of reference plasmid is covered by predicted plasmids
+plasmid	proportion
+CP020836.1	0.036668
+
+> pairs of predicted and reference plasmids with coverage >= 0.800000 in both directions
+none
+
+> summary scores (MILP_putative)
+recall: 0.036668
+precision: 0.006623
+f1_score: 0.011220
+
