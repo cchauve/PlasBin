@@ -50,6 +50,7 @@ if not os.path.exists(output_folder):
 output_filename = 'putative_plasmids.fasta'
 questionable_filename = 'questionable_plasmids.fasta'
 score_filename = 'MILP_objective.csv'
+contigs_filename = 'contig_chains.csv'
 
 #-----------------------------------------------
 #Main program
@@ -94,6 +95,7 @@ contigs_dict = plasmids_preprocessing.get_gene_coverage(mapping_file, contigs_di
 output_file = open(os.path.join(output_folder, output_filename), "w")
 questionable_file = open(os.path.join(output_folder, questionable_filename), "w")
 score_file = open(os.path.join(output_folder, score_filename), "w")
+contigs_file = open(os.path.join(output_folder, contigs_filename), "w")
 logfile_3 = open(os.path.join(output_folder,'circ_sequences.log'),"w")
 
 n_iter = 0
@@ -429,6 +431,7 @@ while len(seeds_set) > 0:
 	output_file = open(os.path.join(output_folder, output_filename), "a")
 	questionable_file = open(os.path.join(output_folder, questionable_filename), "a")
 	score_file = open(os.path.join(output_folder, score_filename), "a")
+	contigs_file = open(os.path.join(output_folder, contigs_filename), "a")
 
 
 	solution_links = {}		
@@ -447,10 +450,19 @@ while len(seeds_set) > 0:
 				solution_links[p].add(e)
 				soln_ext_dict[p][e[0]] = e[1]
 				soln_ext_dict[p][e[1]] = e[0]
-		solution_seq[p] = plasmids_postprocessing.get_seq(solution_links[p], soln_ext_dict[p], contigs_dict)
+		solution_seq[p], contig_chain = plasmids_postprocessing.get_seq(solution_links[p], soln_ext_dict[p], contigs_dict)
 		if plasmid_length[p] >= 1500 and plasmid_gd[p] >= 0.3:
 			output_file.write(">plasmid_"+str(n_iter)+"\t"+"length="+str(plasmid_length[p])+"\t"+"gene_density="+str(plasmid_gd[p])+"\t"+"mean_read_depth="+str(mean_rd[p].x)+"\n")
 			output_file.write(solution_seq[p]+"\n")
+
+			contigs_file.write("plasmid_"+str(n_iter)+";")
+			for x in contig_chain:
+				if x == contig_chain[0]:
+					contigs_file.write(x)
+				else:
+					contigs_file.write(","+x)	
+			contigs_file.write("\n")	
+
 
 			rd_sum, gd_sum, GC_sum = 0, 0, 0
 			for p in diff:

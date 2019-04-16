@@ -94,16 +94,20 @@ def get_seq(plasmid_links, ext_dict, contigs_dict):
 							plasmid.append(plasmid_seg)
 							end_reached = 2
 
-	plasmid_seq = ''						
+	plasmid_seq = ''
+	contig_chain = []						
 	for seg in plasmid:
 		for contig in seg:
 			c, sign = contig[0], contig[1]
 			#print("This",c)
 			if c in contigs_dict:
 				if sign == '+':
+					contig_chain.append(str(c)+'+')
 					plasmid_seq += contigs_dict[c]['Sequence']
 				else:
-					plasmid_seq += contigs_dict[c]['Sequence'][::-1]		
-	return plasmid_seq	 
+					plasmid_seq += contigs_dict[c]['Sequence'][::-1]	
+					contig_chain.append(str(c)+'-')	
+	print(contig_chain)				
+	return plasmid_seq, contig_chain	 
 
 			
