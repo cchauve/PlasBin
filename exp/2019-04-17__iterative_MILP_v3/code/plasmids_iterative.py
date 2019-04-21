@@ -68,8 +68,12 @@ for c in contigs_dict:
 	else:
 		contigs_dict[c]['Seed'] = 0
 
+	
 	#GC_total += contigs_dict[c]['GC_cont']*contigs_dict[c]['Length']
 	#ln_total += contigs_dict[c]['Length']
+
+UBD_rd = 100
+UBD_GC = 100
 	
 #GC_mean = GC_total/ln_total		
 
@@ -88,6 +92,10 @@ for c in contigs_dict:
 			extr_dict[ext2].append(link)
 
 contigs_dict = plasmids_preprocessing.get_gene_coverage(mapping_file, contigs_dict)
+for c in contigs_dict:
+	print(c, contigs_dict[c]['Gene_coverage'])	
+
+
 
 output_file = open(os.path.join(output_folder, output_filename), "w")
 questionable_file = open(os.path.join(output_folder, questionable_filename), "w")
@@ -99,16 +107,18 @@ n_iter = 0
 q_iter = 0
 
 while len(seeds_set) > 0:
-	#Minimum seed read depth check
-	#-----------------------------------------------
-	for x in seeds_set:
-		print(x, contigs_dict[x]['Read_depth'])
-
+	print("\n\n\n\n\n")
 	#-----------------------------------------------
 	#Initializing the ILP
 	m = Model("Plasmids")
 	m.params.LogFile= os.path.join(output_folder,'m.log')
 	m.setParam(GRB.Param.TimeLimit, 2400.0)
+
+	#Minimum seed read depth check
+	#-----------------------------------------------
+	for x in seeds_set:
+		print(x, contigs_dict[x]['Read_depth'])
+
 
 	contigs = {}
 	contigs_ext = {}
@@ -117,17 +127,13 @@ while len(seeds_set) > 0:
 	links = {}
 	links = plasmids_preprocessing.link_vars(m, links_list, links, nplasmids)
 
-	rd = {}
-	mean_rd = {}
-	
-	mean_rd \
-		= plasmids_preprocessing.rd_vars(m, contigs_dict, rd, mean_rd, nplasmids)
+	mean_rd, rd_diff, counted_rd_diff, wtd_rd_diff, counted_wtd_rd_diff = {}, {}, {}, {}, {}	
+	mean_rd, rd_diff, counted_rd_diff, wtd_rd_diff, counted_wtd_rd_diff \
+		= plasmids_preprocessing.rd_vars(m, contigs_dict, mean_rd, rd_diff, counted_rd_diff, wtd_rd_diff, counted_wtd_rd_diff, nplasmids)
 
-	diff, counted_diff = {}, {}
-	wtd_diff, counted_wtd_diff = {}, {}
-	diff, counted_diff , wtd_diff, counted_wtd_diff, wtd_gd, counted_wtd_gd \
-		= plasmids_preprocessing.diff_vars(m, contigs_dict, diff, counted_diff, wtd_diff, counted_wtd_diff, wtd_gd, counted_wtd_gd, nplasmids)
-	
+	mean_GC, GC_diff, counted_GC_diff, wtd_GC_diff, counted_wtd_GC_diff = {}, {}, {}, {}, {}	
+	mean_GC, GC_diff, counted_GC_diff, wtd_GC_diff, counted_wtd_GC_diff \
+		= plasmids_preprocessing.rd_vars(m, contigs_dict, mean_GC, GC_diff, counted_GC_diff, wtd_GC_diff, counted_wtd_GC_diff, nplasmids)
 
 	counted_ln = {}
 	counted_ln = plasmids_preprocessing.ln_vars(m, contigs_dict, counted_ln, nplasmids)
@@ -146,13 +152,13 @@ while len(seeds_set) > 0:
 	expr = LinExpr()
 	alpha1, alpha2, alpha3 = float(alpha1), float(alpha2), float(alpha3) 
 
-	for p in diff:
-		for c in diff[p]:
-			expr.addTerms(alpha1*contigs_dict[c]['Length'], counted_diff[p][c])
+	for p in rd_diff:
+		for c in rd_diff[p]:
+			expr.addTerms(alpha1, counted_wtd_rd_diff[p][c])
 
-			expr.addTerms(-alpha2*contigs_dict[c]['Gene_coverage']*contigs_dict[c]['Length'], counted_rd[p][c])
+			expr.addTerms(-alpha2, counted_wtd_gd[p][c])
 
-			expr.addTerms(-alpha3*(GC_mean-contigs_dict[c]['GC_cont']), counted_ln[p][c])
+			expr.addTerms(alpha3, counted_wtd_GC_diff[p][c])
 
 	m.setObjective(expr, GRB.MINIMIZE)
 
@@ -205,28 +211,28 @@ while len(seeds_set) > 0:
 			m.addConstr(contigs[p][c] >= (contigs_ext[p][end1] + contigs_ext[p][end2])/2, "contig_lbd")
 			constraint_count += 2			
 
-
 	#Constraint type 5
 	#Total of read depth contribution to each plasmid is less than contig read depth
-	for c in contigs_dict:
-		expr = LinExpr()
-		for p in rd:
-			expr.addTerms(1, rd[p][c])
-		m.addConstr(expr <= contigs_dict[c]['Read_depth'], "read-depth_cap")
-		constraint_count += 1		
-
+	#for c in contigs_dict:
+	#	expr = LinExpr()
+	#	for p in rd:
+	#		expr.addTerms(1, rd[p][c])
+	#	m.addConstr(expr <= contigs_dict[c]['Read_depth'], "read-depth_cap")
+	#	constraint_count += 1		
+	
 	#Constraint type 6
 	#counted-read-depth = read-depth * existence-of-a-contig-in-plasmid
-	for p in counted_rd:
-		for c in counted_rd[p]:
-			if c in contigs[p]:
-				m.addConstr(counted_rd[p][c] <= contigs_dict[c]['Read_depth']*contigs[p][c], "counted_read-depth_1")
-				m.addConstr(counted_rd[p][c] <= rd[p][c], "counted_read-depth_2")
-				m.addConstr(counted_rd[p][c] >= rd[p][c] - (1 - contigs[p][c])*contigs_dict[c]['Read_depth'], "counted_read-depth_3")
-				m.addConstr(counted_rd[p][c] >= 0, "counted_read-depth_4")
-				constraint_count += 4				
-
-	#Constraint type 7
+	#for p in counted_rd:
+	#	for c in counted_rd[p]:
+	#		if c in contigs[p]:
+	#			m.addConstr(counted_rd[p][c] <= contigs_dict[c]['Read_depth']*contigs[p][c], "counted_read-depth_1")
+	#			m.addConstr(counted_rd[p][c] <= rd[p][c], "counted_read-depth_2")
+	#			m.addConstr(counted_rd[p][c] >= rd[p][c] - (1 - contigs[p][c])*contigs_dict[c]['Read_depth'], "counted_read-depth_3")
+	#			m.addConstr(counted_rd[p][c] >= 0, "counted_read-depth_4")
+	#			constraint_count += 4				
+	
+	
+	#Constraint type 6
 	#counted-length = length * existence-of-a-contig-in-plasmid
 	for p in counted_ln:
 		for c in counted_ln[p]:
@@ -238,50 +244,98 @@ while len(seeds_set) > 0:
 		expr = LinExpr()
 		for c in contigs[p]:
 			expr.addTerms(1, counted_ln[p][c])
-		m.addConstr(expr <= 200000, "plasmid_length_upper_bound")	
+		m.addConstr(expr <= 200000, "plasmid_length_upper_bound")
+		constraint_count += 1	
 
-	#Constraint type 8
+	#Constraint type 7
 	#counted-seed = seed * existence-of-a-contig-in-plasmid
 	for p in counted_seed:
 		for c in counted_seed[p]:
 			if c in contigs[p]:
 				m.addConstr(counted_seed[p][c] == contigs_dict[c]['Seed']*contigs[p][c], "counted_seed")
 				constraint_count += 1			
-
+	
 	#Constraint type 9
 	#Computing mean read depth for each plasmid
-	for p in counted_mean_rd:
+	#for p in counted_mean_rd:
+	#	expr1 = LinExpr()
+	#	expr2 = LinExpr()
+	#	for c in counted_mean_rd[p]:
+	#		if c in contigs[p]:
+	#			m.addConstr(counted_mean_rd[p][c] <= 1000000*contigs[p][c], "counted_mean-rd1")
+	#			m.addConstr(counted_mean_rd[p][c] <= mean_rd[p], "counted_mean-rd2")
+	#			m.addConstr(counted_mean_rd[p][c] >= mean_rd[p] - (1 - contigs[p][c])*1000000, "counted_mean-rd3")
+	#			m.addConstr(counted_mean_rd[p][c] >= 0, "counted_mean-rd4")
+
+	#			expr1.addTerms(contigs_dict[c]['Length'], counted_mean_rd[p][c])
+	#			expr2.addTerms(contigs_dict[c]['Length'], counted_rd[p][c])
+	#			m.addConstr(expr1 == expr2, "computing-mean-rd")
+	#			constraint_count += 5	
+	
+
+	#Constraint type 8
+
+
+	#Constraint type 9
+	#Computing weighted read depth diff for each plasmid
+	for p in counted_wtd_rd_diff:
 		expr1 = LinExpr()
 		expr2 = LinExpr()
-		for c in counted_mean_rd[p]:
-			if c in contigs[p]:
-				m.addConstr(counted_mean_rd[p][c] <= 1000000*contigs[p][c], "counted_mean-rd1")
-				m.addConstr(counted_mean_rd[p][c] <= mean_rd[p], "counted_mean-rd2")
-				m.addConstr(counted_mean_rd[p][c] >= mean_rd[p] - (1 - contigs[p][c])*1000000, "counted_mean-rd3")
-				m.addConstr(counted_mean_rd[p][c] >= 0, "counted_mean-rd4")
+		for c in counted_wtd_rd_diff[p]:
+			expr1.addTerms(contigs_dict[c]['Length'], counted_wtd_rd_diff[p][c])
+			expr2.addTerms(contigs_dict[c]['Length'], counted_rd_diff[p][c])
+		m.addConstr(expr1 == expr2, "computing-wtd-rd-diff")
+		constraint_count += 1
 
-				expr1.addTerms(contigs_dict[c]['Length'], counted_mean_rd[p][c])
-				expr2.addTerms(contigs_dict[c]['Length'], counted_rd[p][c])
-				m.addConstr(expr1 == expr2, "computing-mean-rd")
-				constraint_count += 5	
+	for p in counted_wtd_GC_diff:
+		expr1 = LinExpr()
+		expr2 = LinExpr()		
+		for c in counted_wtd_GC_diff[p]:
+			expr1.addTerms(contigs_dict[c]['Length'], counted_wtd_GC_diff[p][c])
+			expr2.addTerms(contigs_dict[c]['Length'], counted_GC_diff[p][c])
+		m.addConstr(expr1 == expr2, "computing-wtd-GC-diff")
+		constraint_count += 1
 
+	for p in counted_wtd_gd:
+		expr1 = LinExpr()
+		expr2 = LinExpr()		
+		for c in counted_wtd_gd[p]:
+			expr1.addTerms(contigs_dict[c]['Length'], counted_wtd_gd[p][c])
+			expr2.addTerms(contigs_dict[c]['Gene_coverage']*contigs_dict[c]['Length'], contigs[p][c])
+		m.addConstr(expr1 == expr2, "computing-wtd-gd")
+		constraint_count += 1			
 
 	#Constraint type 10
 	#Absolute value (diff) of mean read depth and plasmid read-depth
-	for p in counted_rd:
-		for c in counted_rd[p]:
-			if c in diff[p]:
-				m.addConstr(diff[p][c] >= mean_rd[p] - counted_rd[p][c], "diff_lbd1")
-				m.addConstr(diff[p][c] >= counted_rd[p][c] - mean_rd[p], "diff_lbd2")
+	for p in rd_diff:
+		for c in rd_diff[p]:
+			if c in rd_diff[p]:
+				m.addConstr(rd_diff[p][c] >= mean_rd[p] - contigs_dict[c]['Read_depth']*contigs[p][c], "rd-diff_lbd1")
+				m.addConstr(rd_diff[p][c] >= contigs_dict[c]['Read_depth']*contigs[p][c] - mean_rd[p], "rd-diff_lbd2")
 				constraint_count += 2
 
-	for p in counted_diff:
-		for c in counted_diff[p]:
-			m.addConstr(counted_diff[p][c] <= 10*contigs[p][c], "counted_diff1")
-			m.addConstr(counted_diff[p][c] <= diff[p][c], "counted_diff2")
-			m.addConstr(counted_diff[p][c] >= diff[p][c] - (1 - contigs[p][c])*10, "counted_diff3")
-			m.addConstr(counted_diff[p][c] >= 0, "counted_diff4")
+	for p in GC_diff:
+		for c in GC_diff[p]:
+			if c in GC_diff[p]:
+				m.addConstr(GC_diff[p][c] >= mean_GC[p] - contigs_dict[c]['GC_cont']*contigs[p][c], "GC-diff_lbd1")
+				m.addConstr(GC_diff[p][c] >= contigs_dict[c]['GC_cont']*contigs[p][c] - mean_GC[p], "GC-diff_lbd2")
+				constraint_count += 2
 
+	for p in counted_rd_diff:
+		for c in counted_rd_diff[p]:
+			m.addConstr(counted_rd_diff[p][c] <= UBD_rd*contigs[p][c], "counted-rd-diff1")
+			m.addConstr(counted_rd_diff[p][c] <= rd_diff[p][c], "counted-rd-diff2")
+			m.addConstr(counted_rd_diff[p][c] >= rd_diff[p][c] - (1 - contigs[p][c])*UBD_rd, "counted-rd-diff3")
+			m.addConstr(counted_rd_diff[p][c] >= 0, "counted-rd-diff4")
+			constraint_count += 4
+
+	for p in counted_GC_diff:
+		for c in counted_GC_diff[p]:
+			m.addConstr(counted_GC_diff[p][c] <= UBD_GC*contigs[p][c], "counted-GC-diff1")
+			m.addConstr(counted_GC_diff[p][c] <= GC_diff[p][c], "counted-GC-diff2")
+			m.addConstr(counted_GC_diff[p][c] >= GC_diff[p][c] - (1 - contigs[p][c])*UBD_GC, "counted-GC-diff3")
+			m.addConstr(counted_GC_diff[p][c] >= 0, "counted-GC-diff4")
+			constraint_count += 4
 
 	#Constraint type 11
 	#Each plasmids should have at least one seed
@@ -314,16 +368,19 @@ while len(seeds_set) > 0:
 			m.addConstr(contigs_ext[p][extr] >= 0, "non-negativity")
 		for e in links[p]:
 			m.addConstr(links[p][e] >= 0, "non-negativity")
-		for c in rd[p]:
-			m.addConstr(rd[p][c] >= 0, "non-negativity")
-			m.addConstr(counted_rd[p][c] >= 0, "non-negativity")
-			m.addConstr(counted_mean_rd[p][c] >= 0, "non-negativity")
+		
+		#for c in rd[p]:
+		#	m.addConstr(rd[p][c] >= 0, "non-negativity")
+		#	m.addConstr(counted_rd[p][c] >= 0, "non-negativity")
+		#	m.addConstr(counted_mean_rd[p][c] >= 0, "non-negativity")
+			
+
 		m.addConstr(mean_rd[p] >= 0, "non-negativity")
 		for c in counted_ln[p]:
 			m.addConstr(counted_ln[p][c] >= 0, "non-negativity")
 			m.addConstr(counted_seed[p][c] >= 0, "non-negativity")
-			m.addConstr(diff[p][c] >= 0, "non-negativity")
-
+			m.addConstr(rd_diff[p][c] >= 0, "non-negativity")
+			m.addConstr(GC_diff[p][c] >= 0, "non-negativity")
 
 
 	#while len(seeds_set) > 0:
@@ -423,7 +480,7 @@ while len(seeds_set) > 0:
 		for c in contigs[p]:
 			if contigs[p][c].x > 0:
 				print(contigs[p][c].varName, contigs[p][c].x)
-				print(counted_rd[p][c].varName, counted_rd[p][c].x)
+				#print(counted_rd[p][c].varName, counted_rd[p][c].x)
 				print(contigs_dict[c]['Read_depth'])
 				plasmid_length[p] += contigs_dict[c]['Length']
 				plasmid_gd[p] += contigs_dict[c]['Gene_coverage']*contigs_dict[c]['Length']
@@ -474,13 +531,16 @@ while len(seeds_set) > 0:
 
 
 			rd_sum, gd_sum, GC_sum = 0, 0, 0
-			for p in diff:
-				for c in diff[p]:
-					rd_sum += alpha1*contigs_dict[c]['Length']*counted_diff[p][c].x
+			for p in rd_diff:
+				for c in rd_diff[p]:
+					rd_sum += alpha1*counted_wtd_rd_diff[p][c].x
 					#expr.addTerms(alpha1*contigs_dict[c]['Length'], counted_diff[p][c])
-					gd_sum += -alpha2*contigs_dict[c]['Gene_coverage']*contigs_dict[c]['Length']*counted_rd[p][c].x
+					gd_sum += -alpha2*counted_wtd_gd[p][c].x
+					#print(c, counted_wtd_gd[p][c].x)
+					if contigs[p][c].x > 0:
+						print("Selected: ",c, counted_wtd_gd[p][c].x, counted_wtd_GC_diff[p][c].x, counted_wtd_rd_diff[p][c].x)
 					#expr.addTerms(-alpha2*contigs_dict[c]['Gene_coverage']*contigs_dict[c]['Length'], counted_rd[p][c])
-					GC_sum += -alpha3*(GC_mean-contigs_dict[c]['GC_cont'])*counted_ln[p][c].x
+					GC_sum += alpha3*counted_wtd_GC_diff[p][c].x
 					#expr.addTerms(-alpha3*(GC_mean-contigs_dict[c]['GC_cont']), counted_ln[p][c])
 			score_file.write("plasmid_"+str(n_iter)+"\t"+str(m.objVal)+"\t"+str(rd_sum)+"\t"+str(gd_sum)+"\t"+str(GC_sum)+"\n")
 			n_iter += 1
@@ -493,7 +553,7 @@ while len(seeds_set) > 0:
 	for p in contigs:
 		for c in contigs[p]:
 			if contigs[p][c] == 1:
-				contigs_dict[c]['Read_depth'] = max(0, contigs_dict[c]['Read_depth'] - rd[p][c].x)
+				contigs_dict[c]['Read_depth'] = max(0, contigs_dict[c]['Read_depth'] - mean_rd[p].x)
 
 				if c in seeds_set and contigs_dict[c]['Read_depth'] <= 0.5:
 					contigs_dict[c]['Seed'] = 0

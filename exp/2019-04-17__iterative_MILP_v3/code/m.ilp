@@ -1,0 +1,58 @@
+\ Model Plasmids_copy
+\ LP format - for model browsing. Use MPS format to capture full model detail.
+Minimize
+ 
+Subject To
+ extr_ubd: contigext-43h_plasmid-0 <= 0.99
+ extr_ubd: contigext-43t_plasmid-0 <= 0.99
+ contig_ubd: contig-43_plasmid-0 - 0.5 contigext-43h_plasmid-0
+   - 0.5 contigext-43t_plasmid-0 <= 0.99
+ counted_seed: counted-seed_contig-38_plasmid-0 = 0
+ counted_seed: counted-seed_contig-59_plasmid-0 = 0
+ counted_seed: counted-seed_contig-58_plasmid-0 = 0
+ counted_seed: counted-seed_contig-54_plasmid-0 = 0
+ counted_seed: counted-seed_contig-44_plasmid-0 = 0
+ counted_seed: counted-seed_contig-45_plasmid-0 = 0
+ counted_seed: - contig-43_plasmid-0 + counted-seed_contig-43_plasmid-0
+   = 0
+ counted_seed: counted-seed_contig-35_plasmid-0 = 0
+ counted_seed: counted-seed_contig-50_plasmid-0 = 0
+ counted_seed: counted-seed_contig-61_plasmid-0 = 0
+ counted_seed: counted-seed_contig-63_plasmid-0 = 0
+ counted_seed: counted-seed_contig-73_plasmid-0 = 0
+ counted_seed: counted-seed_contig-72_plasmid-0 = 0
+ counted_seed: counted-seed_contig-69_plasmid-0 = 0
+ seed_existence: counted-seed_contig-54_plasmid-0
+   + counted-seed_contig-43_plasmid-0 + counted-seed_contig-61_plasmid-0
+   + counted-seed_contig-63_plasmid-0 + counted-seed_contig-69_plasmid-0
+   + counted-seed_contig-44_plasmid-0 + counted-seed_contig-45_plasmid-0
+   + counted-seed_contig-38_plasmid-0 + counted-seed_contig-73_plasmid-0
+   + counted-seed_contig-72_plasmid-0 + counted-seed_contig-59_plasmid-0
+   + counted-seed_contig-58_plasmid-0 + counted-seed_contig-35_plasmid-0
+   + counted-seed_contig-50_plasmid-0 >= 1
+Bounds
+ counted-seed_contig-54_plasmid-0 free
+ counted-seed_contig-43_plasmid-0 free
+ counted-seed_contig-61_plasmid-0 free
+ counted-seed_contig-63_plasmid-0 free
+ counted-seed_contig-69_plasmid-0 free
+ counted-seed_contig-44_plasmid-0 free
+ counted-seed_contig-45_plasmid-0 free
+ counted-seed_contig-38_plasmid-0 free
+ counted-seed_contig-73_plasmid-0 free
+ counted-seed_contig-72_plasmid-0 free
+ counted-seed_contig-59_plasmid-0 free
+ counted-seed_contig-58_plasmid-0 free
+ counted-seed_contig-35_plasmid-0 free
+ counted-seed_contig-50_plasmid-0 free
+Binaries
+ contig-43_plasmid-0 contigext-43h_plasmid-0 contigext-43t_plasmid-0
+Generals
+ counted-seed_contig-54_plasmid-0 counted-seed_contig-43_plasmid-0
+ counted-seed_contig-61_plasmid-0 counted-seed_contig-63_plasmid-0
+ counted-seed_contig-69_plasmid-0 counted-seed_contig-44_plasmid-0
+ counted-seed_contig-45_plasmid-0 counted-seed_contig-38_plasmid-0
+ counted-seed_contig-73_plasmid-0 counted-seed_contig-72_plasmid-0
+ counted-seed_contig-59_plasmid-0 counted-seed_contig-58_plasmid-0
+ counted-seed_contig-35_plasmid-0 counted-seed_contig-50_plasmid-0
+End
