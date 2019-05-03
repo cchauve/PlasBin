@@ -16,6 +16,7 @@ import plasmids_postprocessing
 import rmcircular
 
 sample_dir = '/home/aniket/python_scripts/Plasmids/data/unicycler_pipeline/'
+#sample_dir = '/home/aniket/python_scripts/Plasmids-Optimization/exp/2019-04-17__iterative_MILP_v3/'
 output_dir = '/home/aniket/python_scripts/Plasmids-Optimization/exp/2019-04-17__iterative_MILP_v3/output/' 
 
 #-----------------------------------------------
@@ -61,7 +62,7 @@ seeds_set = plasmids_preprocessing.get_seeds(seeds_file, seeds_set)
 #print(seeds_set)
 
 #GC_total = 0
-#ln_total = 0
+ln_total = 0
 for c in contigs_dict:
 	if c in seeds_set:
 		contigs_dict[c]['Seed'] = 1
@@ -71,9 +72,6 @@ for c in contigs_dict:
 	
 	#GC_total += contigs_dict[c]['GC_cont']*contigs_dict[c]['Length']
 	#ln_total += contigs_dict[c]['Length']
-
-UBD_rd = 100
-UBD_GC = 100
 	
 #GC_mean = GC_total/ln_total		
 
@@ -92,9 +90,21 @@ for c in contigs_dict:
 			extr_dict[ext2].append(link)
 
 contigs_dict = plasmids_preprocessing.get_gene_coverage(mapping_file, contigs_dict)
-for c in contigs_dict:
-	print(c, contigs_dict[c]['Gene_coverage'])	
+#contigs_dict['1']['Gene_coverage'] = 0.8333
+#contigs_dict['2']['Gene_coverage'] = 0.4163
+#contigs_dict['3']['Gene_coverage'] = 0.9163
+#contigs_dict['4']['Gene_coverage'] = 0.3333
 
+UBD_rd = 0
+UBD_GC = 0
+UBD_gd = 0
+for c in contigs_dict:
+	ln_total += contigs_dict[c]['Length']
+	UBD_rd = max(UBD_rd, contigs_dict[c]['Read_depth'])
+	UBD_GC = max(UBD_GC, contigs_dict[c]['GC_cont'])
+	UBD_gd = max(UBD_gd, contigs_dict[c]['Gene_coverage'])
+	print(c, contigs_dict[c]['Gene_coverage'], contigs_dict[c]['Length'])	
+print(UBD_rd, UBD_gd, UBD_GC, ln_total)
 
 
 output_file = open(os.path.join(output_folder, output_filename), "w")
@@ -153,12 +163,18 @@ while len(seeds_set) > 0:
 	alpha1, alpha2, alpha3 = float(alpha1), float(alpha2), float(alpha3) 
 
 	for p in rd_diff:
-		for c in rd_diff[p]:
-			expr.addTerms(alpha1, counted_wtd_rd_diff[p][c])
+		#for c in rd_diff[p]:
+			#expr.addTerms(alpha1, counted_wtd_rd_diff[p][c])
 
-			expr.addTerms(-alpha2, counted_wtd_gd[p][c])
+			#expr.addTerms(alpha2, contigs[p][c])
 
-			expr.addTerms(alpha3, counted_wtd_GC_diff[p][c])
+			#expr.addTerms(-alpha2, counted_wtd_gd[p][c])
+
+			#expr.addTerms(alpha3, counted_wtd_GC_diff[p][c])
+		expr.addTerms(alpha1, wtd_rd_diff[p])
+		expr.addTerms(-alpha2, wtd_gd[p])
+		expr.addTerms(alpha3, wtd_GC_diff[p])	
+	#expr.addConstant(2)
 
 	m.setObjective(expr, GRB.MINIMIZE)
 
@@ -244,7 +260,7 @@ while len(seeds_set) > 0:
 		expr = LinExpr()
 		for c in contigs[p]:
 			expr.addTerms(1, counted_ln[p][c])
-		m.addConstr(expr <= 200000, "plasmid_length_upper_bound")
+		m.addConstr(expr <= 1750000, "plasmid_length_upper_bound")
 		constraint_count += 1	
 
 	#Constraint type 7
@@ -301,7 +317,7 @@ while len(seeds_set) > 0:
 		expr2 = LinExpr()		
 		for c in counted_wtd_gd[p]:
 			expr1.addTerms(contigs_dict[c]['Length'], counted_wtd_gd[p][c])
-			expr2.addTerms(contigs_dict[c]['Gene_coverage']*contigs_dict[c]['Length'], contigs[p][c])
+			expr2.addTerms(contigs_dict[c]['Gene_coverage'], counted_ln[p][c])
 		m.addConstr(expr1 == expr2, "computing-wtd-gd")
 		constraint_count += 1			
 
@@ -337,6 +353,31 @@ while len(seeds_set) > 0:
 			m.addConstr(counted_GC_diff[p][c] >= 0, "counted-GC-diff4")
 			constraint_count += 4
 
+	for p in counted_wtd_rd_diff:
+		for c in counted_wtd_rd_diff[p]:
+			m.addConstr(counted_wtd_rd_diff[p][c] <= UBD_rd*contigs[p][c], "counted-wtd-rd-diff1")
+			m.addConstr(counted_wtd_rd_diff[p][c] <= wtd_rd_diff[p], "counted-wtd-rd-diff2")
+			m.addConstr(counted_wtd_rd_diff[p][c] >= wtd_rd_diff[p] - (1 - contigs[p][c])*UBD_rd, "counted-wtd-rd-diff3")
+			m.addConstr(counted_wtd_rd_diff[p][c] >= 0, "counted-wtd-rd-diff4")
+			constraint_count += 4
+
+	for p in counted_wtd_GC_diff:
+		for c in counted_wtd_GC_diff[p]:
+			m.addConstr(counted_wtd_GC_diff[p][c] <= UBD_GC*contigs[p][c], "counted-wtd-GC-diff1")
+			m.addConstr(counted_wtd_GC_diff[p][c] <= wtd_GC_diff[p], "counted-wtd-GC-diff2")
+			m.addConstr(counted_wtd_GC_diff[p][c] >= wtd_GC_diff[p] - (1 - contigs[p][c])*UBD_GC, "counted-wtd-GC-diff3")
+			m.addConstr(counted_wtd_GC_diff[p][c] >= 0, "counted-wtd-GC-diff4")
+			constraint_count += 4
+
+	for p in counted_wtd_gd:
+		for c in counted_wtd_gd[p]:
+			m.addConstr(counted_wtd_gd[p][c] <= UBD_gd*contigs[p][c], "counted-wtd-gd1")
+			m.addConstr(counted_wtd_gd[p][c] <= wtd_gd[p], "counted-wtd-gd2")
+			m.addConstr(counted_wtd_gd[p][c] >= wtd_gd[p] - (1 - contigs[p][c])*UBD_gd, "counted-wtd-gd3")
+			m.addConstr(counted_wtd_gd[p][c] >= 0, "counted-wtd-gd4")
+			constraint_count += 4					
+				
+
 	#Constraint type 11
 	#Each plasmids should have at least one seed
 	for p in counted_seed:
@@ -352,6 +393,7 @@ while len(seeds_set) > 0:
 	for p in contigs:
 		c_expr = LinExpr()
 		for c in contigs[p]:
+
 			c_expr.addTerms(1, contigs[p][c])
 		l_expr = LinExpr()
 		for e in links[p]:
@@ -376,11 +418,20 @@ while len(seeds_set) > 0:
 			
 
 		m.addConstr(mean_rd[p] >= 0, "non-negativity")
+		m.addConstr(mean_GC[p] >= 0, "non-negativity")
+		m.addConstr(wtd_gd[p] >= 0, "non-negativity")
+		m.addConstr(wtd_rd_diff[p] >= 0, "non-negativity")
+		m.addConstr(wtd_GC_diff[p] >= 0, "non-negativity")
+
 		for c in counted_ln[p]:
 			m.addConstr(counted_ln[p][c] >= 0, "non-negativity")
 			m.addConstr(counted_seed[p][c] >= 0, "non-negativity")
 			m.addConstr(rd_diff[p][c] >= 0, "non-negativity")
 			m.addConstr(GC_diff[p][c] >= 0, "non-negativity")
+			m.addConstr(counted_wtd_gd[p][c] >= 0, "non-negativity")
+
+
+
 
 
 	#while len(seeds_set) > 0:
@@ -414,6 +465,9 @@ while len(seeds_set) > 0:
 			print ('The model cannot be solved because it is infeasible or unbounded ')
 			m.computeIIS()
 			m.write("m.ilp")
+			for con in m.getConstrs():
+				if con.IISConstr:
+					print('%s' % con.constrName) 
 			exit (1)
 
 		solution_links = {}		
@@ -449,11 +503,17 @@ while len(seeds_set) > 0:
 		
 		if circular == 1:	#If chr is circular, adds corresponding constraint
 			x = randint(1, len(circ_seq))
-			chosen_seq = circ_seq[x]['Seq']
+			chosen_seq = set()
+			for e in circ_seq[x]['Seq']:
+				if e not in chosen_seq:
+					chosen_seq.add(e)
+			#chosen_seq = circ_seq[x]['Seq']
+			print(chosen_seq)
 			logfile_3.write("\nChosen seed at iteration "+str(i)+": "+str(x))
 			logfile_3.write("\nChosen chr at iteration "+str(i)+"\n")
 			expr = LinExpr()
 			for e in chosen_seq:
+				print("Simple",e)
 				if e in links[p]:
 					#logfile_3.write(str(species)+": "+ str(adj)+"\n")
 					expr.addTerms(1, links[p][e])
@@ -491,7 +551,11 @@ while len(seeds_set) > 0:
 		print(p, plasmid_length[p])
 		print(p, plasmid_gd[p])
 		print(mean_rd[p].varName, mean_rd[p].x)
-		print("\n")	
+		print("\n")
+
+		if UBD_gd < wtd_gd[p].x:
+			print('gd upper bound lower than wtd_gd\n')
+			quit()	
 
 
 	output_file = open(os.path.join(output_folder, output_filename), "a")
@@ -517,7 +581,7 @@ while len(seeds_set) > 0:
 				soln_ext_dict[p][e[0]] = e[1]
 				soln_ext_dict[p][e[1]] = e[0]
 		solution_seq[p], contig_chain = plasmids_postprocessing.get_seq(solution_links[p], soln_ext_dict[p], contigs_dict)
-		if plasmid_length[p] >= 1500 and plasmid_gd[p] >= 0.3:
+		if plasmid_length[p] >= 1500 and wtd_gd[p].x >= 0.3:
 			output_file.write(">plasmid_"+str(n_iter)+"\t"+"length="+str(plasmid_length[p])+"\t"+"gene_density="+str(plasmid_gd[p])+"\t"+"mean_read_depth="+str(mean_rd[p].x)+"\n")
 			output_file.write(solution_seq[p]+"\n")
 
@@ -531,18 +595,19 @@ while len(seeds_set) > 0:
 
 
 			rd_sum, gd_sum, GC_sum = 0, 0, 0
-			for p in rd_diff:
-				for c in rd_diff[p]:
-					rd_sum += alpha1*counted_wtd_rd_diff[p][c].x
+			#for p in rd_diff:
+				#for c in rd_diff[p]:
+				#	rd_sum += alpha1*counted_wtd_rd_diff[p][c].x
 					#expr.addTerms(alpha1*contigs_dict[c]['Length'], counted_diff[p][c])
-					gd_sum += -alpha2*counted_wtd_gd[p][c].x
+				#	gd_sum += alpha2*counted_wtd_gd[p][c].x
 					#print(c, counted_wtd_gd[p][c].x)
-					if contigs[p][c].x > 0:
-						print("Selected: ",c, counted_wtd_gd[p][c].x, counted_wtd_GC_diff[p][c].x, counted_wtd_rd_diff[p][c].x)
+				#	if contigs[p][c].x > 0:
+				#		print("Selected: ",c, counted_wtd_gd[p][c].x, counted_wtd_GC_diff[p][c].x, counted_wtd_rd_diff[p][c].x)
 					#expr.addTerms(-alpha2*contigs_dict[c]['Gene_coverage']*contigs_dict[c]['Length'], counted_rd[p][c])
-					GC_sum += alpha3*counted_wtd_GC_diff[p][c].x
+				#	GC_sum += alpha3*counted_wtd_GC_diff[p][c].x
 					#expr.addTerms(-alpha3*(GC_mean-contigs_dict[c]['GC_cont']), counted_ln[p][c])
-			score_file.write("plasmid_"+str(n_iter)+"\t"+str(m.objVal)+"\t"+str(rd_sum)+"\t"+str(gd_sum)+"\t"+str(GC_sum)+"\n")
+			#score_file.write("plasmid_"+str(n_iter)+"\t"+str(m.objVal)+"\t"+str(rd_sum)+"\t"+str(gd_sum)+"\t"+str(GC_sum)+"\n")
+			score_file.write("plasmid_"+str(n_iter)+"\t"+str(m.objVal)+"\t"+str(wtd_rd_diff[p].x)+"\t"+str(wtd_gd[p].x)+"\t"+str(wtd_GC_diff[p].x)+"\n")
 			n_iter += 1
 		else:
 			questionable_file.write(">plasmid_"+str(q_iter)+"\t"+"length="+str(plasmid_length[p])+"\t"+"gene_density="+str(plasmid_gd[p])+"\t"+"mean_read_depth="+str(mean_rd[p].x)+"\n")	
@@ -552,7 +617,7 @@ while len(seeds_set) > 0:
 	#Updating assembly graph and formulation
 	for p in contigs:
 		for c in contigs[p]:
-			if contigs[p][c] == 1:
+			if contigs[p][c].x == 1:
 				contigs_dict[c]['Read_depth'] = max(0, contigs_dict[c]['Read_depth'] - mean_rd[p].x)
 
 				if c in seeds_set and contigs_dict[c]['Read_depth'] <= 0.5:

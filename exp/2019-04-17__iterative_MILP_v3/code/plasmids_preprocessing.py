@@ -202,16 +202,16 @@ def seed_vars(m, contigs_dict, counted_seed, nplasmids):
 	for p in range(nplasmids):
 		counted_seed[p] = {}
 		for c in contigs_dict:		
-			counted_seed[p][c] = m.addVar(vtype=GRB.INTEGER, name='counted-seed_contig-'+c+'_plasmid-'+str(p))
+			counted_seed[p][c] = m.addVar(vtype=GRB.BINARY, name='counted-seed_contig-'+c+'_plasmid-'+str(p))
 	return counted_seed
 
 def gd_vars(m, contigs_dict, wtd_gd, counted_wtd_gd, nplasmids):
 	for p in range(nplasmids):
 		wtd_gd[p] = {}
 		counted_wtd_gd[p] = {}
-		wtd_gd[p] = m.addVar(vtype=GRB.INTEGER, name='wtd-gd_plasmid-'+str(p))
+		wtd_gd[p] = m.addVar(vtype=GRB.CONTINUOUS, name='wtd-gd_plasmid-'+str(p))
 		for c in contigs_dict:			
-			counted_wtd_gd[p][c] = m.addVar(vtype=GRB.INTEGER, name='counted-wtd-gd_contig-'+c+'_plasmid-'+str(p))
+			counted_wtd_gd[p][c] = m.addVar(vtype=GRB.CONTINUOUS, name='counted-wtd-gd_contig-'+c+'_plasmid-'+str(p))
 	return wtd_gd, counted_wtd_gd
 
 #-----------------------------------------------------------------------		
