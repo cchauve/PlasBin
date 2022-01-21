@@ -1,0 +1,4 @@
+contig_id	match_id	match_type	score	contig_match_start	contig_match_end
+assembly.fasta|32_length=425_depth=11.57x	CP016586.1	16S	734.0	1140	1554
+assembly.fasta|25_length=1279_depth=10.55x	CP016586.1	16S	1888.0	1	1137
+assembly.fasta|22_length=2985_depth=10.52x	CP016586.1	23S	865.0	1	549

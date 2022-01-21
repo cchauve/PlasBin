@@ -1,0 +1,69 @@
+##### general information #####
+number of reference chromosomes: 0
+number of reference plasmids: 0
+
+##### ILP (MILP_putative) #####
+number of predicted plasmids: 14
+	plasmid_0: 197011 nt
+	plasmid_1: 200732 nt
+	plasmid_10: 11286 nt
+	plasmid_11: 8661 nt
+	plasmid_12: 8661 nt
+	plasmid_13: 5305 nt
+	plasmid_2: 187392 nt
+	plasmid_3: 166880 nt
+	plasmid_4: 140124 nt
+	plasmid_5: 24850 nt
+	plasmid_6: 30656 nt
+	plasmid_7: 6617 nt
+	plasmid_8: 103762 nt
+	plasmid_9: 11286 nt
+
+> predicted plasmid covers <proportion> of reference plasmid
+
+plasmid_0
+plasmid_1
+plasmid_10
+plasmid_11
+plasmid_12
+plasmid_13
+plasmid_2
+plasmid_3
+plasmid_4
+plasmid_5
+plasmid_6
+plasmid_7
+plasmid_8
+plasmid_9
+
+> reference plasmid covers <proportion> of predicted plasmid
+	plasmid_0	plasmid_1	plasmid_10	plasmid_11	plasmid_12	plasmid_13	plasmid_2	plasmid_3	plasmid_4	plasmid_5	plasmid_6	plasmid_7	plasmid_8	plasmid_9
+
+> in total, how much of predicted plasmid is covered by reference plasmids
+plasmid	proportion
+plasmid_0	0.000000
+plasmid_1	0.000000
+plasmid_10	0.000000
+plasmid_11	0.000000
+plasmid_12	0.000000
+plasmid_13	0.000000
+plasmid_2	0.000000
+plasmid_3	0.000000
+plasmid_4	0.000000
+plasmid_5	0.000000
+plasmid_6	0.000000
+plasmid_7	0.000000
+plasmid_8	0.000000
+plasmid_9	0.000000
+
+> in total, how much of reference plasmid is covered by predicted plasmids
+plasmid	proportion
+
+> pairs of predicted and reference plasmids with coverage >= 0.800000 in both directions
+none
+
+> summary scores (MILP_putative)
+recall: 0.000000
+precision: 0.000000
+f1_score: 0.000000
+

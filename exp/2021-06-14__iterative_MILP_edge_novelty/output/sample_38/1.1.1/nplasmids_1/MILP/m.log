@@ -1,0 +1,1672 @@
+
+Gurobi 9.1.1 (linux64) logging started Tue Nov 30 02:52:40 2021
+
+Changed value of parameter LogFile to /home/aniket/python_scripts/Plasmids-Optimization/exp/2021-06-14__iterative_MILP_edge_novelty/output/sample_38/1.1.1/nplasmids_1/MILP/m.log
+   Prev:   Default: 
+Changed value of parameter TimeLimit to 240.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Changed value of parameter MIPGap to 0.05
+   Prev: 0.0001  Min: 0.0  Max: inf  Default: 0.0001
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (linux64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 14232 rows, 4779 columns and 34168 nonzeros
+Model fingerprint: 0x723a30ae
+Variable types: 1461 continuous, 3318 integer (3026 binary)
+Coefficient statistics:
+  Matrix range     [1e-02, 4e+05]
+  Objective range  [5e-04, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [6e-01, 2e+05]
+Presolve removed 11975 rows and 2787 columns
+Presolve time: 0.05s
+Presolved: 2257 rows, 1992 columns, 10337 nonzeros
+Variable types: 549 continuous, 1443 integer (1443 binary)
+Found heuristic solution: objective -0.9992604
+
+Root relaxation: objective -2.810448e+01, 1609 iterations, 0.04 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  -28.10448    0  211   -0.99926  -28.10448  2713%     -    0s
+     0     0  -26.07807    0  188   -0.99926  -26.07807  2510%     -    0s
+H    0     0                     -17.8471432  -26.07807  46.1%     -    0s
+     0     0  -25.93692    0  183  -17.84714  -25.93692  45.3%     -    0s
+     0     0  -25.93692    0  180  -17.84714  -25.93692  45.3%     -    0s
+     0     0  -25.93196    0  180  -17.84714  -25.93196  45.3%     -    0s
+     0     0  -25.93196    0  183  -17.84714  -25.93196  45.3%     -    0s
+     0     0  -25.77068    0  177  -17.84714  -25.77068  44.4%     -    0s
+     0     0  -25.77068    0  178  -17.84714  -25.77068  44.4%     -    0s
+     0     0  -25.69911    0  185  -17.84714  -25.69911  44.0%     -    0s
+     0     0  -25.68404    0  208  -17.84714  -25.68404  43.9%     -    0s
+     0     0  -25.68362    0  217  -17.84714  -25.68362  43.9%     -    0s
+     0     0  -25.65739    0  221  -17.84714  -25.65739  43.8%     -    0s
+     0     0  -25.64912    0  226  -17.84714  -25.64912  43.7%     -    0s
+     0     0  -25.64732    0  223  -17.84714  -25.64732  43.7%     -    0s
+     0     0  -25.64623    0  224  -17.84714  -25.64623  43.7%     -    0s
+     0     0  -25.64460    0  228  -17.84714  -25.64460  43.7%     -    0s
+     0     0  -25.64460    0  230  -17.84714  -25.64460  43.7%     -    0s
+     0     0  -25.62340    0  226  -17.84714  -25.62340  43.6%     -    0s
+     0     0  -25.62340    0  227  -17.84714  -25.62340  43.6%     -    0s
+     0     0  -25.62213    0  233  -17.84714  -25.62213  43.6%     -    0s
+H    0     0                     -19.6861693  -25.62213  30.2%     -    0s
+     0     0  -25.62063    0  233  -19.68617  -25.62063  30.1%     -    0s
+     0     0  -25.61878    0  226  -19.68617  -25.61878  30.1%     -    0s
+     0     0  -25.61856    0  227  -19.68617  -25.61856  30.1%     -    0s
+     0     0  -25.61525    0  225  -19.68617  -25.61525  30.1%     -    0s
+     0     0  -25.61525    0  212  -19.68617  -25.61525  30.1%     -    0s
+H    0     0                     -24.0628090  -25.61525  6.45%     -    0s
+     0     2  -25.61525    0  211  -24.06281  -25.61525  6.45%     -    0s
+
+Cutting planes:
+  Gomory: 3
+  Clique: 1
+  MIR: 4
+  Flow cover: 17
+  RLT: 150
+  BQP: 2
+
+Explored 11 nodes (6185 simplex iterations) in 0.99 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 4: -24.0628 -19.6862 -17.8471 -0.99926 
+
+Optimal solution found (tolerance 5.00e-02)
+Best objective -2.406280900516e+01, best bound -2.521493072234e+01, gap 4.7880%
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (linux64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 14235 rows, 4779 columns and 34180 nonzeros
+Model fingerprint: 0xc9f51906
+Variable types: 1461 continuous, 3318 integer (3026 binary)
+Coefficient statistics:
+  Matrix range     [1e-02, 4e+05]
+  Objective range  [5e-04, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [6e-01, 2e+05]
+
+MIP start from previous solve did not produce a new incumbent solution
+MIP start from previous solve violates constraint circular by 1.000000000
+
+Presolve removed 11975 rows and 2787 columns
+Presolve time: 0.05s
+Presolved: 2260 rows, 1992 columns, 10353 nonzeros
+Variable types: 549 continuous, 1443 integer (1443 binary)
+Found heuristic solution: objective -0.9992604
+
+Root relaxation: objective -2.733997e+01, 1621 iterations, 0.04 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  -27.33997    0  203   -0.99926  -27.33997  2636%     -    0s
+     0     0  -25.88069    0  223   -0.99926  -25.88069  2490%     -    0s
+H    0     0                      -9.7291559  -25.88069   166%     -    0s
+     0     0  -24.90522    0  192   -9.72916  -24.90522   156%     -    0s
+     0     0  -24.82294    0  193   -9.72916  -24.82294   155%     -    0s
+     0     0  -24.82294    0  193   -9.72916  -24.82294   155%     -    0s
+     0     0  -24.69793    0  216   -9.72916  -24.69793   154%     -    0s
+H    0     0                     -10.6644324  -24.69793   132%     -    0s
+     0     0  -24.69671    0  211  -10.66443  -24.69671   132%     -    0s
+     0     0  -24.69671    0  210  -10.66443  -24.69671   132%     -    0s
+     0     0  -24.67057    0  223  -10.66443  -24.67057   131%     -    0s
+     0     0  -24.66655    0  212  -10.66443  -24.66655   131%     -    0s
+     0     0  -24.66388    0  217  -10.66443  -24.66388   131%     -    0s
+     0     0  -24.66368    0  228  -10.66443  -24.66368   131%     -    0s
+     0     0  -24.65699    0  227  -10.66443  -24.65699   131%     -    0s
+     0     0  -24.64847    0  222  -10.66443  -24.64847   131%     -    0s
+     0     0  -24.64804    0  220  -10.66443  -24.64804   131%     -    0s
+     0     0  -24.60895    0  209  -10.66443  -24.60895   131%     -    0s
+     0     0  -24.60895    0  211  -10.66443  -24.60895   131%     -    0s
+     0     0  -24.60400    0  224  -10.66443  -24.60400   131%     -    0s
+H    0     0                     -13.9161694  -24.60400  76.8%     -    0s
+     0     0  -24.58915    0  212  -13.91617  -24.58915  76.7%     -    0s
+     0     0  -24.58664    0  215  -13.91617  -24.58664  76.7%     -    0s
+     0     0  -24.58545    0  213  -13.91617  -24.58545  76.7%     -    0s
+     0     0  -24.58431    0  213  -13.91617  -24.58431  76.7%     -    0s
+     0     0  -24.58420    0  216  -13.91617  -24.58420  76.7%     -    0s
+     0     0  -24.57405    0  216  -13.91617  -24.57405  76.6%     -    0s
+H    0     0                     -14.8061389  -24.57405  66.0%     -    0s
+     0     0  -24.56937    0  225  -14.80614  -24.56937  65.9%     -    0s
+     0     0  -24.56293    0  223  -14.80614  -24.56293  65.9%     -    0s
+     0     0  -24.56000    0  219  -14.80614  -24.56000  65.9%     -    0s
+     0     0  -24.55895    0  220  -14.80614  -24.55895  65.9%     -    0s
+     0     0  -24.55815    0  219  -14.80614  -24.55815  65.9%     -    0s
+     0     0  -24.54439    0  220  -14.80614  -24.54439  65.8%     -    0s
+     0     0  -24.54212    0  230  -14.80614  -24.54212  65.8%     -    0s
+     0     0  -24.54185    0  231  -14.80614  -24.54185  65.8%     -    0s
+     0     0  -24.53510    0  222  -14.80614  -24.53510  65.7%     -    0s
+     0     0  -24.53203    0  222  -14.80614  -24.53203  65.7%     -    0s
+     0     0  -24.53191    0  221  -14.80614  -24.53191  65.7%     -    0s
+     0     0  -24.52828    0  221  -14.80614  -24.52828  65.7%     -    0s
+     0     0  -24.52828    0  207  -14.80614  -24.52828  65.7%     -    1s
+     0     2  -24.52828    0  205  -14.80614  -24.52828  65.7%     -    1s
+H   29    30                     -15.7028894  -24.34822  55.1%   135    1s
+H   30    30                     -20.5960384  -24.34822  18.2%   132    1s
+H   84    57                     -20.8961083  -24.02006  14.9%  95.9    2s
+*  126    67              41     -21.1492818  -24.00431  13.5%  88.3    2s
+*  127    67              41     -21.1986041  -24.00431  13.2%  87.6    2s
+H  172   101                     -21.3761463  -23.91324  11.9%  81.4    2s
+H  176   101                     -21.4792283  -23.91324  11.3%  81.5    2s
+H  284   126                     -22.4464749  -23.90852  6.51%  74.7    2s
+*  331   107              45     -22.4479309  -23.90852  6.51%  73.9    2s
+*  458   121              44     -22.4667329  -23.86687  6.23%  67.7    3s
+H  477   114                     -22.9206706  -23.86516  4.12%  68.4    3s
+
+Cutting planes:
+  Gomory: 27
+  Implied bound: 1
+  Clique: 1
+  MIR: 17
+  Flow cover: 282
+  Zero half: 1
+  RLT: 219
+
+Explored 480 nodes (38211 simplex iterations) in 3.30 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 10: -22.9207 -22.4667 -22.4479 ... -20.596
+
+Optimal solution found (tolerance 5.00e-02)
+Best objective -2.292067061613e+01, best bound -2.386516160854e+01, gap 4.1207%
+
+Gurobi 9.1.1 (linux64) logging started Tue Nov 30 02:52:44 2021
+
+Changed value of parameter LogFile to /home/aniket/python_scripts/Plasmids-Optimization/exp/2021-06-14__iterative_MILP_edge_novelty/output/sample_38/1.1.1/nplasmids_1/MILP/m.log
+   Prev:   Default: 
+Changed value of parameter TimeLimit to 240.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Changed value of parameter MIPGap to 0.05
+   Prev: 0.0001  Min: 0.0  Max: inf  Default: 0.0001
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (linux64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 11846 rows, 3969 columns and 27833 nonzeros
+Model fingerprint: 0x20a3c8e2
+Variable types: 1241 continuous, 2728 integer (2480 binary)
+Coefficient statistics:
+  Matrix range     [1e-02, 4e+05]
+  Objective range  [5e-04, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [6e-01, 2e+05]
+Presolve removed 9962 rows and 2385 columns
+Presolve time: 0.04s
+Presolved: 1884 rows, 1584 columns, 8340 nonzeros
+Variable types: 461 continuous, 1123 integer (1123 binary)
+Found heuristic solution: objective -0.9992604
+
+Root relaxation: objective -1.533289e+01, 1111 iterations, 0.02 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  -15.33289    0  137   -0.99926  -15.33289  1434%     -    0s
+     0     0  -15.26264    0  136   -0.99926  -15.26264  1427%     -    0s
+H    0     0                     -13.0269688  -15.26264  17.2%     -    0s
+     0     0  -14.68343    0  149  -13.02697  -14.68343  12.7%     -    0s
+     0     0  -13.91241    0  126  -13.02697  -13.91241  6.80%     -    0s
+     0     0  -13.91239    0  130  -13.02697  -13.91239  6.80%     -    0s
+     0     0  -13.74830    0  119  -13.02697  -13.74830  5.54%     -    0s
+     0     0  -13.73655    0  119  -13.02697  -13.73655  5.45%     -    0s
+     0     0  -13.70545    0  125  -13.02697  -13.70545  5.21%     -    0s
+     0     0  -13.70424    0  125  -13.02697  -13.70424  5.20%     -    0s
+     0     0  -13.70356    0  125  -13.02697  -13.70356  5.19%     -    0s
+     0     0  -13.70010    0  125  -13.02697  -13.70010  5.17%     -    0s
+     0     0  -13.69947    0  120  -13.02697  -13.69947  5.16%     -    0s
+     0     0  -13.69607    0  141  -13.02697  -13.69607  5.14%     -    0s
+     0     0  -13.69448    0  140  -13.02697  -13.69448  5.12%     -    0s
+     0     0  -13.69389    0  132  -13.02697  -13.69389  5.12%     -    0s
+     0     0  -13.69288    0  132  -13.02697  -13.69288  5.11%     -    0s
+     0     0  -13.69288    0  132  -13.02697  -13.69288  5.11%     -    0s
+     0     0  -13.69288    0   91  -13.02697  -13.69288  5.11%     -    0s
+     0     0  -13.69288    0   98  -13.02697  -13.69288  5.11%     -    0s
+H    0     0                     -13.0269688  -13.69288  5.11%     -    0s
+     0     0  -13.57335    0   75  -13.02697  -13.57335  4.19%     -    0s
+
+Cutting planes:
+  Gomory: 9
+  Implied bound: 2
+  MIR: 3
+  Flow cover: 19
+  RLT: 49
+  Relax-and-lift: 1
+  BQP: 1
+
+Explored 1 nodes (4865 simplex iterations) in 0.82 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 3: -13.027 -13.027 -0.99926 
+
+Optimal solution found (tolerance 5.00e-02)
+Warning: max integrality violation (5.1996e-05) exceeds tolerance
+Best objective -1.302696884934e+01, best bound -1.357335488539e+01, gap 4.1943%
+
+Gurobi 9.1.1 (linux64) logging started Tue Nov 30 02:52:45 2021
+
+Changed value of parameter LogFile to /home/aniket/python_scripts/Plasmids-Optimization/exp/2021-06-14__iterative_MILP_edge_novelty/output/sample_38/1.1.1/nplasmids_1/MILP/m.log
+   Prev:   Default: 
+Changed value of parameter TimeLimit to 240.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Changed value of parameter MIPGap to 0.05
+   Prev: 0.0001  Min: 0.0  Max: inf  Default: 0.0001
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (linux64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 10412 rows, 3481 columns and 24352 nonzeros
+Model fingerprint: 0x319592ad
+Variable types: 1091 continuous, 2390 integer (2172 binary)
+Coefficient statistics:
+  Matrix range     [1e-02, 4e+05]
+  Objective range  [5e-04, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [6e-01, 2e+05]
+Presolve removed 8784 rows and 2107 columns
+Presolve time: 0.03s
+Presolved: 1628 rows, 1374 columns, 7244 nonzeros
+Variable types: 401 continuous, 973 integer (973 binary)
+Found heuristic solution: objective -0.8625306
+
+Root relaxation: objective -8.719517e+00, 996 iterations, 0.02 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   -8.71952    0   80   -0.86253   -8.71952   911%     -    0s
+     0     0   -8.30043    0   89   -0.86253   -8.30043   862%     -    0s
+H    0     0                      -6.9703892   -8.30043  19.1%     -    0s
+     0     0   -7.81756    0   82   -6.97039   -7.81756  12.2%     -    0s
+     0     0   -7.81756    0   82   -6.97039   -7.81756  12.2%     -    0s
+     0     0   -7.49436    0   60   -6.97039   -7.49436  7.52%     -    0s
+H    0     0                      -6.9703892   -7.49436  7.52%     -    0s
+     0     0   -7.49408    0   60   -6.97039   -7.49408  7.51%     -    0s
+     0     0   -7.43211    0   60   -6.97039   -7.43211  6.62%     -    0s
+     0     0   -7.43211    0   59   -6.97039   -7.43211  6.62%     -    0s
+     0     0   -7.43025    0   57   -6.97039   -7.43025  6.60%     -    0s
+     0     0   -7.42757    0   49   -6.97039   -7.42757  6.56%     -    0s
+     0     0   -7.42690    0   52   -6.97039   -7.42690  6.55%     -    0s
+     0     0   -7.42684    0   49   -6.97039   -7.42684  6.55%     -    0s
+     0     0   -7.42585    0   61   -6.97039   -7.42585  6.53%     -    0s
+     0     0   -7.42585    0   50   -6.97039   -7.42585  6.53%     -    0s
+     0     0   -7.42570    0   28   -6.97039   -7.42570  6.53%     -    0s
+     0     0   -7.42570    0   35   -6.97039   -7.42570  6.53%     -    0s
+     0     0   -7.36113    0   24   -6.97039   -7.36113  5.61%     -    0s
+     0     0   -7.35867    0   26   -6.97039   -7.35867  5.57%     -    0s
+     0     0   -7.35867    0   25   -6.97039   -7.35867  5.57%     -    0s
+     0     0   -7.33490    0   27   -6.97039   -7.33490  5.23%     -    0s
+     0     0   -7.27654    0   63   -6.97039   -7.27654  4.39%     -    0s
+
+Cutting planes:
+  Gomory: 5
+  Cover: 3
+  Implied bound: 3
+  Clique: 1
+  MIR: 1
+  Flow cover: 6
+  RLT: 37
+  BQP: 1
+
+Explored 1 nodes (3275 simplex iterations) in 0.61 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 3: -6.97039 -6.97039 -0.862531 
+
+Optimal solution found (tolerance 5.00e-02)
+Best objective -6.970389205396e+00, best bound -7.276541380163e+00, gap 4.3922%
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (linux64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 10414 rows, 3481 columns and 24356 nonzeros
+Model fingerprint: 0x5aa3931f
+Variable types: 1091 continuous, 2390 integer (2172 binary)
+Coefficient statistics:
+  Matrix range     [1e-02, 4e+05]
+  Objective range  [5e-04, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [6e-01, 2e+05]
+
+MIP start from previous solve did not produce a new incumbent solution
+MIP start from previous solve violates constraint circular by 1.000000000
+
+Presolve removed 8786 rows and 2108 columns
+Presolve time: 0.03s
+Presolved: 1628 rows, 1373 columns, 7245 nonzeros
+Variable types: 401 continuous, 972 integer (972 binary)
+Found heuristic solution: objective -0.8625306
+
+Root relaxation: objective -8.629476e+00, 845 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   -8.62948    0   84   -0.86253   -8.62948   900%     -    0s
+     0     0   -7.56744    0   58   -0.86253   -7.56744   777%     -    0s
+H    0     0                      -6.7958600   -7.56744  11.4%     -    0s
+     0     0   -7.32688    0   51   -6.79586   -7.32688  7.81%     -    0s
+     0     0   -7.30486    0   60   -6.79586   -7.30486  7.49%     -    0s
+     0     0   -7.30341    0   57   -6.79586   -7.30341  7.47%     -    0s
+     0     0   -7.30341    0   57   -6.79586   -7.30341  7.47%     -    0s
+     0     0   -7.26595    0   43   -6.79586   -7.26595  6.92%     -    0s
+     0     0   -7.26247    0   57   -6.79586   -7.26247  6.87%     -    0s
+     0     0   -7.26236    0   57   -6.79586   -7.26236  6.86%     -    0s
+     0     0   -7.25105    0   57   -6.79586   -7.25105  6.70%     -    0s
+     0     0   -7.24874    0   57   -6.79586   -7.24874  6.66%     -    0s
+     0     0   -7.24874    0   58   -6.79586   -7.24874  6.66%     -    0s
+     0     0   -7.23834    0   63   -6.79586   -7.23834  6.51%     -    0s
+     0     0   -7.23834    0   63   -6.79586   -7.23834  6.51%     -    0s
+     0     0   -7.23785    0   69   -6.79586   -7.23785  6.50%     -    0s
+     0     0   -7.23785    0   64   -6.79586   -7.23785  6.50%     -    0s
+     0     0   -7.23785    0   65   -6.79586   -7.23785  6.50%     -    0s
+     0     0   -7.23785    0   60   -6.79586   -7.23785  6.50%     -    0s
+     0     0   -7.23785    0   45   -6.79586   -7.23785  6.50%     -    0s
+     0     0   -7.23785    0   34   -6.79586   -7.23785  6.50%     -    0s
+     0     0   -7.23316    0   29   -6.79586   -7.23316  6.43%     -    0s
+     0     0   -7.23316    0   33   -6.79586   -7.23316  6.43%     -    0s
+     0     0   -7.23308    0   45   -6.79586   -7.23308  6.43%     -    0s
+     0     0   -7.23278    0   42   -6.79586   -7.23278  6.43%     -    0s
+     0     0   -7.21341    0   42   -6.79586   -7.21341  6.14%     -    0s
+     0     0   -7.20566    0   44   -6.79586   -7.20566  6.03%     -    0s
+     0     0   -7.20538    0   44   -6.79586   -7.20538  6.03%     -    0s
+     0     0   -7.18661    0   38   -6.79586   -7.18661  5.75%     -    0s
+H    0     0                      -6.7958601   -7.18661  5.75%     -    0s
+     0     0   -7.18525    0   41   -6.79586   -7.18525  5.73%     -    0s
+     0     0   -7.15420    0   36   -6.79586   -7.15420  5.27%     -    0s
+     0     0   -7.14730    0   43   -6.79586   -7.14730  5.17%     -    0s
+     0     0   -7.14725    0   45   -6.79586   -7.14725  5.17%     -    0s
+     0     0   -7.14351    0   50   -6.79586   -7.14351  5.12%     -    0s
+     0     0   -7.13771    0   45   -6.79586   -7.13771  5.03%     -    0s
+     0     0   -7.13603    0   46   -6.79586   -7.13603  5.01%     -    0s
+     0     0   -7.13602    0   46   -6.79586   -7.13602  5.01%     -    0s
+     0     0   -7.12683    0   90   -6.79586   -7.12683  4.87%     -    0s
+
+Cutting planes:
+  Gomory: 4
+  Cover: 4
+  Implied bound: 1
+  Clique: 1
+  MIR: 4
+  Flow cover: 19
+  GUB cover: 2
+  Zero half: 1
+  RLT: 58
+
+Explored 1 nodes (3602 simplex iterations) in 0.84 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 3: -6.79586 -6.79586 -0.862531 
+
+Optimal solution found (tolerance 5.00e-02)
+Best objective -6.795860053950e+00, best bound -7.126829685605e+00, gap 4.8702%
+
+Gurobi 9.1.1 (linux64) logging started Tue Nov 30 02:52:47 2021
+
+Changed value of parameter LogFile to /home/aniket/python_scripts/Plasmids-Optimization/exp/2021-06-14__iterative_MILP_edge_novelty/output/sample_38/1.1.1/nplasmids_1/MILP/m.log
+   Prev:   Default: 
+Changed value of parameter TimeLimit to 240.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Changed value of parameter MIPGap to 0.05
+   Prev: 0.0001  Min: 0.0  Max: inf  Default: 0.0001
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (linux64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 9901 rows, 3307 columns and 23138 nonzeros
+Model fingerprint: 0x51799464
+Variable types: 1036 continuous, 2271 integer (2064 binary)
+Coefficient statistics:
+  Matrix range     [1e-02, 4e+05]
+  Objective range  [5e-04, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [6e-01, 2e+05]
+Presolve removed 8363 rows and 2004 columns
+Presolve time: 0.03s
+Presolved: 1538 rows, 1303 columns, 6872 nonzeros
+Variable types: 379 continuous, 924 integer (924 binary)
+Found heuristic solution: objective -0.8625306
+
+Root relaxation: objective -8.349132e+00, 916 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   -8.34913    0   73   -0.86253   -8.34913   868%     -    0s
+     0     0   -7.82398    0  111   -0.86253   -7.82398   807%     -    0s
+H    0     0                      -6.2078860   -7.82398  26.0%     -    0s
+     0     0   -7.82398    0  110   -6.20789   -7.82398  26.0%     -    0s
+     0     0   -7.65682    0   93   -6.20789   -7.65682  23.3%     -    0s
+H    0     0                      -6.9439030   -7.65682  10.3%     -    0s
+     0     0   -7.65682    0   99   -6.94390   -7.65682  10.3%     -    0s
+     0     0   -7.62566    0  101   -6.94390   -7.62566  9.82%     -    0s
+     0     0   -7.62236    0  104   -6.94390   -7.62236  9.77%     -    0s
+     0     0   -7.62191    0  102   -6.94390   -7.62191  9.76%     -    0s
+     0     0   -7.61166    0  104   -6.94390   -7.61166  9.62%     -    0s
+H    0     0                      -6.9439034   -7.61166  9.62%     -    0s
+     0     0   -7.60890    0  101   -6.94390   -7.60890  9.58%     -    0s
+     0     0   -7.60890    0  101   -6.94390   -7.60890  9.58%     -    0s
+     0     0   -7.60820    0  110   -6.94390   -7.60820  9.57%     -    0s
+     0     0   -7.60820    0  110   -6.94390   -7.60820  9.57%     -    0s
+H    0     0                      -6.9439038   -7.60820  9.57%     -    0s
+     0     2   -7.60820    0  109   -6.94390   -7.60820  9.57%     -    0s
+
+Cutting planes:
+  Gomory: 6
+  MIR: 1
+  Flow cover: 6
+  Zero half: 12
+  RLT: 76
+  BQP: 1
+
+Explored 23 nodes (4135 simplex iterations) in 0.49 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 5: -6.9439 -6.9439 -6.9439 ... -0.862531
+
+Optimal solution found (tolerance 5.00e-02)
+Best objective -6.943903807034e+00, best bound -7.249757556065e+00, gap 4.4046%
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (linux64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 9903 rows, 3307 columns and 23142 nonzeros
+Model fingerprint: 0xbebf905e
+Variable types: 1036 continuous, 2271 integer (2064 binary)
+Coefficient statistics:
+  Matrix range     [1e-02, 4e+05]
+  Objective range  [5e-04, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [6e-01, 2e+05]
+
+MIP start from previous solve did not produce a new incumbent solution
+MIP start from previous solve violates constraint circular by 1.000000000
+
+Presolve removed 8365 rows and 2005 columns
+Presolve time: 0.03s
+Presolved: 1538 rows, 1302 columns, 6881 nonzeros
+Variable types: 379 continuous, 923 integer (923 binary)
+Found heuristic solution: objective -0.8625306
+
+Root relaxation: objective -7.868967e+00, 967 iterations, 0.02 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   -7.86897    0   69   -0.86253   -7.86897   812%     -    0s
+H    0     0                      -0.8625306   -7.86897   812%     -    0s
+     0     0   -6.71126    0   45   -0.86253   -6.71126   678%     -    0s
+H    0     0                      -6.5076773   -6.71126  3.13%     -    0s
+
+Cutting planes:
+  Gomory: 5
+  Clique: 1
+  Flow cover: 2
+  RLT: 26
+
+Explored 1 nodes (1689 simplex iterations) in 0.11 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 2: -6.50768 -0.862531 
+
+Optimal solution found (tolerance 5.00e-02)
+Best objective -6.507677299476e+00, best bound -6.711264142143e+00, gap 3.1284%
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (linux64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 9904 rows, 3307 columns and 23145 nonzeros
+Model fingerprint: 0xb092af47
+Variable types: 1036 continuous, 2271 integer (2064 binary)
+Coefficient statistics:
+  Matrix range     [1e-02, 4e+05]
+  Objective range  [5e-04, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [6e-01, 2e+05]
+
+MIP start from previous solve did not produce a new incumbent solution
+MIP start from previous solve violates constraint circular by 1.000000000
+
+Presolve removed 8365 rows and 2005 columns
+Presolve time: 0.03s
+Presolved: 1539 rows, 1302 columns, 6893 nonzeros
+Variable types: 379 continuous, 923 integer (923 binary)
+Found heuristic solution: objective -0.8625306
+
+Root relaxation: objective -7.868967e+00, 1039 iterations, 0.02 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   -7.86897    0   70   -0.86253   -7.86897   812%     -    0s
+H    0     0                      -0.8625306   -7.86897   812%     -    0s
+     0     0   -7.82457    0   77   -0.86253   -7.82457   807%     -    0s
+H    0     0                      -6.1301980   -7.82457  27.6%     -    0s
+     0     0   -6.71142    0   61   -6.13020   -6.71142  9.48%     -    0s
+     0     0   -6.67810    0   51   -6.13020   -6.67810  8.94%     -    0s
+H    0     0                      -6.5076773   -6.67810  2.62%     -    0s
+
+Cutting planes:
+  Gomory: 6
+  Flow cover: 9
+  RLT: 25
+
+Explored 1 nodes (2339 simplex iterations) in 0.22 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 3: -6.50768 -6.1302 -0.862531 
+
+Optimal solution found (tolerance 5.00e-02)
+Best objective -6.507677299476e+00, best bound -6.678102225911e+00, gap 2.6188%
+
+Gurobi 9.1.1 (linux64) logging started Tue Nov 30 02:52:48 2021
+
+Changed value of parameter LogFile to /home/aniket/python_scripts/Plasmids-Optimization/exp/2021-06-14__iterative_MILP_edge_novelty/output/sample_38/1.1.1/nplasmids_1/MILP/m.log
+   Prev:   Default: 
+Changed value of parameter TimeLimit to 240.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Changed value of parameter MIPGap to 0.05
+   Prev: 0.0001  Min: 0.0  Max: inf  Default: 0.0001
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (linux64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 9299 rows, 3102 columns and 21712 nonzeros
+Model fingerprint: 0x52d95820
+Variable types: 971 continuous, 2131 integer (1937 binary)
+Coefficient statistics:
+  Matrix range     [1e-02, 4e+05]
+  Objective range  [5e-04, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [6e-01, 2e+05]
+Presolve removed 7869 rows and 1884 columns
+Presolve time: 0.03s
+Presolved: 1430 rows, 1218 columns, 6738 nonzeros
+Variable types: 353 continuous, 865 integer (865 binary)
+Found heuristic solution: objective -0.8625306
+
+Root relaxation: objective -6.323416e+00, 1063 iterations, 0.02 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   -6.32342    0   77   -0.86253   -6.32342   633%     -    0s
+     0     0   -5.56131    0   77   -0.86253   -5.56131   545%     -    0s
+H    0     0                      -5.3888921   -5.56131  3.20%     -    0s
+
+Cutting planes:
+  Clique: 1
+  Flow cover: 1
+  Zero half: 6
+  RLT: 30
+
+Explored 1 nodes (1792 simplex iterations) in 0.14 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 2: -5.38889 -0.862531 
+
+Optimal solution found (tolerance 5.00e-02)
+Best objective -5.388892132515e+00, best bound -5.561306562460e+00, gap 3.1994%
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (linux64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 9301 rows, 3102 columns and 21714 nonzeros
+Model fingerprint: 0xbdd44867
+Variable types: 971 continuous, 2131 integer (1937 binary)
+Coefficient statistics:
+  Matrix range     [1e-02, 4e+05]
+  Objective range  [5e-04, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [6e-01, 2e+05]
+
+MIP start from previous solve did not produce a new incumbent solution
+MIP start from previous solve violates constraint circular by 1.000000000
+
+Presolve removed 7873 rows and 1886 columns
+Presolve time: 0.03s
+Presolved: 1428 rows, 1216 columns, 6731 nonzeros
+Variable types: 353 continuous, 863 integer (863 binary)
+Found heuristic solution: objective -0.8625306
+
+Root relaxation: objective -5.672097e+00, 876 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   -5.67210    0   59   -0.86253   -5.67210   558%     -    0s
+     0     0   -5.25795    0  152   -0.86253   -5.25795   510%     -    0s
+H    0     0                      -4.5225850   -5.25795  16.3%     -    0s
+     0     0   -4.69776    0   92   -4.52258   -4.69776  3.87%     -    0s
+
+Cutting planes:
+  Gomory: 3
+  Flow cover: 3
+  Zero half: 1
+  RLT: 15
+
+Explored 1 nodes (1951 simplex iterations) in 0.13 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 2: -4.52258 -0.862531 
+
+Optimal solution found (tolerance 5.00e-02)
+Best objective -4.522584960365e+00, best bound -4.697759106016e+00, gap 3.8733%
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (linux64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 9302 rows, 3102 columns and 21717 nonzeros
+Model fingerprint: 0xf36a27c4
+Variable types: 971 continuous, 2131 integer (1937 binary)
+Coefficient statistics:
+  Matrix range     [1e-02, 4e+05]
+  Objective range  [5e-04, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [6e-01, 2e+05]
+
+MIP start from previous solve did not produce a new incumbent solution
+MIP start from previous solve violates constraint circular by 1.000000000
+
+Presolve removed 7873 rows and 1886 columns
+Presolve time: 0.03s
+Presolved: 1429 rows, 1216 columns, 6735 nonzeros
+Variable types: 353 continuous, 863 integer (863 binary)
+Found heuristic solution: objective -0.8625306
+
+Root relaxation: objective -5.672097e+00, 929 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   -5.67210    0   60   -0.86253   -5.67210   558%     -    0s
+     0     0   -5.10273    0   55   -0.86253   -5.10273   492%     -    0s
+H    0     0                      -4.5868783   -5.10273  11.2%     -    0s
+     0     0   -4.64341    0    8   -4.58688   -4.64341  1.23%     -    0s
+
+Cutting planes:
+  Gomory: 3
+  Clique: 1
+  MIR: 3
+  Flow cover: 21
+  Zero half: 1
+  RLT: 33
+
+Explored 1 nodes (1468 simplex iterations) in 0.14 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 2: -4.58688 -0.862531 
+
+Optimal solution found (tolerance 5.00e-02)
+Best objective -4.586878305331e+00, best bound -4.643406778197e+00, gap 1.2324%
+
+Gurobi 9.1.1 (linux64) logging started Tue Nov 30 02:52:49 2021
+
+Changed value of parameter LogFile to /home/aniket/python_scripts/Plasmids-Optimization/exp/2021-06-14__iterative_MILP_edge_novelty/output/sample_38/1.1.1/nplasmids_1/MILP/m.log
+   Prev:   Default: 
+Changed value of parameter TimeLimit to 240.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Changed value of parameter MIPGap to 0.05
+   Prev: 0.0001  Min: 0.0  Max: inf  Default: 0.0001
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (linux64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 9094 rows, 3032 columns and 21277 nonzeros
+Model fingerprint: 0xcea6d2ad
+Variable types: 946 continuous, 2086 integer (1897 binary)
+Coefficient statistics:
+  Matrix range     [1e-02, 4e+05]
+  Objective range  [5e-04, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [6e-01, 2e+05]
+Presolve removed 7706 rows and 1839 columns
+Presolve time: 0.03s
+Presolved: 1388 rows, 1193 columns, 6573 nonzeros
+Variable types: 343 continuous, 850 integer (850 binary)
+Found heuristic solution: objective -0.8625306
+
+Root relaxation: objective -3.558563e+00, 799 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   -3.55856    0   72   -0.86253   -3.55856   313%     -    0s
+     0     0   -2.81521    0   36   -0.86253   -2.81521   226%     -    0s
+H    0     0                      -1.0000000   -2.81521   182%     -    0s
+H    0     0                      -2.6930400   -2.81521  4.54%     -    0s
+
+Cutting planes:
+  Clique: 1
+  Flow cover: 2
+  Zero half: 4
+  RLT: 31
+
+Explored 1 nodes (1389 simplex iterations) in 0.11 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 3: -2.69304 -1 -0.862531 
+
+Optimal solution found (tolerance 5.00e-02)
+Best objective -2.693040048916e+00, best bound -2.815206315162e+00, gap 4.5364%
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (linux64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 9095 rows, 3032 columns and 21278 nonzeros
+Model fingerprint: 0x7b0e712f
+Variable types: 946 continuous, 2086 integer (1897 binary)
+Coefficient statistics:
+  Matrix range     [1e-02, 4e+05]
+  Objective range  [5e-04, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [6e-01, 2e+05]
+
+MIP start from previous solve did not produce a new incumbent solution
+MIP start from previous solve violates constraint circular by 1.000000000
+
+Presolve removed 7708 rows and 1840 columns
+Presolve time: 0.03s
+Presolved: 1387 rows, 1192 columns, 6570 nonzeros
+Variable types: 343 continuous, 849 integer (849 binary)
+Found heuristic solution: objective -0.8625306
+
+Root relaxation: objective -2.858929e+00, 698 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   -2.85893    0   51   -0.86253   -2.85893   231%     -    0s
+H    0     0                      -0.8868656   -2.85893   222%     -    0s
+     0     0   -1.93737    0   24   -0.88687   -1.93737   118%     -    0s
+H    0     0                      -1.0000000   -1.93737  93.7%     -    0s
+H    0     0                      -1.8998538   -1.93737  1.97%     -    0s
+
+Cutting planes:
+  Gomory: 1
+  Clique: 1
+  Flow cover: 4
+  Zero half: 2
+  RLT: 22
+
+Explored 1 nodes (1177 simplex iterations) in 0.11 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 4: -1.89985 -1 -0.886866 -0.862531 
+
+Optimal solution found (tolerance 5.00e-02)
+Best objective -1.899853777933e+00, best bound -1.937373194020e+00, gap 1.9749%
+
+Gurobi 9.1.1 (linux64) logging started Tue Nov 30 02:52:49 2021
+
+Changed value of parameter LogFile to /home/aniket/python_scripts/Plasmids-Optimization/exp/2021-06-14__iterative_MILP_edge_novelty/output/sample_38/1.1.1/nplasmids_1/MILP/m.log
+   Prev:   Default: 
+Changed value of parameter TimeLimit to 240.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Changed value of parameter MIPGap to 0.05
+   Prev: 0.0001  Min: 0.0  Max: inf  Default: 0.0001
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (linux64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 9012 rows, 3004 columns and 21103 nonzeros
+Model fingerprint: 0xb182b13f
+Variable types: 936 continuous, 2068 integer (1881 binary)
+Coefficient statistics:
+  Matrix range     [1e-02, 4e+05]
+  Objective range  [5e-04, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [6e-01, 2e+05]
+Presolve removed 7642 rows and 1821 columns
+Presolve time: 0.03s
+Presolved: 1370 rows, 1183 columns, 6513 nonzeros
+Variable types: 339 continuous, 844 integer (844 binary)
+Found heuristic solution: objective -0.8625306
+
+Root relaxation: objective -2.635370e+00, 682 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   -2.63537    0   35   -0.86253   -2.63537   206%     -    0s
+H    0     0                      -1.0000000   -2.63537   164%     -    0s
+H    0     0                      -1.4923233   -2.63537  76.6%     -    0s
+     0     0   -2.41684    0   39   -1.49232   -2.41684  62.0%     -    0s
+H    0     0                      -1.6446541   -2.41684  47.0%     -    0s
+     0     0   -2.29205    0   48   -1.64465   -2.29205  39.4%     -    0s
+     0     0   -2.14253    0   14   -1.64465   -2.14253  30.3%     -    0s
+     0     0   -1.93128    0   39   -1.64465   -1.93128  17.4%     -    0s
+     0     0   -1.89895    0   39   -1.64465   -1.89895  15.5%     -    0s
+H    0     0                      -1.8625014   -1.89895  1.96%     -    0s
+
+Cutting planes:
+  Learned: 3
+  Gomory: 1
+  Cover: 2
+  Implied bound: 2
+  Clique: 1
+  MIR: 2
+  Flow cover: 2
+  Zero half: 4
+  RLT: 18
+
+Explored 1 nodes (1689 simplex iterations) in 0.18 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 5: -1.8625 -1.64465 -1.49232 ... -0.862531
+
+Optimal solution found (tolerance 5.00e-02)
+Best objective -1.862501400362e+00, best bound -1.898950271954e+00, gap 1.9570%
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (linux64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 9013 rows, 3004 columns and 21104 nonzeros
+Model fingerprint: 0x2089ca85
+Variable types: 936 continuous, 2068 integer (1881 binary)
+Coefficient statistics:
+  Matrix range     [1e-02, 4e+05]
+  Objective range  [5e-04, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [6e-01, 2e+05]
+
+MIP start from previous solve did not produce a new incumbent solution
+MIP start from previous solve violates constraint circular by 1.000000000
+
+Presolve removed 7644 rows and 1822 columns
+Presolve time: 0.03s
+Presolved: 1369 rows, 1182 columns, 6510 nonzeros
+Variable types: 339 continuous, 843 integer (843 binary)
+Found heuristic solution: objective -0.8625306
+
+Root relaxation: objective -2.388601e+00, 789 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   -2.38860    0   49   -0.86253   -2.38860   177%     -    0s
+     0     0   -1.83740    0   30   -0.86253   -1.83740   113%     -    0s
+H    0     0                      -1.0000000   -1.83740  83.7%     -    0s
+     0     0   -1.82874    0   19   -1.00000   -1.82874  82.9%     -    0s
+     0     0   -1.49391    0   22   -1.00000   -1.49391  49.4%     -    0s
+     0     0   -1.49391    0   19   -1.00000   -1.49391  49.4%     -    0s
+     0     0   -1.43367    0   15   -1.00000   -1.43367  43.4%     -    0s
+     0     0   -1.43034    0   17   -1.00000   -1.43034  43.0%     -    0s
+     0     0   -1.42569    0   14   -1.00000   -1.42569  42.6%     -    0s
+     0     0   -1.42481    0   14   -1.00000   -1.42481  42.5%     -    0s
+     0     0   -1.42481    0   17   -1.00000   -1.42481  42.5%     -    0s
+     0     0   -1.41685    0   14   -1.00000   -1.41685  41.7%     -    0s
+     0     0   -1.41685    0   10   -1.00000   -1.41685  41.7%     -    0s
+     0     2   -1.41685    0   10   -1.00000   -1.41685  41.7%     -    0s
+
+Cutting planes:
+  Gomory: 2
+  Implied bound: 1
+  Clique: 1
+  MIR: 1
+  Flow cover: 4
+  Zero half: 2
+  RLT: 22
+
+Explored 3 nodes (2469 simplex iterations) in 0.24 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 2: -1 -0.862531 
+
+Optimal solution found (tolerance 5.00e-02)
+Best objective -1.000000000000e+00, best bound -1.000000000000e+00, gap 0.0000%
+
+Gurobi 9.1.1 (linux64) logging started Tue Nov 30 02:52:50 2021
+
+Changed value of parameter LogFile to /home/aniket/python_scripts/Plasmids-Optimization/exp/2021-06-14__iterative_MILP_edge_novelty/output/sample_38/1.1.1/nplasmids_1/MILP/m.log
+   Prev:   Default: 
+Changed value of parameter TimeLimit to 240.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Changed value of parameter MIPGap to 0.05
+   Prev: 0.0001  Min: 0.0  Max: inf  Default: 0.0001
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (linux64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 8977 rows, 2992 columns and 21042 nonzeros
+Model fingerprint: 0x9ca89307
+Variable types: 931 continuous, 2061 integer (1875 binary)
+Coefficient statistics:
+  Matrix range     [1e-02, 4e+05]
+  Objective range  [5e-04, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [6e-01, 2e+05]
+Presolve removed 7613 rows and 1812 columns
+Presolve time: 0.03s
+Presolved: 1364 rows, 1180 columns, 6493 nonzeros
+Variable types: 337 continuous, 843 integer (843 binary)
+Found heuristic solution: objective -0.8625306
+
+Root relaxation: objective -2.612347e+00, 884 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   -2.61235    0   33   -0.86253   -2.61235   203%     -    0s
+H    0     0                      -0.9804688   -2.61235   166%     -    0s
+H    0     0                      -1.4923233   -2.61235  75.1%     -    0s
+     0     0   -2.31435    0   60   -1.49232   -2.31435  55.1%     -    0s
+H    0     0                      -1.8000103   -2.31435  28.6%     -    0s
+     0     0   -2.19419    0   47   -1.80001   -2.19419  21.9%     -    0s
+     0     0   -2.02734    0   46   -1.80001   -2.02734  12.6%     -    0s
+     0     0   -1.94344    0   28   -1.80001   -1.94344  7.97%     -    0s
+     0     0   -1.85113    0   12   -1.80001   -1.85113  2.84%     -    0s
+
+Cutting planes:
+  Learned: 3
+  Gomory: 4
+  Implied bound: 1
+  Clique: 1
+  MIR: 1
+  Flow cover: 5
+  Zero half: 2
+  RLT: 13
+  BQP: 1
+
+Explored 1 nodes (1939 simplex iterations) in 0.16 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 4: -1.80001 -1.49232 -0.980469 -0.862531 
+
+Optimal solution found (tolerance 5.00e-02)
+Best objective -1.800010305862e+00, best bound -1.851128773643e+00, gap 2.8399%
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (linux64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 8978 rows, 2992 columns and 21043 nonzeros
+Model fingerprint: 0xee4a40e4
+Variable types: 931 continuous, 2061 integer (1875 binary)
+Coefficient statistics:
+  Matrix range     [1e-02, 4e+05]
+  Objective range  [5e-04, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [6e-01, 2e+05]
+
+MIP start from previous solve did not produce a new incumbent solution
+MIP start from previous solve violates constraint circular by 1.000000000
+
+Presolve removed 7615 rows and 1813 columns
+Presolve time: 0.03s
+Presolved: 1363 rows, 1179 columns, 6490 nonzeros
+Variable types: 337 continuous, 842 integer (842 binary)
+Found heuristic solution: objective -0.8625306
+
+Root relaxation: objective -2.377888e+00, 712 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   -2.37789    0   51   -0.86253   -2.37789   176%     -    0s
+     0     0   -1.83612    0   39   -0.86253   -1.83612   113%     -    0s
+H    0     0                      -0.9804688   -1.83612  87.3%     -    0s
+     0     0   -1.82823    0   17   -0.98047   -1.82823  86.5%     -    0s
+     0     0   -1.40708    0   51   -0.98047   -1.40708  43.5%     -    0s
+     0     0   -1.40708    0   40   -0.98047   -1.40708  43.5%     -    0s
+     0     0   -1.40708    0   32   -0.98047   -1.40708  43.5%     -    0s
+     0     0   -1.40708    0    8   -0.98047   -1.40708  43.5%     -    0s
+     0     0   -1.40708    0    8   -0.98047   -1.40708  43.5%     -    0s
+     0     0   -1.40708    0    8   -0.98047   -1.40708  43.5%     -    0s
+     0     0   -1.40708    0   11   -0.98047   -1.40708  43.5%     -    0s
+     0     0   -1.40708    0    8   -0.98047   -1.40708  43.5%     -    0s
+     0     1   -1.40708    0    8   -0.98047   -1.40708  43.5%     -    0s
+
+Cutting planes:
+  Gomory: 2
+  Implied bound: 2
+  Clique: 3
+  MIR: 1
+  Flow cover: 7
+  Zero half: 2
+  RLT: 26
+
+Explored 2 nodes (2716 simplex iterations) in 0.24 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 2: -0.980469 -0.862531 
+
+Optimal solution found (tolerance 5.00e-02)
+Best objective -9.804687500000e-01, best bound -9.804687500000e-01, gap 0.0000%
+
+Gurobi 9.1.1 (linux64) logging started Tue Nov 30 02:52:50 2021
+
+Changed value of parameter LogFile to /home/aniket/python_scripts/Plasmids-Optimization/exp/2021-06-14__iterative_MILP_edge_novelty/output/sample_38/1.1.1/nplasmids_1/MILP/m.log
+   Prev:   Default: 
+Changed value of parameter TimeLimit to 240.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Changed value of parameter MIPGap to 0.05
+   Prev: 0.0001  Min: 0.0  Max: inf  Default: 0.0001
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (linux64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 8939 rows, 2979 columns and 20968 nonzeros
+Model fingerprint: 0xb0ffefa5
+Variable types: 926 continuous, 2053 integer (1868 binary)
+Coefficient statistics:
+  Matrix range     [1e-02, 4e+05]
+  Objective range  [5e-04, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [6e-01, 2e+05]
+Presolve removed 7583 rows and 1803 columns
+Presolve time: 0.03s
+Presolved: 1356 rows, 1176 columns, 6468 nonzeros
+Variable types: 335 continuous, 841 integer (841 binary)
+Found heuristic solution: objective -0.8625306
+
+Root relaxation: objective -2.606809e+00, 676 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   -2.60681    0   36   -0.86253   -2.60681   202%     -    0s
+H    0     0                      -0.9723926   -2.60681   168%     -    0s
+H    0     0                      -1.4923233   -2.60681  74.7%     -    0s
+     0     0   -2.25160    0   95   -1.49232   -2.25160  50.9%     -    0s
+     0     0   -2.06691    0   79   -1.49232   -2.06691  38.5%     -    0s
+     0     0   -1.86704    0   92   -1.49232   -1.86704  25.1%     -    0s
+H    0     0                      -1.5722033   -1.86704  18.8%     -    0s
+     0     0   -1.81230    0   81   -1.57220   -1.81230  15.3%     -    0s
+     0     0   -1.81006    0   78   -1.57220   -1.81006  15.1%     -    0s
+     0     0   -1.81006    0   78   -1.57220   -1.81006  15.1%     -    0s
+     0     0   -1.80885    0  101   -1.57220   -1.80885  15.1%     -    0s
+H    0     0                      -1.8000103   -1.80885  0.49%     -    0s
+
+Cutting planes:
+  Learned: 2
+  Gomory: 3
+  Clique: 2
+  Flow cover: 7
+  Zero half: 1
+  RLT: 46
+
+Explored 1 nodes (2435 simplex iterations) in 0.22 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 5: -1.80001 -1.5722 -1.49232 ... -0.862531
+
+Optimal solution found (tolerance 5.00e-02)
+Best objective -1.800010305862e+00, best bound -1.808847565930e+00, gap 0.4910%
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (linux64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 8940 rows, 2979 columns and 20969 nonzeros
+Model fingerprint: 0xfd5dcbe0
+Variable types: 926 continuous, 2053 integer (1868 binary)
+Coefficient statistics:
+  Matrix range     [1e-02, 4e+05]
+  Objective range  [5e-04, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [6e-01, 2e+05]
+
+MIP start from previous solve did not produce a new incumbent solution
+MIP start from previous solve violates constraint circular by 1.000000000
+
+Presolve removed 7585 rows and 1804 columns
+Presolve time: 0.03s
+Presolved: 1355 rows, 1175 columns, 6465 nonzeros
+Variable types: 335 continuous, 840 integer (840 binary)
+Found heuristic solution: objective -0.8625306
+
+Root relaxation: objective -1.839293e+00, 631 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   -1.83929    0   42   -0.86253   -1.83929   113%     -    0s
+*    0     0               0      -0.9723926   -0.97239  0.00%     -    0s
+
+Cutting planes:
+  Gomory: 12
+  Flow cover: 36
+  Zero half: 2
+  RLT: 19
+
+Explored 1 nodes (1182 simplex iterations) in 0.08 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 2: -0.972393 -0.862531 
+
+Optimal solution found (tolerance 5.00e-02)
+Best objective -9.723926380368e-01, best bound -9.723926380368e-01, gap 0.0000%
+
+Gurobi 9.1.1 (linux64) logging started Tue Nov 30 02:52:50 2021
+
+Changed value of parameter LogFile to /home/aniket/python_scripts/Plasmids-Optimization/exp/2021-06-14__iterative_MILP_edge_novelty/output/sample_38/1.1.1/nplasmids_1/MILP/m.log
+   Prev:   Default: 
+Changed value of parameter TimeLimit to 240.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Changed value of parameter MIPGap to 0.05
+   Prev: 0.0001  Min: 0.0  Max: inf  Default: 0.0001
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (linux64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 8901 rows, 2966 columns and 20894 nonzeros
+Model fingerprint: 0xf21e81c0
+Variable types: 921 continuous, 2045 integer (1861 binary)
+Coefficient statistics:
+  Matrix range     [1e-02, 4e+05]
+  Objective range  [5e-04, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [6e-01, 2e+05]
+Presolve removed 7553 rows and 1794 columns
+Presolve time: 0.03s
+Presolved: 1348 rows, 1172 columns, 6443 nonzeros
+Variable types: 333 continuous, 839 integer (839 binary)
+Found heuristic solution: objective -0.8625306
+
+Root relaxation: objective -2.562657e+00, 841 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   -2.56266    0   39   -0.86253   -2.56266   197%     -    0s
+H    0     0                      -0.9427330   -2.56266   172%     -    0s
+H    0     0                      -1.4923233   -2.56266  71.7%     -    0s
+     0     0   -2.13866    0   41   -1.49232   -2.13866  43.3%     -    0s
+H    0     0                      -1.6446541   -2.13866  30.0%     -    0s
+H    0     0                      -1.7410280   -2.13866  22.8%     -    0s
+     0     0   -1.99695    0   40   -1.74103   -1.99695  14.7%     -    0s
+     0     0   -1.79842    0    2   -1.74103   -1.79842  3.30%     -    0s
+
+Cutting planes:
+  Gomory: 2
+  Flow cover: 16
+  Zero half: 3
+  RLT: 26
+
+Explored 1 nodes (1520 simplex iterations) in 0.14 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 5: -1.74103 -1.64465 -1.49232 ... -0.862531
+
+Optimal solution found (tolerance 5.00e-02)
+Warning: max integrality violation (2.4811e-02) exceeds tolerance
+         (model may be infeasible or unbounded - try turning presolve off)
+Best objective -1.741028030291e+00, best bound -1.798419667098e+00, gap 3.2964%
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (linux64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 8902 rows, 2966 columns and 20895 nonzeros
+Model fingerprint: 0x28d7865c
+Variable types: 921 continuous, 2045 integer (1861 binary)
+Coefficient statistics:
+  Matrix range     [1e-02, 4e+05]
+  Objective range  [5e-04, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [6e-01, 2e+05]
+
+MIP start from previous solve did not produce a new incumbent solution
+MIP start from previous solve violates constraint circular by 1.000000000
+
+Presolve removed 7555 rows and 1795 columns
+Presolve time: 0.03s
+Presolved: 1347 rows, 1171 columns, 6440 nonzeros
+Variable types: 333 continuous, 838 integer (838 binary)
+Found heuristic solution: objective -0.8625306
+
+Root relaxation: objective -1.810008e+00, 592 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   -1.81001    0   42   -0.86253   -1.81001   110%     -    0s
+H    0     0                      -0.8625306   -1.81001   110%     -    0s
+*    0     0               0      -0.9427330   -0.94273  0.00%     -    0s
+
+Cutting planes:
+  Gomory: 12
+  Clique: 1
+  Flow cover: 31
+  Zero half: 2
+  RLT: 19
+
+Explored 1 nodes (848 simplex iterations) in 0.07 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 2: -0.942733 -0.862531 
+
+Optimal solution found (tolerance 5.00e-02)
+Best objective -9.427330173776e-01, best bound -9.427330173776e-01, gap 0.0000%
+
+Gurobi 9.1.1 (linux64) logging started Tue Nov 30 02:52:51 2021
+
+Changed value of parameter LogFile to /home/aniket/python_scripts/Plasmids-Optimization/exp/2021-06-14__iterative_MILP_edge_novelty/output/sample_38/1.1.1/nplasmids_1/MILP/m.log
+   Prev:   Default: 
+Changed value of parameter TimeLimit to 240.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Changed value of parameter MIPGap to 0.05
+   Prev: 0.0001  Min: 0.0  Max: inf  Default: 0.0001
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (linux64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 8860 rows, 2952 columns and 20807 nonzeros
+Model fingerprint: 0x63a736ff
+Variable types: 916 continuous, 2036 integer (1853 binary)
+Coefficient statistics:
+  Matrix range     [1e-02, 4e+05]
+  Objective range  [5e-04, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [6e-01, 2e+05]
+Presolve removed 7518 rows and 1783 columns
+Presolve time: 0.03s
+Presolved: 1342 rows, 1169 columns, 6423 nonzeros
+Variable types: 331 continuous, 838 integer (838 binary)
+Found heuristic solution: objective -0.8625306
+
+Root relaxation: objective -2.512110e+00, 567 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   -2.51211    0   33   -0.86253   -2.51211   191%     -    0s
+H    0     0                      -0.8868656   -2.51211   183%     -    0s
+     0     0   -2.11870    0   52   -0.88687   -2.11870   139%     -    0s
+H    0     0                      -1.7410235   -2.11870  21.7%     -    0s
+     0     0   -1.96367    0   48   -1.74102   -1.96367  12.8%     -    0s
+     0     0   -1.74940    0   17   -1.74102   -1.74940  0.48%     -    0s
+
+Cutting planes:
+  Gomory: 9
+  Cover: 1
+  Clique: 1
+  MIR: 1
+  Flow cover: 23
+  Zero half: 3
+  RLT: 24
+
+Explored 1 nodes (1479 simplex iterations) in 0.14 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 3: -1.74102 -0.886866 -0.862531 
+
+Optimal solution found (tolerance 5.00e-02)
+Best objective -1.741023484453e+00, best bound -1.749396159249e+00, gap 0.4809%
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (linux64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 8861 rows, 2952 columns and 20808 nonzeros
+Model fingerprint: 0xf6674928
+Variable types: 916 continuous, 2036 integer (1853 binary)
+Coefficient statistics:
+  Matrix range     [1e-02, 4e+05]
+  Objective range  [5e-04, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [6e-01, 2e+05]
+
+MIP start from previous solve did not produce a new incumbent solution
+MIP start from previous solve violates constraint circular by 1.000000000
+
+Presolve removed 7520 rows and 1784 columns
+Presolve time: 0.03s
+Presolved: 1341 rows, 1168 columns, 6420 nonzeros
+Variable types: 331 continuous, 837 integer (837 binary)
+Found heuristic solution: objective -0.8625306
+
+Root relaxation: objective -1.756074e+00, 733 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   -1.75607    0   41   -0.86253   -1.75607   104%     -    0s
+     0     0   -1.33030    0   71   -0.86253   -1.33030  54.2%     -    0s
+H    0     0                      -0.8868656   -1.33030  50.0%     -    0s
+
+Cutting planes:
+  Gomory: 2
+  Clique: 1
+  Flow cover: 3
+  Zero half: 2
+  RLT: 8
+
+Explored 1 nodes (1449 simplex iterations) in 0.11 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 2: -0.886866 -0.862531 
+
+Optimal solution found (tolerance 5.00e-02)
+Best objective -8.868655559861e-01, best bound -8.868655559861e-01, gap 0.0000%
+
+Gurobi 9.1.1 (linux64) logging started Tue Nov 30 02:52:51 2021
+
+Changed value of parameter LogFile to /home/aniket/python_scripts/Plasmids-Optimization/exp/2021-06-14__iterative_MILP_edge_novelty/output/sample_38/1.1.1/nplasmids_1/MILP/m.log
+   Prev:   Default: 
+Changed value of parameter TimeLimit to 240.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Changed value of parameter MIPGap to 0.05
+   Prev: 0.0001  Min: 0.0  Max: inf  Default: 0.0001
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (linux64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 8810 rows, 2935 columns and 20681 nonzeros
+Model fingerprint: 0x06689a33
+Variable types: 911 continuous, 2024 integer (1842 binary)
+Coefficient statistics:
+  Matrix range     [1e-02, 4e+05]
+  Objective range  [5e-04, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [6e-01, 2e+05]
+Presolve removed 7476 rows and 1773 columns
+Presolve time: 0.03s
+Presolved: 1334 rows, 1162 columns, 6387 nonzeros
+Variable types: 329 continuous, 833 integer (833 binary)
+Found heuristic solution: objective -0.8625306
+
+Root relaxation: objective -2.512112e+00, 601 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   -2.51211    0   34   -0.86253   -2.51211   191%     -    0s
+H    0     0                      -0.8868656   -2.51211   183%     -    0s
+H    0     0                      -1.4923233   -2.51211  68.3%     -    0s
+     0     0   -2.49963    0   32   -1.49232   -2.49963  67.5%     -    0s
+H    0     0                      -1.7410233   -2.49963  43.6%     -    0s
+     0     0   -2.39822    0   31   -1.74102   -2.39822  37.7%     -    0s
+     0     0   -2.29729    0   48   -1.74102   -2.29729  32.0%     -    0s
+     0     0   -2.24717    0   49   -1.74102   -2.24717  29.1%     -    0s
+     0     0   -2.20776    0   55   -1.74102   -2.20776  26.8%     -    0s
+     0     0   -2.20551    0   55   -1.74102   -2.20551  26.7%     -    0s
+     0     0   -2.20551    0   54   -1.74102   -2.20551  26.7%     -    0s
+     0     0   -2.18826    0   40   -1.74102   -2.18826  25.7%     -    0s
+     0     0   -2.18792    0   44   -1.74102   -2.18792  25.7%     -    0s
+     0     0   -2.15213    0   59   -1.74102   -2.15213  23.6%     -    0s
+     0     0   -2.14180    0   58   -1.74102   -2.14180  23.0%     -    0s
+     0     0   -2.14123    0   58   -1.74102   -2.14123  23.0%     -    0s
+     0     0   -2.14057    0   58   -1.74102   -2.14057  22.9%     -    0s
+     0     0   -2.14024    0   58   -1.74102   -2.14024  22.9%     -    0s
+     0     0   -2.08801    0   62   -1.74102   -2.08801  19.9%     -    0s
+     0     0   -2.07846    0   63   -1.74102   -2.07846  19.4%     -    0s
+     0     0   -2.07846    0   64   -1.74102   -2.07846  19.4%     -    0s
+     0     0   -2.07811    0   64   -1.74102   -2.07811  19.4%     -    0s
+     0     0   -2.07811    0   62   -1.74102   -2.07811  19.4%     -    0s
+     0     0   -2.07811    0   32   -1.74102   -2.07811  19.4%     -    0s
+     0     0   -2.07811    0   82   -1.74102   -2.07811  19.4%     -    0s
+     0     0   -1.98807    0   90   -1.74102   -1.98807  14.2%     -    0s
+     0     0   -1.93603    0   60   -1.74102   -1.93603  11.2%     -    0s
+H    0     0                      -1.7410234   -1.93603  11.2%     -    0s
+     0     0   -1.93603    0   59   -1.74102   -1.93603  11.2%     -    0s
+     0     0   -1.92416    0   60   -1.74102   -1.92416  10.5%     -    0s
+H    0     0                      -1.7410237   -1.92416  10.5%     -    0s
+     0     0   -1.92416    0   63   -1.74102   -1.92416  10.5%     -    0s
+     0     0   -1.91772    0   62   -1.74102   -1.91772  10.1%     -    0s
+     0     0   -1.91772    0   63   -1.74102   -1.91772  10.1%     -    0s
+     0     0   -1.91772    0   60   -1.74102   -1.91772  10.1%     -    0s
+     0     0   -1.91772    0   54   -1.74102   -1.91772  10.1%     -    0s
+     0     0   -1.91772    0   61   -1.74102   -1.91772  10.1%     -    0s
+     0     0   -1.91772    0   56   -1.74102   -1.91772  10.1%     -    0s
+
+Cutting planes:
+  Gomory: 2
+  Implied bound: 6
+  Flow cover: 8
+  Zero half: 21
+  RLT: 42
+  Relax-and-lift: 6
+  BQP: 2
+
+Explored 1 nodes (3526 simplex iterations) in 0.66 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 5: -1.74102 -1.74102 -1.49232 ... -0.862531
+No other solutions better than -1.74102
+
+Optimal solution found (tolerance 5.00e-02)
+Best objective -1.741023688499e+00, best bound -1.741023688499e+00, gap 0.0000%
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (linux64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 8811 rows, 2935 columns and 20682 nonzeros
+Model fingerprint: 0x80469c65
+Variable types: 911 continuous, 2024 integer (1842 binary)
+Coefficient statistics:
+  Matrix range     [1e-02, 4e+05]
+  Objective range  [5e-04, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [6e-01, 2e+05]
+
+MIP start from previous solve did not produce a new incumbent solution
+MIP start from previous solve violates constraint circular by 1.000000000
+
+Presolve removed 7478 rows and 1774 columns
+Presolve time: 0.03s
+Presolved: 1333 rows, 1161 columns, 6384 nonzeros
+Variable types: 329 continuous, 832 integer (832 binary)
+Found heuristic solution: objective -0.8625306
+
+Root relaxation: objective -1.732415e+00, 587 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   -1.73241    0   37   -0.86253   -1.73241   101%     -    0s
+H    0     0                      -0.8868656   -1.73241  95.3%     -    0s
+     0     0   -1.29158    0   22   -0.88687   -1.29158  45.6%     -    0s
+     0     0   -1.04581    0   21   -0.88687   -1.04581  17.9%     -    0s
+     0     0   -0.98360    0   24   -0.88687   -0.98360  10.9%     -    0s
+     0     0     cutoff    0        -0.88687   -0.88687  0.00%     -    0s
+
+Cutting planes:
+  Gomory: 6
+  MIR: 1
+  Flow cover: 3
+  Zero half: 5
+  RLT: 14
+
+Explored 1 nodes (938 simplex iterations) in 0.13 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 2: -0.886866 -0.862531 
+
+Optimal solution found (tolerance 5.00e-02)
+Best objective -8.868655559861e-01, best bound -8.868655559861e-01, gap 0.0000%
+
+Gurobi 9.1.1 (linux64) logging started Tue Nov 30 02:52:52 2021
+
+Changed value of parameter LogFile to /home/aniket/python_scripts/Plasmids-Optimization/exp/2021-06-14__iterative_MILP_edge_novelty/output/sample_38/1.1.1/nplasmids_1/MILP/m.log
+   Prev:   Default: 
+Changed value of parameter TimeLimit to 240.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Changed value of parameter MIPGap to 0.05
+   Prev: 0.0001  Min: 0.0  Max: inf  Default: 0.0001
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (linux64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 8760 rows, 2918 columns and 20555 nonzeros
+Model fingerprint: 0x579058a0
+Variable types: 906 continuous, 2012 integer (1831 binary)
+Coefficient statistics:
+  Matrix range     [1e-02, 4e+05]
+  Objective range  [5e-04, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [6e-01, 2e+05]
+Presolve removed 7435 rows and 1763 columns
+Presolve time: 0.03s
+Presolved: 1325 rows, 1155 columns, 6340 nonzeros
+Variable types: 327 continuous, 828 integer (828 binary)
+Found heuristic solution: objective -0.8868656
+
+Root relaxation: objective -2.147082e+00, 447 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   -2.14708    0   23   -0.88687   -2.14708   142%     -    0s
+     0     0   -2.07668    0   38   -0.88687   -2.07668   134%     -    0s
+H    0     0                      -1.4923233   -2.07668  39.2%     -    0s
+H    0     0                      -1.7410233   -2.07668  19.3%     -    0s
+     0     0   -1.96192    0   35   -1.74102   -1.96192  12.7%     -    0s
+     0     0     cutoff    0        -1.74102   -1.74102  0.00%     -    0s
+
+Cutting planes:
+  Gomory: 5
+  Clique: 1
+  MIR: 1
+  Zero half: 2
+  RLT: 11
+  Relax-and-lift: 2
+  BQP: 2
+
+Explored 1 nodes (1573 simplex iterations) in 0.13 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 3: -1.74102 -1.49232 -0.886866 
+No other solutions better than -1.74102
+
+Optimal solution found (tolerance 5.00e-02)
+Best objective -1.741023324547e+00, best bound -1.741023324547e+00, gap 0.0000%
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (linux64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 8761 rows, 2918 columns and 20556 nonzeros
+Model fingerprint: 0x02f047c4
+Variable types: 906 continuous, 2012 integer (1831 binary)
+Coefficient statistics:
+  Matrix range     [1e-02, 4e+05]
+  Objective range  [5e-04, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [6e-01, 2e+05]
+
+MIP start from previous solve did not produce a new incumbent solution
+MIP start from previous solve violates constraint circular by 1.000000000
+
+Presolve removed 7437 rows and 1764 columns
+Presolve time: 0.03s
+Presolved: 1324 rows, 1154 columns, 6337 nonzeros
+Variable types: 327 continuous, 827 integer (827 binary)
+Found heuristic solution: objective -0.8868656
+
+Root relaxation: objective -1.680418e+00, 607 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   -1.68042    0   34   -0.88687   -1.68042  89.5%     -    0s
+     0     0   -1.42091    0   42   -0.88687   -1.42091  60.2%     -    0s
+     0     0   -1.06645    0   61   -0.88687   -1.06645  20.2%     -    0s
+     0     0     cutoff    0        -0.88687   -0.88687  0.00%     -    0s
+
+Cutting planes:
+  Gomory: 2
+  Implied bound: 5
+  Clique: 1
+  Flow cover: 9
+  Zero half: 4
+  RLT: 22
+
+Explored 1 nodes (1495 simplex iterations) in 0.14 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 1: -0.886866 
+
+Optimal solution found (tolerance 5.00e-02)
+Best objective -8.868655559861e-01, best bound -8.868655559861e-01, gap 0.0000%
+
+Gurobi 9.1.1 (linux64) logging started Tue Nov 30 02:52:53 2021
+
+Changed value of parameter LogFile to /home/aniket/python_scripts/Plasmids-Optimization/exp/2021-06-14__iterative_MILP_edge_novelty/output/sample_38/1.1.1/nplasmids_1/MILP/m.log
+   Prev:   Default: 
+Changed value of parameter TimeLimit to 240.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Changed value of parameter MIPGap to 0.05
+   Prev: 0.0001  Min: 0.0  Max: inf  Default: 0.0001
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (linux64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 8710 rows, 2901 columns and 20429 nonzeros
+Model fingerprint: 0x6bd49f59
+Variable types: 901 continuous, 2000 integer (1820 binary)
+Coefficient statistics:
+  Matrix range     [1e-02, 4e+05]
+  Objective range  [5e-04, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [6e-01, 2e+05]
+Presolve removed 7397 rows and 1753 columns
+Presolve time: 0.03s
+Presolved: 1313 rows, 1148 columns, 6302 nonzeros
+Variable types: 325 continuous, 823 integer (823 binary)
+Found heuristic solution: objective -0.8625306
+
+Root relaxation: objective -1.261409e+00, 6 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0      -1.2454190   -1.24542  0.00%     -    0s
+
+Explored 0 nodes (8 simplex iterations) in 0.04 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 2: -1.24542 -0.862531 
+No other solutions better than -1.24542
+
+Optimal solution found (tolerance 5.00e-02)
+Best objective -1.245418978970e+00, best bound -1.245418978970e+00, gap 0.0000%
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (linux64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 8711 rows, 2901 columns and 20430 nonzeros
+Model fingerprint: 0x7b91b8a8
+Variable types: 901 continuous, 2000 integer (1820 binary)
+Coefficient statistics:
+  Matrix range     [1e-02, 4e+05]
+  Objective range  [5e-04, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [6e-01, 2e+05]
+
+MIP start from previous solve did not produce a new incumbent solution
+MIP start from previous solve violates constraint circular by 1.000000000
+
+Presolve removed 7399 rows and 1754 columns
+Presolve time: 0.03s
+Presolved: 1312 rows, 1147 columns, 6299 nonzeros
+Variable types: 325 continuous, 822 integer (822 binary)
+Found heuristic solution: objective -0.8625306
+
+Root relaxation: cutoff, 386 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0     cutoff    0        -0.86253   -0.86253  0.00%     -    0s
+
+Explored 0 nodes (386 simplex iterations) in 0.05 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 1: -0.862531 
+
+Optimal solution found (tolerance 5.00e-02)
+Best objective -8.625306032625e-01, best bound -8.625306032625e-01, gap 0.0000%
+
+Gurobi 9.1.1 (linux64) logging started Tue Nov 30 02:52:53 2021
+
+Changed value of parameter LogFile to /home/aniket/python_scripts/Plasmids-Optimization/exp/2021-06-14__iterative_MILP_edge_novelty/output/sample_38/1.1.1/nplasmids_1/MILP/m.log
+   Prev:   Default: 
+Changed value of parameter TimeLimit to 240.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Changed value of parameter MIPGap to 0.05
+   Prev: 0.0001  Min: 0.0  Max: inf  Default: 0.0001
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (linux64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 8672 rows, 2888 columns and 20355 nonzeros
+Model fingerprint: 0x71cec5ee
+Variable types: 896 continuous, 1992 integer (1813 binary)
+Coefficient statistics:
+  Matrix range     [1e-02, 4e+05]
+  Objective range  [5e-04, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [6e-01, 2e+05]
+Presolve removed 7373 rows and 1747 columns
+Presolve time: 0.03s
+Presolved: 1299 rows, 1141 columns, 6240 nonzeros
+Variable types: 322 continuous, 819 integer (819 binary)
+Found heuristic solution: objective -0.4952093
+
+Explored 0 nodes (0 simplex iterations) in 0.03 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 1: -0.495209 
+
+Optimal solution found (tolerance 5.00e-02)
+Best objective -4.952092788704e-01, best bound -4.952092788704e-01, gap 0.0000%
+
+Gurobi 9.1.1 (linux64) logging started Tue Nov 30 02:52:53 2021
+
+Changed value of parameter LogFile to /home/aniket/python_scripts/Plasmids-Optimization/exp/2021-06-14__iterative_MILP_edge_novelty/output/sample_38/1.1.1/nplasmids_1/MILP/m.log
+   Prev:   Default: 
+Changed value of parameter TimeLimit to 240.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Changed value of parameter MIPGap to 0.05
+   Prev: 0.0001  Min: 0.0  Max: inf  Default: 0.0001
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (linux64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 8634 rows, 2875 columns and 20281 nonzeros
+Model fingerprint: 0x259eed7b
+Variable types: 891 continuous, 1984 integer (1806 binary)
+Coefficient statistics:
+  Matrix range     [1e-02, 4e+05]
+  Objective range  [5e-04, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [6e-01, 2e+05]
+Presolve removed 3473 rows and 570 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 1 (of 4 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+           Constraints          |            Bounds           |  Runtime
+      Min       Max     Guess   |   Min       Max     Guess   |
+--------------------------------------------------------------------------
+        0      7020         -         0      1069         -           0s
+      358       358         -         0         0         -           1s
+
+IIS computed: 358 constraints, 0 bounds
+IIS runtime: 0.54 seconds
+Warning: linear constraint 0 and linear constraint 1 have the same name "counted_length"

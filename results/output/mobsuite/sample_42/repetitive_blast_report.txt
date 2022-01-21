@@ -1,0 +1,14 @@
+contig_id	match_id	match_type	score	contig_match_start	contig_match_end
+assembly.fasta|67_length=2952_depth=9.51x	CP016586.1	23S	948.0	1	549
+assembly.fasta|82_length=981_depth=5.79x	CP000035	IS3	1373.0	30	1011
+assembly.fasta|80_length=1055_depth=1.81x	BA000007	IS200/IS605	1821.0	376	1430
+assembly.fasta|73_length=1702_depth=9.58x	CP016586.1	16S	2660.0	1	1554
+assembly.fasta|71_length=1742_depth=0.88x	NC_002695	IS66	560.0	2159	2533
+assembly.fasta|68_length=2639_depth=2.57x	NC_007385	IS21	4313.0	1	2638
+assembly.fasta|94_length=572_depth=2.40x	X97542	IS3	839.0	1	517
+assembly.fasta|105_length=373_depth=0.73x	L02370	ISAs1	619.0	448	818
+assembly.fasta|93_length=629_depth=6.71x	AY857617	IS3	920.0	1	624
+assembly.fasta|89_length=702_depth=8.02x	M18426	IS3	1297.0	630	1331
+assembly.fasta|98_length=486_depth=1.03x	NC_014312	IS66	859.0	495	980
+assembly.fasta|97_length=492_depth=2.27x	NC_019360	IS66	536.0	969	1459
+assembly.fasta|86_length=820_depth=6.90x	M12900	IS6	1206.0	1	653

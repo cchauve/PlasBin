@@ -1,0 +1,85 @@
+Iteration 1
+Iteration 1
+1	deque([(('299_1', 'h'), ('330_1', 't')), (('330_1', 'h'), ('134_0', 'h')), (('329_0', 't'), ('134_0', 't')), (('430_1', 'h'), ('329_0', 'h')), (('430_1', 't'), ('373_0', 't')), (('373_0', 'h'), ('400_1', 't')), (('400_1', 'h'), ('299_1', 't'))])
+
+Chosen seed at iteration 1: 1
+Chosen chr at iteration 1
+
+
+Iteration 2
+2	deque([(('373_0', 'h'), ('400_3', 't')), (('400_3', 'h'), ('299_0', 't')), (('299_0', 'h'), ('330_1', 't')), (('330_1', 'h'), ('134_0', 'h')), (('329_0', 't'), ('134_0', 't')), (('430_1', 'h'), ('329_0', 'h')), (('430_1', 't'), ('373_0', 't'))])
+
+Chosen seed at iteration 2: 1
+Chosen chr at iteration 2
+
+
+Iteration 3
+3	deque([(('255_1', 'h'), ('378_0', 't')), (('378_0', 'h'), ('302_0', 't')), (('304_1', 'h'), ('302_0', 'h')), (('304_1', 't'), ('99_0', 't')), (('298_3', 'h'), ('99_0', 'h')), (('381_5', 'h'), ('298_3', 't')), (('379_0', 'h'), ('381_5', 't')), (('220_12', 'h'), ('379_0', 't')), (('377_0', 'h'), ('220_12', 't')), (('377_0', 't'), ('336_1', 't')), (('336_1', 'h'), ('285_1', 't')), (('285_1', 'h'), ('199_1', 't')), (('199_1', 'h'), ('315_2', 't')), (('315_2', 'h'), ('221_1', 't')), (('221_1', 'h'), ('197_4', 't')), (('197_4', 'h'), ('337_1', 't')), (('337_1', 'h'), ('255_1', 't'))])
+
+Chosen seed at iteration 3: 1
+Chosen chr at iteration 3
+
+
+Iteration 4
+4	deque([(('430_1', 't'), ('373_0', 't')), (('430_1', 'h'), ('329_0', 'h')), (('329_0', 't'), ('134_0', 't')), (('330_4', 'h'), ('134_0', 'h')), (('299_2', 'h'), ('330_4', 't')), (('400_2', 'h'), ('299_2', 't')), (('373_0', 'h'), ('400_2', 't'))])
+
+Chosen seed at iteration 4: 1
+Chosen chr at iteration 4
+
+
+Iteration 1
+Iteration 1
+Iteration 1
+Iteration 1
+Iteration 1
+Iteration 1
+Iteration 1
+Iteration 1
+Iteration 1
+Iteration 1
+Iteration 1
+Iteration 1
+Iteration 1
+Iteration 1
+Iteration 1
+Iteration 1
+Iteration 1
+Iteration 1
+Iteration 1
+Iteration 1
+Iteration 1
+Iteration 1
+Iteration 1
+Iteration 1
+Iteration 1
+Iteration 1
+Iteration 1
+Iteration 1
+Iteration 1
+Iteration 1
+Iteration 1
+Iteration 1
+Iteration 1
+Iteration 1
+Iteration 1
+Iteration 1
+Iteration 1
+Iteration 1
+Iteration 1
+Iteration 1
+Iteration 1
+Iteration 1
+Iteration 1
+Iteration 1
+Iteration 1
+Iteration 1
+Iteration 1
+Iteration 1
+Iteration 1
+Iteration 1
+Iteration 1
+Iteration 1
+Iteration 1
+Iteration 1
+Iteration 1
+Iteration 1

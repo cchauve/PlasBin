@@ -1,0 +1,32 @@
+contig_id	match_id	match_type	score	contig_match_start	contig_match_end
+assembly.fasta|141_length=331_depth=3.55x	X97542	IS3	512.0	163	493
+assembly.fasta|142_length=324_depth=2.22x	CP001875	IS5	448.0	390	712
+assembly.fasta|95_length=1443_depth=3.96x	EF382672	IS3	2244.0	1	1443
+assembly.fasta|125_length=489_depth=1.02x	NC_019360	IS66	527.0	1091	1579
+assembly.fasta|114_length=856_depth=1.51x	J01829	IS4	1543.0	154	1009
+assembly.fasta|143_length=308_depth=0.70x	BA000007	IS200/IS605	520.0	1354	1661
+assembly.fasta|100_length=1316_depth=3.42x	CP016763	ISL3	1367.0	1	1316
+assembly.fasta|87_length=1799_depth=0.85x		Tn3	2041.0	3245	5042
+assembly.fasta|121_length=580_depth=1.22x	NC_014312	IS66	885.0	1	494
+assembly.fasta|75_length=3040_depth=6.94x	CP016586.1	23S	937.0	1	549
+assembly.fasta|102_length=1272_depth=2.29x	NZ_AOZE01000018	IS21	1380.0	88	1356
+assembly.fasta|135_length=366_depth=1.84x	J01728	IS5	433.0	348	713
+assembly.fasta|136_length=354_depth=2.35x	M19532	IS3	520.0	418	770
+assembly.fasta|107_length=1043_depth=2.00x		Tn3	1256.0	5550	6592
+assembly.fasta|132_length=429_depth=1.48x		IS66	531.0	50	483
+assembly.fasta|109_length=1021_depth=1.13x	Z12167	IS3	1376.0	1	745
+assembly.fasta|103_length=1259_depth=3.11x	CP000035	IS3	1832.0	1	1261
+assembly.fasta|120_length=583_depth=1.39x	NC_004431	IS66	632.0	1796	2374
+assembly.fasta|104_length=1150_depth=2.19x	BA000007	IS200/IS605	2013.0	204	1353
+assembly.fasta|127_length=486_depth=1.16x	NC_014312	IS66	859.0	495	980
+assembly.fasta|94_length=1463_depth=6.86x	CP016586.1	16S	2523.0	96	1554
+assembly.fasta|139_length=333_depth=3.08x	CP001875	IS5	442.0	390	721
+assembly.fasta|99_length=1344_depth=4.00x	M11300	IS4	2451.0	1	1341
+assembly.fasta|137_length=347_depth=3.50x	NC_002695	IS66	514.0	486	832
+assembly.fasta|126_length=486_depth=2.23x		IS66	894.0	1	484
+assembly.fasta|144_length=308_depth=0.79x	BA000007	IS200/IS605	544.0	1355	1660
+assembly.fasta|89_length=1702_depth=2.16x	NC_008460	IS66	2176.0	842	2541
+assembly.fasta|117_length=671_depth=14.48x	M12900	IS6	1206.0	1	653
+assembly.fasta|123_length=507_depth=1.43x		Tn3	614.0	5043	5548
+assembly.fasta|131_length=432_depth=2.42x	CP009539	IS21	516.0	1523	1954
+assembly.fasta|138_length=333_depth=2.45x	L02372	ISAs1	577.0	912	1244

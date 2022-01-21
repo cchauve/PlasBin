@@ -1,0 +1,13 @@
+S	1	ACGTACGTACGT	LN:i:12	dp:f:2.4
+S	2	CGCTATGAGCTA	LN:i:12	dp:f:2.6
+#S	3	TACGTACATGCT	LN:i:12	dp:f:1.6
+#S	4	GATGTAGATGCA	LN:i:12	dp:f:2.0
+L	1	-	2	+	0M
+#L	4	-	3	+	0M
+#L	1	+	4	+	0M
+#L	2	+	4	-	0M
+#L	1	+	4	-	0M
+#L	3	+	1	+	0M
+#L	4	+	2	+	0M
+#L	2	-	3	+	0M
+#L	3	+	2	+	0M

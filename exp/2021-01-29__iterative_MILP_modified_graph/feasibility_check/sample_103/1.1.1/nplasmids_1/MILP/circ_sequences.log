@@ -1,0 +1,30 @@
+Iteration 1
+1	deque([(('43', 't'), ('39', 't')), (('43', 'h'), ('39', 'h'))])
+
+Chosen seed at iteration 1: 1
+Chosen chr at iteration 1
+
+
+Iteration 2
+2	deque([(('43', 't'), ('26', 't')), (('43', 'h'), ('26', 'h'))])
+
+Chosen seed at iteration 2: 1
+Chosen chr at iteration 2
+
+
+Iteration 3
+Iteration 1
+1	deque([(('43', 'h'), ('26', 'h')), (('43', 't'), ('26', 't'))])
+
+Chosen seed at iteration 1: 1
+Chosen chr at iteration 1
+
+
+Iteration 2
+2	deque([(('43', 't'), ('39', 't')), (('43', 'h'), ('39', 'h'))])
+
+Chosen seed at iteration 2: 1
+Chosen chr at iteration 2
+
+
+Iteration 3

@@ -1,0 +1,1868 @@
+\ Model Plasmids_copy
+\ LP format - for model browsing. Use MPS format to capture full model detail.
+Minimize
+ 
+Subject To
+ counted_length: - 485299 contig-1_0_plasmid-0
+   + counted-ln_contig-1_0_plasmid-0 = 0
+ counted_length: - 429300 contig-2_0_plasmid-0
+   + counted-ln_contig-2_0_plasmid-0 = 0
+ counted_length: - 429300 contig-2_1_plasmid-0
+   + counted-ln_contig-2_1_plasmid-0 = 0
+ counted_length: - 270158 contig-3_0_plasmid-0
+   + counted-ln_contig-3_0_plasmid-0 = 0
+ counted_length: - 270158 contig-3_1_plasmid-0
+   + counted-ln_contig-3_1_plasmid-0 = 0
+ counted_length: - 265969 contig-4_0_plasmid-0
+   + counted-ln_contig-4_0_plasmid-0 = 0
+ counted_length: - 259266 contig-5_0_plasmid-0
+   + counted-ln_contig-5_0_plasmid-0 = 0
+ counted_length: - 259266 contig-5_1_plasmid-0
+   + counted-ln_contig-5_1_plasmid-0 = 0
+ counted_length: - 223304 contig-6_0_plasmid-0
+   + counted-ln_contig-6_0_plasmid-0 = 0
+ counted_length: - 209796 contig-7_0_plasmid-0
+   + counted-ln_contig-7_0_plasmid-0 = 0
+ counted_length: - 203670 contig-8_0_plasmid-0
+   + counted-ln_contig-8_0_plasmid-0 = 0
+ counted_length: - 203670 contig-8_1_plasmid-0
+   + counted-ln_contig-8_1_plasmid-0 = 0
+ counted_length: - 201730 contig-9_0_plasmid-0
+   + counted-ln_contig-9_0_plasmid-0 = 0
+ counted_length: - 196679 contig-10_0_plasmid-0
+   + counted-ln_contig-10_0_plasmid-0 = 0
+ counted_length: - 191323 contig-11_0_plasmid-0
+   + counted-ln_contig-11_0_plasmid-0 = 0
+ counted_length: - 177705 contig-12_0_plasmid-0
+   + counted-ln_contig-12_0_plasmid-0 = 0
+ counted_length: - 177705 contig-12_1_plasmid-0
+   + counted-ln_contig-12_1_plasmid-0 = 0
+ counted_length: - 175474 contig-13_0_plasmid-0
+   + counted-ln_contig-13_0_plasmid-0 = 0
+ counted_length: - 129304 contig-18_0_plasmid-0
+   + counted-ln_contig-18_0_plasmid-0 = 0
+ counted_length: - 129304 contig-18_1_plasmid-0
+   + counted-ln_contig-18_1_plasmid-0 = 0
+ counted_length: - 126848 contig-19_0_plasmid-0
+   + counted-ln_contig-19_0_plasmid-0 = 0
+ counted_length: - 107244 contig-20_0_plasmid-0
+   + counted-ln_contig-20_0_plasmid-0 = 0
+ counted_length: - 107244 contig-20_1_plasmid-0
+   + counted-ln_contig-20_1_plasmid-0 = 0
+ counted_length: - 100339 contig-21_0_plasmid-0
+   + counted-ln_contig-21_0_plasmid-0 = 0
+ counted_length: - 100339 contig-21_1_plasmid-0
+   + counted-ln_contig-21_1_plasmid-0 = 0
+ counted_length: - 99275 contig-22_0_plasmid-0
+   + counted-ln_contig-22_0_plasmid-0 = 0
+ counted_length: - 99275 contig-22_1_plasmid-0
+   + counted-ln_contig-22_1_plasmid-0 = 0
+ counted_length: - 95562 contig-24_0_plasmid-0
+   + counted-ln_contig-24_0_plasmid-0 = 0
+ counted_length: - 95562 contig-24_1_plasmid-0
+   + counted-ln_contig-24_1_plasmid-0 = 0
+ counted_length: - 69116 contig-27_0_plasmid-0
+   + counted-ln_contig-27_0_plasmid-0 = 0
+ counted_length: - 69116 contig-27_1_plasmid-0
+   + counted-ln_contig-27_1_plasmid-0 = 0
+ counted_length: - 34261 contig-31_0_plasmid-0
+   + counted-ln_contig-31_0_plasmid-0 = 0
+ counted_length: - 34261 contig-31_1_plasmid-0
+   + counted-ln_contig-31_1_plasmid-0 = 0
+ counted_length: - 26037 contig-34_0_plasmid-0
+   + counted-ln_contig-34_0_plasmid-0 = 0
+ counted_length: - 26037 contig-34_1_plasmid-0
+   + counted-ln_contig-34_1_plasmid-0 = 0
+ counted_length: - 23725 contig-35_1_plasmid-0
+   + counted-ln_contig-35_1_plasmid-0 = 0
+ counted_length: - 20444 contig-36_0_plasmid-0
+   + counted-ln_contig-36_0_plasmid-0 = 0
+ counted_length: - 20444 contig-36_1_plasmid-0
+   + counted-ln_contig-36_1_plasmid-0 = 0
+ counted_length: - 16271 contig-38_0_plasmid-0
+   + counted-ln_contig-38_0_plasmid-0 = 0
+ counted_length: - 16271 contig-38_1_plasmid-0
+   + counted-ln_contig-38_1_plasmid-0 = 0
+ counted_length: - 14756 contig-39_0_plasmid-0
+   + counted-ln_contig-39_0_plasmid-0 = 0
+ counted_length: - 14264 contig-40_0_plasmid-0
+   + counted-ln_contig-40_0_plasmid-0 = 0
+ counted_length: - 13877 contig-41_0_plasmid-0
+   + counted-ln_contig-41_0_plasmid-0 = 0
+ counted_length: - 11389 contig-42_0_plasmid-0
+   + counted-ln_contig-42_0_plasmid-0 = 0
+ counted_length: - 11389 contig-42_1_plasmid-0
+   + counted-ln_contig-42_1_plasmid-0 = 0
+ counted_length: - 4448 contig-47_0_plasmid-0
+   + counted-ln_contig-47_0_plasmid-0 = 0
+ counted_length: - 4448 contig-47_1_plasmid-0
+   + counted-ln_contig-47_1_plasmid-0 = 0
+ counted_length: - 3133 contig-48_0_plasmid-0
+   + counted-ln_contig-48_0_plasmid-0 = 0
+ counted_length: - 3133 contig-48_1_plasmid-0
+   + counted-ln_contig-48_1_plasmid-0 = 0
+ counted_length: - 2905 contig-50_0_plasmid-0
+   + counted-ln_contig-50_0_plasmid-0 = 0
+ counted_length: - 2905 contig-50_1_plasmid-0
+   + counted-ln_contig-50_1_plasmid-0 = 0
+ counted_length: - 2905 contig-50_2_plasmid-0
+   + counted-ln_contig-50_2_plasmid-0 = 0
+ counted_length: - 2905 contig-50_3_plasmid-0
+   + counted-ln_contig-50_3_plasmid-0 = 0
+ counted_length: - 2905 contig-50_5_plasmid-0
+   + counted-ln_contig-50_5_plasmid-0 = 0
+ counted_length: - 2905 contig-50_6_plasmid-0
+   + counted-ln_contig-50_6_plasmid-0 = 0
+ counted_length: - 2905 contig-50_7_plasmid-0
+   + counted-ln_contig-50_7_plasmid-0 = 0
+ counted_length: - 2905 contig-50_8_plasmid-0
+   + counted-ln_contig-50_8_plasmid-0 = 0
+ counted_length: - 2905 contig-50_9_plasmid-0
+   + counted-ln_contig-50_9_plasmid-0 = 0
+ counted_length: - 2905 contig-50_10_plasmid-0
+   + counted-ln_contig-50_10_plasmid-0 = 0
+ counted_length: - 2001 contig-52_1_plasmid-0
+   + counted-ln_contig-52_1_plasmid-0 = 0
+ counted_length: - 2001 contig-52_2_plasmid-0
+   + counted-ln_contig-52_2_plasmid-0 = 0
+ counted_length: - 1352 contig-54_0_plasmid-0
+   + counted-ln_contig-54_0_plasmid-0 = 0
+ counted_length: - 1352 contig-54_1_plasmid-0
+   + counted-ln_contig-54_1_plasmid-0 = 0
+ counted_length: - 1352 contig-54_4_plasmid-0
+   + counted-ln_contig-54_4_plasmid-0 = 0
+ counted_length: - 1352 contig-54_5_plasmid-0
+   + counted-ln_contig-54_5_plasmid-0 = 0
+ counted_length: - 1352 contig-54_6_plasmid-0
+   + counted-ln_contig-54_6_plasmid-0 = 0
+ counted_length: - 1352 contig-54_7_plasmid-0
+   + counted-ln_contig-54_7_plasmid-0 = 0
+ counted_length: - 1352 contig-54_8_plasmid-0
+   + counted-ln_contig-54_8_plasmid-0 = 0
+ counted_length: - 1087 contig-57_0_plasmid-0
+   + counted-ln_contig-57_0_plasmid-0 = 0
+ counted_length: - 1087 contig-57_1_plasmid-0
+   + counted-ln_contig-57_1_plasmid-0 = 0
+ counted_length: - 1087 contig-57_3_plasmid-0
+   + counted-ln_contig-57_3_plasmid-0 = 0
+ counted_length: - 1087 contig-57_4_plasmid-0
+   + counted-ln_contig-57_4_plasmid-0 = 0
+ counted_length: - 1087 contig-57_5_plasmid-0
+   + counted-ln_contig-57_5_plasmid-0 = 0
+ counted_length: - 1087 contig-57_6_plasmid-0
+   + counted-ln_contig-57_6_plasmid-0 = 0
+ counted_length: - 1087 contig-57_7_plasmid-0
+   + counted-ln_contig-57_7_plasmid-0 = 0
+ counted_length: - 1087 contig-57_8_plasmid-0
+   + counted-ln_contig-57_8_plasmid-0 = 0
+ counted_length: - 1087 contig-57_9_plasmid-0
+   + counted-ln_contig-57_9_plasmid-0 = 0
+ counted_length: - 1087 contig-57_11_plasmid-0
+   + counted-ln_contig-57_11_plasmid-0 = 0
+ counted_length: - 1087 contig-57_12_plasmid-0
+   + counted-ln_contig-57_12_plasmid-0 = 0
+ counted_length: - 1013 contig-60_0_plasmid-0
+   + counted-ln_contig-60_0_plasmid-0 = 0
+ counted_length: - 1013 contig-60_1_plasmid-0
+   + counted-ln_contig-60_1_plasmid-0 = 0
+ counted_length: - 1013 contig-60_2_plasmid-0
+   + counted-ln_contig-60_2_plasmid-0 = 0
+ counted_length: - 992 contig-61_1_plasmid-0
+   + counted-ln_contig-61_1_plasmid-0 = 0
+ counted_length: - 991 contig-62_0_plasmid-0
+   + counted-ln_contig-62_0_plasmid-0 = 0
+ counted_length: - 991 contig-62_1_plasmid-0
+   + counted-ln_contig-62_1_plasmid-0 = 0
+ counted_length: - 834 contig-64_0_plasmid-0
+   + counted-ln_contig-64_0_plasmid-0 = 0
+ counted_length: - 834 contig-64_1_plasmid-0
+   + counted-ln_contig-64_1_plasmid-0 = 0
+ counted_length: - 662 contig-66_0_plasmid-0
+   + counted-ln_contig-66_0_plasmid-0 = 0
+ counted_length: - 662 contig-66_1_plasmid-0
+   + counted-ln_contig-66_1_plasmid-0 = 0
+ counted_length: - 600 contig-67_0_plasmid-0
+   + counted-ln_contig-67_0_plasmid-0 = 0
+ counted_length: - 600 contig-67_1_plasmid-0
+   + counted-ln_contig-67_1_plasmid-0 = 0
+ counted_length: - 600 contig-67_3_plasmid-0
+   + counted-ln_contig-67_3_plasmid-0 = 0
+ counted_length: - 600 contig-67_4_plasmid-0
+   + counted-ln_contig-67_4_plasmid-0 = 0
+ counted_length: - 600 contig-67_5_plasmid-0
+   + counted-ln_contig-67_5_plasmid-0 = 0
+ counted_length: - 600 contig-67_6_plasmid-0
+   + counted-ln_contig-67_6_plasmid-0 = 0
+ counted_length: - 600 contig-67_8_plasmid-0
+   + counted-ln_contig-67_8_plasmid-0 = 0
+ counted_length: - 600 contig-67_9_plasmid-0
+   + counted-ln_contig-67_9_plasmid-0 = 0
+ counted_length: - 600 contig-67_10_plasmid-0
+   + counted-ln_contig-67_10_plasmid-0 = 0
+ counted_length: - 600 contig-67_11_plasmid-0
+   + counted-ln_contig-67_11_plasmid-0 = 0
+ counted_length: - 460 contig-69_0_plasmid-0
+   + counted-ln_contig-69_0_plasmid-0 = 0
+ counted_length: - 382 contig-72_0_plasmid-0
+   + counted-ln_contig-72_0_plasmid-0 = 0
+ counted_length: - 382 contig-72_1_plasmid-0
+   + counted-ln_contig-72_1_plasmid-0 = 0
+ counted_length: - 382 contig-73_0_plasmid-0
+   + counted-ln_contig-73_0_plasmid-0 = 0
+ counted_length: - 382 contig-73_1_plasmid-0
+   + counted-ln_contig-73_1_plasmid-0 = 0
+ counted_length: - 331 contig-74_0_plasmid-0
+   + counted-ln_contig-74_0_plasmid-0 = 0
+ counted_length: - 331 contig-74_1_plasmid-0
+   + counted-ln_contig-74_1_plasmid-0 = 0
+ counted_length: - 296 contig-76_0_plasmid-0
+   + counted-ln_contig-76_0_plasmid-0 = 0
+ counted_length: - 296 contig-76_1_plasmid-0
+   + counted-ln_contig-76_1_plasmid-0 = 0
+ counted_length: - 296 contig-76_2_plasmid-0
+   + counted-ln_contig-76_2_plasmid-0 = 0
+ counted_length: - 296 contig-76_4_plasmid-0
+   + counted-ln_contig-76_4_plasmid-0 = 0
+ counted_length: - 277 contig-77_0_plasmid-0
+   + counted-ln_contig-77_0_plasmid-0 = 0
+ counted_length: - 275 contig-78_0_plasmid-0
+   + counted-ln_contig-78_0_plasmid-0 = 0
+ counted_length: - 275 contig-78_1_plasmid-0
+   + counted-ln_contig-78_1_plasmid-0 = 0
+ counted_length: - 268 contig-79_0_plasmid-0
+   + counted-ln_contig-79_0_plasmid-0 = 0
+ counted_length: - 255 contig-80_3_plasmid-0
+   + counted-ln_contig-80_3_plasmid-0 = 0
+ counted_length: - 250 contig-81_0_plasmid-0
+   + counted-ln_contig-81_0_plasmid-0 = 0
+ counted_length: - 197 contig-82_0_plasmid-0
+   + counted-ln_contig-82_0_plasmid-0 = 0
+ counted_length: - 197 contig-82_1_plasmid-0
+   + counted-ln_contig-82_1_plasmid-0 = 0
+ counted_length: - 197 contig-82_2_plasmid-0
+   + counted-ln_contig-82_2_plasmid-0 = 0
+ counted_length: - 193 contig-83_0_plasmid-0
+   + counted-ln_contig-83_0_plasmid-0 = 0
+ counted_length: - 193 contig-83_1_plasmid-0
+   + counted-ln_contig-83_1_plasmid-0 = 0
+ counted_length: - 193 contig-83_2_plasmid-0
+   + counted-ln_contig-83_2_plasmid-0 = 0
+ counted_length: - 193 contig-83_3_plasmid-0
+   + counted-ln_contig-83_3_plasmid-0 = 0
+ counted_length: - 193 contig-83_4_plasmid-0
+   + counted-ln_contig-83_4_plasmid-0 = 0
+ counted_length: - 138 contig-85_0_plasmid-0
+   + counted-ln_contig-85_0_plasmid-0 = 0
+ counted_length: - 130 contig-86_1_plasmid-0
+   + counted-ln_contig-86_1_plasmid-0 = 0
+ counted_length: - 130 contig-86_2_plasmid-0
+   + counted-ln_contig-86_2_plasmid-0 = 0
+ counted_length: - 130 contig-86_3_plasmid-0
+   + counted-ln_contig-86_3_plasmid-0 = 0
+ counted_length: - 130 contig-86_4_plasmid-0
+   + counted-ln_contig-86_4_plasmid-0 = 0
+ counted_length: - 130 contig-86_5_plasmid-0
+   + counted-ln_contig-86_5_plasmid-0 = 0
+ counted_length: - 130 contig-86_6_plasmid-0
+   + counted-ln_contig-86_6_plasmid-0 = 0
+ counted_length: - 130 contig-86_7_plasmid-0
+   + counted-ln_contig-86_7_plasmid-0 = 0
+ counted_length: - 130 contig-87_0_plasmid-0
+   + counted-ln_contig-87_0_plasmid-0 = 0
+ counted_length: - 130 contig-87_2_plasmid-0
+   + counted-ln_contig-87_2_plasmid-0 = 0
+ counted_length: - 128 contig-88_0_plasmid-0
+   + counted-ln_contig-88_0_plasmid-0 = 0
+ counted_length: - 128 contig-88_1_plasmid-0
+   + counted-ln_contig-88_1_plasmid-0 = 0
+ counted_length: - 123 contig-89_0_plasmid-0
+   + counted-ln_contig-89_0_plasmid-0 = 0
+ counted_length: - 118 contig-90_0_plasmid-0
+   + counted-ln_contig-90_0_plasmid-0 = 0
+ counted_length: - 118 contig-90_1_plasmid-0
+   + counted-ln_contig-90_1_plasmid-0 = 0
+ counted_length: - 118 contig-90_2_plasmid-0
+   + counted-ln_contig-90_2_plasmid-0 = 0
+ counted_length: - 118 contig-90_3_plasmid-0
+   + counted-ln_contig-90_3_plasmid-0 = 0
+ counted_length: - 118 contig-90_4_plasmid-0
+   + counted-ln_contig-90_4_plasmid-0 = 0
+ counted_length: - 118 contig-90_5_plasmid-0
+   + counted-ln_contig-90_5_plasmid-0 = 0
+ counted_length: - 118 contig-90_6_plasmid-0
+   + counted-ln_contig-90_6_plasmid-0 = 0
+ counted_length: - 118 contig-90_7_plasmid-0
+   + counted-ln_contig-90_7_plasmid-0 = 0
+ counted_length: - 109 contig-91_0_plasmid-0
+   + counted-ln_contig-91_0_plasmid-0 = 0
+ counted_length: - 109 contig-91_1_plasmid-0
+   + counted-ln_contig-91_1_plasmid-0 = 0
+ counted_length: - 94 contig-92_0_plasmid-0
+   + counted-ln_contig-92_0_plasmid-0 = 0
+ counted_length: - 94 contig-92_1_plasmid-0
+   + counted-ln_contig-92_1_plasmid-0 = 0
+ counted_length: - 94 contig-92_2_plasmid-0
+   + counted-ln_contig-92_2_plasmid-0 = 0
+ counted_length: - 94 contig-92_3_plasmid-0
+   + counted-ln_contig-92_3_plasmid-0 = 0
+ counted_length: - 94 contig-92_4_plasmid-0
+   + counted-ln_contig-92_4_plasmid-0 = 0
+ counted_length: - 88 contig-93_1_plasmid-0
+   + counted-ln_contig-93_1_plasmid-0 = 0
+ counted_length: - 64 contig-94_0_plasmid-0
+   + counted-ln_contig-94_0_plasmid-0 = 0
+ counted_length: - 64 contig-94_1_plasmid-0
+   + counted-ln_contig-94_1_plasmid-0 = 0
+ counted_length: - 64 contig-94_2_plasmid-0
+   + counted-ln_contig-94_2_plasmid-0 = 0
+ counted_length: - 64 contig-94_3_plasmid-0
+   + counted-ln_contig-94_3_plasmid-0 = 0
+ counted_length: - 64 contig-94_5_plasmid-0
+   + counted-ln_contig-94_5_plasmid-0 = 0
+ counted_length: - 63 contig-95_1_plasmid-0
+   + counted-ln_contig-95_1_plasmid-0 = 0
+ counted_length: - 63 contig-95_2_plasmid-0
+   + counted-ln_contig-95_2_plasmid-0 = 0
+ counted_length: - 63 contig-95_3_plasmid-0
+   + counted-ln_contig-95_3_plasmid-0 = 0
+ counted_length: - 63 contig-95_5_plasmid-0
+   + counted-ln_contig-95_5_plasmid-0 = 0
+ counted_length: - 63 contig-96_0_plasmid-0
+   + counted-ln_contig-96_0_plasmid-0 = 0
+ counted_length: - 63 contig-96_1_plasmid-0
+   + counted-ln_contig-96_1_plasmid-0 = 0
+ counted_length: - 63 contig-96_2_plasmid-0
+   + counted-ln_contig-96_2_plasmid-0 = 0
+ counted_length: - 63 contig-96_3_plasmid-0
+   + counted-ln_contig-96_3_plasmid-0 = 0
+ counted_length: - 63 contig-96_4_plasmid-0
+   + counted-ln_contig-96_4_plasmid-0 = 0
+ counted_length: - 63 contig-96_5_plasmid-0
+   + counted-ln_contig-96_5_plasmid-0 = 0
+ counted_length: - 63 contig-96_6_plasmid-0
+   + counted-ln_contig-96_6_plasmid-0 = 0
+ counted_length: - 63 contig-97_0_plasmid-0
+   + counted-ln_contig-97_0_plasmid-0 = 0
+ counted_length: - 63 contig-97_2_plasmid-0
+   + counted-ln_contig-97_2_plasmid-0 = 0
+ counted_length: - 63 contig-97_4_plasmid-0
+   + counted-ln_contig-97_4_plasmid-0 = 0
+ counted_length: - 63 contig-97_5_plasmid-0
+   + counted-ln_contig-97_5_plasmid-0 = 0
+ counted_length: - 63 contig-98_0_plasmid-0
+   + counted-ln_contig-98_0_plasmid-0 = 0
+ counted_length: - 63 contig-98_1_plasmid-0
+   + counted-ln_contig-98_1_plasmid-0 = 0
+ counted_length: - 63 contig-98_2_plasmid-0
+   + counted-ln_contig-98_2_plasmid-0 = 0
+ counted_length: - 63 contig-98_5_plasmid-0
+   + counted-ln_contig-98_5_plasmid-0 = 0
+ counted_length: - 63 contig-98_7_plasmid-0
+   + counted-ln_contig-98_7_plasmid-0 = 0
+ counted_length: - 62 contig-99_6_plasmid-0
+   + counted-ln_contig-99_6_plasmid-0 = 0
+ counted_length: - 51 contig-100_0_plasmid-0
+   + counted-ln_contig-100_0_plasmid-0 = 0
+ counted_length: - 51 contig-100_1_plasmid-0
+   + counted-ln_contig-100_1_plasmid-0 = 0
+ counted_length: - 51 contig-100_2_plasmid-0
+   + counted-ln_contig-100_2_plasmid-0 = 0
+ counted_length: - 51 contig-100_3_plasmid-0
+   + counted-ln_contig-100_3_plasmid-0 = 0
+ counted_length: - 48 contig-101_0_plasmid-0
+   + counted-ln_contig-101_0_plasmid-0 = 0
+ counted_length: - 48 contig-101_1_plasmid-0
+   + counted-ln_contig-101_1_plasmid-0 = 0
+ counted_length: - 41 contig-102_0_plasmid-0
+   + counted-ln_contig-102_0_plasmid-0 = 0
+ counted_length: - 41 contig-102_1_plasmid-0
+   + counted-ln_contig-102_1_plasmid-0 = 0
+ counted_length: - 41 contig-102_2_plasmid-0
+   + counted-ln_contig-102_2_plasmid-0 = 0
+ counted_length: - 41 contig-103_0_plasmid-0
+   + counted-ln_contig-103_0_plasmid-0 = 0
+ counted_length: - 41 contig-103_1_plasmid-0
+   + counted-ln_contig-103_1_plasmid-0 = 0
+ counted_length: - 41 contig-103_2_plasmid-0
+   + counted-ln_contig-103_2_plasmid-0 = 0
+ counted_length: - 39 contig-104_0_plasmid-0
+   + counted-ln_contig-104_0_plasmid-0 = 0
+ counted_length: - 39 contig-104_1_plasmid-0
+   + counted-ln_contig-104_1_plasmid-0 = 0
+ counted_length: - 39 contig-104_2_plasmid-0
+   + counted-ln_contig-104_2_plasmid-0 = 0
+ counted_length: - 39 contig-104_3_plasmid-0
+   + counted-ln_contig-104_3_plasmid-0 = 0
+ counted_length: - 39 contig-104_4_plasmid-0
+   + counted-ln_contig-104_4_plasmid-0 = 0
+ counted_length: - 39 contig-104_5_plasmid-0
+   + counted-ln_contig-104_5_plasmid-0 = 0
+ counted_length: - 39 contig-104_6_plasmid-0
+   + counted-ln_contig-104_6_plasmid-0 = 0
+ counted_length: - 31 contig-105_1_plasmid-0
+   + counted-ln_contig-105_1_plasmid-0 = 0
+ counted_length: - 31 contig-105_2_plasmid-0
+   + counted-ln_contig-105_2_plasmid-0 = 0
+ counted_length: - 31 contig-105_3_plasmid-0
+   + counted-ln_contig-105_3_plasmid-0 = 0
+ counted_length: - 31 contig-105_4_plasmid-0
+   + counted-ln_contig-105_4_plasmid-0 = 0
+ counted_length: - 31 contig-105_6_plasmid-0
+   + counted-ln_contig-105_6_plasmid-0 = 0
+ counted_length: - 31 contig-105_7_plasmid-0
+   + counted-ln_contig-105_7_plasmid-0 = 0
+ counted_length: - 27 contig-106_0_plasmid-0
+   + counted-ln_contig-106_0_plasmid-0 = 0
+ counted_length: - 27 contig-106_1_plasmid-0
+   + counted-ln_contig-106_1_plasmid-0 = 0
+ counted_length: - 27 contig-106_2_plasmid-0
+   + counted-ln_contig-106_2_plasmid-0 = 0
+ counted_length: - 27 contig-106_3_plasmid-0
+   + counted-ln_contig-106_3_plasmid-0 = 0
+ counted_length: - 22 contig-108_0_plasmid-0
+   + counted-ln_contig-108_0_plasmid-0 = 0
+ counted_length: - 22 contig-108_1_plasmid-0
+   + counted-ln_contig-108_1_plasmid-0 = 0
+ counted_length: - 22 contig-108_2_plasmid-0
+   + counted-ln_contig-108_2_plasmid-0 = 0
+ counted_length: - 22 contig-108_3_plasmid-0
+   + counted-ln_contig-108_3_plasmid-0 = 0
+ counted_length: - 22 contig-108_4_plasmid-0
+   + counted-ln_contig-108_4_plasmid-0 = 0
+ counted_length: - 22 contig-109_0_plasmid-0
+   + counted-ln_contig-109_0_plasmid-0 = 0
+ counted_length: - 22 contig-109_1_plasmid-0
+   + counted-ln_contig-109_1_plasmid-0 = 0
+ counted_length: - 22 contig-109_2_plasmid-0
+   + counted-ln_contig-109_2_plasmid-0 = 0
+ counted_length: - 22 contig-109_3_plasmid-0
+   + counted-ln_contig-109_3_plasmid-0 = 0
+ counted_length: - 22 contig-109_4_plasmid-0
+   + counted-ln_contig-109_4_plasmid-0 = 0
+ counted_length: - 22 contig-109_5_plasmid-0
+   + counted-ln_contig-109_5_plasmid-0 = 0
+ counted_length: - 22 contig-109_6_plasmid-0
+   + counted-ln_contig-109_6_plasmid-0 = 0
+ counted_length: - 22 contig-109_7_plasmid-0
+   + counted-ln_contig-109_7_plasmid-0 = 0
+ counted_length: - 22 contig-109_8_plasmid-0
+   + counted-ln_contig-109_8_plasmid-0 = 0
+ counted_length: - 21 contig-110_0_plasmid-0
+   + counted-ln_contig-110_0_plasmid-0 = 0
+ counted_length: - 21 contig-110_1_plasmid-0
+   + counted-ln_contig-110_1_plasmid-0 = 0
+ counted_length: - 21 contig-110_2_plasmid-0
+   + counted-ln_contig-110_2_plasmid-0 = 0
+ counted_length: - 20 contig-111_0_plasmid-0
+   + counted-ln_contig-111_0_plasmid-0 = 0
+ counted_length: - 20 contig-111_1_plasmid-0
+   + counted-ln_contig-111_1_plasmid-0 = 0
+ counted_length: - 20 contig-111_2_plasmid-0
+   + counted-ln_contig-111_2_plasmid-0 = 0
+ counted_length: - 19 contig-112_0_plasmid-0
+   + counted-ln_contig-112_0_plasmid-0 = 0
+ counted_length: - 19 contig-112_1_plasmid-0
+   + counted-ln_contig-112_1_plasmid-0 = 0
+ counted_length: - 19 contig-112_2_plasmid-0
+   + counted-ln_contig-112_2_plasmid-0 = 0
+ counted_length: - 19 contig-112_3_plasmid-0
+   + counted-ln_contig-112_3_plasmid-0 = 0
+ counted_length: - 19 contig-112_4_plasmid-0
+   + counted-ln_contig-112_4_plasmid-0 = 0
+ counted_length: - 19 contig-112_5_plasmid-0
+   + counted-ln_contig-112_5_plasmid-0 = 0
+ counted_length: - 19 contig-112_6_plasmid-0
+   + counted-ln_contig-112_6_plasmid-0 = 0
+ counted_length: - 19 contig-112_7_plasmid-0
+   + counted-ln_contig-112_7_plasmid-0 = 0
+ counted_length: - 19 contig-112_8_plasmid-0
+   + counted-ln_contig-112_8_plasmid-0 = 0
+ counted_length: - 18 contig-113_0_plasmid-0
+   + counted-ln_contig-113_0_plasmid-0 = 0
+ counted_length: - 18 contig-113_1_plasmid-0
+   + counted-ln_contig-113_1_plasmid-0 = 0
+ counted_length: - 18 contig-113_2_plasmid-0
+   + counted-ln_contig-113_2_plasmid-0 = 0
+ counted_length: - 18 contig-113_3_plasmid-0
+   + counted-ln_contig-113_3_plasmid-0 = 0
+ counted_length: - 18 contig-113_4_plasmid-0
+   + counted-ln_contig-113_4_plasmid-0 = 0
+ counted_length: - 18 contig-113_5_plasmid-0
+   + counted-ln_contig-113_5_plasmid-0 = 0
+ counted_length: - 16 contig-114_0_plasmid-0
+   + counted-ln_contig-114_0_plasmid-0 = 0
+ counted_length: - 16 contig-114_1_plasmid-0
+   + counted-ln_contig-114_1_plasmid-0 = 0
+ counted_length: - 16 contig-114_2_plasmid-0
+   + counted-ln_contig-114_2_plasmid-0 = 0
+ counted_length: - 16 contig-114_3_plasmid-0
+   + counted-ln_contig-114_3_plasmid-0 = 0
+ counted_length: - 16 contig-114_4_plasmid-0
+   + counted-ln_contig-114_4_plasmid-0 = 0
+ counted_length: - 16 contig-115_0_plasmid-0
+   + counted-ln_contig-115_0_plasmid-0 = 0
+ counted_length: - 16 contig-115_1_plasmid-0
+   + counted-ln_contig-115_1_plasmid-0 = 0
+ counted_length: - 16 contig-115_4_plasmid-0
+   + counted-ln_contig-115_4_plasmid-0 = 0
+ counted_length: - 16 contig-115_5_plasmid-0
+   + counted-ln_contig-115_5_plasmid-0 = 0
+ counted_length: - 16 contig-115_6_plasmid-0
+   + counted-ln_contig-115_6_plasmid-0 = 0
+ counted_length: - 14 contig-116_0_plasmid-0
+   + counted-ln_contig-116_0_plasmid-0 = 0
+ counted_length: - 14 contig-116_2_plasmid-0
+   + counted-ln_contig-116_2_plasmid-0 = 0
+ counted_length: - 9 contig-117_0_plasmid-0
+   + counted-ln_contig-117_0_plasmid-0 = 0
+ counted_length: - 9 contig-117_1_plasmid-0
+   + counted-ln_contig-117_1_plasmid-0 = 0
+ counted_length: - 9 contig-117_2_plasmid-0
+   + counted-ln_contig-117_2_plasmid-0 = 0
+ counted_length: - 9 contig-117_3_plasmid-0
+   + counted-ln_contig-117_3_plasmid-0 = 0
+ counted_length: - 8 contig-118_0_plasmid-0
+   + counted-ln_contig-118_0_plasmid-0 = 0
+ counted_length: - 3 contig-119_0_plasmid-0
+   + counted-ln_contig-119_0_plasmid-0 = 0
+ counted_length: - 3 contig-119_2_plasmid-0
+   + counted-ln_contig-119_2_plasmid-0 = 0
+ counted_length: - 3 contig-119_3_plasmid-0
+   + counted-ln_contig-119_3_plasmid-0 = 0
+ counted_length: - 3 contig-119_4_plasmid-0
+   + counted-ln_contig-119_4_plasmid-0 = 0
+ counted_length: - 3 contig-119_6_plasmid-0
+   + counted-ln_contig-119_6_plasmid-0 = 0
+ counted_length: - 3 contig-120_0_plasmid-0
+   + counted-ln_contig-120_0_plasmid-0 = 0
+ counted_length: - 3 contig-120_1_plasmid-0
+   + counted-ln_contig-120_1_plasmid-0 = 0
+ counted_length: - 3 contig-120_2_plasmid-0
+   + counted-ln_contig-120_2_plasmid-0 = 0
+ counted_length: - 3 contig-120_3_plasmid-0
+   + counted-ln_contig-120_3_plasmid-0 = 0
+ counted_length: - 3 contig-120_4_plasmid-0
+   + counted-ln_contig-120_4_plasmid-0 = 0
+ counted_length: - 3 contig-120_5_plasmid-0
+   + counted-ln_contig-120_5_plasmid-0 = 0
+ counted_length: - 3 contig-120_6_plasmid-0
+   + counted-ln_contig-120_6_plasmid-0 = 0
+ plasmid_length_upper_bound: counted-ln_contig-1_0_plasmid-0
+   + counted-ln_contig-2_0_plasmid-0 + counted-ln_contig-2_1_plasmid-0
+   + counted-ln_contig-3_0_plasmid-0 + counted-ln_contig-3_1_plasmid-0
+   + counted-ln_contig-4_0_plasmid-0 + counted-ln_contig-5_0_plasmid-0
+   + counted-ln_contig-5_1_plasmid-0 + counted-ln_contig-6_0_plasmid-0
+   + counted-ln_contig-7_0_plasmid-0 + counted-ln_contig-8_0_plasmid-0
+   + counted-ln_contig-8_1_plasmid-0 + counted-ln_contig-9_0_plasmid-0
+   + counted-ln_contig-10_0_plasmid-0 + counted-ln_contig-11_0_plasmid-0
+   + counted-ln_contig-12_0_plasmid-0 + counted-ln_contig-12_1_plasmid-0
+   + counted-ln_contig-13_0_plasmid-0 + counted-ln_contig-18_0_plasmid-0
+   + counted-ln_contig-18_1_plasmid-0 + counted-ln_contig-19_0_plasmid-0
+   + counted-ln_contig-20_0_plasmid-0 + counted-ln_contig-20_1_plasmid-0
+   + counted-ln_contig-21_0_plasmid-0 + counted-ln_contig-21_1_plasmid-0
+   + counted-ln_contig-22_0_plasmid-0 + counted-ln_contig-22_1_plasmid-0
+   + counted-ln_contig-24_0_plasmid-0 + counted-ln_contig-24_1_plasmid-0
+   + counted-ln_contig-27_0_plasmid-0 + counted-ln_contig-27_1_plasmid-0
+   + counted-ln_contig-31_0_plasmid-0 + counted-ln_contig-31_1_plasmid-0
+   + counted-ln_contig-34_0_plasmid-0 + counted-ln_contig-34_1_plasmid-0
+   + counted-ln_contig-35_1_plasmid-0 + counted-ln_contig-36_0_plasmid-0
+   + counted-ln_contig-36_1_plasmid-0 + counted-ln_contig-38_0_plasmid-0
+   + counted-ln_contig-38_1_plasmid-0 + counted-ln_contig-39_0_plasmid-0
+   + counted-ln_contig-40_0_plasmid-0 + counted-ln_contig-41_0_plasmid-0
+   + counted-ln_contig-42_0_plasmid-0 + counted-ln_contig-42_1_plasmid-0
+   + counted-ln_contig-47_0_plasmid-0 + counted-ln_contig-47_1_plasmid-0
+   + counted-ln_contig-48_0_plasmid-0 + counted-ln_contig-48_1_plasmid-0
+   + counted-ln_contig-50_0_plasmid-0 + counted-ln_contig-50_1_plasmid-0
+   + counted-ln_contig-50_2_plasmid-0 + counted-ln_contig-50_3_plasmid-0
+   + counted-ln_contig-50_5_plasmid-0 + counted-ln_contig-50_6_plasmid-0
+   + counted-ln_contig-50_7_plasmid-0 + counted-ln_contig-50_8_plasmid-0
+   + counted-ln_contig-50_9_plasmid-0 + counted-ln_contig-50_10_plasmid-0
+   + counted-ln_contig-52_1_plasmid-0 + counted-ln_contig-52_2_plasmid-0
+   + counted-ln_contig-54_0_plasmid-0 + counted-ln_contig-54_1_plasmid-0
+   + counted-ln_contig-54_4_plasmid-0 + counted-ln_contig-54_5_plasmid-0
+   + counted-ln_contig-54_6_plasmid-0 + counted-ln_contig-54_7_plasmid-0
+   + counted-ln_contig-54_8_plasmid-0 + counted-ln_contig-57_0_plasmid-0
+   + counted-ln_contig-57_1_plasmid-0 + counted-ln_contig-57_3_plasmid-0
+   + counted-ln_contig-57_4_plasmid-0 + counted-ln_contig-57_5_plasmid-0
+   + counted-ln_contig-57_6_plasmid-0 + counted-ln_contig-57_7_plasmid-0
+   + counted-ln_contig-57_8_plasmid-0 + counted-ln_contig-57_9_plasmid-0
+   + counted-ln_contig-57_11_plasmid-0 + counted-ln_contig-57_12_plasmid-0
+   + counted-ln_contig-60_0_plasmid-0 + counted-ln_contig-60_1_plasmid-0
+   + counted-ln_contig-60_2_plasmid-0 + counted-ln_contig-61_1_plasmid-0
+   + counted-ln_contig-62_0_plasmid-0 + counted-ln_contig-62_1_plasmid-0
+   + counted-ln_contig-64_0_plasmid-0 + counted-ln_contig-64_1_plasmid-0
+   + counted-ln_contig-66_0_plasmid-0 + counted-ln_contig-66_1_plasmid-0
+   + counted-ln_contig-67_0_plasmid-0 + counted-ln_contig-67_1_plasmid-0
+   + counted-ln_contig-67_3_plasmid-0 + counted-ln_contig-67_4_plasmid-0
+   + counted-ln_contig-67_5_plasmid-0 + counted-ln_contig-67_6_plasmid-0
+   + counted-ln_contig-67_8_plasmid-0 + counted-ln_contig-67_9_plasmid-0
+   + counted-ln_contig-67_10_plasmid-0 + counted-ln_contig-67_11_plasmid-0
+   + counted-ln_contig-69_0_plasmid-0 + counted-ln_contig-72_0_plasmid-0
+   + counted-ln_contig-72_1_plasmid-0 + counted-ln_contig-73_0_plasmid-0
+   + counted-ln_contig-73_1_plasmid-0 + counted-ln_contig-74_0_plasmid-0
+   + counted-ln_contig-74_1_plasmid-0 + counted-ln_contig-76_0_plasmid-0
+   + counted-ln_contig-76_1_plasmid-0 + counted-ln_contig-76_2_plasmid-0
+   + counted-ln_contig-76_4_plasmid-0 + counted-ln_contig-77_0_plasmid-0
+   + counted-ln_contig-78_0_plasmid-0 + counted-ln_contig-78_1_plasmid-0
+   + counted-ln_contig-79_0_plasmid-0 + counted-ln_contig-80_3_plasmid-0
+   + counted-ln_contig-81_0_plasmid-0 + counted-ln_contig-82_0_plasmid-0
+   + counted-ln_contig-82_1_plasmid-0 + counted-ln_contig-82_2_plasmid-0
+   + counted-ln_contig-83_0_plasmid-0 + counted-ln_contig-83_1_plasmid-0
+   + counted-ln_contig-83_2_plasmid-0 + counted-ln_contig-83_3_plasmid-0
+   + counted-ln_contig-83_4_plasmid-0 + counted-ln_contig-85_0_plasmid-0
+   + counted-ln_contig-86_1_plasmid-0 + counted-ln_contig-86_2_plasmid-0
+   + counted-ln_contig-86_3_plasmid-0 + counted-ln_contig-86_4_plasmid-0
+   + counted-ln_contig-86_5_plasmid-0 + counted-ln_contig-86_6_plasmid-0
+   + counted-ln_contig-86_7_plasmid-0 + counted-ln_contig-87_0_plasmid-0
+   + counted-ln_contig-87_2_plasmid-0 + counted-ln_contig-88_0_plasmid-0
+   + counted-ln_contig-88_1_plasmid-0 + counted-ln_contig-89_0_plasmid-0
+   + counted-ln_contig-90_0_plasmid-0 + counted-ln_contig-90_1_plasmid-0
+   + counted-ln_contig-90_2_plasmid-0 + counted-ln_contig-90_3_plasmid-0
+   + counted-ln_contig-90_4_plasmid-0 + counted-ln_contig-90_5_plasmid-0
+   + counted-ln_contig-90_6_plasmid-0 + counted-ln_contig-90_7_plasmid-0
+   + counted-ln_contig-91_0_plasmid-0 + counted-ln_contig-91_1_plasmid-0
+   + counted-ln_contig-92_0_plasmid-0 + counted-ln_contig-92_1_plasmid-0
+   + counted-ln_contig-92_2_plasmid-0 + counted-ln_contig-92_3_plasmid-0
+   + counted-ln_contig-92_4_plasmid-0 + counted-ln_contig-93_1_plasmid-0
+   + counted-ln_contig-94_0_plasmid-0 + counted-ln_contig-94_1_plasmid-0
+   + counted-ln_contig-94_2_plasmid-0 + counted-ln_contig-94_3_plasmid-0
+   + counted-ln_contig-94_5_plasmid-0 + counted-ln_contig-95_1_plasmid-0
+   + counted-ln_contig-95_2_plasmid-0 + counted-ln_contig-95_3_plasmid-0
+   + counted-ln_contig-95_5_plasmid-0 + counted-ln_contig-96_0_plasmid-0
+   + counted-ln_contig-96_1_plasmid-0 + counted-ln_contig-96_2_plasmid-0
+   + counted-ln_contig-96_3_plasmid-0 + counted-ln_contig-96_4_plasmid-0
+   + counted-ln_contig-96_5_plasmid-0 + counted-ln_contig-96_6_plasmid-0
+   + counted-ln_contig-97_0_plasmid-0 + counted-ln_contig-97_2_plasmid-0
+   + counted-ln_contig-97_4_plasmid-0 + counted-ln_contig-97_5_plasmid-0
+   + counted-ln_contig-98_0_plasmid-0 + counted-ln_contig-98_1_plasmid-0
+   + counted-ln_contig-98_2_plasmid-0 + counted-ln_contig-98_5_plasmid-0
+   + counted-ln_contig-98_7_plasmid-0 + counted-ln_contig-99_6_plasmid-0
+   + counted-ln_contig-100_0_plasmid-0 + counted-ln_contig-100_1_plasmid-0
+   + counted-ln_contig-100_2_plasmid-0 + counted-ln_contig-100_3_plasmid-0
+   + counted-ln_contig-101_0_plasmid-0 + counted-ln_contig-101_1_plasmid-0
+   + counted-ln_contig-102_0_plasmid-0 + counted-ln_contig-102_1_plasmid-0
+   + counted-ln_contig-102_2_plasmid-0 + counted-ln_contig-103_0_plasmid-0
+   + counted-ln_contig-103_1_plasmid-0 + counted-ln_contig-103_2_plasmid-0
+   + counted-ln_contig-104_0_plasmid-0 + counted-ln_contig-104_1_plasmid-0
+   + counted-ln_contig-104_2_plasmid-0 + counted-ln_contig-104_3_plasmid-0
+   + counted-ln_contig-104_4_plasmid-0 + counted-ln_contig-104_5_plasmid-0
+   + counted-ln_contig-104_6_plasmid-0 + counted-ln_contig-105_1_plasmid-0
+   + counted-ln_contig-105_2_plasmid-0 + counted-ln_contig-105_3_plasmid-0
+   + counted-ln_contig-105_4_plasmid-0 + counted-ln_contig-105_6_plasmid-0
+   + counted-ln_contig-105_7_plasmid-0 + counted-ln_contig-106_0_plasmid-0
+   + counted-ln_contig-106_1_plasmid-0 + counted-ln_contig-106_2_plasmid-0
+   + counted-ln_contig-106_3_plasmid-0 + counted-ln_contig-108_0_plasmid-0
+   + counted-ln_contig-108_1_plasmid-0 + counted-ln_contig-108_2_plasmid-0
+   + counted-ln_contig-108_3_plasmid-0 + counted-ln_contig-108_4_plasmid-0
+   + counted-ln_contig-109_0_plasmid-0 + counted-ln_contig-109_1_plasmid-0
+   + counted-ln_contig-109_2_plasmid-0 + counted-ln_contig-109_3_plasmid-0
+   + counted-ln_contig-109_4_plasmid-0 + counted-ln_contig-109_5_plasmid-0
+   + counted-ln_contig-109_6_plasmid-0 + counted-ln_contig-109_7_plasmid-0
+   + counted-ln_contig-109_8_plasmid-0 + counted-ln_contig-110_0_plasmid-0
+   + counted-ln_contig-110_1_plasmid-0 + counted-ln_contig-110_2_plasmid-0
+   + counted-ln_contig-111_0_plasmid-0 + counted-ln_contig-111_1_plasmid-0
+   + counted-ln_contig-111_2_plasmid-0 + counted-ln_contig-112_0_plasmid-0
+   + counted-ln_contig-112_1_plasmid-0 + counted-ln_contig-112_2_plasmid-0
+   + counted-ln_contig-112_3_plasmid-0 + counted-ln_contig-112_4_plasmid-0
+   + counted-ln_contig-112_5_plasmid-0 + counted-ln_contig-112_6_plasmid-0
+   + counted-ln_contig-112_7_plasmid-0 + counted-ln_contig-112_8_plasmid-0
+   + counted-ln_contig-113_0_plasmid-0 + counted-ln_contig-113_1_plasmid-0
+   + counted-ln_contig-113_2_plasmid-0 + counted-ln_contig-113_3_plasmid-0
+   + counted-ln_contig-113_4_plasmid-0 + counted-ln_contig-113_5_plasmid-0
+   + counted-ln_contig-114_0_plasmid-0 + counted-ln_contig-114_1_plasmid-0
+   + counted-ln_contig-114_2_plasmid-0 + counted-ln_contig-114_3_plasmid-0
+   + counted-ln_contig-114_4_plasmid-0 + counted-ln_contig-115_0_plasmid-0
+   + counted-ln_contig-115_1_plasmid-0 + counted-ln_contig-115_4_plasmid-0
+   + counted-ln_contig-115_5_plasmid-0 + counted-ln_contig-115_6_plasmid-0
+   + counted-ln_contig-116_0_plasmid-0 + counted-ln_contig-116_2_plasmid-0
+   + counted-ln_contig-117_0_plasmid-0 + counted-ln_contig-117_1_plasmid-0
+   + counted-ln_contig-117_2_plasmid-0 + counted-ln_contig-117_3_plasmid-0
+   + counted-ln_contig-118_0_plasmid-0 + counted-ln_contig-119_0_plasmid-0
+   + counted-ln_contig-119_2_plasmid-0 + counted-ln_contig-119_3_plasmid-0
+   + counted-ln_contig-119_4_plasmid-0 + counted-ln_contig-119_6_plasmid-0
+   + counted-ln_contig-120_0_plasmid-0 + counted-ln_contig-120_1_plasmid-0
+   + counted-ln_contig-120_2_plasmid-0 + counted-ln_contig-120_3_plasmid-0
+   + counted-ln_contig-120_4_plasmid-0 + counted-ln_contig-120_5_plasmid-0
+   + counted-ln_contig-120_6_plasmid-0 <= 175000
+ counted_seed: - contig-1_0_plasmid-0 + counted-seed_contig-1_0_plasmid-0
+   = 0
+ counted_seed: - contig-2_0_plasmid-0 + counted-seed_contig-2_0_plasmid-0
+   = 0
+ counted_seed: - contig-2_1_plasmid-0 + counted-seed_contig-2_1_plasmid-0
+   = 0
+ counted_seed: counted-seed_contig-3_0_plasmid-0 = 0
+ counted_seed: counted-seed_contig-3_1_plasmid-0 = 0
+ counted_seed: counted-seed_contig-4_0_plasmid-0 = 0
+ counted_seed: counted-seed_contig-5_0_plasmid-0 = 0
+ counted_seed: counted-seed_contig-5_1_plasmid-0 = 0
+ counted_seed: counted-seed_contig-6_0_plasmid-0 = 0
+ counted_seed: counted-seed_contig-7_0_plasmid-0 = 0
+ counted_seed: counted-seed_contig-8_0_plasmid-0 = 0
+ counted_seed: counted-seed_contig-8_1_plasmid-0 = 0
+ counted_seed: counted-seed_contig-9_0_plasmid-0 = 0
+ counted_seed: counted-seed_contig-10_0_plasmid-0 = 0
+ counted_seed: counted-seed_contig-11_0_plasmid-0 = 0
+ counted_seed: - contig-12_0_plasmid-0 + counted-seed_contig-12_0_plasmid-0
+   = 0
+ counted_seed: - contig-12_1_plasmid-0 + counted-seed_contig-12_1_plasmid-0
+   = 0
+ counted_seed: counted-seed_contig-13_0_plasmid-0 = 0
+ counted_seed: counted-seed_contig-18_0_plasmid-0 = 0
+ counted_seed: counted-seed_contig-18_1_plasmid-0 = 0
+ counted_seed: counted-seed_contig-19_0_plasmid-0 = 0
+ counted_seed: counted-seed_contig-20_0_plasmid-0 = 0
+ counted_seed: counted-seed_contig-20_1_plasmid-0 = 0
+ counted_seed: counted-seed_contig-21_0_plasmid-0 = 0
+ counted_seed: counted-seed_contig-21_1_plasmid-0 = 0
+ counted_seed: counted-seed_contig-22_0_plasmid-0 = 0
+ counted_seed: counted-seed_contig-22_1_plasmid-0 = 0
+ counted_seed: counted-seed_contig-24_0_plasmid-0 = 0
+ counted_seed: counted-seed_contig-24_1_plasmid-0 = 0
+ counted_seed: counted-seed_contig-27_0_plasmid-0 = 0
+ counted_seed: counted-seed_contig-27_1_plasmid-0 = 0
+ counted_seed: counted-seed_contig-31_0_plasmid-0 = 0
+ counted_seed: counted-seed_contig-31_1_plasmid-0 = 0
+ counted_seed: counted-seed_contig-34_0_plasmid-0 = 0
+ counted_seed: counted-seed_contig-34_1_plasmid-0 = 0
+ counted_seed: counted-seed_contig-35_1_plasmid-0 = 0
+ counted_seed: counted-seed_contig-36_0_plasmid-0 = 0
+ counted_seed: counted-seed_contig-36_1_plasmid-0 = 0
+ counted_seed: counted-seed_contig-38_0_plasmid-0 = 0
+ counted_seed: counted-seed_contig-38_1_plasmid-0 = 0
+ counted_seed: counted-seed_contig-39_0_plasmid-0 = 0
+ counted_seed: counted-seed_contig-40_0_plasmid-0 = 0
+ counted_seed: counted-seed_contig-41_0_plasmid-0 = 0
+ counted_seed: counted-seed_contig-42_0_plasmid-0 = 0
+ counted_seed: counted-seed_contig-42_1_plasmid-0 = 0
+ counted_seed: counted-seed_contig-47_0_plasmid-0 = 0
+ counted_seed: counted-seed_contig-47_1_plasmid-0 = 0
+ counted_seed: counted-seed_contig-48_0_plasmid-0 = 0
+ counted_seed: counted-seed_contig-48_1_plasmid-0 = 0
+ counted_seed: counted-seed_contig-50_0_plasmid-0 = 0
+ counted_seed: counted-seed_contig-50_1_plasmid-0 = 0
+ counted_seed: counted-seed_contig-50_2_plasmid-0 = 0
+ counted_seed: counted-seed_contig-50_3_plasmid-0 = 0
+ counted_seed: counted-seed_contig-50_5_plasmid-0 = 0
+ counted_seed: counted-seed_contig-50_6_plasmid-0 = 0
+ counted_seed: counted-seed_contig-50_7_plasmid-0 = 0
+ counted_seed: counted-seed_contig-50_8_plasmid-0 = 0
+ counted_seed: counted-seed_contig-50_9_plasmid-0 = 0
+ counted_seed: counted-seed_contig-50_10_plasmid-0 = 0
+ counted_seed: counted-seed_contig-52_1_plasmid-0 = 0
+ counted_seed: counted-seed_contig-52_2_plasmid-0 = 0
+ counted_seed: counted-seed_contig-54_0_plasmid-0 = 0
+ counted_seed: counted-seed_contig-54_1_plasmid-0 = 0
+ counted_seed: counted-seed_contig-54_4_plasmid-0 = 0
+ counted_seed: counted-seed_contig-54_5_plasmid-0 = 0
+ counted_seed: counted-seed_contig-54_6_plasmid-0 = 0
+ counted_seed: counted-seed_contig-54_7_plasmid-0 = 0
+ counted_seed: counted-seed_contig-54_8_plasmid-0 = 0
+ counted_seed: counted-seed_contig-57_0_plasmid-0 = 0
+ counted_seed: counted-seed_contig-57_1_plasmid-0 = 0
+ counted_seed: counted-seed_contig-57_3_plasmid-0 = 0
+ counted_seed: counted-seed_contig-57_4_plasmid-0 = 0
+ counted_seed: counted-seed_contig-57_5_plasmid-0 = 0
+ counted_seed: counted-seed_contig-57_6_plasmid-0 = 0
+ counted_seed: counted-seed_contig-57_7_plasmid-0 = 0
+ counted_seed: counted-seed_contig-57_8_plasmid-0 = 0
+ counted_seed: counted-seed_contig-57_9_plasmid-0 = 0
+ counted_seed: counted-seed_contig-57_11_plasmid-0 = 0
+ counted_seed: counted-seed_contig-57_12_plasmid-0 = 0
+ counted_seed: counted-seed_contig-60_0_plasmid-0 = 0
+ counted_seed: counted-seed_contig-60_1_plasmid-0 = 0
+ counted_seed: counted-seed_contig-60_2_plasmid-0 = 0
+ counted_seed: counted-seed_contig-61_1_plasmid-0 = 0
+ counted_seed: counted-seed_contig-62_0_plasmid-0 = 0
+ counted_seed: counted-seed_contig-62_1_plasmid-0 = 0
+ counted_seed: counted-seed_contig-64_0_plasmid-0 = 0
+ counted_seed: counted-seed_contig-64_1_plasmid-0 = 0
+ counted_seed: counted-seed_contig-66_0_plasmid-0 = 0
+ counted_seed: counted-seed_contig-66_1_plasmid-0 = 0
+ counted_seed: counted-seed_contig-67_0_plasmid-0 = 0
+ counted_seed: counted-seed_contig-67_1_plasmid-0 = 0
+ counted_seed: counted-seed_contig-67_3_plasmid-0 = 0
+ counted_seed: counted-seed_contig-67_4_plasmid-0 = 0
+ counted_seed: counted-seed_contig-67_5_plasmid-0 = 0
+ counted_seed: counted-seed_contig-67_6_plasmid-0 = 0
+ counted_seed: counted-seed_contig-67_8_plasmid-0 = 0
+ counted_seed: counted-seed_contig-67_9_plasmid-0 = 0
+ counted_seed: counted-seed_contig-67_10_plasmid-0 = 0
+ counted_seed: counted-seed_contig-67_11_plasmid-0 = 0
+ counted_seed: counted-seed_contig-69_0_plasmid-0 = 0
+ counted_seed: counted-seed_contig-72_0_plasmid-0 = 0
+ counted_seed: counted-seed_contig-72_1_plasmid-0 = 0
+ counted_seed: counted-seed_contig-73_0_plasmid-0 = 0
+ counted_seed: counted-seed_contig-73_1_plasmid-0 = 0
+ counted_seed: counted-seed_contig-74_0_plasmid-0 = 0
+ counted_seed: counted-seed_contig-74_1_plasmid-0 = 0
+ counted_seed: counted-seed_contig-76_0_plasmid-0 = 0
+ counted_seed: counted-seed_contig-76_1_plasmid-0 = 0
+ counted_seed: counted-seed_contig-76_2_plasmid-0 = 0
+ counted_seed: counted-seed_contig-76_4_plasmid-0 = 0
+ counted_seed: counted-seed_contig-77_0_plasmid-0 = 0
+ counted_seed: counted-seed_contig-78_0_plasmid-0 = 0
+ counted_seed: counted-seed_contig-78_1_plasmid-0 = 0
+ counted_seed: counted-seed_contig-79_0_plasmid-0 = 0
+ counted_seed: counted-seed_contig-80_3_plasmid-0 = 0
+ counted_seed: counted-seed_contig-81_0_plasmid-0 = 0
+ counted_seed: counted-seed_contig-82_0_plasmid-0 = 0
+ counted_seed: counted-seed_contig-82_1_plasmid-0 = 0
+ counted_seed: counted-seed_contig-82_2_plasmid-0 = 0
+ counted_seed: counted-seed_contig-83_0_plasmid-0 = 0
+ counted_seed: counted-seed_contig-83_1_plasmid-0 = 0
+ counted_seed: counted-seed_contig-83_2_plasmid-0 = 0
+ counted_seed: counted-seed_contig-83_3_plasmid-0 = 0
+ counted_seed: counted-seed_contig-83_4_plasmid-0 = 0
+ counted_seed: counted-seed_contig-85_0_plasmid-0 = 0
+ counted_seed: counted-seed_contig-86_1_plasmid-0 = 0
+ counted_seed: counted-seed_contig-86_2_plasmid-0 = 0
+ counted_seed: counted-seed_contig-86_3_plasmid-0 = 0
+ counted_seed: counted-seed_contig-86_4_plasmid-0 = 0
+ counted_seed: counted-seed_contig-86_5_plasmid-0 = 0
+ counted_seed: counted-seed_contig-86_6_plasmid-0 = 0
+ counted_seed: counted-seed_contig-86_7_plasmid-0 = 0
+ counted_seed: counted-seed_contig-87_0_plasmid-0 = 0
+ counted_seed: counted-seed_contig-87_2_plasmid-0 = 0
+ counted_seed: counted-seed_contig-88_0_plasmid-0 = 0
+ counted_seed: counted-seed_contig-88_1_plasmid-0 = 0
+ counted_seed: counted-seed_contig-89_0_plasmid-0 = 0
+ counted_seed: counted-seed_contig-90_0_plasmid-0 = 0
+ counted_seed: counted-seed_contig-90_1_plasmid-0 = 0
+ counted_seed: counted-seed_contig-90_2_plasmid-0 = 0
+ counted_seed: counted-seed_contig-90_3_plasmid-0 = 0
+ counted_seed: counted-seed_contig-90_4_plasmid-0 = 0
+ counted_seed: counted-seed_contig-90_5_plasmid-0 = 0
+ counted_seed: counted-seed_contig-90_6_plasmid-0 = 0
+ counted_seed: counted-seed_contig-90_7_plasmid-0 = 0
+ counted_seed: counted-seed_contig-91_0_plasmid-0 = 0
+ counted_seed: counted-seed_contig-91_1_plasmid-0 = 0
+ counted_seed: counted-seed_contig-92_0_plasmid-0 = 0
+ counted_seed: counted-seed_contig-92_1_plasmid-0 = 0
+ counted_seed: counted-seed_contig-92_2_plasmid-0 = 0
+ counted_seed: counted-seed_contig-92_3_plasmid-0 = 0
+ counted_seed: counted-seed_contig-92_4_plasmid-0 = 0
+ counted_seed: counted-seed_contig-93_1_plasmid-0 = 0
+ counted_seed: counted-seed_contig-94_0_plasmid-0 = 0
+ counted_seed: counted-seed_contig-94_1_plasmid-0 = 0
+ counted_seed: counted-seed_contig-94_2_plasmid-0 = 0
+ counted_seed: counted-seed_contig-94_3_plasmid-0 = 0
+ counted_seed: counted-seed_contig-94_5_plasmid-0 = 0
+ counted_seed: counted-seed_contig-95_1_plasmid-0 = 0
+ counted_seed: counted-seed_contig-95_2_plasmid-0 = 0
+ counted_seed: counted-seed_contig-95_3_plasmid-0 = 0
+ counted_seed: counted-seed_contig-95_5_plasmid-0 = 0
+ counted_seed: counted-seed_contig-96_0_plasmid-0 = 0
+ counted_seed: counted-seed_contig-96_1_plasmid-0 = 0
+ counted_seed: counted-seed_contig-96_2_plasmid-0 = 0
+ counted_seed: counted-seed_contig-96_3_plasmid-0 = 0
+ counted_seed: counted-seed_contig-96_4_plasmid-0 = 0
+ counted_seed: counted-seed_contig-96_5_plasmid-0 = 0
+ counted_seed: counted-seed_contig-96_6_plasmid-0 = 0
+ counted_seed: counted-seed_contig-97_0_plasmid-0 = 0
+ counted_seed: counted-seed_contig-97_2_plasmid-0 = 0
+ counted_seed: counted-seed_contig-97_4_plasmid-0 = 0
+ counted_seed: counted-seed_contig-97_5_plasmid-0 = 0
+ counted_seed: counted-seed_contig-98_0_plasmid-0 = 0
+ counted_seed: counted-seed_contig-98_1_plasmid-0 = 0
+ counted_seed: counted-seed_contig-98_2_plasmid-0 = 0
+ counted_seed: counted-seed_contig-98_5_plasmid-0 = 0
+ counted_seed: counted-seed_contig-98_7_plasmid-0 = 0
+ counted_seed: counted-seed_contig-99_6_plasmid-0 = 0
+ counted_seed: counted-seed_contig-100_0_plasmid-0 = 0
+ counted_seed: counted-seed_contig-100_1_plasmid-0 = 0
+ counted_seed: counted-seed_contig-100_2_plasmid-0 = 0
+ counted_seed: counted-seed_contig-100_3_plasmid-0 = 0
+ counted_seed: counted-seed_contig-101_0_plasmid-0 = 0
+ counted_seed: counted-seed_contig-101_1_plasmid-0 = 0
+ counted_seed: counted-seed_contig-102_0_plasmid-0 = 0
+ counted_seed: counted-seed_contig-102_1_plasmid-0 = 0
+ counted_seed: counted-seed_contig-102_2_plasmid-0 = 0
+ counted_seed: counted-seed_contig-103_0_plasmid-0 = 0
+ counted_seed: counted-seed_contig-103_1_plasmid-0 = 0
+ counted_seed: counted-seed_contig-103_2_plasmid-0 = 0
+ counted_seed: counted-seed_contig-104_0_plasmid-0 = 0
+ counted_seed: counted-seed_contig-104_1_plasmid-0 = 0
+ counted_seed: counted-seed_contig-104_2_plasmid-0 = 0
+ counted_seed: counted-seed_contig-104_3_plasmid-0 = 0
+ counted_seed: counted-seed_contig-104_4_plasmid-0 = 0
+ counted_seed: counted-seed_contig-104_5_plasmid-0 = 0
+ counted_seed: counted-seed_contig-104_6_plasmid-0 = 0
+ counted_seed: counted-seed_contig-105_1_plasmid-0 = 0
+ counted_seed: counted-seed_contig-105_2_plasmid-0 = 0
+ counted_seed: counted-seed_contig-105_3_plasmid-0 = 0
+ counted_seed: counted-seed_contig-105_4_plasmid-0 = 0
+ counted_seed: counted-seed_contig-105_6_plasmid-0 = 0
+ counted_seed: counted-seed_contig-105_7_plasmid-0 = 0
+ counted_seed: counted-seed_contig-106_0_plasmid-0 = 0
+ counted_seed: counted-seed_contig-106_1_plasmid-0 = 0
+ counted_seed: counted-seed_contig-106_2_plasmid-0 = 0
+ counted_seed: counted-seed_contig-106_3_plasmid-0 = 0
+ counted_seed: counted-seed_contig-108_0_plasmid-0 = 0
+ counted_seed: counted-seed_contig-108_1_plasmid-0 = 0
+ counted_seed: counted-seed_contig-108_2_plasmid-0 = 0
+ counted_seed: counted-seed_contig-108_3_plasmid-0 = 0
+ counted_seed: counted-seed_contig-108_4_plasmid-0 = 0
+ counted_seed: counted-seed_contig-109_0_plasmid-0 = 0
+ counted_seed: counted-seed_contig-109_1_plasmid-0 = 0
+ counted_seed: counted-seed_contig-109_2_plasmid-0 = 0
+ counted_seed: counted-seed_contig-109_3_plasmid-0 = 0
+ counted_seed: counted-seed_contig-109_4_plasmid-0 = 0
+ counted_seed: counted-seed_contig-109_5_plasmid-0 = 0
+ counted_seed: counted-seed_contig-109_6_plasmid-0 = 0
+ counted_seed: counted-seed_contig-109_7_plasmid-0 = 0
+ counted_seed: counted-seed_contig-109_8_plasmid-0 = 0
+ counted_seed: counted-seed_contig-110_0_plasmid-0 = 0
+ counted_seed: counted-seed_contig-110_1_plasmid-0 = 0
+ counted_seed: counted-seed_contig-110_2_plasmid-0 = 0
+ counted_seed: counted-seed_contig-111_0_plasmid-0 = 0
+ counted_seed: counted-seed_contig-111_1_plasmid-0 = 0
+ counted_seed: counted-seed_contig-111_2_plasmid-0 = 0
+ counted_seed: counted-seed_contig-112_0_plasmid-0 = 0
+ counted_seed: counted-seed_contig-112_1_plasmid-0 = 0
+ counted_seed: counted-seed_contig-112_2_plasmid-0 = 0
+ counted_seed: counted-seed_contig-112_3_plasmid-0 = 0
+ counted_seed: counted-seed_contig-112_4_plasmid-0 = 0
+ counted_seed: counted-seed_contig-112_5_plasmid-0 = 0
+ counted_seed: counted-seed_contig-112_6_plasmid-0 = 0
+ counted_seed: counted-seed_contig-112_7_plasmid-0 = 0
+ counted_seed: counted-seed_contig-112_8_plasmid-0 = 0
+ counted_seed: counted-seed_contig-113_0_plasmid-0 = 0
+ counted_seed: counted-seed_contig-113_1_plasmid-0 = 0
+ counted_seed: counted-seed_contig-113_2_plasmid-0 = 0
+ counted_seed: counted-seed_contig-113_3_plasmid-0 = 0
+ counted_seed: counted-seed_contig-113_4_plasmid-0 = 0
+ counted_seed: counted-seed_contig-113_5_plasmid-0 = 0
+ counted_seed: counted-seed_contig-114_0_plasmid-0 = 0
+ counted_seed: counted-seed_contig-114_1_plasmid-0 = 0
+ counted_seed: counted-seed_contig-114_2_plasmid-0 = 0
+ counted_seed: counted-seed_contig-114_3_plasmid-0 = 0
+ counted_seed: counted-seed_contig-114_4_plasmid-0 = 0
+ counted_seed: counted-seed_contig-115_0_plasmid-0 = 0
+ counted_seed: counted-seed_contig-115_1_plasmid-0 = 0
+ counted_seed: counted-seed_contig-115_4_plasmid-0 = 0
+ counted_seed: counted-seed_contig-115_5_plasmid-0 = 0
+ counted_seed: counted-seed_contig-115_6_plasmid-0 = 0
+ counted_seed: counted-seed_contig-116_0_plasmid-0 = 0
+ counted_seed: counted-seed_contig-116_2_plasmid-0 = 0
+ counted_seed: counted-seed_contig-117_0_plasmid-0 = 0
+ counted_seed: counted-seed_contig-117_1_plasmid-0 = 0
+ counted_seed: counted-seed_contig-117_2_plasmid-0 = 0
+ counted_seed: counted-seed_contig-117_3_plasmid-0 = 0
+ counted_seed: counted-seed_contig-118_0_plasmid-0 = 0
+ counted_seed: counted-seed_contig-119_0_plasmid-0 = 0
+ counted_seed: counted-seed_contig-119_2_plasmid-0 = 0
+ counted_seed: counted-seed_contig-119_3_plasmid-0 = 0
+ counted_seed: counted-seed_contig-119_4_plasmid-0 = 0
+ counted_seed: counted-seed_contig-119_6_plasmid-0 = 0
+ counted_seed: counted-seed_contig-120_0_plasmid-0 = 0
+ counted_seed: counted-seed_contig-120_1_plasmid-0 = 0
+ counted_seed: counted-seed_contig-120_2_plasmid-0 = 0
+ counted_seed: counted-seed_contig-120_3_plasmid-0 = 0
+ counted_seed: counted-seed_contig-120_4_plasmid-0 = 0
+ counted_seed: counted-seed_contig-120_5_plasmid-0 = 0
+ counted_seed: counted-seed_contig-120_6_plasmid-0 = 0
+ seed_existence: counted-seed_contig-1_0_plasmid-0
+   + counted-seed_contig-2_0_plasmid-0 + counted-seed_contig-2_1_plasmid-0
+   + counted-seed_contig-3_0_plasmid-0 + counted-seed_contig-3_1_plasmid-0
+   + counted-seed_contig-4_0_plasmid-0 + counted-seed_contig-5_0_plasmid-0
+   + counted-seed_contig-5_1_plasmid-0 + counted-seed_contig-6_0_plasmid-0
+   + counted-seed_contig-7_0_plasmid-0 + counted-seed_contig-8_0_plasmid-0
+   + counted-seed_contig-8_1_plasmid-0 + counted-seed_contig-9_0_plasmid-0
+   + counted-seed_contig-10_0_plasmid-0
+   + counted-seed_contig-11_0_plasmid-0
+   + counted-seed_contig-12_0_plasmid-0
+   + counted-seed_contig-12_1_plasmid-0
+   + counted-seed_contig-13_0_plasmid-0
+   + counted-seed_contig-18_0_plasmid-0
+   + counted-seed_contig-18_1_plasmid-0
+   + counted-seed_contig-19_0_plasmid-0
+   + counted-seed_contig-20_0_plasmid-0
+   + counted-seed_contig-20_1_plasmid-0
+   + counted-seed_contig-21_0_plasmid-0
+   + counted-seed_contig-21_1_plasmid-0
+   + counted-seed_contig-22_0_plasmid-0
+   + counted-seed_contig-22_1_plasmid-0
+   + counted-seed_contig-24_0_plasmid-0
+   + counted-seed_contig-24_1_plasmid-0
+   + counted-seed_contig-27_0_plasmid-0
+   + counted-seed_contig-27_1_plasmid-0
+   + counted-seed_contig-31_0_plasmid-0
+   + counted-seed_contig-31_1_plasmid-0
+   + counted-seed_contig-34_0_plasmid-0
+   + counted-seed_contig-34_1_plasmid-0
+   + counted-seed_contig-35_1_plasmid-0
+   + counted-seed_contig-36_0_plasmid-0
+   + counted-seed_contig-36_1_plasmid-0
+   + counted-seed_contig-38_0_plasmid-0
+   + counted-seed_contig-38_1_plasmid-0
+   + counted-seed_contig-39_0_plasmid-0
+   + counted-seed_contig-40_0_plasmid-0
+   + counted-seed_contig-41_0_plasmid-0
+   + counted-seed_contig-42_0_plasmid-0
+   + counted-seed_contig-42_1_plasmid-0
+   + counted-seed_contig-47_0_plasmid-0
+   + counted-seed_contig-47_1_plasmid-0
+   + counted-seed_contig-48_0_plasmid-0
+   + counted-seed_contig-48_1_plasmid-0
+   + counted-seed_contig-50_0_plasmid-0
+   + counted-seed_contig-50_1_plasmid-0
+   + counted-seed_contig-50_2_plasmid-0
+   + counted-seed_contig-50_3_plasmid-0
+   + counted-seed_contig-50_5_plasmid-0
+   + counted-seed_contig-50_6_plasmid-0
+   + counted-seed_contig-50_7_plasmid-0
+   + counted-seed_contig-50_8_plasmid-0
+   + counted-seed_contig-50_9_plasmid-0
+   + counted-seed_contig-50_10_plasmid-0
+   + counted-seed_contig-52_1_plasmid-0
+   + counted-seed_contig-52_2_plasmid-0
+   + counted-seed_contig-54_0_plasmid-0
+   + counted-seed_contig-54_1_plasmid-0
+   + counted-seed_contig-54_4_plasmid-0
+   + counted-seed_contig-54_5_plasmid-0
+   + counted-seed_contig-54_6_plasmid-0
+   + counted-seed_contig-54_7_plasmid-0
+   + counted-seed_contig-54_8_plasmid-0
+   + counted-seed_contig-57_0_plasmid-0
+   + counted-seed_contig-57_1_plasmid-0
+   + counted-seed_contig-57_3_plasmid-0
+   + counted-seed_contig-57_4_plasmid-0
+   + counted-seed_contig-57_5_plasmid-0
+   + counted-seed_contig-57_6_plasmid-0
+   + counted-seed_contig-57_7_plasmid-0
+   + counted-seed_contig-57_8_plasmid-0
+   + counted-seed_contig-57_9_plasmid-0
+   + counted-seed_contig-57_11_plasmid-0
+   + counted-seed_contig-57_12_plasmid-0
+   + counted-seed_contig-60_0_plasmid-0
+   + counted-seed_contig-60_1_plasmid-0
+   + counted-seed_contig-60_2_plasmid-0
+   + counted-seed_contig-61_1_plasmid-0
+   + counted-seed_contig-62_0_plasmid-0
+   + counted-seed_contig-62_1_plasmid-0
+   + counted-seed_contig-64_0_plasmid-0
+   + counted-seed_contig-64_1_plasmid-0
+   + counted-seed_contig-66_0_plasmid-0
+   + counted-seed_contig-66_1_plasmid-0
+   + counted-seed_contig-67_0_plasmid-0
+   + counted-seed_contig-67_1_plasmid-0
+   + counted-seed_contig-67_3_plasmid-0
+   + counted-seed_contig-67_4_plasmid-0
+   + counted-seed_contig-67_5_plasmid-0
+   + counted-seed_contig-67_6_plasmid-0
+   + counted-seed_contig-67_8_plasmid-0
+   + counted-seed_contig-67_9_plasmid-0
+   + counted-seed_contig-67_10_plasmid-0
+   + counted-seed_contig-67_11_plasmid-0
+   + counted-seed_contig-69_0_plasmid-0
+   + counted-seed_contig-72_0_plasmid-0
+   + counted-seed_contig-72_1_plasmid-0
+   + counted-seed_contig-73_0_plasmid-0
+   + counted-seed_contig-73_1_plasmid-0
+   + counted-seed_contig-74_0_plasmid-0
+   + counted-seed_contig-74_1_plasmid-0
+   + counted-seed_contig-76_0_plasmid-0
+   + counted-seed_contig-76_1_plasmid-0
+   + counted-seed_contig-76_2_plasmid-0
+   + counted-seed_contig-76_4_plasmid-0
+   + counted-seed_contig-77_0_plasmid-0
+   + counted-seed_contig-78_0_plasmid-0
+   + counted-seed_contig-78_1_plasmid-0
+   + counted-seed_contig-79_0_plasmid-0
+   + counted-seed_contig-80_3_plasmid-0
+   + counted-seed_contig-81_0_plasmid-0
+   + counted-seed_contig-82_0_plasmid-0
+   + counted-seed_contig-82_1_plasmid-0
+   + counted-seed_contig-82_2_plasmid-0
+   + counted-seed_contig-83_0_plasmid-0
+   + counted-seed_contig-83_1_plasmid-0
+   + counted-seed_contig-83_2_plasmid-0
+   + counted-seed_contig-83_3_plasmid-0
+   + counted-seed_contig-83_4_plasmid-0
+   + counted-seed_contig-85_0_plasmid-0
+   + counted-seed_contig-86_1_plasmid-0
+   + counted-seed_contig-86_2_plasmid-0
+   + counted-seed_contig-86_3_plasmid-0
+   + counted-seed_contig-86_4_plasmid-0
+   + counted-seed_contig-86_5_plasmid-0
+   + counted-seed_contig-86_6_plasmid-0
+   + counted-seed_contig-86_7_plasmid-0
+   + counted-seed_contig-87_0_plasmid-0
+   + counted-seed_contig-87_2_plasmid-0
+   + counted-seed_contig-88_0_plasmid-0
+   + counted-seed_contig-88_1_plasmid-0
+   + counted-seed_contig-89_0_plasmid-0
+   + counted-seed_contig-90_0_plasmid-0
+   + counted-seed_contig-90_1_plasmid-0
+   + counted-seed_contig-90_2_plasmid-0
+   + counted-seed_contig-90_3_plasmid-0
+   + counted-seed_contig-90_4_plasmid-0
+   + counted-seed_contig-90_5_plasmid-0
+   + counted-seed_contig-90_6_plasmid-0
+   + counted-seed_contig-90_7_plasmid-0
+   + counted-seed_contig-91_0_plasmid-0
+   + counted-seed_contig-91_1_plasmid-0
+   + counted-seed_contig-92_0_plasmid-0
+   + counted-seed_contig-92_1_plasmid-0
+   + counted-seed_contig-92_2_plasmid-0
+   + counted-seed_contig-92_3_plasmid-0
+   + counted-seed_contig-92_4_plasmid-0
+   + counted-seed_contig-93_1_plasmid-0
+   + counted-seed_contig-94_0_plasmid-0
+   + counted-seed_contig-94_1_plasmid-0
+   + counted-seed_contig-94_2_plasmid-0
+   + counted-seed_contig-94_3_plasmid-0
+   + counted-seed_contig-94_5_plasmid-0
+   + counted-seed_contig-95_1_plasmid-0
+   + counted-seed_contig-95_2_plasmid-0
+   + counted-seed_contig-95_3_plasmid-0
+   + counted-seed_contig-95_5_plasmid-0
+   + counted-seed_contig-96_0_plasmid-0
+   + counted-seed_contig-96_1_plasmid-0
+   + counted-seed_contig-96_2_plasmid-0
+   + counted-seed_contig-96_3_plasmid-0
+   + counted-seed_contig-96_4_plasmid-0
+   + counted-seed_contig-96_5_plasmid-0
+   + counted-seed_contig-96_6_plasmid-0
+   + counted-seed_contig-97_0_plasmid-0
+   + counted-seed_contig-97_2_plasmid-0
+   + counted-seed_contig-97_4_plasmid-0
+   + counted-seed_contig-97_5_plasmid-0
+   + counted-seed_contig-98_0_plasmid-0
+   + counted-seed_contig-98_1_plasmid-0
+   + counted-seed_contig-98_2_plasmid-0
+   + counted-seed_contig-98_5_plasmid-0
+   + counted-seed_contig-98_7_plasmid-0
+   + counted-seed_contig-99_6_plasmid-0
+   + counted-seed_contig-100_0_plasmid-0
+   + counted-seed_contig-100_1_plasmid-0
+   + counted-seed_contig-100_2_plasmid-0
+   + counted-seed_contig-100_3_plasmid-0
+   + counted-seed_contig-101_0_plasmid-0
+   + counted-seed_contig-101_1_plasmid-0
+   + counted-seed_contig-102_0_plasmid-0
+   + counted-seed_contig-102_1_plasmid-0
+   + counted-seed_contig-102_2_plasmid-0
+   + counted-seed_contig-103_0_plasmid-0
+   + counted-seed_contig-103_1_plasmid-0
+   + counted-seed_contig-103_2_plasmid-0
+   + counted-seed_contig-104_0_plasmid-0
+   + counted-seed_contig-104_1_plasmid-0
+   + counted-seed_contig-104_2_plasmid-0
+   + counted-seed_contig-104_3_plasmid-0
+   + counted-seed_contig-104_4_plasmid-0
+   + counted-seed_contig-104_5_plasmid-0
+   + counted-seed_contig-104_6_plasmid-0
+   + counted-seed_contig-105_1_plasmid-0
+   + counted-seed_contig-105_2_plasmid-0
+   + counted-seed_contig-105_3_plasmid-0
+   + counted-seed_contig-105_4_plasmid-0
+   + counted-seed_contig-105_6_plasmid-0
+   + counted-seed_contig-105_7_plasmid-0
+   + counted-seed_contig-106_0_plasmid-0
+   + counted-seed_contig-106_1_plasmid-0
+   + counted-seed_contig-106_2_plasmid-0
+   + counted-seed_contig-106_3_plasmid-0
+   + counted-seed_contig-108_0_plasmid-0
+   + counted-seed_contig-108_1_plasmid-0
+   + counted-seed_contig-108_2_plasmid-0
+   + counted-seed_contig-108_3_plasmid-0
+   + counted-seed_contig-108_4_plasmid-0
+   + counted-seed_contig-109_0_plasmid-0
+   + counted-seed_contig-109_1_plasmid-0
+   + counted-seed_contig-109_2_plasmid-0
+   + counted-seed_contig-109_3_plasmid-0
+   + counted-seed_contig-109_4_plasmid-0
+   + counted-seed_contig-109_5_plasmid-0
+   + counted-seed_contig-109_6_plasmid-0
+   + counted-seed_contig-109_7_plasmid-0
+   + counted-seed_contig-109_8_plasmid-0
+   + counted-seed_contig-110_0_plasmid-0
+   + counted-seed_contig-110_1_plasmid-0
+   + counted-seed_contig-110_2_plasmid-0
+   + counted-seed_contig-111_0_plasmid-0
+   + counted-seed_contig-111_1_plasmid-0
+   + counted-seed_contig-111_2_plasmid-0
+   + counted-seed_contig-112_0_plasmid-0
+   + counted-seed_contig-112_1_plasmid-0
+   + counted-seed_contig-112_2_plasmid-0
+   + counted-seed_contig-112_3_plasmid-0
+   + counted-seed_contig-112_4_plasmid-0
+   + counted-seed_contig-112_5_plasmid-0
+   + counted-seed_contig-112_6_plasmid-0
+   + counted-seed_contig-112_7_plasmid-0
+   + counted-seed_contig-112_8_plasmid-0
+   + counted-seed_contig-113_0_plasmid-0
+   + counted-seed_contig-113_1_plasmid-0
+   + counted-seed_contig-113_2_plasmid-0
+   + counted-seed_contig-113_3_plasmid-0
+   + counted-seed_contig-113_4_plasmid-0
+   + counted-seed_contig-113_5_plasmid-0
+   + counted-seed_contig-114_0_plasmid-0
+   + counted-seed_contig-114_1_plasmid-0
+   + counted-seed_contig-114_2_plasmid-0
+   + counted-seed_contig-114_3_plasmid-0
+   + counted-seed_contig-114_4_plasmid-0
+   + counted-seed_contig-115_0_plasmid-0
+   + counted-seed_contig-115_1_plasmid-0
+   + counted-seed_contig-115_4_plasmid-0
+   + counted-seed_contig-115_5_plasmid-0
+   + counted-seed_contig-115_6_plasmid-0
+   + counted-seed_contig-116_0_plasmid-0
+   + counted-seed_contig-116_2_plasmid-0
+   + counted-seed_contig-117_0_plasmid-0
+   + counted-seed_contig-117_1_plasmid-0
+   + counted-seed_contig-117_2_plasmid-0
+   + counted-seed_contig-117_3_plasmid-0
+   + counted-seed_contig-118_0_plasmid-0
+   + counted-seed_contig-119_0_plasmid-0
+   + counted-seed_contig-119_2_plasmid-0
+   + counted-seed_contig-119_3_plasmid-0
+   + counted-seed_contig-119_4_plasmid-0
+   + counted-seed_contig-119_6_plasmid-0
+   + counted-seed_contig-120_0_plasmid-0
+   + counted-seed_contig-120_1_plasmid-0
+   + counted-seed_contig-120_2_plasmid-0
+   + counted-seed_contig-120_3_plasmid-0
+   + counted-seed_contig-120_4_plasmid-0
+   + counted-seed_contig-120_5_plasmid-0
+   + counted-seed_contig-120_6_plasmid-0 >= 1
+Bounds
+ counted-ln_contig-1_0_plasmid-0 free
+ counted-ln_contig-2_0_plasmid-0 free
+ counted-ln_contig-2_1_plasmid-0 free
+ counted-ln_contig-3_0_plasmid-0 free
+ counted-ln_contig-3_1_plasmid-0 free
+ counted-ln_contig-4_0_plasmid-0 free
+ counted-ln_contig-5_0_plasmid-0 free
+ counted-ln_contig-5_1_plasmid-0 free
+ counted-ln_contig-6_0_plasmid-0 free
+ counted-ln_contig-7_0_plasmid-0 free
+ counted-ln_contig-8_0_plasmid-0 free
+ counted-ln_contig-8_1_plasmid-0 free
+ counted-ln_contig-9_0_plasmid-0 free
+ counted-ln_contig-10_0_plasmid-0 free
+ counted-ln_contig-11_0_plasmid-0 free
+ counted-ln_contig-12_0_plasmid-0 free
+ counted-ln_contig-12_1_plasmid-0 free
+ counted-ln_contig-13_0_plasmid-0 free
+ counted-ln_contig-18_0_plasmid-0 free
+ counted-ln_contig-18_1_plasmid-0 free
+ counted-ln_contig-19_0_plasmid-0 free
+ counted-ln_contig-20_0_plasmid-0 free
+ counted-ln_contig-20_1_plasmid-0 free
+ counted-ln_contig-21_0_plasmid-0 free
+ counted-ln_contig-21_1_plasmid-0 free
+ counted-ln_contig-22_0_plasmid-0 free
+ counted-ln_contig-22_1_plasmid-0 free
+ counted-ln_contig-24_0_plasmid-0 free
+ counted-ln_contig-24_1_plasmid-0 free
+ counted-ln_contig-27_0_plasmid-0 free
+ counted-ln_contig-27_1_plasmid-0 free
+ counted-ln_contig-31_0_plasmid-0 free
+ counted-ln_contig-31_1_plasmid-0 free
+ counted-ln_contig-34_0_plasmid-0 free
+ counted-ln_contig-34_1_plasmid-0 free
+ counted-ln_contig-35_1_plasmid-0 free
+ counted-ln_contig-36_0_plasmid-0 free
+ counted-ln_contig-36_1_plasmid-0 free
+ counted-ln_contig-38_0_plasmid-0 free
+ counted-ln_contig-38_1_plasmid-0 free
+ counted-ln_contig-39_0_plasmid-0 free
+ counted-ln_contig-40_0_plasmid-0 free
+ counted-ln_contig-41_0_plasmid-0 free
+ counted-ln_contig-42_0_plasmid-0 free
+ counted-ln_contig-42_1_plasmid-0 free
+ counted-ln_contig-47_0_plasmid-0 free
+ counted-ln_contig-47_1_plasmid-0 free
+ counted-ln_contig-48_0_plasmid-0 free
+ counted-ln_contig-48_1_plasmid-0 free
+ counted-ln_contig-50_0_plasmid-0 free
+ counted-ln_contig-50_1_plasmid-0 free
+ counted-ln_contig-50_2_plasmid-0 free
+ counted-ln_contig-50_3_plasmid-0 free
+ counted-ln_contig-50_5_plasmid-0 free
+ counted-ln_contig-50_6_plasmid-0 free
+ counted-ln_contig-50_7_plasmid-0 free
+ counted-ln_contig-50_8_plasmid-0 free
+ counted-ln_contig-50_9_plasmid-0 free
+ counted-ln_contig-50_10_plasmid-0 free
+ counted-ln_contig-52_1_plasmid-0 free
+ counted-ln_contig-52_2_plasmid-0 free
+ counted-ln_contig-54_0_plasmid-0 free
+ counted-ln_contig-54_1_plasmid-0 free
+ counted-ln_contig-54_4_plasmid-0 free
+ counted-ln_contig-54_5_plasmid-0 free
+ counted-ln_contig-54_6_plasmid-0 free
+ counted-ln_contig-54_7_plasmid-0 free
+ counted-ln_contig-54_8_plasmid-0 free
+ counted-ln_contig-57_0_plasmid-0 free
+ counted-ln_contig-57_1_plasmid-0 free
+ counted-ln_contig-57_3_plasmid-0 free
+ counted-ln_contig-57_4_plasmid-0 free
+ counted-ln_contig-57_5_plasmid-0 free
+ counted-ln_contig-57_6_plasmid-0 free
+ counted-ln_contig-57_7_plasmid-0 free
+ counted-ln_contig-57_8_plasmid-0 free
+ counted-ln_contig-57_9_plasmid-0 free
+ counted-ln_contig-57_11_plasmid-0 free
+ counted-ln_contig-57_12_plasmid-0 free
+ counted-ln_contig-60_0_plasmid-0 free
+ counted-ln_contig-60_1_plasmid-0 free
+ counted-ln_contig-60_2_plasmid-0 free
+ counted-ln_contig-61_1_plasmid-0 free
+ counted-ln_contig-62_0_plasmid-0 free
+ counted-ln_contig-62_1_plasmid-0 free
+ counted-ln_contig-64_0_plasmid-0 free
+ counted-ln_contig-64_1_plasmid-0 free
+ counted-ln_contig-66_0_plasmid-0 free
+ counted-ln_contig-66_1_plasmid-0 free
+ counted-ln_contig-67_0_plasmid-0 free
+ counted-ln_contig-67_1_plasmid-0 free
+ counted-ln_contig-67_3_plasmid-0 free
+ counted-ln_contig-67_4_plasmid-0 free
+ counted-ln_contig-67_5_plasmid-0 free
+ counted-ln_contig-67_6_plasmid-0 free
+ counted-ln_contig-67_8_plasmid-0 free
+ counted-ln_contig-67_9_plasmid-0 free
+ counted-ln_contig-67_10_plasmid-0 free
+ counted-ln_contig-67_11_plasmid-0 free
+ counted-ln_contig-69_0_plasmid-0 free
+ counted-ln_contig-72_0_plasmid-0 free
+ counted-ln_contig-72_1_plasmid-0 free
+ counted-ln_contig-73_0_plasmid-0 free
+ counted-ln_contig-73_1_plasmid-0 free
+ counted-ln_contig-74_0_plasmid-0 free
+ counted-ln_contig-74_1_plasmid-0 free
+ counted-ln_contig-76_0_plasmid-0 free
+ counted-ln_contig-76_1_plasmid-0 free
+ counted-ln_contig-76_2_plasmid-0 free
+ counted-ln_contig-76_4_plasmid-0 free
+ counted-ln_contig-77_0_plasmid-0 free
+ counted-ln_contig-78_0_plasmid-0 free
+ counted-ln_contig-78_1_plasmid-0 free
+ counted-ln_contig-79_0_plasmid-0 free
+ counted-ln_contig-80_3_plasmid-0 free
+ counted-ln_contig-81_0_plasmid-0 free
+ counted-ln_contig-82_0_plasmid-0 free
+ counted-ln_contig-82_1_plasmid-0 free
+ counted-ln_contig-82_2_plasmid-0 free
+ counted-ln_contig-83_0_plasmid-0 free
+ counted-ln_contig-83_1_plasmid-0 free
+ counted-ln_contig-83_2_plasmid-0 free
+ counted-ln_contig-83_3_plasmid-0 free
+ counted-ln_contig-83_4_plasmid-0 free
+ counted-ln_contig-85_0_plasmid-0 free
+ counted-ln_contig-86_1_plasmid-0 free
+ counted-ln_contig-86_2_plasmid-0 free
+ counted-ln_contig-86_3_plasmid-0 free
+ counted-ln_contig-86_4_plasmid-0 free
+ counted-ln_contig-86_5_plasmid-0 free
+ counted-ln_contig-86_6_plasmid-0 free
+ counted-ln_contig-86_7_plasmid-0 free
+ counted-ln_contig-87_0_plasmid-0 free
+ counted-ln_contig-87_2_plasmid-0 free
+ counted-ln_contig-88_0_plasmid-0 free
+ counted-ln_contig-88_1_plasmid-0 free
+ counted-ln_contig-89_0_plasmid-0 free
+ counted-ln_contig-90_0_plasmid-0 free
+ counted-ln_contig-90_1_plasmid-0 free
+ counted-ln_contig-90_2_plasmid-0 free
+ counted-ln_contig-90_3_plasmid-0 free
+ counted-ln_contig-90_4_plasmid-0 free
+ counted-ln_contig-90_5_plasmid-0 free
+ counted-ln_contig-90_6_plasmid-0 free
+ counted-ln_contig-90_7_plasmid-0 free
+ counted-ln_contig-91_0_plasmid-0 free
+ counted-ln_contig-91_1_plasmid-0 free
+ counted-ln_contig-92_0_plasmid-0 free
+ counted-ln_contig-92_1_plasmid-0 free
+ counted-ln_contig-92_2_plasmid-0 free
+ counted-ln_contig-92_3_plasmid-0 free
+ counted-ln_contig-92_4_plasmid-0 free
+ counted-ln_contig-93_1_plasmid-0 free
+ counted-ln_contig-94_0_plasmid-0 free
+ counted-ln_contig-94_1_plasmid-0 free
+ counted-ln_contig-94_2_plasmid-0 free
+ counted-ln_contig-94_3_plasmid-0 free
+ counted-ln_contig-94_5_plasmid-0 free
+ counted-ln_contig-95_1_plasmid-0 free
+ counted-ln_contig-95_2_plasmid-0 free
+ counted-ln_contig-95_3_plasmid-0 free
+ counted-ln_contig-95_5_plasmid-0 free
+ counted-ln_contig-96_0_plasmid-0 free
+ counted-ln_contig-96_1_plasmid-0 free
+ counted-ln_contig-96_2_plasmid-0 free
+ counted-ln_contig-96_3_plasmid-0 free
+ counted-ln_contig-96_4_plasmid-0 free
+ counted-ln_contig-96_5_plasmid-0 free
+ counted-ln_contig-96_6_plasmid-0 free
+ counted-ln_contig-97_0_plasmid-0 free
+ counted-ln_contig-97_2_plasmid-0 free
+ counted-ln_contig-97_4_plasmid-0 free
+ counted-ln_contig-97_5_plasmid-0 free
+ counted-ln_contig-98_0_plasmid-0 free
+ counted-ln_contig-98_1_plasmid-0 free
+ counted-ln_contig-98_2_plasmid-0 free
+ counted-ln_contig-98_5_plasmid-0 free
+ counted-ln_contig-98_7_plasmid-0 free
+ counted-ln_contig-99_6_plasmid-0 free
+ counted-ln_contig-100_0_plasmid-0 free
+ counted-ln_contig-100_1_plasmid-0 free
+ counted-ln_contig-100_2_plasmid-0 free
+ counted-ln_contig-100_3_plasmid-0 free
+ counted-ln_contig-101_0_plasmid-0 free
+ counted-ln_contig-101_1_plasmid-0 free
+ counted-ln_contig-102_0_plasmid-0 free
+ counted-ln_contig-102_1_plasmid-0 free
+ counted-ln_contig-102_2_plasmid-0 free
+ counted-ln_contig-103_0_plasmid-0 free
+ counted-ln_contig-103_1_plasmid-0 free
+ counted-ln_contig-103_2_plasmid-0 free
+ counted-ln_contig-104_0_plasmid-0 free
+ counted-ln_contig-104_1_plasmid-0 free
+ counted-ln_contig-104_2_plasmid-0 free
+ counted-ln_contig-104_3_plasmid-0 free
+ counted-ln_contig-104_4_plasmid-0 free
+ counted-ln_contig-104_5_plasmid-0 free
+ counted-ln_contig-104_6_plasmid-0 free
+ counted-ln_contig-105_1_plasmid-0 free
+ counted-ln_contig-105_2_plasmid-0 free
+ counted-ln_contig-105_3_plasmid-0 free
+ counted-ln_contig-105_4_plasmid-0 free
+ counted-ln_contig-105_6_plasmid-0 free
+ counted-ln_contig-105_7_plasmid-0 free
+ counted-ln_contig-106_0_plasmid-0 free
+ counted-ln_contig-106_1_plasmid-0 free
+ counted-ln_contig-106_2_plasmid-0 free
+ counted-ln_contig-106_3_plasmid-0 free
+ counted-ln_contig-108_0_plasmid-0 free
+ counted-ln_contig-108_1_plasmid-0 free
+ counted-ln_contig-108_2_plasmid-0 free
+ counted-ln_contig-108_3_plasmid-0 free
+ counted-ln_contig-108_4_plasmid-0 free
+ counted-ln_contig-109_0_plasmid-0 free
+ counted-ln_contig-109_1_plasmid-0 free
+ counted-ln_contig-109_2_plasmid-0 free
+ counted-ln_contig-109_3_plasmid-0 free
+ counted-ln_contig-109_4_plasmid-0 free
+ counted-ln_contig-109_5_plasmid-0 free
+ counted-ln_contig-109_6_plasmid-0 free
+ counted-ln_contig-109_7_plasmid-0 free
+ counted-ln_contig-109_8_plasmid-0 free
+ counted-ln_contig-110_0_plasmid-0 free
+ counted-ln_contig-110_1_plasmid-0 free
+ counted-ln_contig-110_2_plasmid-0 free
+ counted-ln_contig-111_0_plasmid-0 free
+ counted-ln_contig-111_1_plasmid-0 free
+ counted-ln_contig-111_2_plasmid-0 free
+ counted-ln_contig-112_0_plasmid-0 free
+ counted-ln_contig-112_1_plasmid-0 free
+ counted-ln_contig-112_2_plasmid-0 free
+ counted-ln_contig-112_3_plasmid-0 free
+ counted-ln_contig-112_4_plasmid-0 free
+ counted-ln_contig-112_5_plasmid-0 free
+ counted-ln_contig-112_6_plasmid-0 free
+ counted-ln_contig-112_7_plasmid-0 free
+ counted-ln_contig-112_8_plasmid-0 free
+ counted-ln_contig-113_0_plasmid-0 free
+ counted-ln_contig-113_1_plasmid-0 free
+ counted-ln_contig-113_2_plasmid-0 free
+ counted-ln_contig-113_3_plasmid-0 free
+ counted-ln_contig-113_4_plasmid-0 free
+ counted-ln_contig-113_5_plasmid-0 free
+ counted-ln_contig-114_0_plasmid-0 free
+ counted-ln_contig-114_1_plasmid-0 free
+ counted-ln_contig-114_2_plasmid-0 free
+ counted-ln_contig-114_3_plasmid-0 free
+ counted-ln_contig-114_4_plasmid-0 free
+ counted-ln_contig-115_0_plasmid-0 free
+ counted-ln_contig-115_1_plasmid-0 free
+ counted-ln_contig-115_4_plasmid-0 free
+ counted-ln_contig-115_5_plasmid-0 free
+ counted-ln_contig-115_6_plasmid-0 free
+ counted-ln_contig-116_0_plasmid-0 free
+ counted-ln_contig-116_2_plasmid-0 free
+ counted-ln_contig-117_0_plasmid-0 free
+ counted-ln_contig-117_1_plasmid-0 free
+ counted-ln_contig-117_2_plasmid-0 free
+ counted-ln_contig-117_3_plasmid-0 free
+ counted-ln_contig-118_0_plasmid-0 free
+ counted-ln_contig-119_0_plasmid-0 free
+ counted-ln_contig-119_2_plasmid-0 free
+ counted-ln_contig-119_3_plasmid-0 free
+ counted-ln_contig-119_4_plasmid-0 free
+ counted-ln_contig-119_6_plasmid-0 free
+ counted-ln_contig-120_0_plasmid-0 free
+ counted-ln_contig-120_1_plasmid-0 free
+ counted-ln_contig-120_2_plasmid-0 free
+ counted-ln_contig-120_3_plasmid-0 free
+ counted-ln_contig-120_4_plasmid-0 free
+ counted-ln_contig-120_5_plasmid-0 free
+ counted-ln_contig-120_6_plasmid-0 free
+Binaries
+ contig-1_0_plasmid-0 contig-2_0_plasmid-0 contig-2_1_plasmid-0
+ contig-3_0_plasmid-0 contig-3_1_plasmid-0 contig-4_0_plasmid-0
+ contig-5_0_plasmid-0 contig-5_1_plasmid-0 contig-6_0_plasmid-0
+ contig-7_0_plasmid-0 contig-8_0_plasmid-0 contig-8_1_plasmid-0
+ contig-9_0_plasmid-0 contig-10_0_plasmid-0 contig-11_0_plasmid-0
+ contig-12_0_plasmid-0 contig-12_1_plasmid-0 contig-13_0_plasmid-0
+ contig-18_0_plasmid-0 contig-18_1_plasmid-0 contig-19_0_plasmid-0
+ contig-20_0_plasmid-0 contig-20_1_plasmid-0 contig-21_0_plasmid-0
+ contig-21_1_plasmid-0 contig-22_0_plasmid-0 contig-22_1_plasmid-0
+ contig-24_0_plasmid-0 contig-24_1_plasmid-0 contig-27_0_plasmid-0
+ contig-27_1_plasmid-0 contig-31_0_plasmid-0 contig-31_1_plasmid-0
+ contig-34_0_plasmid-0 contig-34_1_plasmid-0 contig-35_1_plasmid-0
+ contig-36_0_plasmid-0 contig-36_1_plasmid-0 contig-38_0_plasmid-0
+ contig-38_1_plasmid-0 contig-39_0_plasmid-0 contig-40_0_plasmid-0
+ contig-41_0_plasmid-0 contig-42_0_plasmid-0 contig-42_1_plasmid-0
+ contig-47_0_plasmid-0 contig-47_1_plasmid-0 contig-48_0_plasmid-0
+ contig-48_1_plasmid-0 contig-50_0_plasmid-0 contig-50_1_plasmid-0
+ contig-50_2_plasmid-0 contig-50_3_plasmid-0 contig-50_5_plasmid-0
+ contig-50_6_plasmid-0 contig-50_7_plasmid-0 contig-50_8_plasmid-0
+ contig-50_9_plasmid-0 contig-50_10_plasmid-0 contig-52_1_plasmid-0
+ contig-52_2_plasmid-0 contig-54_0_plasmid-0 contig-54_1_plasmid-0
+ contig-54_4_plasmid-0 contig-54_5_plasmid-0 contig-54_6_plasmid-0
+ contig-54_7_plasmid-0 contig-54_8_plasmid-0 contig-57_0_plasmid-0
+ contig-57_1_plasmid-0 contig-57_3_plasmid-0 contig-57_4_plasmid-0
+ contig-57_5_plasmid-0 contig-57_6_plasmid-0 contig-57_7_plasmid-0
+ contig-57_8_plasmid-0 contig-57_9_plasmid-0 contig-57_11_plasmid-0
+ contig-57_12_plasmid-0 contig-60_0_plasmid-0 contig-60_1_plasmid-0
+ contig-60_2_plasmid-0 contig-61_1_plasmid-0 contig-62_0_plasmid-0
+ contig-62_1_plasmid-0 contig-64_0_plasmid-0 contig-64_1_plasmid-0
+ contig-66_0_plasmid-0 contig-66_1_plasmid-0 contig-67_0_plasmid-0
+ contig-67_1_plasmid-0 contig-67_3_plasmid-0 contig-67_4_plasmid-0
+ contig-67_5_plasmid-0 contig-67_6_plasmid-0 contig-67_8_plasmid-0
+ contig-67_9_plasmid-0 contig-67_10_plasmid-0 contig-67_11_plasmid-0
+ contig-69_0_plasmid-0 contig-72_0_plasmid-0 contig-72_1_plasmid-0
+ contig-73_0_plasmid-0 contig-73_1_plasmid-0 contig-74_0_plasmid-0
+ contig-74_1_plasmid-0 contig-76_0_plasmid-0 contig-76_1_plasmid-0
+ contig-76_2_plasmid-0 contig-76_4_plasmid-0 contig-77_0_plasmid-0
+ contig-78_0_plasmid-0 contig-78_1_plasmid-0 contig-79_0_plasmid-0
+ contig-80_3_plasmid-0 contig-81_0_plasmid-0 contig-82_0_plasmid-0
+ contig-82_1_plasmid-0 contig-82_2_plasmid-0 contig-83_0_plasmid-0
+ contig-83_1_plasmid-0 contig-83_2_plasmid-0 contig-83_3_plasmid-0
+ contig-83_4_plasmid-0 contig-85_0_plasmid-0 contig-86_1_plasmid-0
+ contig-86_2_plasmid-0 contig-86_3_plasmid-0 contig-86_4_plasmid-0
+ contig-86_5_plasmid-0 contig-86_6_plasmid-0 contig-86_7_plasmid-0
+ contig-87_0_plasmid-0 contig-87_2_plasmid-0 contig-88_0_plasmid-0
+ contig-88_1_plasmid-0 contig-89_0_plasmid-0 contig-90_0_plasmid-0
+ contig-90_1_plasmid-0 contig-90_2_plasmid-0 contig-90_3_plasmid-0
+ contig-90_4_plasmid-0 contig-90_5_plasmid-0 contig-90_6_plasmid-0
+ contig-90_7_plasmid-0 contig-91_0_plasmid-0 contig-91_1_plasmid-0
+ contig-92_0_plasmid-0 contig-92_1_plasmid-0 contig-92_2_plasmid-0
+ contig-92_3_plasmid-0 contig-92_4_plasmid-0 contig-93_1_plasmid-0
+ contig-94_0_plasmid-0 contig-94_1_plasmid-0 contig-94_2_plasmid-0
+ contig-94_3_plasmid-0 contig-94_5_plasmid-0 contig-95_1_plasmid-0
+ contig-95_2_plasmid-0 contig-95_3_plasmid-0 contig-95_5_plasmid-0
+ contig-96_0_plasmid-0 contig-96_1_plasmid-0 contig-96_2_plasmid-0
+ contig-96_3_plasmid-0 contig-96_4_plasmid-0 contig-96_5_plasmid-0
+ contig-96_6_plasmid-0 contig-97_0_plasmid-0 contig-97_2_plasmid-0
+ contig-97_4_plasmid-0 contig-97_5_plasmid-0 contig-98_0_plasmid-0
+ contig-98_1_plasmid-0 contig-98_2_plasmid-0 contig-98_5_plasmid-0
+ contig-98_7_plasmid-0 contig-99_6_plasmid-0 contig-100_0_plasmid-0
+ contig-100_1_plasmid-0 contig-100_2_plasmid-0 contig-100_3_plasmid-0
+ contig-101_0_plasmid-0 contig-101_1_plasmid-0 contig-102_0_plasmid-0
+ contig-102_1_plasmid-0 contig-102_2_plasmid-0 contig-103_0_plasmid-0
+ contig-103_1_plasmid-0 contig-103_2_plasmid-0 contig-104_0_plasmid-0
+ contig-104_1_plasmid-0 contig-104_2_plasmid-0 contig-104_3_plasmid-0
+ contig-104_4_plasmid-0 contig-104_5_plasmid-0 contig-104_6_plasmid-0
+ contig-105_1_plasmid-0 contig-105_2_plasmid-0 contig-105_3_plasmid-0
+ contig-105_4_plasmid-0 contig-105_6_plasmid-0 contig-105_7_plasmid-0
+ contig-106_0_plasmid-0 contig-106_1_plasmid-0 contig-106_2_plasmid-0
+ contig-106_3_plasmid-0 contig-108_0_plasmid-0 contig-108_1_plasmid-0
+ contig-108_2_plasmid-0 contig-108_3_plasmid-0 contig-108_4_plasmid-0
+ contig-109_0_plasmid-0 contig-109_1_plasmid-0 contig-109_2_plasmid-0
+ contig-109_3_plasmid-0 contig-109_4_plasmid-0 contig-109_5_plasmid-0
+ contig-109_6_plasmid-0 contig-109_7_plasmid-0 contig-109_8_plasmid-0
+ contig-110_0_plasmid-0 contig-110_1_plasmid-0 contig-110_2_plasmid-0
+ contig-111_0_plasmid-0 contig-111_1_plasmid-0 contig-111_2_plasmid-0
+ contig-112_0_plasmid-0 contig-112_1_plasmid-0 contig-112_2_plasmid-0
+ contig-112_3_plasmid-0 contig-112_4_plasmid-0 contig-112_5_plasmid-0
+ contig-112_6_plasmid-0 contig-112_7_plasmid-0 contig-112_8_plasmid-0
+ contig-113_0_plasmid-0 contig-113_1_plasmid-0 contig-113_2_plasmid-0
+ contig-113_3_plasmid-0 contig-113_4_plasmid-0 contig-113_5_plasmid-0
+ contig-114_0_plasmid-0 contig-114_1_plasmid-0 contig-114_2_plasmid-0
+ contig-114_3_plasmid-0 contig-114_4_plasmid-0 contig-115_0_plasmid-0
+ contig-115_1_plasmid-0 contig-115_4_plasmid-0 contig-115_5_plasmid-0
+ contig-115_6_plasmid-0 contig-116_0_plasmid-0 contig-116_2_plasmid-0
+ contig-117_0_plasmid-0 contig-117_1_plasmid-0 contig-117_2_plasmid-0
+ contig-117_3_plasmid-0 contig-118_0_plasmid-0 contig-119_0_plasmid-0
+ contig-119_2_plasmid-0 contig-119_3_plasmid-0 contig-119_4_plasmid-0
+ contig-119_6_plasmid-0 contig-120_0_plasmid-0 contig-120_1_plasmid-0
+ contig-120_2_plasmid-0 contig-120_3_plasmid-0 contig-120_4_plasmid-0
+ contig-120_5_plasmid-0 contig-120_6_plasmid-0
+ counted-seed_contig-1_0_plasmid-0 counted-seed_contig-2_0_plasmid-0
+ counted-seed_contig-2_1_plasmid-0 counted-seed_contig-3_0_plasmid-0
+ counted-seed_contig-3_1_plasmid-0 counted-seed_contig-4_0_plasmid-0
+ counted-seed_contig-5_0_plasmid-0 counted-seed_contig-5_1_plasmid-0
+ counted-seed_contig-6_0_plasmid-0 counted-seed_contig-7_0_plasmid-0
+ counted-seed_contig-8_0_plasmid-0 counted-seed_contig-8_1_plasmid-0
+ counted-seed_contig-9_0_plasmid-0 counted-seed_contig-10_0_plasmid-0
+ counted-seed_contig-11_0_plasmid-0 counted-seed_contig-12_0_plasmid-0
+ counted-seed_contig-12_1_plasmid-0 counted-seed_contig-13_0_plasmid-0
+ counted-seed_contig-18_0_plasmid-0 counted-seed_contig-18_1_plasmid-0
+ counted-seed_contig-19_0_plasmid-0 counted-seed_contig-20_0_plasmid-0
+ counted-seed_contig-20_1_plasmid-0 counted-seed_contig-21_0_plasmid-0
+ counted-seed_contig-21_1_plasmid-0 counted-seed_contig-22_0_plasmid-0
+ counted-seed_contig-22_1_plasmid-0 counted-seed_contig-24_0_plasmid-0
+ counted-seed_contig-24_1_plasmid-0 counted-seed_contig-27_0_plasmid-0
+ counted-seed_contig-27_1_plasmid-0 counted-seed_contig-31_0_plasmid-0
+ counted-seed_contig-31_1_plasmid-0 counted-seed_contig-34_0_plasmid-0
+ counted-seed_contig-34_1_plasmid-0 counted-seed_contig-35_1_plasmid-0
+ counted-seed_contig-36_0_plasmid-0 counted-seed_contig-36_1_plasmid-0
+ counted-seed_contig-38_0_plasmid-0 counted-seed_contig-38_1_plasmid-0
+ counted-seed_contig-39_0_plasmid-0 counted-seed_contig-40_0_plasmid-0
+ counted-seed_contig-41_0_plasmid-0 counted-seed_contig-42_0_plasmid-0
+ counted-seed_contig-42_1_plasmid-0 counted-seed_contig-47_0_plasmid-0
+ counted-seed_contig-47_1_plasmid-0 counted-seed_contig-48_0_plasmid-0
+ counted-seed_contig-48_1_plasmid-0 counted-seed_contig-50_0_plasmid-0
+ counted-seed_contig-50_1_plasmid-0 counted-seed_contig-50_2_plasmid-0
+ counted-seed_contig-50_3_plasmid-0 counted-seed_contig-50_5_plasmid-0
+ counted-seed_contig-50_6_plasmid-0 counted-seed_contig-50_7_plasmid-0
+ counted-seed_contig-50_8_plasmid-0 counted-seed_contig-50_9_plasmid-0
+ counted-seed_contig-50_10_plasmid-0 counted-seed_contig-52_1_plasmid-0
+ counted-seed_contig-52_2_plasmid-0 counted-seed_contig-54_0_plasmid-0
+ counted-seed_contig-54_1_plasmid-0 counted-seed_contig-54_4_plasmid-0
+ counted-seed_contig-54_5_plasmid-0 counted-seed_contig-54_6_plasmid-0
+ counted-seed_contig-54_7_plasmid-0 counted-seed_contig-54_8_plasmid-0
+ counted-seed_contig-57_0_plasmid-0 counted-seed_contig-57_1_plasmid-0
+ counted-seed_contig-57_3_plasmid-0 counted-seed_contig-57_4_plasmid-0
+ counted-seed_contig-57_5_plasmid-0 counted-seed_contig-57_6_plasmid-0
+ counted-seed_contig-57_7_plasmid-0 counted-seed_contig-57_8_plasmid-0
+ counted-seed_contig-57_9_plasmid-0 counted-seed_contig-57_11_plasmid-0
+ counted-seed_contig-57_12_plasmid-0 counted-seed_contig-60_0_plasmid-0
+ counted-seed_contig-60_1_plasmid-0 counted-seed_contig-60_2_plasmid-0
+ counted-seed_contig-61_1_plasmid-0 counted-seed_contig-62_0_plasmid-0
+ counted-seed_contig-62_1_plasmid-0 counted-seed_contig-64_0_plasmid-0
+ counted-seed_contig-64_1_plasmid-0 counted-seed_contig-66_0_plasmid-0
+ counted-seed_contig-66_1_plasmid-0 counted-seed_contig-67_0_plasmid-0
+ counted-seed_contig-67_1_plasmid-0 counted-seed_contig-67_3_plasmid-0
+ counted-seed_contig-67_4_plasmid-0 counted-seed_contig-67_5_plasmid-0
+ counted-seed_contig-67_6_plasmid-0 counted-seed_contig-67_8_plasmid-0
+ counted-seed_contig-67_9_plasmid-0 counted-seed_contig-67_10_plasmid-0
+ counted-seed_contig-67_11_plasmid-0 counted-seed_contig-69_0_plasmid-0
+ counted-seed_contig-72_0_plasmid-0 counted-seed_contig-72_1_plasmid-0
+ counted-seed_contig-73_0_plasmid-0 counted-seed_contig-73_1_plasmid-0
+ counted-seed_contig-74_0_plasmid-0 counted-seed_contig-74_1_plasmid-0
+ counted-seed_contig-76_0_plasmid-0 counted-seed_contig-76_1_plasmid-0
+ counted-seed_contig-76_2_plasmid-0 counted-seed_contig-76_4_plasmid-0
+ counted-seed_contig-77_0_plasmid-0 counted-seed_contig-78_0_plasmid-0
+ counted-seed_contig-78_1_plasmid-0 counted-seed_contig-79_0_plasmid-0
+ counted-seed_contig-80_3_plasmid-0 counted-seed_contig-81_0_plasmid-0
+ counted-seed_contig-82_0_plasmid-0 counted-seed_contig-82_1_plasmid-0
+ counted-seed_contig-82_2_plasmid-0 counted-seed_contig-83_0_plasmid-0
+ counted-seed_contig-83_1_plasmid-0 counted-seed_contig-83_2_plasmid-0
+ counted-seed_contig-83_3_plasmid-0 counted-seed_contig-83_4_plasmid-0
+ counted-seed_contig-85_0_plasmid-0 counted-seed_contig-86_1_plasmid-0
+ counted-seed_contig-86_2_plasmid-0 counted-seed_contig-86_3_plasmid-0
+ counted-seed_contig-86_4_plasmid-0 counted-seed_contig-86_5_plasmid-0
+ counted-seed_contig-86_6_plasmid-0 counted-seed_contig-86_7_plasmid-0
+ counted-seed_contig-87_0_plasmid-0 counted-seed_contig-87_2_plasmid-0
+ counted-seed_contig-88_0_plasmid-0 counted-seed_contig-88_1_plasmid-0
+ counted-seed_contig-89_0_plasmid-0 counted-seed_contig-90_0_plasmid-0
+ counted-seed_contig-90_1_plasmid-0 counted-seed_contig-90_2_plasmid-0
+ counted-seed_contig-90_3_plasmid-0 counted-seed_contig-90_4_plasmid-0
+ counted-seed_contig-90_5_plasmid-0 counted-seed_contig-90_6_plasmid-0
+ counted-seed_contig-90_7_plasmid-0 counted-seed_contig-91_0_plasmid-0
+ counted-seed_contig-91_1_plasmid-0 counted-seed_contig-92_0_plasmid-0
+ counted-seed_contig-92_1_plasmid-0 counted-seed_contig-92_2_plasmid-0
+ counted-seed_contig-92_3_plasmid-0 counted-seed_contig-92_4_plasmid-0
+ counted-seed_contig-93_1_plasmid-0 counted-seed_contig-94_0_plasmid-0
+ counted-seed_contig-94_1_plasmid-0 counted-seed_contig-94_2_plasmid-0
+ counted-seed_contig-94_3_plasmid-0 counted-seed_contig-94_5_plasmid-0
+ counted-seed_contig-95_1_plasmid-0 counted-seed_contig-95_2_plasmid-0
+ counted-seed_contig-95_3_plasmid-0 counted-seed_contig-95_5_plasmid-0
+ counted-seed_contig-96_0_plasmid-0 counted-seed_contig-96_1_plasmid-0
+ counted-seed_contig-96_2_plasmid-0 counted-seed_contig-96_3_plasmid-0
+ counted-seed_contig-96_4_plasmid-0 counted-seed_contig-96_5_plasmid-0
+ counted-seed_contig-96_6_plasmid-0 counted-seed_contig-97_0_plasmid-0
+ counted-seed_contig-97_2_plasmid-0 counted-seed_contig-97_4_plasmid-0
+ counted-seed_contig-97_5_plasmid-0 counted-seed_contig-98_0_plasmid-0
+ counted-seed_contig-98_1_plasmid-0 counted-seed_contig-98_2_plasmid-0
+ counted-seed_contig-98_5_plasmid-0 counted-seed_contig-98_7_plasmid-0
+ counted-seed_contig-99_6_plasmid-0 counted-seed_contig-100_0_plasmid-0
+ counted-seed_contig-100_1_plasmid-0 counted-seed_contig-100_2_plasmid-0
+ counted-seed_contig-100_3_plasmid-0 counted-seed_contig-101_0_plasmid-0
+ counted-seed_contig-101_1_plasmid-0 counted-seed_contig-102_0_plasmid-0
+ counted-seed_contig-102_1_plasmid-0 counted-seed_contig-102_2_plasmid-0
+ counted-seed_contig-103_0_plasmid-0 counted-seed_contig-103_1_plasmid-0
+ counted-seed_contig-103_2_plasmid-0 counted-seed_contig-104_0_plasmid-0
+ counted-seed_contig-104_1_plasmid-0 counted-seed_contig-104_2_plasmid-0
+ counted-seed_contig-104_3_plasmid-0 counted-seed_contig-104_4_plasmid-0
+ counted-seed_contig-104_5_plasmid-0 counted-seed_contig-104_6_plasmid-0
+ counted-seed_contig-105_1_plasmid-0 counted-seed_contig-105_2_plasmid-0
+ counted-seed_contig-105_3_plasmid-0 counted-seed_contig-105_4_plasmid-0
+ counted-seed_contig-105_6_plasmid-0 counted-seed_contig-105_7_plasmid-0
+ counted-seed_contig-106_0_plasmid-0 counted-seed_contig-106_1_plasmid-0
+ counted-seed_contig-106_2_plasmid-0 counted-seed_contig-106_3_plasmid-0
+ counted-seed_contig-108_0_plasmid-0 counted-seed_contig-108_1_plasmid-0
+ counted-seed_contig-108_2_plasmid-0 counted-seed_contig-108_3_plasmid-0
+ counted-seed_contig-108_4_plasmid-0 counted-seed_contig-109_0_plasmid-0
+ counted-seed_contig-109_1_plasmid-0 counted-seed_contig-109_2_plasmid-0
+ counted-seed_contig-109_3_plasmid-0 counted-seed_contig-109_4_plasmid-0
+ counted-seed_contig-109_5_plasmid-0 counted-seed_contig-109_6_plasmid-0
+ counted-seed_contig-109_7_plasmid-0 counted-seed_contig-109_8_plasmid-0
+ counted-seed_contig-110_0_plasmid-0 counted-seed_contig-110_1_plasmid-0
+ counted-seed_contig-110_2_plasmid-0 counted-seed_contig-111_0_plasmid-0
+ counted-seed_contig-111_1_plasmid-0 counted-seed_contig-111_2_plasmid-0
+ counted-seed_contig-112_0_plasmid-0 counted-seed_contig-112_1_plasmid-0
+ counted-seed_contig-112_2_plasmid-0 counted-seed_contig-112_3_plasmid-0
+ counted-seed_contig-112_4_plasmid-0 counted-seed_contig-112_5_plasmid-0
+ counted-seed_contig-112_6_plasmid-0 counted-seed_contig-112_7_plasmid-0
+ counted-seed_contig-112_8_plasmid-0 counted-seed_contig-113_0_plasmid-0
+ counted-seed_contig-113_1_plasmid-0 counted-seed_contig-113_2_plasmid-0
+ counted-seed_contig-113_3_plasmid-0 counted-seed_contig-113_4_plasmid-0
+ counted-seed_contig-113_5_plasmid-0 counted-seed_contig-114_0_plasmid-0
+ counted-seed_contig-114_1_plasmid-0 counted-seed_contig-114_2_plasmid-0
+ counted-seed_contig-114_3_plasmid-0 counted-seed_contig-114_4_plasmid-0
+ counted-seed_contig-115_0_plasmid-0 counted-seed_contig-115_1_plasmid-0
+ counted-seed_contig-115_4_plasmid-0 counted-seed_contig-115_5_plasmid-0
+ counted-seed_contig-115_6_plasmid-0 counted-seed_contig-116_0_plasmid-0
+ counted-seed_contig-116_2_plasmid-0 counted-seed_contig-117_0_plasmid-0
+ counted-seed_contig-117_1_plasmid-0 counted-seed_contig-117_2_plasmid-0
+ counted-seed_contig-117_3_plasmid-0 counted-seed_contig-118_0_plasmid-0
+ counted-seed_contig-119_0_plasmid-0 counted-seed_contig-119_2_plasmid-0
+ counted-seed_contig-119_3_plasmid-0 counted-seed_contig-119_4_plasmid-0
+ counted-seed_contig-119_6_plasmid-0 counted-seed_contig-120_0_plasmid-0
+ counted-seed_contig-120_1_plasmid-0 counted-seed_contig-120_2_plasmid-0
+ counted-seed_contig-120_3_plasmid-0 counted-seed_contig-120_4_plasmid-0
+ counted-seed_contig-120_5_plasmid-0 counted-seed_contig-120_6_plasmid-0
+Generals
+ counted-ln_contig-1_0_plasmid-0 counted-ln_contig-2_0_plasmid-0
+ counted-ln_contig-2_1_plasmid-0 counted-ln_contig-3_0_plasmid-0
+ counted-ln_contig-3_1_plasmid-0 counted-ln_contig-4_0_plasmid-0
+ counted-ln_contig-5_0_plasmid-0 counted-ln_contig-5_1_plasmid-0
+ counted-ln_contig-6_0_plasmid-0 counted-ln_contig-7_0_plasmid-0
+ counted-ln_contig-8_0_plasmid-0 counted-ln_contig-8_1_plasmid-0
+ counted-ln_contig-9_0_plasmid-0 counted-ln_contig-10_0_plasmid-0
+ counted-ln_contig-11_0_plasmid-0 counted-ln_contig-12_0_plasmid-0
+ counted-ln_contig-12_1_plasmid-0 counted-ln_contig-13_0_plasmid-0
+ counted-ln_contig-18_0_plasmid-0 counted-ln_contig-18_1_plasmid-0
+ counted-ln_contig-19_0_plasmid-0 counted-ln_contig-20_0_plasmid-0
+ counted-ln_contig-20_1_plasmid-0 counted-ln_contig-21_0_plasmid-0
+ counted-ln_contig-21_1_plasmid-0 counted-ln_contig-22_0_plasmid-0
+ counted-ln_contig-22_1_plasmid-0 counted-ln_contig-24_0_plasmid-0
+ counted-ln_contig-24_1_plasmid-0 counted-ln_contig-27_0_plasmid-0
+ counted-ln_contig-27_1_plasmid-0 counted-ln_contig-31_0_plasmid-0
+ counted-ln_contig-31_1_plasmid-0 counted-ln_contig-34_0_plasmid-0
+ counted-ln_contig-34_1_plasmid-0 counted-ln_contig-35_1_plasmid-0
+ counted-ln_contig-36_0_plasmid-0 counted-ln_contig-36_1_plasmid-0
+ counted-ln_contig-38_0_plasmid-0 counted-ln_contig-38_1_plasmid-0
+ counted-ln_contig-39_0_plasmid-0 counted-ln_contig-40_0_plasmid-0
+ counted-ln_contig-41_0_plasmid-0 counted-ln_contig-42_0_plasmid-0
+ counted-ln_contig-42_1_plasmid-0 counted-ln_contig-47_0_plasmid-0
+ counted-ln_contig-47_1_plasmid-0 counted-ln_contig-48_0_plasmid-0
+ counted-ln_contig-48_1_plasmid-0 counted-ln_contig-50_0_plasmid-0
+ counted-ln_contig-50_1_plasmid-0 counted-ln_contig-50_2_plasmid-0
+ counted-ln_contig-50_3_plasmid-0 counted-ln_contig-50_5_plasmid-0
+ counted-ln_contig-50_6_plasmid-0 counted-ln_contig-50_7_plasmid-0
+ counted-ln_contig-50_8_plasmid-0 counted-ln_contig-50_9_plasmid-0
+ counted-ln_contig-50_10_plasmid-0 counted-ln_contig-52_1_plasmid-0
+ counted-ln_contig-52_2_plasmid-0 counted-ln_contig-54_0_plasmid-0
+ counted-ln_contig-54_1_plasmid-0 counted-ln_contig-54_4_plasmid-0
+ counted-ln_contig-54_5_plasmid-0 counted-ln_contig-54_6_plasmid-0
+ counted-ln_contig-54_7_plasmid-0 counted-ln_contig-54_8_plasmid-0
+ counted-ln_contig-57_0_plasmid-0 counted-ln_contig-57_1_plasmid-0
+ counted-ln_contig-57_3_plasmid-0 counted-ln_contig-57_4_plasmid-0
+ counted-ln_contig-57_5_plasmid-0 counted-ln_contig-57_6_plasmid-0
+ counted-ln_contig-57_7_plasmid-0 counted-ln_contig-57_8_plasmid-0
+ counted-ln_contig-57_9_plasmid-0 counted-ln_contig-57_11_plasmid-0
+ counted-ln_contig-57_12_plasmid-0 counted-ln_contig-60_0_plasmid-0
+ counted-ln_contig-60_1_plasmid-0 counted-ln_contig-60_2_plasmid-0
+ counted-ln_contig-61_1_plasmid-0 counted-ln_contig-62_0_plasmid-0
+ counted-ln_contig-62_1_plasmid-0 counted-ln_contig-64_0_plasmid-0
+ counted-ln_contig-64_1_plasmid-0 counted-ln_contig-66_0_plasmid-0
+ counted-ln_contig-66_1_plasmid-0 counted-ln_contig-67_0_plasmid-0
+ counted-ln_contig-67_1_plasmid-0 counted-ln_contig-67_3_plasmid-0
+ counted-ln_contig-67_4_plasmid-0 counted-ln_contig-67_5_plasmid-0
+ counted-ln_contig-67_6_plasmid-0 counted-ln_contig-67_8_plasmid-0
+ counted-ln_contig-67_9_plasmid-0 counted-ln_contig-67_10_plasmid-0
+ counted-ln_contig-67_11_plasmid-0 counted-ln_contig-69_0_plasmid-0
+ counted-ln_contig-72_0_plasmid-0 counted-ln_contig-72_1_plasmid-0
+ counted-ln_contig-73_0_plasmid-0 counted-ln_contig-73_1_plasmid-0
+ counted-ln_contig-74_0_plasmid-0 counted-ln_contig-74_1_plasmid-0
+ counted-ln_contig-76_0_plasmid-0 counted-ln_contig-76_1_plasmid-0
+ counted-ln_contig-76_2_plasmid-0 counted-ln_contig-76_4_plasmid-0
+ counted-ln_contig-77_0_plasmid-0 counted-ln_contig-78_0_plasmid-0
+ counted-ln_contig-78_1_plasmid-0 counted-ln_contig-79_0_plasmid-0
+ counted-ln_contig-80_3_plasmid-0 counted-ln_contig-81_0_plasmid-0
+ counted-ln_contig-82_0_plasmid-0 counted-ln_contig-82_1_plasmid-0
+ counted-ln_contig-82_2_plasmid-0 counted-ln_contig-83_0_plasmid-0
+ counted-ln_contig-83_1_plasmid-0 counted-ln_contig-83_2_plasmid-0
+ counted-ln_contig-83_3_plasmid-0 counted-ln_contig-83_4_plasmid-0
+ counted-ln_contig-85_0_plasmid-0 counted-ln_contig-86_1_plasmid-0
+ counted-ln_contig-86_2_plasmid-0 counted-ln_contig-86_3_plasmid-0
+ counted-ln_contig-86_4_plasmid-0 counted-ln_contig-86_5_plasmid-0
+ counted-ln_contig-86_6_plasmid-0 counted-ln_contig-86_7_plasmid-0
+ counted-ln_contig-87_0_plasmid-0 counted-ln_contig-87_2_plasmid-0
+ counted-ln_contig-88_0_plasmid-0 counted-ln_contig-88_1_plasmid-0
+ counted-ln_contig-89_0_plasmid-0 counted-ln_contig-90_0_plasmid-0
+ counted-ln_contig-90_1_plasmid-0 counted-ln_contig-90_2_plasmid-0
+ counted-ln_contig-90_3_plasmid-0 counted-ln_contig-90_4_plasmid-0
+ counted-ln_contig-90_5_plasmid-0 counted-ln_contig-90_6_plasmid-0
+ counted-ln_contig-90_7_plasmid-0 counted-ln_contig-91_0_plasmid-0
+ counted-ln_contig-91_1_plasmid-0 counted-ln_contig-92_0_plasmid-0
+ counted-ln_contig-92_1_plasmid-0 counted-ln_contig-92_2_plasmid-0
+ counted-ln_contig-92_3_plasmid-0 counted-ln_contig-92_4_plasmid-0
+ counted-ln_contig-93_1_plasmid-0 counted-ln_contig-94_0_plasmid-0
+ counted-ln_contig-94_1_plasmid-0 counted-ln_contig-94_2_plasmid-0
+ counted-ln_contig-94_3_plasmid-0 counted-ln_contig-94_5_plasmid-0
+ counted-ln_contig-95_1_plasmid-0 counted-ln_contig-95_2_plasmid-0
+ counted-ln_contig-95_3_plasmid-0 counted-ln_contig-95_5_plasmid-0
+ counted-ln_contig-96_0_plasmid-0 counted-ln_contig-96_1_plasmid-0
+ counted-ln_contig-96_2_plasmid-0 counted-ln_contig-96_3_plasmid-0
+ counted-ln_contig-96_4_plasmid-0 counted-ln_contig-96_5_plasmid-0
+ counted-ln_contig-96_6_plasmid-0 counted-ln_contig-97_0_plasmid-0
+ counted-ln_contig-97_2_plasmid-0 counted-ln_contig-97_4_plasmid-0
+ counted-ln_contig-97_5_plasmid-0 counted-ln_contig-98_0_plasmid-0
+ counted-ln_contig-98_1_plasmid-0 counted-ln_contig-98_2_plasmid-0
+ counted-ln_contig-98_5_plasmid-0 counted-ln_contig-98_7_plasmid-0
+ counted-ln_contig-99_6_plasmid-0 counted-ln_contig-100_0_plasmid-0
+ counted-ln_contig-100_1_plasmid-0 counted-ln_contig-100_2_plasmid-0
+ counted-ln_contig-100_3_plasmid-0 counted-ln_contig-101_0_plasmid-0
+ counted-ln_contig-101_1_plasmid-0 counted-ln_contig-102_0_plasmid-0
+ counted-ln_contig-102_1_plasmid-0 counted-ln_contig-102_2_plasmid-0
+ counted-ln_contig-103_0_plasmid-0 counted-ln_contig-103_1_plasmid-0
+ counted-ln_contig-103_2_plasmid-0 counted-ln_contig-104_0_plasmid-0
+ counted-ln_contig-104_1_plasmid-0 counted-ln_contig-104_2_plasmid-0
+ counted-ln_contig-104_3_plasmid-0 counted-ln_contig-104_4_plasmid-0
+ counted-ln_contig-104_5_plasmid-0 counted-ln_contig-104_6_plasmid-0
+ counted-ln_contig-105_1_plasmid-0 counted-ln_contig-105_2_plasmid-0
+ counted-ln_contig-105_3_plasmid-0 counted-ln_contig-105_4_plasmid-0
+ counted-ln_contig-105_6_plasmid-0 counted-ln_contig-105_7_plasmid-0
+ counted-ln_contig-106_0_plasmid-0 counted-ln_contig-106_1_plasmid-0
+ counted-ln_contig-106_2_plasmid-0 counted-ln_contig-106_3_plasmid-0
+ counted-ln_contig-108_0_plasmid-0 counted-ln_contig-108_1_plasmid-0
+ counted-ln_contig-108_2_plasmid-0 counted-ln_contig-108_3_plasmid-0
+ counted-ln_contig-108_4_plasmid-0 counted-ln_contig-109_0_plasmid-0
+ counted-ln_contig-109_1_plasmid-0 counted-ln_contig-109_2_plasmid-0
+ counted-ln_contig-109_3_plasmid-0 counted-ln_contig-109_4_plasmid-0
+ counted-ln_contig-109_5_plasmid-0 counted-ln_contig-109_6_plasmid-0
+ counted-ln_contig-109_7_plasmid-0 counted-ln_contig-109_8_plasmid-0
+ counted-ln_contig-110_0_plasmid-0 counted-ln_contig-110_1_plasmid-0
+ counted-ln_contig-110_2_plasmid-0 counted-ln_contig-111_0_plasmid-0
+ counted-ln_contig-111_1_plasmid-0 counted-ln_contig-111_2_plasmid-0
+ counted-ln_contig-112_0_plasmid-0 counted-ln_contig-112_1_plasmid-0
+ counted-ln_contig-112_2_plasmid-0 counted-ln_contig-112_3_plasmid-0
+ counted-ln_contig-112_4_plasmid-0 counted-ln_contig-112_5_plasmid-0
+ counted-ln_contig-112_6_plasmid-0 counted-ln_contig-112_7_plasmid-0
+ counted-ln_contig-112_8_plasmid-0 counted-ln_contig-113_0_plasmid-0
+ counted-ln_contig-113_1_plasmid-0 counted-ln_contig-113_2_plasmid-0
+ counted-ln_contig-113_3_plasmid-0 counted-ln_contig-113_4_plasmid-0
+ counted-ln_contig-113_5_plasmid-0 counted-ln_contig-114_0_plasmid-0
+ counted-ln_contig-114_1_plasmid-0 counted-ln_contig-114_2_plasmid-0
+ counted-ln_contig-114_3_plasmid-0 counted-ln_contig-114_4_plasmid-0
+ counted-ln_contig-115_0_plasmid-0 counted-ln_contig-115_1_plasmid-0
+ counted-ln_contig-115_4_plasmid-0 counted-ln_contig-115_5_plasmid-0
+ counted-ln_contig-115_6_plasmid-0 counted-ln_contig-116_0_plasmid-0
+ counted-ln_contig-116_2_plasmid-0 counted-ln_contig-117_0_plasmid-0
+ counted-ln_contig-117_1_plasmid-0 counted-ln_contig-117_2_plasmid-0
+ counted-ln_contig-117_3_plasmid-0 counted-ln_contig-118_0_plasmid-0
+ counted-ln_contig-119_0_plasmid-0 counted-ln_contig-119_2_plasmid-0
+ counted-ln_contig-119_3_plasmid-0 counted-ln_contig-119_4_plasmid-0
+ counted-ln_contig-119_6_plasmid-0 counted-ln_contig-120_0_plasmid-0
+ counted-ln_contig-120_1_plasmid-0 counted-ln_contig-120_2_plasmid-0
+ counted-ln_contig-120_3_plasmid-0 counted-ln_contig-120_4_plasmid-0
+ counted-ln_contig-120_5_plasmid-0 counted-ln_contig-120_6_plasmid-0
+End

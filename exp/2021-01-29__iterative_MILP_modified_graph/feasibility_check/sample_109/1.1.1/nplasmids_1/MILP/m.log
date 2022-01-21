@@ -1,0 +1,64 @@
+
+Gurobi 7.5.2 (linux64) logging started Sun Jan  3 00:12:45 2021
+
+Changed value of parameter LogFile to /home/aniket/python_scripts/Plasmids-Optimization/exp/2019-05-07__iterative_MILP_unweighted/feasibility_check/sample_109/1.1.1/nplasmids_1/MILP/m.log
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 2400.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 2590 rows, 1182 columns and 4703 nonzeros
+Variable types: 441 continuous, 741 integer (301 binary)
+Coefficient statistics:
+  Matrix range     [1e-02, 1e+06]
+  Objective range  [3e-04, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [9e-01, 2e+05]
+Presolve removed 2231 rows and 903 columns
+Presolve time: 0.01s
+Presolved: 359 rows, 279 columns, 1060 nonzeros
+Variable types: 56 continuous, 223 integer (166 binary)
+
+Root relaxation: infeasible, 249 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 infeasible    0               - infeasible      -     -    0s
+
+Explored 0 nodes (249 simplex iterations) in 0.02 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 0
+
+Model is infeasible or unbounded
+Best objective -, best bound -, gap -
+Presolve removed 2351 rows and 967 columns
+Presolve time: 0.00s
+Presolved: 239 rows, 215 columns, 750 nonzeros
+Variable types: 0 continuous, 215 integer (158 binary)
+
+Root relaxation: infeasible, 141 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 infeasible    0               - infeasible      -     -    0s
+
+Explored 0 nodes (141 simplex iterations) in 0.01 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+      Constraints           Bounds       Runtime
+     Min       Max       Min      Max
+------------------------------------------------
+        0     2201         0      881         0s
+      188      188         0        0         1s
+
+IIS computed: 188 constraints, 0 bounds
+IIS runtime: 0.59 seconds
+Warning: linear constraint 0 and linear constraint 1 have the same name "link_ubd"

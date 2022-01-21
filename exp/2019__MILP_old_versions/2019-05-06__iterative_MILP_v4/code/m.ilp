@@ -1,0 +1,204 @@
+\ Model Plasmids_copy
+\ LP format - for model browsing. Use MPS format to capture full model detail.
+Minimize
+ 
+Subject To
+ extr_ubd: contigext-48t_plasmid-0 - link-48h48t_plasmid-0 <= 0.99
+ extr_ubd: contigext-31t_plasmid-0 - link-31h31t_plasmid-0 <= 0.99
+ extr_ubd: contigext-111h_plasmid-0 <= 0.99
+ extr_ubd: contigext-43h_plasmid-0 <= 0.99
+ extr_ubd: contigext-96h_plasmid-0 <= 0.99
+ extr_ubd: contigext-48h_plasmid-0 - link-48h48t_plasmid-0 <= 0.99
+ extr_ubd: contigext-111t_plasmid-0 <= 0.99
+ extr_ubd: contigext-27t_plasmid-0 <= 0.99
+ extr_ubd: contigext-54t_plasmid-0 <= 0.99
+ extr_ubd: contigext-33t_plasmid-0 <= 0.99
+ extr_ubd: contigext-27h_plasmid-0 <= 0.99
+ extr_ubd: contigext-43t_plasmid-0 <= 0.99
+ extr_ubd: contigext-54h_plasmid-0 <= 0.99
+ extr_ubd: contigext-40t_plasmid-0 <= 0.99
+ extr_ubd: contigext-33h_plasmid-0 <= 0.99
+ extr_ubd: contigext-96t_plasmid-0 <= 0.99
+ extr_ubd: contigext-31h_plasmid-0 - link-31h31t_plasmid-0 <= 0.99
+ extr_ubd: contigext-79t_plasmid-0 <= 0.99
+ extr_ubd: contigext-79h_plasmid-0 <= 0.99
+ extr_ubd: contigext-40h_plasmid-0 <= 0.99
+ contig_ubd: contig-43_plasmid-0 - 0.5 contigext-43h_plasmid-0
+   - 0.5 contigext-43t_plasmid-0 <= 0.99
+ contig_ubd: contig-111_plasmid-0 - 0.5 contigext-111h_plasmid-0
+   - 0.5 contigext-111t_plasmid-0 <= 0.99
+ contig_ubd: contig-27_plasmid-0 - 0.5 contigext-27h_plasmid-0
+   - 0.5 contigext-27t_plasmid-0 <= 0.99
+ contig_ubd: contig-48_plasmid-0 - 0.5 contigext-48h_plasmid-0
+   - 0.5 contigext-48t_plasmid-0 <= 0.99
+ contig_ubd: contig-40_plasmid-0 - 0.5 contigext-40h_plasmid-0
+   - 0.5 contigext-40t_plasmid-0 <= 0.99
+ contig_ubd: contig-79_plasmid-0 - 0.5 contigext-79h_plasmid-0
+   - 0.5 contigext-79t_plasmid-0 <= 0.99
+ contig_ubd: contig-96_plasmid-0 - 0.5 contigext-96h_plasmid-0
+   - 0.5 contigext-96t_plasmid-0 <= 0.99
+ contig_ubd: contig-33_plasmid-0 - 0.5 contigext-33h_plasmid-0
+   - 0.5 contigext-33t_plasmid-0 <= 0.99
+ contig_ubd: contig-54_plasmid-0 - 0.5 contigext-54h_plasmid-0
+   - 0.5 contigext-54t_plasmid-0 <= 0.99
+ contig_ubd: contig-31_plasmid-0 - 0.5 contigext-31h_plasmid-0
+   - 0.5 contigext-31t_plasmid-0 <= 0.99
+ counted_seed: counted-seed_contig-77_plasmid-0 = 0
+ counted_seed: counted-seed_contig-41_plasmid-0 = 0
+ counted_seed: counted-seed_contig-70_plasmid-0 = 0
+ counted_seed: - contig-43_plasmid-0 + counted-seed_contig-43_plasmid-0
+   = 0
+ counted_seed: counted-seed_contig-115_plasmid-0 = 0
+ counted_seed: counted-seed_contig-114_plasmid-0 = 0
+ counted_seed: counted-seed_contig-88_plasmid-0 = 0
+ counted_seed: counted-seed_contig-130_plasmid-0 = 0
+ counted_seed: - contig-111_plasmid-0 + counted-seed_contig-111_plasmid-0
+   = 0
+ counted_seed: counted-seed_contig-110_plasmid-0 = 0
+ counted_seed: counted-seed_contig-66_plasmid-0 = 0
+ counted_seed: counted-seed_contig-112_plasmid-0 = 0
+ counted_seed: counted-seed_contig-80_plasmid-0 = 0
+ counted_seed: counted-seed_contig-138_plasmid-0 = 0
+ counted_seed: counted-seed_contig-87_plasmid-0 = 0
+ counted_seed: counted-seed_contig-84_plasmid-0 = 0
+ counted_seed: counted-seed_contig-85_plasmid-0 = 0
+ counted_seed: counted-seed_contig-25_plasmid-0 = 0
+ counted_seed: counted-seed_contig-117_plasmid-0 = 0
+ counted_seed: - contig-27_plasmid-0 + counted-seed_contig-27_plasmid-0
+   = 0
+ counted_seed: - contig-48_plasmid-0 + counted-seed_contig-48_plasmid-0
+   = 0
+ counted_seed: counted-seed_contig-42_plasmid-0 = 0
+ counted_seed: counted-seed_contig-29_plasmid-0 = 0
+ counted_seed: - contig-40_plasmid-0 + counted-seed_contig-40_plasmid-0
+   = 0
+ counted_seed: counted-seed_contig-18_plasmid-0 = 0
+ counted_seed: counted-seed_contig-3_plasmid-0 = 0
+ counted_seed: counted-seed_contig-5_plasmid-0 = 0
+ counted_seed: counted-seed_contig-4_plasmid-0 = 0
+ counted_seed: counted-seed_contig-7_plasmid-0 = 0
+ counted_seed: counted-seed_contig-14_plasmid-0 = 0
+ counted_seed: counted-seed_contig-9_plasmid-0 = 0
+ counted_seed: counted-seed_contig-8_plasmid-0 = 0
+ counted_seed: counted-seed_contig-78_plasmid-0 = 0
+ counted_seed: counted-seed_contig-75_plasmid-0 = 0
+ counted_seed: counted-seed_contig-11_plasmid-0 = 0
+ counted_seed: counted-seed_contig-34_plasmid-0 = 0
+ counted_seed: counted-seed_contig-120_plasmid-0 = 0
+ counted_seed: counted-seed_contig-98_plasmid-0 = 0
+ counted_seed: counted-seed_contig-122_plasmid-0 = 0
+ counted_seed: counted-seed_contig-123_plasmid-0 = 0
+ counted_seed: counted-seed_contig-124_plasmid-0 = 0
+ counted_seed: counted-seed_contig-127_plasmid-0 = 0
+ counted_seed: counted-seed_contig-128_plasmid-0 = 0
+ counted_seed: counted-seed_contig-103_plasmid-0 = 0
+ counted_seed: counted-seed_contig-100_plasmid-0 = 0
+ counted_seed: counted-seed_contig-95_plasmid-0 = 0
+ counted_seed: - contig-79_plasmid-0 + counted-seed_contig-79_plasmid-0
+   = 0
+ counted_seed: - contig-96_plasmid-0 + counted-seed_contig-96_plasmid-0
+   = 0
+ counted_seed: counted-seed_contig-91_plasmid-0 = 0
+ counted_seed: counted-seed_contig-10_plasmid-0 = 0
+ counted_seed: counted-seed_contig-13_plasmid-0 = 0
+ counted_seed: counted-seed_contig-12_plasmid-0 = 0
+ counted_seed: counted-seed_contig-58_plasmid-0 = 0
+ counted_seed: counted-seed_contig-17_plasmid-0 = 0
+ counted_seed: counted-seed_contig-16_plasmid-0 = 0
+ counted_seed: - contig-33_plasmid-0 + counted-seed_contig-33_plasmid-0
+   = 0
+ counted_seed: - contig-54_plasmid-0 + counted-seed_contig-54_plasmid-0
+   = 0
+ counted_seed: - contig-31_plasmid-0 + counted-seed_contig-31_plasmid-0
+   = 0
+ counted_seed: counted-seed_contig-108_plasmid-0 = 0
+ counted_seed: counted-seed_contig-35_plasmid-0 = 0
+ counted_seed: counted-seed_contig-52_plasmid-0 = 0
+ counted_seed: counted-seed_contig-19_plasmid-0 = 0
+ counted_seed: counted-seed_contig-116_plasmid-0 = 0
+ counted_seed: counted-seed_contig-32_plasmid-0 = 0
+ counted_seed: counted-seed_contig-64_plasmid-0 = 0
+ counted_seed: counted-seed_contig-136_plasmid-0 = 0
+ seed_existence: counted-seed_contig-130_plasmid-0
+   + counted-seed_contig-136_plasmid-0 + counted-seed_contig-138_plasmid-0
+   + counted-seed_contig-25_plasmid-0 + counted-seed_contig-27_plasmid-0
+   + counted-seed_contig-29_plasmid-0 + counted-seed_contig-4_plasmid-0
+   + counted-seed_contig-8_plasmid-0 + counted-seed_contig-120_plasmid-0
+   + counted-seed_contig-122_plasmid-0 + counted-seed_contig-123_plasmid-0
+   + counted-seed_contig-124_plasmid-0 + counted-seed_contig-127_plasmid-0
+   + counted-seed_contig-128_plasmid-0 + counted-seed_contig-58_plasmid-0
+   + counted-seed_contig-54_plasmid-0 + counted-seed_contig-52_plasmid-0
+   + counted-seed_contig-115_plasmid-0 + counted-seed_contig-114_plasmid-0
+   + counted-seed_contig-88_plasmid-0 + counted-seed_contig-111_plasmid-0
+   + counted-seed_contig-110_plasmid-0 + counted-seed_contig-112_plasmid-0
+   + counted-seed_contig-80_plasmid-0 + counted-seed_contig-87_plasmid-0
+   + counted-seed_contig-84_plasmid-0 + counted-seed_contig-85_plasmid-0
+   + counted-seed_contig-3_plasmid-0 + counted-seed_contig-7_plasmid-0
+   + counted-seed_contig-108_plasmid-0 + counted-seed_contig-103_plasmid-0
+   + counted-seed_contig-100_plasmid-0 + counted-seed_contig-33_plasmid-0
+   + counted-seed_contig-32_plasmid-0 + counted-seed_contig-31_plasmid-0
+   + counted-seed_contig-35_plasmid-0 + counted-seed_contig-34_plasmid-0
+   + counted-seed_contig-64_plasmid-0 + counted-seed_contig-66_plasmid-0
+   + counted-seed_contig-98_plasmid-0 + counted-seed_contig-91_plasmid-0
+   + counted-seed_contig-95_plasmid-0 + counted-seed_contig-96_plasmid-0
+   + counted-seed_contig-11_plasmid-0 + counted-seed_contig-10_plasmid-0
+   + counted-seed_contig-13_plasmid-0 + counted-seed_contig-12_plasmid-0
+   + counted-seed_contig-14_plasmid-0 + counted-seed_contig-17_plasmid-0
+   + counted-seed_contig-16_plasmid-0 + counted-seed_contig-19_plasmid-0
+   + counted-seed_contig-18_plasmid-0 + counted-seed_contig-117_plasmid-0
+   + counted-seed_contig-116_plasmid-0 + counted-seed_contig-48_plasmid-0
+   + counted-seed_contig-42_plasmid-0 + counted-seed_contig-43_plasmid-0
+   + counted-seed_contig-40_plasmid-0 + counted-seed_contig-41_plasmid-0
+   + counted-seed_contig-5_plasmid-0 + counted-seed_contig-9_plasmid-0
+   + counted-seed_contig-77_plasmid-0 + counted-seed_contig-75_plasmid-0
+   + counted-seed_contig-70_plasmid-0 + counted-seed_contig-79_plasmid-0
+   + counted-seed_contig-78_plasmid-0 >= 1
+ circular: link-31h31t_plasmid-0 <= 0
+ circular: link-48h48t_plasmid-0 <= 0
+Bounds
+Binaries
+ contig-27_plasmid-0 contigext-27h_plasmid-0 contigext-27t_plasmid-0
+ contig-54_plasmid-0 contigext-54h_plasmid-0 contigext-54t_plasmid-0
+ contig-111_plasmid-0 contigext-111h_plasmid-0 contigext-111t_plasmid-0
+ contig-33_plasmid-0 contigext-33h_plasmid-0 contigext-33t_plasmid-0
+ contig-31_plasmid-0 contigext-31h_plasmid-0 contigext-31t_plasmid-0
+ contig-96_plasmid-0 contigext-96h_plasmid-0 contigext-96t_plasmid-0
+ contig-48_plasmid-0 contigext-48h_plasmid-0 contigext-48t_plasmid-0
+ contig-43_plasmid-0 contigext-43h_plasmid-0 contigext-43t_plasmid-0
+ contig-40_plasmid-0 contigext-40h_plasmid-0 contigext-40t_plasmid-0
+ contig-79_plasmid-0 contigext-79h_plasmid-0 contigext-79t_plasmid-0
+ link-31h31t_plasmid-0 link-48h48t_plasmid-0
+ counted-seed_contig-130_plasmid-0 counted-seed_contig-136_plasmid-0
+ counted-seed_contig-138_plasmid-0 counted-seed_contig-25_plasmid-0
+ counted-seed_contig-27_plasmid-0 counted-seed_contig-29_plasmid-0
+ counted-seed_contig-4_plasmid-0 counted-seed_contig-8_plasmid-0
+ counted-seed_contig-120_plasmid-0 counted-seed_contig-122_plasmid-0
+ counted-seed_contig-123_plasmid-0 counted-seed_contig-124_plasmid-0
+ counted-seed_contig-127_plasmid-0 counted-seed_contig-128_plasmid-0
+ counted-seed_contig-58_plasmid-0 counted-seed_contig-54_plasmid-0
+ counted-seed_contig-52_plasmid-0 counted-seed_contig-115_plasmid-0
+ counted-seed_contig-114_plasmid-0 counted-seed_contig-88_plasmid-0
+ counted-seed_contig-111_plasmid-0 counted-seed_contig-110_plasmid-0
+ counted-seed_contig-112_plasmid-0 counted-seed_contig-80_plasmid-0
+ counted-seed_contig-87_plasmid-0 counted-seed_contig-84_plasmid-0
+ counted-seed_contig-85_plasmid-0 counted-seed_contig-3_plasmid-0
+ counted-seed_contig-7_plasmid-0 counted-seed_contig-108_plasmid-0
+ counted-seed_contig-103_plasmid-0 counted-seed_contig-100_plasmid-0
+ counted-seed_contig-33_plasmid-0 counted-seed_contig-32_plasmid-0
+ counted-seed_contig-31_plasmid-0 counted-seed_contig-35_plasmid-0
+ counted-seed_contig-34_plasmid-0 counted-seed_contig-64_plasmid-0
+ counted-seed_contig-66_plasmid-0 counted-seed_contig-98_plasmid-0
+ counted-seed_contig-91_plasmid-0 counted-seed_contig-95_plasmid-0
+ counted-seed_contig-96_plasmid-0 counted-seed_contig-11_plasmid-0
+ counted-seed_contig-10_plasmid-0 counted-seed_contig-13_plasmid-0
+ counted-seed_contig-12_plasmid-0 counted-seed_contig-14_plasmid-0
+ counted-seed_contig-17_plasmid-0 counted-seed_contig-16_plasmid-0
+ counted-seed_contig-19_plasmid-0 counted-seed_contig-18_plasmid-0
+ counted-seed_contig-117_plasmid-0 counted-seed_contig-116_plasmid-0
+ counted-seed_contig-48_plasmid-0 counted-seed_contig-42_plasmid-0
+ counted-seed_contig-43_plasmid-0 counted-seed_contig-40_plasmid-0
+ counted-seed_contig-41_plasmid-0 counted-seed_contig-5_plasmid-0
+ counted-seed_contig-9_plasmid-0 counted-seed_contig-77_plasmid-0
+ counted-seed_contig-75_plasmid-0 counted-seed_contig-70_plasmid-0
+ counted-seed_contig-79_plasmid-0 counted-seed_contig-78_plasmid-0
+End

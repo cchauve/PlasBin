@@ -1,0 +1,132 @@
+Iteration 1
+1	deque([(('74_2', 't'), ('30_1', 't')), (('74_2', 'h'), ('30_1', 'h'))])
+
+Chosen seed at iteration 1: 1
+Chosen chr at iteration 1
+
+
+Iteration 2
+2	deque([(('68_4', 't'), ('14_0', 't')), (('68_4', 'h'), ('32_7', 'h')), (('73_1', 'h'), ('32_7', 't')), (('73_1', 't'), ('70_0', 't')), (('70_0', 'h'), ('14_0', 'h'))])
+2	deque([(('74_0', 't'), ('30_0', 't')), (('74_0', 'h'), ('30_0', 'h'))])
+
+Chosen seed at iteration 2: 1
+Chosen chr at iteration 2
+
+
+Iteration 3
+3	deque([(('74_0', 'h'), ('30_2', 'h')), (('74_0', 't'), ('30_2', 't'))])
+
+Chosen seed at iteration 3: 1
+Chosen chr at iteration 3
+
+
+Iteration 4
+4	deque([(('68_0', 't'), ('27_0', 't')), (('68_0', 'h'), ('32_1', 'h')), (('27_0', 'h'), ('32_1', 't'))])
+4	deque([(('74_2', 'h'), ('30_0', 'h')), (('74_2', 't'), ('30_0', 't'))])
+
+Chosen seed at iteration 4: 2
+Chosen chr at iteration 4
+
+
+Iteration 1
+1	deque([(('73_1', 'h'), ('32_4', 't')), (('68_5', 'h'), ('32_4', 'h')), (('68_5', 't'), ('14_0', 't')), (('70_1', 'h'), ('14_0', 'h')), (('73_1', 't'), ('70_1', 't'))])
+1	deque([(('74_0', 'h'), ('30_2', 'h')), (('74_0', 't'), ('30_2', 't'))])
+
+Chosen seed at iteration 1: 1
+Chosen chr at iteration 1
+
+
+Iteration 2
+2	deque([(('74_1', 'h'), ('30_1', 'h')), (('74_1', 't'), ('30_1', 't'))])
+
+Chosen seed at iteration 2: 1
+Chosen chr at iteration 2
+
+
+Iteration 3
+3	deque([(('73_2', 'h'), ('32_7', 't')), (('68_5', 'h'), ('32_7', 'h')), (('68_5', 't'), ('14_0', 't')), (('70_2', 'h'), ('14_0', 'h')), (('73_2', 't'), ('70_2', 't'))])
+3	deque([(('74_0', 't'), ('30_2', 't')), (('74_0', 'h'), ('30_2', 'h'))])
+
+Chosen seed at iteration 3: 1
+Chosen chr at iteration 3
+
+
+Iteration 4
+4	deque([(('73_5', 'h'), ('32_0', 't')), (('73_5', 't'), ('70_2', 't')), (('70_2', 'h'), ('14_0', 'h')), (('68_1', 't'), ('14_0', 't')), (('68_1', 'h'), ('32_0', 'h'))])
+4	deque([(('73_5', 'h'), ('32_8', 't')), (('68_1', 'h'), ('32_8', 'h'))])
+4	deque([(('74_1', 'h'), ('30_2', 'h')), (('74_1', 't'), ('30_2', 't'))])
+
+Chosen seed at iteration 4: 3
+Chosen chr at iteration 4
+
+
+Iteration 1
+1	deque([(('68_5', 'h'), ('32_4', 'h')), (('68_5', 't'), ('37_0', 't')), (('37_0', 'h'), ('73_7', 't')), (('73_7', 'h'), ('32_4', 't'))])
+
+Chosen seed at iteration 1: 1
+Chosen chr at iteration 1
+
+
+Iteration 2
+2	deque([(('68_2', 'h'), ('32_2', 'h')), (('68_2', 't'), ('37_0', 't')), (('37_0', 'h'), ('73_3', 't')), (('73_3', 'h'), ('32_2', 't'))])
+
+Chosen seed at iteration 2: 1
+Chosen chr at iteration 2
+
+
+Iteration 3
+3	deque([(('37_0', 'h'), ('73_6', 't')), (('68_5', 't'), ('37_0', 't')), (('68_5', 'h'), ('32_0', 'h')), (('73_6', 'h'), ('32_0', 't'))])
+
+Chosen seed at iteration 3: 1
+Chosen chr at iteration 3
+
+
+Iteration 4
+4	deque([(('37_0', 'h'), ('73_6', 't')), (('68_2', 't'), ('37_0', 't')), (('68_2', 'h'), ('32_0', 'h')), (('73_6', 'h'), ('32_0', 't'))])
+
+Chosen seed at iteration 4: 1
+Chosen chr at iteration 4
+
+
+Iteration 1
+1	deque([(('57_2', 'h'), ('33_0', 't')), (('33_0', 'h'), ('15_0', 'h')), (('57_2', 't'), ('15_0', 't'))])
+
+Chosen seed at iteration 1: 1
+Chosen chr at iteration 1
+
+
+Iteration 2
+2	deque([(('57_1', 't'), ('15_0', 't')), (('33_3', 'h'), ('15_0', 'h')), (('57_1', 'h'), ('33_3', 't'))])
+
+Chosen seed at iteration 2: 1
+Chosen chr at iteration 2
+
+
+Iteration 3
+3	deque([(('57_2', 'h'), ('33_2', 't')), (('33_2', 'h'), ('15_0', 'h')), (('57_2', 't'), ('15_0', 't'))])
+
+Chosen seed at iteration 3: 1
+Chosen chr at iteration 3
+
+
+Iteration 4
+4	deque([(('57_4', 'h'), ('33_1', 't')), (('33_1', 'h'), ('15_0', 'h')), (('57_4', 't'), ('15_0', 't'))])
+
+Chosen seed at iteration 4: 1
+Chosen chr at iteration 4
+
+
+Iteration 1
+Iteration 1
+Iteration 1
+1	deque([(('47_2', 'h'), ('69_1', 't'))])
+
+Chosen seed at iteration 1: 1
+Chosen chr at iteration 1
+
+
+Iteration 2
+Iteration 1
+Iteration 1
+Iteration 1
+Iteration 1

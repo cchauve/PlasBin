@@ -1,0 +1,10 @@
+>plasmid_0	length=48	gene_density=0.6248	mean_read_depth=1
+ACGTACGTACGGCGCTATGAGCTATACGTACATGCTGATGTAGATGCA
+>plasmid_1	length=48	gene_density=0.6248	mean_read_depth=1
+ACGTACGTACGGCGCTATGAGCTATACGTACATGCTGATGTAGATGCA
+>plasmid_2	length=48	gene_density=0.6248	mean_read_depth=0.9
+GGCATGCATGCAACGTAGATGTAGTCGTACATGCATATCGAGTATCGC
+>plasmid_3	length=12	gene_density=0.8333	mean_read_depth=1
+
+>plasmid_4	length=12	gene_density=0.9163	mean_read_depth=0.6
+
