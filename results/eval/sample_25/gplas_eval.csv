@@ -1,0 +1,40 @@
+##### general information #####
+number of reference chromosomes: 1
+	AP017617.1: 5117319 nt
+number of reference plasmids: 2
+	AP017618.1: 116529 nt
+	AP017619.1: 61223 nt
+
+##### ILP (putative) #####
+number of predicted plasmids: 2
+	P1_LN:i:75054: 75054 nt
+	P2_LN:i:13870: 13870 nt
+
+> predicted PLASMID covers <proportion> of reference plasmid
+	AP017618.1	AP017619.1
+P1_LN:i:75054	0.687133674879	0.0110906032047
+P2_LN:i:13870	0.127873748166	0.0
+
+> reference plasmid covers <proportion> of predicted plasmid
+	P1_LN:i:75054	P2_LN:i:13870
+AP017618.1	1.0	1.0
+AP017619.1	0.00900684840248	0.0
+
+> in total, how much of predicted plasmid is covered by reference plasmids
+plasmid	proportion
+P1_LN:i:75054	1.000000
+P2_LN:i:13870	1.000000
+
+> in total, how much of reference plasmid is covered by predicted plasmids
+plasmid	proportion
+AP017618.1	0.797372
+AP017619.1	0.011091
+
+> pairs of predicted and reference plasmids with coverage >= 0.800000 in both directions
+none
+
+> summary scores (putative)
+recall: 0.526554
+precision: 1.000000
+f1_score: 0.689860
+

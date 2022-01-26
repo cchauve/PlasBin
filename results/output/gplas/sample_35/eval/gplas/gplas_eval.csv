@@ -1,0 +1,43 @@
+##### general information #####
+number of reference chromosomes: 1
+	CP024862.1: 5107874 nt
+number of reference plasmids: 3
+	CP024864.1: 88768 nt
+	CP024863.1: 139059 nt
+	CP024865.1: 48511 nt
+
+##### ILP (putative) #####
+number of predicted plasmids: 2
+	P1_LN:i:146061: 146061 nt
+	P2_LN:i:48511: 48511 nt
+
+> predicted PLASMID covers <proportion> of reference plasmid
+	CP024863.1	CP024864.1	CP024865.1
+P1_LN:i:146061	0.591669722923	0.790746665465	0.0
+P2_LN:i:48511	0.0	0.0	1.0
+
+> reference plasmid covers <proportion> of predicted plasmid
+	P1_LN:i:146061	P2_LN:i:48511
+CP024863.1	0.602001903314	0.0
+CP024864.1	0.515654418359	0.0
+CP024865.1	0.0	1.0
+
+> in total, how much of predicted plasmid is covered by reference plasmids
+plasmid	proportion
+P1_LN:i:146061	1.000000
+P2_LN:i:48511	1.000000
+
+> in total, how much of reference plasmid is covered by predicted plasmids
+plasmid	proportion
+CP024863.1	0.591670
+CP024864.1	0.790747
+CP024865.1	1.000000
+
+> pairs of predicted and reference plasmids with coverage >= 0.800000 in both directions
+CP024865.1 <-> P2_LN:i:48511 (1.000000 resp. 1.000000)
+
+> summary scores (putative)
+recall: 0.727301
+precision: 1.000000
+f1_score: 0.842124
+

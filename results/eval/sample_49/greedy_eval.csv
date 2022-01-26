@@ -4,62 +4,37 @@ number of reference chromosomes: 1
 number of reference plasmids: 1
 	CP017445.1: 92726 nt
 
-##### greedy putative (greedy_putative) #####
+##### ILP (MILP_putative) #####
 number of predicted plasmids: 3
-	plasmid_0: 44800 nt
+	plasmid_0: 102769 nt
 	plasmid_1: 24241 nt
-	plasmid_2: 24291 nt
+	plasmid_3: 23553 nt
 
 > predicted plasmid covers <proportion> of reference plasmid
 	CP017445.1
-plasmid_0	0.48938808964044606
+plasmid_0	0.49007829519228696
 plasmid_1	0.17214157841382136
-plasmid_2	0.2778185190777128
+plasmid_3	0.0
 
 > reference plasmid covers <proportion> of predicted plasmid
-	plasmid_0	plasmid_1	plasmid_2
-CP017445.1	1.0	0.6177550431087826	1.0
+	plasmid_0	plasmid_1	plasmid_3
+CP017445.1	0.43170605922019284	0.6177550431087826	0.0
 
 > in total, how much of predicted plasmid is covered by reference plasmids
 plasmid	proportion
-plasmid_0	1.000000
+plasmid_0	0.431706
 plasmid_1	0.617755
-plasmid_2	1.000000
+plasmid_3	0.000000
 
 > in total, how much of reference plasmid is covered by predicted plasmids
 plasmid	proportion
-CP017445.1	0.881500
+CP017445.1	0.632951
 
 > pairs of predicted and reference plasmids with coverage >= 0.800000 in both directions
 none
 
-> summary scores (greedy_putative)
-recall: 0.881500
-precision: 0.900720
-f1_score: 0.891007
-
-##### greedy questionable (greedy_questionable) #####
-number of predicted plasmids: 0
-
-> predicted plasmid covers <proportion> of reference plasmid
-	CP017445.1
-
-> reference plasmid covers <proportion> of predicted plasmid
-
-CP017445.1
-
-> in total, how much of predicted plasmid is covered by reference plasmids
-plasmid	proportion
-
-> in total, how much of reference plasmid is covered by predicted plasmids
-plasmid	proportion
-CP017445.1	0.000000
-
-> pairs of predicted and reference plasmids with coverage >= 0.800000 in both directions
-none
-
-> summary scores (greedy_questionable)
-recall: 0.000000
-precision: 0.000000
-f1_score: 0.000000
+> summary scores (MILP_putative)
+recall: 0.632951
+precision: 0.394127
+f1_score: 0.485773
 

@@ -1,0 +1,52 @@
+##### general information #####
+number of reference chromosomes: 1
+	CP024228.1: 4848034 nt
+number of reference plasmids: 3
+	CP024231.1: 82510 nt
+	CP024230.1: 73915 nt
+	CP024229.1: 38467 nt
+
+##### ILP (putative) #####
+number of predicted plasmids: 5
+	P1_LN:i:112960: 112960 nt
+	P2_LN:i:24134: 20465 nt
+	P3_LN:i:1959: 1959 nt
+	P4_LN:i:4091: 4091 nt
+	P5_LN:i:4072: 4072 nt
+
+> predicted PLASMID covers <proportion> of reference plasmid
+	CP024229.1	CP024230.1	CP024231.1
+P1_LN:i:112960	0.722463410196	0.962416288981	0.0503211731911
+P2_LN:i:24134	0.0712298853563	0.00357167016167	0.321742819052
+P3_LN:i:1959	0.0	0.0	0.00341776754333
+P4_LN:i:4091	0.0	0.00362578637624	0.0
+P5_LN:i:4072	0.0	0.0	0.0
+
+> reference plasmid covers <proportion> of predicted plasmid
+	P1_LN:i:112960	P2_LN:i:24134	P3_LN:i:1959	P4_LN:i:4091	P5_LN:i:4072
+CP024229.1	0.244201487252	0.133887124359	0.0	0.0	0.0
+CP024230.1	0.63328611898	0.0129000732959	0.0	0.065509655341	0.0
+CP024231.1	0.0398105524079	1.0	0.144461459929	0.0	0.0
+
+> in total, how much of predicted plasmid is covered by reference plasmids
+plasmid	proportion
+P1_LN:i:112960	0.877107
+P2_LN:i:24134	1.000000
+P3_LN:i:1959	0.144461
+P4_LN:i:4091	0.065510
+P5_LN:i:4072	0.000000
+
+> in total, how much of reference plasmid is covered by predicted plasmids
+plasmid	proportion
+CP024229.1	0.793589
+CP024230.1	0.962416
+CP024231.1	0.368452
+
+> pairs of predicted and reference plasmids with coverage >= 0.800000 in both directions
+none
+
+> summary scores (putative)
+recall: 0.677632
+precision: 0.836618
+f1_score: 0.748779
+

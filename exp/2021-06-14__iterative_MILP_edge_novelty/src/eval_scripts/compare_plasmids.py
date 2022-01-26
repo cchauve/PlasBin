@@ -3,10 +3,9 @@
 # Analyses how well predicted plasmids resp. their contigs cover reference plasmids.
 # It determines the proportions of reference plasmids covered by individual / all predicted plasmids (and vice versa)
 # and uses these information to score the predictions (recall, precision, F1 score).
-
+from __future__ import division
 import argparse
 import pandas as pd
-
 from Bio import SeqIO
 
 
@@ -41,6 +40,7 @@ def print_csv_row(tool, sample_id, values, sep):
 # analyse matches between the predicted plasmids (= concatenation of orientated contigs) obtained from greedy strategy
 # and the reference plasmids
 def analyse_greedy(hits, predicted_sequences, reference_sequences, ref_chromosomes, ref_plasmids, threshold, name, sample_id, out):
+
     predicted_plasmids = sorted(list(predicted_sequences.keys()))
     covered_ref_sections = dict([(ref, []) for ref in reference_sequences.keys()]) # of lists
     covered_pred_sections = dict([(pred, []) for pred in predicted_plasmids])
@@ -48,8 +48,8 @@ def analyse_greedy(hits, predicted_sequences, reference_sequences, ref_chromosom
     covered_pred_sections_per_ref = dict()
 
     for pred in predicted_plasmids:
-        #for ref in sorted(ref_plasmids):
-        for ref in sorted(ref_chromosomes):
+        for ref in sorted(ref_plasmids):
+        #for ref in sorted(ref_chromosomes):
             pred_ref_hits = hits.loc[hits.qseqid == pred].loc[hits.sseqid == ref]
             covered_pred_sections_per_ref[(pred, ref)] = []
             covered_ref_sections_per_pred[(ref, pred)] = []
@@ -72,9 +72,9 @@ def analyse_greedy(hits, predicted_sequences, reference_sequences, ref_chromosom
         out.write("\t%s: %i nt\n" % (pred, len(predicted_sequences[pred])))
     out.write("\n")
 
-    out.write("> predicted plasmid covers <proportion> of reference plasmid\n")
-    #out.write("\t".join([""] + sorted(ref_plasmids)) + "\n")
-    out.write("\t".join([""] + sorted(ref_chromosomes)) + "\n")
+    out.write("> predicted PLASMID covers <proportion> of reference plasmid\n")
+    out.write("\t".join([""] + sorted(ref_plasmids)) + "\n")
+    #out.write("\t".join([""] + sorted(ref_chromosomes)) + "\n")
     for pred in predicted_plasmids:
         out.write("\t".join([pred] + [str(num_covered_positions(covered_ref_sections_per_pred[(ref, pred)]) / len(reference_sequences[ref])) for ref in sorted(ref_plasmids)]) + "\n")
         #out.write("\t".join([pred] + [str(num_covered_positions(covered_ref_sections_per_pred[(ref, pred)]) / len(reference_sequences[ref])) for ref in sorted(ref_chromosomes)]) + "\n")
@@ -194,7 +194,7 @@ def analyse_from_contigs(hits, predicted_plasmids, contig_sequences, reference_s
         out.write("\t%s: %i nt\n" % (pred, predicted_lengths[pred]))
     out.write("\n")
 
-    out.write("> predicted plasmid covers <proportion> of reference plasmid\n")
+    out.write("> predicted PLASMID covers <proportion> of reference plasmid\n")
     out.write("\t".join([""] + sorted(ref_plasmids)) + "\n")
     for id in sorted(predicted_plasmids):
         out.write("\t".join([str(id)] + [str(num_covered_positions(covered_ref_sections_per_pred[(ref, id)]) / len(reference_sequences[ref])) for ref in sorted(ref_plasmids)]) + "\n")

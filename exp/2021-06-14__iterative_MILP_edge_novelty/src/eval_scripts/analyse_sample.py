@@ -2,20 +2,21 @@
 
 # MILP strategy
 #
-
+from __future__ import division
 import os
 import subprocess
 
 
-#proj_dir = '/home/amane/projects/rrg-chauvec/wg-anoph/Plasmids-Optimization'
-#proj_dir = '/home/aniket/PhD/Plasmids-Optimization'
-proj_dir = '/home/aniket/python_scripts/Plasmids-Optimization'
 
-compare_script = proj_dir + '/exp/2021-01-29__iterative_MILP_modified_graph/src/eval_scripts/compare_plasmids.py'
-#extract_script = '/home/aniket/PhD/Plasmids/data/2018-05-17__MOB-suite_benchmark/extract.sh'
-extract_script = '/home/aniket/python_scripts/Plasmids/data/2018-05-17__MOB-suite_benchmark/extract.sh'
-#sample_script = '/home/aniket/PhD/Plasmids/data/2018-05-23__MOB-suite_benchmark_reads/sample.sh'
-sample_script = '/home/aniket/python_scripts/Plasmids/data/2018-05-23__MOB-suite_benchmark_reads/sample.sh'
+proj_dir = '/home/aniket/PhD'
+#proj_dir = '/home/aniket/PhD/Plasmids-Optimization'
+#proj_dir = '/home/aniket/python_scripts/Plasmids-Optimization'
+
+compare_script = proj_dir + '/Plasmids-Optimization/exp/2021-06-14__iterative_MILP_edge_novelty/src/eval_scripts/compare_plasmids.py'
+extract_script = proj_dir + '/Plasmids-Optimization/data/2018-05-17__MOB-suite_benchmark/extract.sh'
+#extract_script = '/home/aniket/python_scripts/Plasmids/data/2018-05-17__MOB-suite_benchmark/extract.sh'
+sample_script = proj_dir + '/Plasmids-Optimization/data/2018-05-23__MOB-suite_benchmark_reads/sample.sh'
+#sample_script = '/home/aniket/python_scripts/Plasmids/data/2018-05-23__MOB-suite_benchmark_reads/sample.sh'
 #load_modules = 'module load gcc/5.4.0 blast+/2.6.0 boost/1.60.0 sickle/1.33 samtools/1.5 bowtie2/2.3.3.1 racon/20170719 perl/5.22.4 java/1.8.0_121 python/3.5.4; source $HOME/py3.5.4/bin/activate;'
 #unload_modules = 'source deactivate; module unload python/3.5.4 java/1.8.0_121 perl/5.22.4 boost/1.60.0 blast+/2.6.0 gcc/5.4.0;'
     
@@ -55,16 +56,16 @@ def evaluate(sample_id, out_dir, results):
     ## evaluate MILP-based plasmids
     # first, map plasmid genes to Unicycler assembly and filter the mapping
     print('Performing evaluations with MILP strategy...')
-    subprocess.call('mkdir %s/MILP' % eval_dir, shell = True)
+    subprocess.call('mkdir %s/gplas' % eval_dir, shell = True)
     
     # MILP / partial training                     
-    MILP_putative_queries = out_dir + '/MILP/putative_plasmids.fasta'
-    MILP_putative_mapping = eval_dir + '/MILP/MILP_putative_map.csv'
+    MILP_putative_queries = out_dir + '/putative_plasmids.fasta'
+    MILP_putative_mapping = eval_dir + '/gplas/putative_map.csv'
     #greedy_questionable_queries = out_dir + '/greedy/plasmids/greedy/questionable_plasmids.fasta'
     #greedy_questionable_mapping = eval_dir + '/greedy/greedy_questionable_map.csv'
     subprocess.call( 'blastn -task megablast -query %s -db %s -out %s -outfmt 6; ' % (MILP_putative_queries, blast_db, MILP_putative_mapping) \
                     #+ 'blastn -task megablast -query %s -db %s -out %s -outfmt 6; ' % (greedy_questionable_queries, blast_db, greedy_questionable_mapping) \
-                    + 'python %s %s %s %s %s/MILP/greedy_eval.csv -i "MILP_putative;%s;%s" >> %s; ' % (compare_script, sample_id, chr_references_fasta, pla_references_fasta, eval_dir, MILP_putative_queries, MILP_putative_mapping, results) , shell = True)
+                    + 'python %s %s %s %s %s/gplas/gplas_eval.csv -i "putative;%s;%s" >> %s; ' % (compare_script, sample_id, chr_references_fasta, pla_references_fasta, eval_dir, MILP_putative_queries, MILP_putative_mapping, results) , shell = True)
 
 if __name__ == '__main__':
     import argparse
@@ -75,5 +76,5 @@ if __name__ == '__main__':
     args = argparser.parse_args()
     
     evaluate(args.sample_id, args.out_dir, args.results)
-
+    print(5/2)
     print('Finished analysis of sample %s.' % args.sample_id)

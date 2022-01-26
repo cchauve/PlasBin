@@ -1,0 +1,60 @@
+##### general information #####
+number of reference chromosomes: 1
+	AP017610.1: 4920828 nt
+number of reference plasmids: 6
+	AP017612.1: 108986 nt
+	AP017613.1: 108957 nt
+	AP017616.1: 4073 nt
+	AP017615.1: 6078 nt
+	AP017611.1: 168972 nt
+	AP017614.1: 61805 nt
+
+##### ILP (putative) #####
+number of predicted plasmids: 4
+	P1_LN:i:175132: 175132 nt
+	P2_LN:i:108986: 108986 nt
+	P3_LN:i:6078: 6078 nt
+	P4_LN:i:4073: 4073 nt
+
+> predicted PLASMID covers <proportion> of reference plasmid
+	AP017611.1	AP017612.1	AP017613.1	AP017614.1	AP017615.1	AP017616.1
+P1_LN:i:175132	0.774601709159	0.0	0.442137724056	0.00653668797023	0.0	0.0
+P2_LN:i:108986	0.0	1.0	0.0	0.0	0.0	0.0
+P3_LN:i:6078	0.0	0.0	0.0	0.0	1.0	0.0
+P4_LN:i:4073	0.0	0.0	0.0	0.0	0.0	1.0
+
+> reference plasmid covers <proportion> of predicted plasmid
+	P1_LN:i:175132	P2_LN:i:108986	P3_LN:i:6078	P4_LN:i:4073
+AP017611.1	0.775495055158	0.0	0.0	0.0
+AP017612.1	0.0	1.0	0.0	0.0
+AP017613.1	0.314951008382	0.0	0.0	0.0
+AP017614.1	0.00232967133362	0.0	0.0	0.0
+AP017615.1	0.0	0.0	1.0	0.0
+AP017616.1	0.0	0.0	0.0	1.0
+
+> in total, how much of predicted plasmid is covered by reference plasmids
+plasmid	proportion
+P1_LN:i:175132	1.000000
+P2_LN:i:108986	1.000000
+P3_LN:i:6078	1.000000
+P4_LN:i:4073	1.000000
+
+> in total, how much of reference plasmid is covered by predicted plasmids
+plasmid	proportion
+AP017611.1	0.774602
+AP017612.1	1.000000
+AP017613.1	0.442138
+AP017614.1	0.006537
+AP017615.1	1.000000
+AP017616.1	1.000000
+
+> pairs of predicted and reference plasmids with coverage >= 0.800000 in both directions
+AP017612.1 <-> P2_LN:i:108986 (1.000000 resp. 1.000000)
+AP017615.1 <-> P3_LN:i:6078 (1.000000 resp. 1.000000)
+AP017616.1 <-> P4_LN:i:4073 (1.000000 resp. 1.000000)
+
+> summary scores (putative)
+recall: 0.650730
+precision: 1.000000
+f1_score: 0.788415
+

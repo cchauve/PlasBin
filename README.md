@@ -8,7 +8,9 @@ We use the data set from Robertson and Nash, 2018 (previously used for the HyAsP
 The data set contains 133 bacterial samples. As some of the methods we use are reference-based, we split this data set into two parts - a reference set and a test set. 
 We carry out our experiments on the test set consisting of 66 of the 133 samples.
 
-*Question.* How was the plit done?   
+*Question.* How was the split done?
+The split was similar to the one used for the HyAsP paper. Samples released before 19 December 2015 formed the reference database and after that date formed the test set.
+
 *Comment.* If the reference set is used, we should outline how.
 
 ## Experiment details
