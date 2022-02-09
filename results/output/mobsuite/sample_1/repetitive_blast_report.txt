@@ -1,0 +1,27 @@
+contig_id	match_id	match_type	score	contig_match_start	contig_match_end
+assembly.fasta|139_length=575_depth=4.88x		IS1634	1051.0	1143	1717
+assembly.fasta|136_length=664_depth=3.01x		IS3	1227.0	1	664
+assembly.fasta|134_length=745_depth=3.36x	LIIX01000004	IS1595	1118.0	1	741
+assembly.fasta|88_length=2981_depth=15.31x	CP016586.1	23S	2909.0	660	2950
+assembly.fasta|121_length=943_depth=6.67x	L27157	IS30	1709.0	93	1035
+assembly.fasta|107_length=1261_depth=6.77x		IS4	2318.0	1	1261
+assembly.fasta|110_length=1213_depth=3.01x	CP007567	ISAs1	1596.0	1	1212
+assembly.fasta|113_length=1109_depth=10.53x	GU595196	ISAs1	1517.0	1220	2328
+assembly.fasta|153_length=331_depth=12.49x	HQ170513	ISAs1	595.0	3	329
+assembly.fasta|105_length=1283_depth=9.11x	AJ276453	ISAs1	2364.0	1	1283
+assembly.fasta|102_length=1426_depth=3.86x	CP007567	IS4	1463.0	1	1425
+assembly.fasta|117_length=1013_depth=6.97x	EF118171	IS30	1866.0	1	1013
+assembly.fasta|112_length=1142_depth=4.98x		IS1634	2093.0	1	1142
+assembly.fasta|99_length=1606_depth=14.13x	CP016586.1	16S	2045.0	1	1550
+assembly.fasta|111_length=1174_depth=4.62x	CP000645	Tn3	1158.0	10208	10837
+assembly.fasta|87_length=3188_depth=1.48x		IS21	4427.0	1	2397
+assembly.fasta|148_length=401_depth=10.01x	U95365	IS5	680.0	342	754
+assembly.fasta|135_length=719_depth=3.15x		IS3	1323.0	956	1674
+assembly.fasta|103_length=1366_depth=3.90x	AF457211	IS110	1947.0	1	1327
+assembly.fasta|75_length=5988_depth=1.28x	CP000645	Tn3	11058.0	39	6026
+assembly.fasta|104_length=1316_depth=2.69x	CP020856.1	integron_1	2425.0	5662	6977
+assembly.fasta|100_length=1534_depth=12.92x	JQ809466	IS66	2828.0	1	1534
+assembly.fasta|106_length=1262_depth=13.02x	CP002607	IS3	1916.0	72	1333
+assembly.fasta|90_length=2613_depth=3.58x		IS21	4721.0	1	2613
+assembly.fasta|130_length=819_depth=13.85x	M12900	IS6	1206.0	1	653
+assembly.fasta|133_length=749_depth=3.94x	AJ971342	IS1595	1116.0	1	753

@@ -1,0 +1,7 @@
+contig_id	match_id	match_type	score	contig_match_start	contig_match_end
+assembly.fasta|35_length=698_depth=2.38x	AJ000635	IS3	1105.0	562	1246
+assembly.fasta|29_length=1630_depth=12.06x	CP016586.1	16S	2826.0	1	1554
+assembly.fasta|38_length=426_depth=14.56x	CP016586.1	23S	787.0	124	549
+assembly.fasta|36_length=668_depth=6.56x	AJ238015	IS200/IS605	701.0	8	665
+assembly.fasta|27_length=1751_depth=12.75x	CP016586.1	23S	3208.0	1291	3027
+assembly.fasta|37_length=523_depth=9.20x	CP016586.1	23S	966.0	757	1279

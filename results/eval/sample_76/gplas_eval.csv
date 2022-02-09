@@ -1,0 +1,50 @@
+##### general information #####
+number of reference chromosomes: 1
+	CP017934.1: 5387681 nt
+number of reference plasmids: 3
+	CP017935.1: 89621 nt
+	CP017937.1: 43621 nt
+	CP017936.1: 76186 nt
+
+##### ILP (putative) #####
+number of predicted plasmids: 4
+	P1_LN:i:62983: 62983 nt
+	P2_LN:i:26902: 26902 nt
+	P3_LN:i:42344: 42344 nt
+	P4_LN:i:43621: 43621 nt
+
+> predicted PLASMID covers <proportion> of reference plasmid
+	CP017935.1	CP017936.1	CP017937.1
+P1_LN:i:62983	0.0	0.826739820964	0.00100868847573
+P2_LN:i:26902	0.306825409223	0.0	0.0
+P3_LN:i:42344	0.485600473103	0.0	0.0
+P4_LN:i:43621	0.0	0.000630037014675	1.0
+
+> reference plasmid covers <proportion> of predicted plasmid
+	P1_LN:i:62983	P2_LN:i:26902	P3_LN:i:42344	P4_LN:i:43621
+CP017935.1	0.0	1.0	1.0	0.0
+CP017936.1	1.0	0.0	0.0	0.00107746268999
+CP017937.1	0.000714478510074	0.0	0.0	1.0
+
+> in total, how much of predicted plasmid is covered by reference plasmids
+plasmid	proportion
+P1_LN:i:62983	1.000000
+P2_LN:i:26902	1.000000
+P3_LN:i:42344	1.000000
+P4_LN:i:43621	1.000000
+
+> in total, how much of reference plasmid is covered by predicted plasmids
+plasmid	proportion
+CP017935.1	0.772665
+CP017936.1	0.826740
+CP017937.1	1.000000
+
+> pairs of predicted and reference plasmids with coverage >= 0.800000 in both directions
+CP017936.1 <-> P1_LN:i:62983 (0.826740 resp. 1.000000)
+CP017937.1 <-> P4_LN:i:43621 (1.000000 resp. 1.000000)
+
+> summary scores (putative)
+recall: 0.839687
+precision: 1.000000
+f1_score: 0.912859
+

@@ -1,0 +1,7 @@
+contig_id	match_id	match_type	score	contig_match_start	contig_match_end
+assembly.fasta|68_length=432_depth=1.87x	Z83734	IS3	608.0	777	1207
+assembly.fasta|40_length=1737_depth=9.89x	CP016586.1	23S	3114.0	1291	3027
+assembly.fasta|60_length=523_depth=7.81x	CP016586.1	23S	966.0	757	1279
+assembly.fasta|41_length=1693_depth=9.03x	CP016586.1	16S	2826.0	1	1554
+assembly.fasta|59_length=558_depth=9.82x	CP016586.1	23S	977.0	1	550
+assembly.fasta|61_length=498_depth=1.81x	Z83734	IS3	704.0	279	776

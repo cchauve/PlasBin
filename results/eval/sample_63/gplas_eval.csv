@@ -1,0 +1,37 @@
+##### general information #####
+number of reference chromosomes: 1
+	CP015134.1: 5229229 nt
+number of reference plasmids: 1
+	CP015135.1: 158741 nt
+
+##### ILP (putative) #####
+number of predicted plasmids: 2
+	P1_LN:i:156693: 156693 nt
+	P2_LN:i:4683: 4683 nt
+
+> predicted PLASMID covers <proportion> of reference plasmid
+	CP015135.1
+P1_LN:i:156693	0.994028007887
+P2_LN:i:4683	0.0
+
+> reference plasmid covers <proportion> of predicted plasmid
+	P1_LN:i:156693	P2_LN:i:4683
+CP015135.1	1.0	0.0
+
+> in total, how much of predicted plasmid is covered by reference plasmids
+plasmid	proportion
+P1_LN:i:156693	1.000000
+P2_LN:i:4683	0.000000
+
+> in total, how much of reference plasmid is covered by predicted plasmids
+plasmid	proportion
+CP015135.1	0.994028
+
+> pairs of predicted and reference plasmids with coverage >= 0.800000 in both directions
+CP015135.1 <-> P1_LN:i:156693 (0.994028 resp. 1.000000)
+
+> summary scores (putative)
+recall: 0.994028
+precision: 0.970981
+f1_score: 0.982369
+

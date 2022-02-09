@@ -1,0 +1,111 @@
+file_id	cluster_id	contig_id	contig_length	circularity_status	rep_type	rep_type_accession	relaxase_type	relaxase_type_accession	mash_nearest_neighbor	 mash_neighbor_distance	repetitive_dna_id	match_type	score	contig_match_start	contig_match_end
+assembly.fasta	61	assembly.fasta|33_length=2096_depth=81.34x_circular=true	2096	Circular	ColRNAI_rep_cluster_1993	000024__JX133088			CP012932	2.38274e-05					
+assembly.fasta	430	assembly.fasta|23_length=7514_depth=1.71x	7514	Incomplete					CP012931	0.0011089					
+assembly.fasta	430	assembly.fasta|24_length=6651_depth=0.99x	6651	Incomplete					CP012931	0.0011089					
+assembly.fasta	430	assembly.fasta|35_length=1310_depth=2.55x	1310	Incomplete			MOBP	NC_011416_00039	CP012931	0.0011089	X97542	IS3	1613.0	1	1032
+assembly.fasta	430	assembly.fasta|20_length=19935_depth=0.99x	19935	Incomplete					CP012931	0.0011089					
+assembly.fasta	430	assembly.fasta|15_length=52520_depth=1.22x	52520	Incomplete			MOBH	NC_012555_00231	CP012931	0.0011089					
+assembly.fasta	430	assembly.fasta|28_length=4250_depth=1.37x	4250	Incomplete					CP012931	0.0011089					
+assembly.fasta	430	assembly.fasta|11_length=139250_depth=1.17x	139250	Incomplete	IncH,rep_cluster_1088	000340__KU353730,000139__NC_012555_00001			CP012931	0.0011089					
+assembly.fasta	430	assembly.fasta|26_length=4718_depth=0.95x	4718	Incomplete					CP012931	0.0011089					
+assembly.fasta	261	assembly.fasta|31_length=3372_depth=30.28x_circular=true	3372	Circular			MOBP	NC_014003_00004	CP012934	0.000312573					
+assembly.fasta	476	assembly.fasta|16_length=45950_depth=1.94x	45950	Incomplete	IncI1	000145__HE610900_00001			CP012936	0.00173271					
+assembly.fasta	476	assembly.fasta|17_length=44203_depth=2.00x	44203	Incomplete			MOBP	NC_019097	CP012936	0.00173271					
+assembly.fasta	226	assembly.fasta|29_length=3905_depth=18.25x_circular=true	3905	Circular	ColRNAI_rep_cluster_1291	000001__EU090225_00001	MOBQ	NC_013719_00001	CP012935	0.000312573					
+assembly.fasta	14	assembly.fasta|32_length=3319_depth=28.64x_circular=true	3319	Circular	ColRNAI_rep_cluster_1857	000008__AJ627566	MOBF	CP019897	CP012933	0.00028831					
+assembly.fasta	chromosome	assembly.fasta|99_length=16_depth=4.69x	16	Incomplete											
+assembly.fasta	chromosome	assembly.fasta|107_length=9_depth=2.45x	9	Incomplete											
+assembly.fasta	chromosome	assembly.fasta|2_length=731085_depth=1.02x	731085	Incomplete											
+assembly.fasta	chromosome	assembly.fasta|70_length=106_depth=0.84x	106	Incomplete											
+assembly.fasta	chromosome	assembly.fasta|110_length=2_depth=1.60x	2	Incomplete											
+assembly.fasta	chromosome	assembly.fasta|80_length=64_depth=4.30x	64	Incomplete											
+assembly.fasta	chromosome	assembly.fasta|41_length=881_depth=1.85x	881	Incomplete											
+assembly.fasta	chromosome	assembly.fasta|95_length=30_depth=3.44x	30	Incomplete											
+assembly.fasta	chromosome	assembly.fasta|36_length=1043_depth=2.32x	1043	Incomplete											
+assembly.fasta	chromosome	assembly.fasta|65_length=124_depth=2.37x	124	Incomplete											
+assembly.fasta	chromosome	assembly.fasta|53_length=344_depth=2.21x	344	Incomplete							AB063175	IS5	353.0	1	334
+assembly.fasta	chromosome	assembly.fasta|76_length=68_depth=4.19x	68	Incomplete											
+assembly.fasta	chromosome	assembly.fasta|83_length=56_depth=1.22x	56	Incomplete											
+assembly.fasta	chromosome	assembly.fasta|12_length=137820_depth=1.03x	137820	Incomplete											
+assembly.fasta	chromosome	assembly.fasta|78_length=68_depth=2.76x	68	Incomplete											
+assembly.fasta	chromosome	assembly.fasta|50_length=446_depth=11.12x	446	Incomplete							CP016586.1	16S	761.0	1143	1554
+assembly.fasta	chromosome	assembly.fasta|108_length=8_depth=2.79x	8	Incomplete											
+assembly.fasta	chromosome	assembly.fasta|27_length=4664_depth=1.12x	4664	Incomplete											
+assembly.fasta	chromosome	assembly.fasta|9_length=201188_depth=1.03x	201188	Incomplete											
+assembly.fasta	chromosome	assembly.fasta|5_length=411907_depth=1.03x	411907	Incomplete											
+assembly.fasta	chromosome	assembly.fasta|56_length=208_depth=0.92x	208	Incomplete											
+assembly.fasta	chromosome	assembly.fasta|44_length=690_depth=1.08x	690	Incomplete											
+assembly.fasta	chromosome	assembly.fasta|34_length=1702_depth=10.12x	1702	Incomplete							CP016586.1	23S	3118.0	1340	3027
+assembly.fasta	chromosome	assembly.fasta|89_length=47_depth=6.07x	47	Incomplete											
+assembly.fasta	chromosome	assembly.fasta|4_length=427851_depth=0.95x	427851	Incomplete											
+assembly.fasta	chromosome	assembly.fasta|6_length=298540_depth=1.00x	298540	Incomplete											
+assembly.fasta	chromosome	assembly.fasta|98_length=17_depth=3.56x	17	Incomplete											
+assembly.fasta	chromosome	assembly.fasta|85_length=50_depth=2.35x	50	Incomplete											
+assembly.fasta	chromosome	assembly.fasta|74_length=71_depth=4.78x	71	Incomplete											
+assembly.fasta	chromosome	assembly.fasta|66_length=122_depth=4.62x	122	Incomplete											
+assembly.fasta	chromosome	assembly.fasta|97_length=18_depth=2.09x	18	Incomplete											
+assembly.fasta	chromosome	assembly.fasta|91_length=46_depth=1.96x	46	Incomplete											
+assembly.fasta	chromosome	assembly.fasta|1_length=1021714_depth=0.98x	1021714	Incomplete											
+assembly.fasta	chromosome	assembly.fasta|87_length=47_depth=2.24x	47	Incomplete											
+assembly.fasta	chromosome	assembly.fasta|51_length=431_depth=4.85x	431	Incomplete											
+assembly.fasta	chromosome	assembly.fasta|55_length=286_depth=5.25x	286	Incomplete											
+assembly.fasta	chromosome	assembly.fasta|45_length=668_depth=2.94x	668	Incomplete							AJ238015	IS200/IS605	701.0	8	665
+assembly.fasta	chromosome	assembly.fasta|77_length=68_depth=2.96x	68	Incomplete											
+assembly.fasta	chromosome	assembly.fasta|81_length=61_depth=3.68x	61	Incomplete											
+assembly.fasta	chromosome	assembly.fasta|59_length=163_depth=1.69x	163	Incomplete											
+assembly.fasta	chromosome	assembly.fasta|96_length=20_depth=6.12x	20	Incomplete											
+assembly.fasta	chromosome	assembly.fasta|58_length=188_depth=2.87x	188	Incomplete											
+assembly.fasta	chromosome	assembly.fasta|64_length=127_depth=4.23x	127	Incomplete											
+assembly.fasta	chromosome	assembly.fasta|62_length=132_depth=2.41x	132	Incomplete											
+assembly.fasta	chromosome	assembly.fasta|61_length=137_depth=1.51x	137	Incomplete											
+assembly.fasta	chromosome	assembly.fasta|90_length=47_depth=1.41x	47	Incomplete											
+assembly.fasta	chromosome	assembly.fasta|30_length=3486_depth=2.46x	3486	Incomplete											
+assembly.fasta	chromosome	assembly.fasta|52_length=426_depth=9.78x	426	Incomplete							CP016586.1	23S	787.0	124	549
+assembly.fasta	chromosome	assembly.fasta|82_length=59_depth=2.83x	59	Incomplete											
+assembly.fasta	chromosome	assembly.fasta|103_length=11_depth=2.20x	11	Incomplete											
+assembly.fasta	chromosome	assembly.fasta|7_length=297376_depth=1.07x	297376	Incomplete											
+assembly.fasta	chromosome	assembly.fasta|18_length=31277_depth=1.12x	31277	Incomplete											
+assembly.fasta	chromosome	assembly.fasta|40_length=887_depth=2.77x	887	Incomplete											
+assembly.fasta	chromosome	assembly.fasta|38_length=898_depth=1.14x	898	Incomplete											
+assembly.fasta	chromosome	assembly.fasta|22_length=10121_depth=0.97x	10121	Incomplete											
+assembly.fasta	chromosome	assembly.fasta|46_length=549_depth=2.39x	549	Incomplete											
+assembly.fasta	chromosome	assembly.fasta|10_length=161567_depth=0.97x	161567	Incomplete											
+assembly.fasta	chromosome	assembly.fasta|43_length=820_depth=3.99x	820	Incomplete							M12900	IS6	1206.0	1	653
+assembly.fasta	chromosome	assembly.fasta|69_length=109_depth=2.90x	109	Incomplete											
+assembly.fasta	chromosome	assembly.fasta|67_length=122_depth=5.81x	122	Incomplete											
+assembly.fasta	chromosome	assembly.fasta|105_length=10_depth=1.90x	10	Incomplete											
+assembly.fasta	chromosome	assembly.fasta|88_length=47_depth=0.70x	47	Incomplete											
+assembly.fasta	chromosome	assembly.fasta|72_length=87_depth=1.44x	87	Incomplete											
+assembly.fasta	chromosome	assembly.fasta|63_length=131_depth=6.79x	131	Incomplete											
+assembly.fasta	chromosome	assembly.fasta|47_length=536_depth=2.55x	536	Incomplete											
+assembly.fasta	chromosome	assembly.fasta|49_length=485_depth=2.44x	485	Incomplete											
+assembly.fasta	chromosome	assembly.fasta|57_length=191_depth=2.71x	191	Incomplete											
+assembly.fasta	chromosome	assembly.fasta|75_length=71_depth=5.92x	71	Incomplete											
+assembly.fasta	chromosome	assembly.fasta|21_length=10129_depth=0.96x	10129	Incomplete											
+assembly.fasta	chromosome	assembly.fasta|37_length=908_depth=9.86x	908	Incomplete							CP016586.1	16S	1677.0	96	1003
+assembly.fasta	chromosome	assembly.fasta|54_length=301_depth=1.13x	301	Incomplete											
+assembly.fasta	chromosome	assembly.fasta|14_length=76547_depth=1.09x	76547	Incomplete											
+assembly.fasta	chromosome	assembly.fasta|101_length=14_depth=2.68x	14	Incomplete											
+assembly.fasta	chromosome	assembly.fasta|73_length=86_depth=5.06x	86	Incomplete											
+assembly.fasta	chromosome	assembly.fasta|8_length=230819_depth=0.99x	230819	Incomplete											
+assembly.fasta	chromosome	assembly.fasta|100_length=16_depth=3.28x	16	Incomplete											
+assembly.fasta	chromosome	assembly.fasta|13_length=89155_depth=1.04x	89155	Incomplete											
+assembly.fasta	chromosome	assembly.fasta|79_length=64_depth=2.96x	64	Incomplete											
+assembly.fasta	chromosome	assembly.fasta|106_length=10_depth=4.57x	10	Incomplete											
+assembly.fasta	chromosome	assembly.fasta|86_length=49_depth=4.60x	49	Incomplete											
+assembly.fasta	chromosome	assembly.fasta|60_length=158_depth=1.41x	158	Incomplete											
+assembly.fasta	chromosome	assembly.fasta|104_length=11_depth=5.39x	11	Incomplete											
+assembly.fasta	chromosome	assembly.fasta|84_length=53_depth=1.23x	53	Incomplete											
+assembly.fasta	chromosome	assembly.fasta|68_length=114_depth=1.18x	114	Incomplete											
+assembly.fasta	chromosome	assembly.fasta|102_length=12_depth=2.23x	12	Incomplete											
+assembly.fasta	chromosome	assembly.fasta|25_length=6200_depth=1.15x	6200	Incomplete											
+assembly.fasta	chromosome	assembly.fasta|109_length=3_depth=1.31x	3	Incomplete											
+assembly.fasta	chromosome	assembly.fasta|92_length=42_depth=1.30x	42	Incomplete											
+assembly.fasta	chromosome	assembly.fasta|48_length=523_depth=7.92x	523	Incomplete							CP016586.1	23S	966.0	757	1279
+assembly.fasta	chromosome	assembly.fasta|39_length=898_depth=1.01x	898	Incomplete											
+assembly.fasta	chromosome	assembly.fasta|71_length=100_depth=2.11x	100	Incomplete											
+assembly.fasta	chromosome	assembly.fasta|3_length=573909_depth=1.00x	573909	Incomplete											
+assembly.fasta	chromosome	assembly.fasta|42_length=857_depth=2.58x	857	Incomplete							J01829	IS4	1555.0	204	1060
+assembly.fasta	chromosome	assembly.fasta|93_length=40_depth=4.01x	40	Incomplete											
+assembly.fasta	chromosome	assembly.fasta|19_length=25998_depth=1.20x	25998	Incomplete											
+assembly.fasta	chromosome	assembly.fasta|94_length=30_depth=1.02x	30	Incomplete											
