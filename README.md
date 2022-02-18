@@ -1,4 +1,4 @@
-# Plasmids-Optimization
+# PlasBin
 This repository contains the details and experimental results of the Plasmid MILP tool. 
 It also contains the results of five other methods designed for plasmid binning and assembly. 
 These methods include HyAsP, MOB-recon, plasmidSPAdes, gplas and SCAPP.
