@@ -25,7 +25,7 @@ python2.7 plasbin_iterative.py assembly.gfa genes_to_contigs.csv seed_contigs.tx
 ### Contig chains
 Lists of contigs and their orientation as they appear in the linear contig chain of all plasmid bins (both putative and questionable).<br/>
 File name: putative_contig_chains.csv, questionable_contig_chains.csv<br/>
-Format: <plasmid id>;<comma-separated list of contigs with orientation><br/>
+Format: plasmid id;comma-separated list of oriented contigs<br/>
 Example: plasmid_0;23+,25-,10+<br/>
 
 ### Sequences of contig chains<br/>
