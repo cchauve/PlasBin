@@ -23,7 +23,13 @@ python2.7 plasbin_iterative.py assembly.gfa genes_to_contigs.csv seed_contigs.tx
 python2.7 plasbin_iterative.py assembly.gfa genes_to_contigs.csv seed_contigs.txt alpha_1 alpha_2 alpha_3
 
 ## Output
-1. Contig chains representing putative plasmid bins, 
-2. Fasta file containing the sequences of binned putative plasmids,
-3. Contig chains representing questionable plasmid bins,
-4. Fasta file containing the sequences of binned questionable plasmids,
+### Contig chains
+Lists of contigs and their orientation as they appear in the linear contig chain of all plasmid bins (both putative and questionable).
+File name: putative_contig_chains.csv, questionable_contig_chains.csv
+Format: <plasmid id>;<comma-separated list of contigs with orientation>
+Example: plasmid_0;23+,25-,10+
+
+### Sequences of contig chains
+Concatenated sequences of contigs in putative plasmid bins in FASTA format. The plasmid identifier is also used as the identifier of the FASTA entry. The additional information on each plasmid are provided in the deflines (e.g. seed_contig and gene_density.)
+File names: putative_plasmids.fasta, questionable_plasmids.fasta
+Format: FASTA with additional information in defline (as tab-separated list of <property>=<value> pairs)
