@@ -10,9 +10,6 @@ The following are required to run HyAsP
 1. Python (Version 2.7+; packages: random, math, sys)
 2. Gurobi solver (Version 9.1.2+)
 
-## Usage
-python2.7 plasbin_iterative.py assembly.gfa genes_to_contigs.csv seed_contigs.txt alpha_1 alpha_2 alpha_3
-
 ## Input
 1. A file containing the details of the assembly graph (.gfa format), 
 2. A file mapping genes from a plasmid marker database to contigs (.csv format)
@@ -20,7 +17,9 @@ python2.7 plasbin_iterative.py assembly.gfa genes_to_contigs.csv seed_contigs.tx
 4. Weight for the gene density term and GC content term in the objective function.
 
 ### Usage
+```
 python2.7 plasbin_iterative.py assembly.gfa genes_to_contigs.csv seed_contigs.txt alpha_1 alpha_2 alpha_3
+```
 
 ## Output
 ### Contig chains
