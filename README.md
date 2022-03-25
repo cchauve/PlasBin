@@ -1,71 +1,29 @@
 # PlasBin
-This repository contains the details and experimental results of the Plasmid MILP tool. 
-It also contains the results of five other methods designed for plasmid binning and assembly. 
-These methods include HyAsP, MOB-recon, plasmidSPAdes, gplas and SCAPP.
+PlasBin is a tool that uses a mixed integer linear programming (MILP) based tool for plasmid binning. It uses a hybrid approach that incorporates ideas from both de novo and reference-based methods to identify plasmid bins. PlasBin considers several features associated with a contig such as
+its %GC content, sequencing coverage, length and plasmid gene density.
 
-## Data
-We use the data set from Robertson and Nash, 2018 (previously used for the HyAsP experiments). 
-The data set contains 133 bacterial samples. As some of the methods we use are reference-based, we split this data set into two parts - a reference set and a test set. 
-We carry out our experiments on the test set consisting of 66 of the 133 samples.
+## Overview
+The code/ directory contains the source code of PlasBin. The requirements to run PlasBin have been listed below. The results/ directory contains the results of PlasBin, plasmidSPAdes, MOB-recon, HyAsP and gplas.
 
-*Question.* How was the split done?
-The split was similar to the one used for the HyAsP paper. Samples released before 19 December 2015 formed the reference database and after that date formed the test set.
+## Requirements
+The following are required to run HyAsP
+1. Python (Version 2.7+; packages: random, math, sys)
+2. Gurobi solver (Version 9.1.2+)
 
-*Comment.* If the reference set is used, we should outline how.
+## Usage
+python2.7 plasbin_iterative.py assembly.gfa genes_to_contigs.csv seed_contigs.txt alpha_1 alpha_2 alpha_3
 
-## Experiment details
+## Input
+1. A file containing the details of the assembly graph (.gfa format), 
+2. A file mapping genes from a plasmid marker database to contigs (.csv format)
+3. A file with a list of seed contigs (one entry per line) 
+4. Weight for the gene density term and GC content term in the objective function.
 
-## MILP
-The MILP is a hybrid approach aimed at extracting cycles or paths from the assembly graph that represent plasmids *(fragments?)*. 
-The objective function is inspired by the greedy heuristic in that it tries to maximize the gene density of plasmids and maintain a uniform coverage and GC content. The MILP iteratively outputs a plasmid that contains at least one seed contig.
+### Usage
+python2.7 plasbin_iterative.py assembly.gfa genes_to_contigs.csv seed_contigs.txt alpha_1 alpha_2 alpha_3
 
-*Comment.* Here we should make it clear if we bin or assemble. We need to provide a slightly more detailed overview of the MILP method.
-
-### Input
-1. Assembly graph, 2. Gene density of contigs, 3. Read depth of each contig, 4. GC content of each contig, 5. Seed eligbility of each contig
-
-*Comment.* We will need to specify how the contig features are obtained.
-
-### Output
-1. Contig chains representing plasmids, 2. Fasta file containing the sequences of assembled *(assembled or binned?)* plasmids.
-
-Older versions of the MILP can be found in the folder exp/2019__MILP_old_versions. 
-The two latest versions are located in the exp folder with their own directories.
-### 2021-01-29__iterative_MILP_modified_graph
-This version executed the changes pertaining to the input assembly graph. 
-These changes were motivated by the need to visit the same node multiple times, something that wasn't easily achievable in previous versions. 
-As a result, a contig with coverage $k$ is replaced by $k$ copies of the contig. 
-The edges incident on the original contig are now incident on all $k$ copies of the contig. 
-Since every new contig copy has coverage 1, this also allows us to remove the read depth uniformity term in the MILP
-
-*Comment.* This is hard to follow without a description of the initial MILP.
-
-### 2021-06-14__iterative_MILP_edge_novelty
-This version of the MILP included edge novelty constraints. 
-These constraints allow the MILP to choose solutions that allow multiple copies of the same contig but not similar edges (If $(a_1,b_1)$ is chosen then no other edge $(a_x,b_y)$ will be chosen. 
-
-## HyAsP
-HyAsP is a hybrid approach that uses a greedy heuristic to extract cycles or paths from an assembly graph. 
-It chooses a seed contig as a starting point and extends the path based on an objective function, similar to the MILP. 
-However, in case of HyAsP, it can only extend based on the immediate neighbors of the current end contig.  
-### Input
-1. Assembly graph, 2. Gene density of contigs, 3. Read depth of each contig, 4. GC content of each contig, 5. Seed eligbility of each contig
-### Output
-1. Contig chains representing plasmids, 2. Fasta file containing the sequences of assembled plasmids.
-
-## plasmidSPAdes
-
-
-## MOB-recon (from MOB-suite)
-
-
-## gplas
-
-
-## SCAPP
-
-
-## Documents
-The analysis of the latest results is provided in the notebook results_analysis.ipynb, located in the folder exp/2021-06-14__iterative_MILP_edge_novelty/doc. 
-The notebook contains the precision, recall and F1 scores for the results of the MILP, HyAsP, MOB-recon and plasmidSPAdes. 
-It also contains a comparative analysis between the MILP and HyAsP.
+## Output
+1. Contig chains representing putative plasmid bins, 
+2. Fasta file containing the sequences of binned putative plasmids,
+3. Contig chains representing questionable plasmid bins,
+4. Fasta file containing the sequences of binned questionable plasmids,
