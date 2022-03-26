@@ -1,9 +1,0 @@
-plasmid_0;17_0-,17_1-
-#Contig	Gene_coverage	GC_cont	Read_depth	Length
-# 17_0	0.8217582767402377	0.4117943548387097	1	37696
-# 17_1	0.8217582767402377	0.4117943548387097	1	37696
-
-plasmid_1;17_2+
-#Contig	Gene_coverage	GC_cont	Read_depth	Length
-# 17_2	0.8217582767402377	0.4117943548387097	1	37696
-

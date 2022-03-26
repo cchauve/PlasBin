@@ -1,8 +1,0 @@
-S	1	ACGTACGTACGG	LN:i:12	dp:f:4.2
-S	2	CGCTATGAGCTA	LN:i:12	dp:f:2.6
-S	3	TACGTACATGCT	LN:i:12	dp:f:3.6
-S	4	GATGTAGATGCA	LN:i:12	dp:f:3.0
-L	1	+	2	+	0M
-L	2	+	3	+	0M
-L	3	+	4	+	0M
-L	4	+	1	+	0M

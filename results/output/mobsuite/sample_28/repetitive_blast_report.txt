@@ -1,8 +1,0 @@
-contig_id	match_id	match_type	score	contig_match_start	contig_match_end
-assembly.fasta|52_length=1425_depth=7.24x	CP016586.1	16S	2436.0	140	1554
-assembly.fasta|60_length=1014_depth=1.07x	NC_009800	IS110	1629.0	36	1002
-assembly.fasta|64_length=823_depth=2.15x	NZ_AAJU01000005.1	IS3	1509.0	1	823
-assembly.fasta|74_length=452_depth=7.57x	NZ_AOZE01000018	IS21	475.0	85	536
-assembly.fasta|54_length=1318_depth=8.98x	NZ_AOZE01000018	IS21	1493.0	537	1854
-assembly.fasta|53_length=1362_depth=4.40x	X92970	IS3	2483.0	71	1432
-assembly.fasta|46_length=3145_depth=7.40x	CP016586.1	23S	939.0	1	550

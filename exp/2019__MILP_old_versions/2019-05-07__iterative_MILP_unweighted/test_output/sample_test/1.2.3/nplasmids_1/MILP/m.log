@@ -1,7 +1,0 @@
-
-Gurobi 7.5.2 (linux64) logging started Sun Dec 20 15:36:24 2020
-
-Changed value of parameter LogFile to /home/aniket/python_scripts/Plasmids-Optimization/exp/2019-05-07__iterative_MILP_unweighted/test_output/sample_test/1.2.3/nplasmids_1/MILP/m.log
-   Prev: gurobi.log  Default: 
-Changed value of parameter TimeLimit to 2400.0
-   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
