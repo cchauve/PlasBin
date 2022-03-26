@@ -1,0 +1,67 @@
+##### general information #####
+number of reference chromosomes: 1
+	CP024862.1: 5107874 nt
+number of reference plasmids: 3
+	CP024863.1: 139059 nt
+	CP024865.1: 48511 nt
+	CP024864.1: 88768 nt
+
+##### ILP (MILP_putative) #####
+number of predicted plasmids: 10
+	plasmid_1: 147748 nt
+	plasmid_10: 30069 nt
+	plasmid_11: 64135 nt
+	plasmid_2: 23039 nt
+	plasmid_3: 3327 nt
+	plasmid_4: 30667 nt
+	plasmid_5: 9492 nt
+	plasmid_6: 10928 nt
+	plasmid_8: 7162 nt
+	plasmid_9: 97022 nt
+
+> predicted plasmid covers <proportion> of reference plasmid
+	CP024863.1	CP024864.1	CP024865.1
+plasmid_1	0.6936767846741311	0.9274963950973324	0.0
+plasmid_10	0.21682163685917488	0.05293574260994953	0.0
+plasmid_11	0.00551564443869149	0.0	0.0
+plasmid_2	0.23597897295392603	0.048778839221341026	0.0
+plasmid_3	0.030893361810454555	0.04369817952415285	0.0
+plasmid_4	0.0	0.0	0.0
+plasmid_5	0.18964612143047196	0.023195295602018745	0.0
+plasmid_6	0.1289165030670435	0.11474855803893295	0.0
+plasmid_8	0.05591151957082965	0.09231930425378515	0.0
+plasmid_9	0.0	0.0	1.0
+
+> reference plasmid covers <proportion> of predicted plasmid
+	plasmid_1	plasmid_10	plasmid_11	plasmid_2	plasmid_3	plasmid_4	plasmid_5	plasmid_6	plasmid_8	plasmid_9
+CP024863.1	0.6176259577117795	1.0	0.004381383020191783	1.0	1.0	0.0	1.0	0.5420021961932651	0.9745881038815973	0.0
+CP024864.1	0.6473996263908818	0.15624064651302005	0.0	0.1640696210773037	0.941088067327923	0.0	0.18699957859249894	0.7855051244509517	1.0	0.0
+CP024865.1	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	1.0
+
+> in total, how much of predicted plasmid is covered by reference plasmids
+plasmid	proportion
+plasmid_1	1.000000
+plasmid_10	1.000000
+plasmid_11	0.004381
+plasmid_2	1.000000
+plasmid_3	1.000000
+plasmid_4	0.000000
+plasmid_5	1.000000
+plasmid_6	1.000000
+plasmid_8	1.000000
+plasmid_9	1.000000
+
+> in total, how much of reference plasmid is covered by predicted plasmids
+plasmid	proportion
+CP024863.1	1.000000
+CP024864.1	1.000000
+CP024865.1	1.000000
+
+> pairs of predicted and reference plasmids with coverage >= 0.800000 in both directions
+CP024865.1 <-> plasmid_9 (1.000000 resp. 1.000000)
+
+> summary scores (MILP_putative)
+recall: 1.000000
+precision: 0.776857
+f1_score: 0.874417
+
