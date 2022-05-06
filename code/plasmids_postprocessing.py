@@ -12,8 +12,7 @@ def get_seq(soln_links, neighbour_dict, contigs_dict, contigs):
 	n_dict = copy.deepcopy(neighbour_dict)
 
 	reached_links = {}
-	#reached_contigs = {}
-	plasmid = []
+	plasmid_parts = []
 
 	extr_degree = {}
 	for p in contigs:
@@ -34,9 +33,6 @@ def get_seq(soln_links, neighbour_dict, contigs_dict, contigs):
 			plasmid_ends.append((c,'h'))
 		elif extr_degree[c][(c,'h')] < extr_degree[c][(c,'t')]:
 			plasmid_ends.append((c,'t'))
-	#print(plasmid_ends)
-	#print(extr_degree)
-
 
 	if len(plasmid_ends) == 0:
 		linear_found = 1
@@ -50,19 +46,12 @@ def get_seq(soln_links, neighbour_dict, contigs_dict, contigs):
 			curr_vertex = plasmid_ends[0]
 			c1 = curr_vertex[0]
 			plasmid_seg.append((c1, '+')) if curr_vertex[1] == 'h' else plasmid_seg.append((c1, '-'))
-			#plasmid_seg.append((c2, '+')) if neighbour[1] == 't' else plasmid_seg.append((c2, '-'))			
 			
 			while extr_degree[c1][curr_vertex] != 0: 
-				#print(curr_vertex, n_dict[curr_vertex])
-
-				#print(curr_vertex, n_dict)
 				neighbour = n_dict[curr_vertex][0]
 				n_dict[curr_vertex].remove(neighbour)
 				n_dict[neighbour].remove(curr_vertex)
 
-				#print("Neib", neighbour_dict)
-				#print("N", n_dict)
-				#print(curr_vertex, neighbour, n_dict[curr_vertex])
 				if len(n_dict[curr_vertex]) == 0:
 					del(n_dict[curr_vertex])
 				if len(n_dict[neighbour]) == 0:
@@ -72,12 +61,8 @@ def get_seq(soln_links, neighbour_dict, contigs_dict, contigs):
 				if curr_link not in plasmid_links:
 					curr_link = curr_link[::-1]
 				
-				#print(curr_link)
-				#print(plasmid_links)
 				plasmid_links.remove(curr_link)
 
-
-				
 				ext1, ext2 = curr_link[0], curr_link[1]
 				extr_degree[ext1[0]][ext1] -= 1
 				extr_degree[ext2[0]][ext2] -= 1
@@ -86,26 +71,18 @@ def get_seq(soln_links, neighbour_dict, contigs_dict, contigs):
 				plasmid_seg.append((c1, '+')) if neighbour[1] == 't' else plasmid_seg.append((c1, '-'))
 				curr_vertex = (c1, other(neighbour[1]))
 
-			#print(plasmid_seg)	
-			plasmid.append(plasmid_seg)	
+			plasmid_parts.append(plasmid_seg)	
 			linear_found = 1	
 
-
 		else:
-			#print(len(n_dict), n_dict)
 			curr_vertex = random.choice(list(n_dict))		
 			c1 = curr_vertex[0]
 			plasmid_seg.append((c1, '+')) if curr_vertex[1] == 'h' else plasmid_seg.append((c1, '-'))
-			#plasmid_seg.append((c2, '+')) if neighbour[1] == 't' else plasmid_seg.append((c2, '-'))			
 			
 			while extr_degree[c1][curr_vertex] != 0: 
-				#print(curr_vertex, n_dict[curr_vertex])
-
-				#print(curr_vertex, n_dict)
 				neighbour = n_dict[curr_vertex][0]
 				n_dict[curr_vertex].remove(neighbour)
 				n_dict[neighbour].remove(curr_vertex)
-				#print(curr_vertex, neighbour, n_dict[curr_vertex])
 				if len(n_dict[curr_vertex]) == 0:
 					del(n_dict[curr_vertex])
 				if len(n_dict[neighbour]) == 0:
@@ -115,12 +92,8 @@ def get_seq(soln_links, neighbour_dict, contigs_dict, contigs):
 				if curr_link not in plasmid_links:
 					curr_link = curr_link[::-1]
 				
-				#print(curr_link)
-				#print(plasmid_links)
 				plasmid_links.remove(curr_link)
 
-
-				
 				ext1, ext2 = curr_link[0], curr_link[1]
 				extr_degree[ext1[0]][ext1] -= 1
 				extr_degree[ext2[0]][ext2] -= 1
@@ -129,32 +102,21 @@ def get_seq(soln_links, neighbour_dict, contigs_dict, contigs):
 				plasmid_seg.append((c1, '+')) if neighbour[1] == 't' else plasmid_seg.append((c1, '-'))
 				curr_vertex = (c1, other(neighbour[1]))
 
-			#print(plasmid_seg)	
-			plasmid.append(plasmid_seg)
+			plasmid_parts.append(plasmid_seg)
 	plasmid_seq = ''
 	contig_chain = []						
-	for seg in plasmid:
+	for seg in plasmid_parts:
 		for contig in seg:
 			c, sign = contig[0], contig[1]
-			#print("This",c)
 			if c in contigs_dict:
 				if sign == '+':
 					contig_chain.append(str(c)+'+')
 					plasmid_seq += contigs_dict[c]['Sequence']
 				else:
 					plasmid_seq += contigs_dict[c]['Sequence'][::-1]	
-					contig_chain.append(str(c)+'-')
-	#print("Comparing lists")				
-	#print(soln_links)
-	#print(plasmid_links)	
-
-
-	#print("Comparing dicts")				
-	#print(neighbour_dict)
-	#print(n_dict)					
-	return plasmid_seq, contig_chain, plasmid
+					contig_chain.append(str(c)+'-')				
+	return plasmid_seq, contig_chain, plasmid_parts
 		
-
 def trim_zero_end(contig_chain, contigs_dict, end_pt):
 	l , r = 0, 0
 	if end_pt == 'l':
@@ -172,8 +134,7 @@ def trim_zero_end(contig_chain, contigs_dict, end_pt):
 			contig_chain = contig_chain[:-1]
 			r = 0
 		else:
-			r = 1
-	print(contig_chain)						
+			r = 1						
 	return(contig_chain, l, r)
 
 def get_rev_compliment(string):
@@ -208,3 +169,23 @@ def refine_chain(contig_chain, contigs_dict):
 	gd = gd/length
 	rd = rd/length				
 	return contig_chain, length, gd, rd, seq
+
+# Returns that starting and ending point (index) of the sublist, if it exists, otherwise 'None'.
+def find_sub_list(sub_list, in_list):
+	sub_list_length = len(sub_list[0])
+	flag = 0
+	for i in range(len(in_list)-sub_list_length):
+		if sub_list[0] == in_list[i:i+sub_list_length]:
+			flag = 1
+			return (i,i+sub_list_length)
+	if flag == 0:
+		return None	       
+
+# Removes the sublist, if it exists and returns a new list, otherwise returns the old list.
+def remove_sub_list(sub_list, in_list):
+	indices = find_sub_list(sub_list, in_list)
+	if not indices is None:
+		return in_list[0:indices[0]] + in_list[indices[1]:]
+	else:
+		return in_list
+		

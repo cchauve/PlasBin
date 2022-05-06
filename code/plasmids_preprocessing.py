@@ -164,8 +164,8 @@ def get_gene_coverage(mapping_file, contigs_dict, rd_dict):
 
 #-----------------------------------------------------------	
 #contigs[p][c] == 1 if contig 'c' belongs to plasmid 'p', else 0
-def contig_vars(m, contigs_dict, contigs, degree, contigs_ext, ceil, nplasmids):
-	for p in range(nplasmids):
+def contig_vars(m, contigs_dict, contigs, degree, contigs_ext, ceil):
+	for p in range(1):
 		contigs[p] = {}
 		degree[p] = {}
 		contigs_ext[p] = {}
@@ -179,16 +179,16 @@ def contig_vars(m, contigs_dict, contigs, degree, contigs_ext, ceil, nplasmids):
 	return contigs, degree, contigs_ext, ceil
 
 #links[p][e] == 1 if link 'e' belongs to plasmid 'p', else 0
-def link_vars(m, links_list, links, nplasmids):
-	for p in range(nplasmids):
+def link_vars(m, links_list, links):
+	for p in range(1):
 		links[p] = {}
 		for e in links_list:		
 			links[p][e] = m.addVar(vtype=GRB.BINARY, name='link-'+e[0][0]+e[0][1]+e[1][0]+e[1][1]+'_plasmid-'+str(p))
 	return links
 
 #-------------------------------------------------------------
-def rd_vars(m, contigs_dict, rd_diff, counted_rd_diff, nplasmids):
-	for p in range(nplasmids):
+def rd_vars(m, contigs_dict, rd_diff, counted_rd_diff):
+	for p in range(1):
 		rd_diff[p] = {}
 		counted_rd_diff[p] = {}
 		for c in contigs_dict:	
@@ -196,8 +196,8 @@ def rd_vars(m, contigs_dict, rd_diff, counted_rd_diff, nplasmids):
 			counted_rd_diff[p][c] = m.addVar(vtype=GRB.CONTINUOUS, name='counted-rd-diff_contig-'+c+'_plasmid-'+str(p))
 	return rd_diff, counted_rd_diff
 
-def GC_vars(m, contigs_dict, mean_GC, counted_GC_mean, GC_diff, counted_GC_diff, nplasmids):
-	for p in range(nplasmids):
+def GC_vars(m, contigs_dict, mean_GC, counted_GC_mean, GC_diff, counted_GC_diff):
+	for p in range(1):
 		mean_GC[p] = {}
 		counted_GC_mean[p] = {}
 		GC_diff[p] = {}
@@ -209,28 +209,19 @@ def GC_vars(m, contigs_dict, mean_GC, counted_GC_mean, GC_diff, counted_GC_diff,
 			counted_GC_mean[p][c] = m.addVar(vtype=GRB.CONTINUOUS, name='counted-GC-mean_contig-'+c+'_plasmid-'+str(p))
 	return mean_GC, counted_GC_mean, GC_diff, counted_GC_diff
 
-def ln_vars(m, contigs_dict, counted_ln, nplasmids):
-	for p in range(nplasmids):
+def ln_vars(m, contigs_dict, counted_ln):
+	for p in range(1):
 		counted_ln[p] = {}	
 		for c in contigs_dict:
 			counted_ln[p][c] = m.addVar(vtype=GRB.INTEGER, name='counted-ln_contig-'+c+'_plasmid-'+str(p))
 	return counted_ln		
 
-def seed_vars(m, contigs_dict, counted_seed, nplasmids):
-	for p in range(nplasmids):
+def seed_vars(m, contigs_dict, counted_seed):
+	for p in range(1):
 		counted_seed[p] = {}
 		for c in contigs_dict:		
 			counted_seed[p][c] = m.addVar(vtype=GRB.BINARY, name='counted-seed_contig-'+c+'_plasmid-'+str(p))
 	return counted_seed
-
-#def gd_vars(m, contigs_dict, wtd_gd, counted_wtd_gd, nplasmids):
-#	for p in range(nplasmids):
-#		wtd_gd[p] = {}
-#		counted_wtd_gd[p] = {}
-#		wtd_gd[p] = m.addVar(vtype=GRB.CONTINUOUS, name='wtd-gd_plasmid-'+str(p))
-#		for c in contigs_dict:			
-#			counted_wtd_gd[p][c] = m.addVar(vtype=GRB.CONTINUOUS, name='counted-wtd-gd_contig-'+c+'_plasmid-'+str(p))
-#	return wtd_gd, counted_wtd_gd
 
 #-----------------------------------------------------------------------		
 
