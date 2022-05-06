@@ -10,7 +10,7 @@ import argparse
 #-------------------
 
 #USAGE: 
-#time python plasmids_iterative.py --ag assembly.gfa --map mapping.csv --input input_dir \
+#time python generate_seeds.py --ag assembly.gfa --map mapping.csv --out output_dir \
 #				 --gd_ratio gd_ratio --rd_ratio rd_ratio --max_len max_len
 
 def read_file(filename):
@@ -122,7 +122,7 @@ if __name__ == "__main__":
 	parser = argparse.ArgumentParser()
 	parser.add_argument("--ag", help="Path to assembly graph file")
 	parser.add_argument("--map", help="Path to gene to contig mapping file")
-	parser.add_argument("--input", help="Path to input dir")
+	parser.add_argument("--out", help="Path to output dir")
 	parser.add_argument("--gd_ratio", nargs='?', const = 1, type=float, default = 1.5, help="Ratio between minimum seed gd and mean gd of assembly graph")
 	parser.add_argument("--rd_ratio", nargs='?', const = 1, type=float, default = 0.3, help="Ratio between minimum seed read depth and median read depth of assembly graph")
 	parser.add_argument("--max_len", nargs='?', const = 1, type=int, default = 1750000, help="Maximum length of seed contig")

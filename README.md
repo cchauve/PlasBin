@@ -3,21 +3,26 @@ PlasBin is a tool that uses a mixed integer linear programming (MILP) based tool
 its %GC content, sequencing coverage, length and plasmid gene density.
 
 ## Overview
-The code/ directory contains the source code of PlasBin. The requirements to run PlasBin have been listed below. The results/ directory contains the results of PlasBin, plasmidSPAdes, MOB-recon, HyAsP and gplas.
+The code/ directory contains the source code of PlasBin. The requirements to run PlasBin have been listed below. It also contains the script to designate seed contigs, which is an input for PlasBin. The results/ directory contains the results of PlasBin, plasmidSPAdes, MOB-recon, HyAsP and gplas.
 
 ## Requirements
-The following are required to run HyAsP
-1. Python (Version 2.7+; packages: random, math, sys)
+The following are required to run PlasBin
+1. Python (Version 3+; packages: random, math, sys)
 2. Gurobi solver (Version 9.1.2+)
 
 ## Input
 1. A file containing the details of the assembly graph (.gfa format), 
-2. A file mapping genes from a plasmid marker database to contigs (.tsv format)<br/>
+2. A file mapping genes from a plasmid marker database to contigs (.csv format)<br/>
 Each line of this file contains the ids of the two sequences being mapped. In this case, we map genes to contigs, hence the file contains the gene name and the contig id. This is followed by the starting and ending positions of the contig sequence, denoting the region onto which the gene has been mapped.<br/>
-Example:#Gene_name	Contig_ID	Start_Posn	End_Posn<br/>
-AM349_24745	22	39217	38796<br/>
-EC1303_109p00370	1	41519	41376<br/>
+The format for this file is the blastn output format 6. <br/>
 3. A file with a list of seed contigs (one entry per line)<br/>
+This file takes as input the assembly graph and the gene to contig mapping as well as the thresholds to decide the seed contigs.
+```
+python generate_seeds.py --ag assembly.gfa --map mapping.csv --out output_dir \
+				--gd_ratio gd_ratio --rd_ratio rd_ratio --max_len max_len
+
+```
+
 4. Weight for the gene density term and GC content term in the objective function.
 
 ### Usage
