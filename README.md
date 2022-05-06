@@ -24,9 +24,9 @@ python generate_seeds.py --ag assembly.gfa --map mapping.csv --out output_dir \
 ```
 Additional arguments
 ```
---rd_ratio          Minimum read depth of a contig to be considered a seed. (default: 0.3 * median read depth of the graph)
---min_gd	     	Minimum gene density necessary for a contig to be considered as a seed. (default: 0.45)                              
---max_len           Gene-containing contigs longer than max_length are not used as seeds. (default: 1750000)
+--rd_ratio			Minimum read depth of a contig to be considered a seed. (default: 0.3 * median read depth of the graph)
+--min_gd			Minimum gene density necessary for a contig to be considered as a seed. (default:.45)                              
+--max_len 			Gene-containing contigs longer than max_length are not used as seeds. (default: 1750000)
 ```
 4. Weight for the gene density term and GC content term in the objective function.
 
