@@ -612,6 +612,7 @@ if __name__ == "__main__":
 		temp_seq = []
 		gene_free_len = []
 		gene_free_seq = []
+		print(idx, component_contigs_list)
 		chain = component_contigs_list[idx][0]
 			
 		for contig in chain:
@@ -620,7 +621,7 @@ if __name__ == "__main__":
 			ln = used_contigs[contig]['Length']
 
 			if gd >= 0.3:
-				if temp_len > 10000:
+				if temp_len > 2000:
 					gene_free_len.append(temp_len)
 					gene_free_seq.append(temp_seq)
 				temp_len = 0

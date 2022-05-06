@@ -11,7 +11,7 @@ import argparse
 
 #USAGE: 
 #time python generate_seeds.py --ag assembly.gfa --map mapping.csv --out output_dir \
-#				 --gd_ratio gd_ratio --rd_ratio rd_ratio --max_len max_len
+#				  --rd_ratio rd_ratio --min_gd min_gd --max_len max_len
 
 def read_file(filename):
 	string = open(filename, "r").read()
@@ -123,12 +123,12 @@ if __name__ == "__main__":
 	parser.add_argument("--ag", help="Path to assembly graph file")
 	parser.add_argument("--map", help="Path to gene to contig mapping file")
 	parser.add_argument("--out", help="Path to output dir")
-	parser.add_argument("--gd_ratio", nargs='?', const = 1, type=float, default = 1.5, help="Ratio between minimum seed gd and mean gd of assembly graph")
 	parser.add_argument("--rd_ratio", nargs='?', const = 1, type=float, default = 0.3, help="Ratio between minimum seed read depth and median read depth of assembly graph")
+	parser.add_argument("--min_gd", nargs='?', const = 1, type=float, default = 0.45, help="Minimum seed gd")
 	parser.add_argument("--max_len", nargs='?', const = 1, type=int, default = 1750000, help="Maximum length of seed contig")
 	args = parser.parse_args()
 
-	input_dir = args.input
+	output_dir = args.out
 	assembly_file = args.ag
 	mapping_file = args.map
 
@@ -137,14 +137,13 @@ if __name__ == "__main__":
 	contigs_dict = get_gene_coverage(mapping_file, contigs_dict)
 
 	contigs_df = pd.DataFrame.from_dict(contigs_dict).T
-	mean_gd = contigs_df['Gene_coverage'].mean()
 	med_rd = contigs_df['Read_depth'].median()
 
-	min_seed_gd = float(args.gd_ratio)*mean_gd
 	min_seed_rd = float(args.rd_ratio)*med_rd
+	min_seed_gd = float(args.min_gd)
 	max_seed_len = int(args.max_len)
 
-	seeds_file = open(os.path.join(input_dir, 'seed_contigs.csv'), "w")
+	seeds_file = open(os.path.join(output_dir, 'seed_contigs.csv'), "w")
 
 	for c in contigs_dict:
 		gd = contigs_dict[c]['Gene_coverage']

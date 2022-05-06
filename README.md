@@ -16,13 +16,18 @@ The following are required to run PlasBin
 Each line of this file contains the ids of the two sequences being mapped. In this case, we map genes to contigs, hence the file contains the gene name and the contig id. This is followed by the starting and ending positions of the contig sequence, denoting the region onto which the gene has been mapped.<br/>
 The format for this file is the blastn output format 6. <br/>
 3. A file with a list of seed contigs (one entry per line)<br/>
-This file takes as input the assembly graph and the gene to contig mapping as well as the thresholds to decide the seed contigs.
+This file takes as input the assembly graph and the gene to contig mapping as well as the thresholds to decide the seed contigs. 
 ```
 python generate_seeds.py --ag assembly.gfa --map mapping.csv --out output_dir \
-				--gd_ratio gd_ratio --rd_ratio rd_ratio --max_len max_len
+				  --rd_ratio rd_ratio --min_gd min_gd --max_len max_len
 
 ```
-
+Additional arguments
+```
+--rd_ratio          Minimum read depth of a contig to be considered a seed. (default: 0.3 * median read depth of the graph)
+--min_gd	     	Minimum gene density necessary for a contig to be considered as a seed. (default: 0.45)                              
+--max_len           Gene-containing contigs longer than max_length are not used as seeds. (default: 1750000)
+```
 4. Weight for the gene density term and GC content term in the objective function.
 
 ### Usage
