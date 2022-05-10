@@ -35,6 +35,13 @@ Additional arguments
 python plasmids_iterative.py --ag assembly.gfa --map mapping.csv --seeds seed_contigs.csv \
 				--out output_dir --alpha1 alpha_1 --alpha2 alpha_2 --rmiter rmiter
 ```
+```
+Additional arguments
+```
+--rmiter			Number of iterations to remove circular components. (default: 50)
+--alpha1			Weight of gene density term. (default: 1)                              
+--alpha2			Weight of GC content term. (default: 1)
+```
 
 ## Output
 ### Contig chains
