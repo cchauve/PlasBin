@@ -33,7 +33,7 @@ Additional arguments
 ### Usage
 ```
 python plasmids_iterative.py --ag assembly.gfa --map mapping.csv --seeds seed_contigs.csv \
-				--out output_dir --alpha1 alpha_1 --alpha2 alpha_2 
+				--out output_dir --alpha1 alpha_1 --alpha2 alpha_2 --rmiter rmiter
 ```
 
 ## Output

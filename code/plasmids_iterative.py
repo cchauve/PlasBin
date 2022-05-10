@@ -4,7 +4,7 @@ __author__ = 'amane'
 
 #USAGE: 
 #time python plasmids_iterative.py --ag assembly.gfa --map mapping.csv --seeds seed_contigs.csv \
-#				 --out output_dir --alpha1 alpha_1 --alpha2 alpha_2 
+#				 --out output_dir --alpha1 alpha_1 --alpha2 alpha_2 --rmiter rmiter
 
 from gurobipy import *
 from sys import argv
@@ -32,6 +32,8 @@ if __name__ == "__main__":
 	parser.add_argument("--out", help="Path to output dir")
 	parser.add_argument("--alpha1", nargs='?', const = 1, type=int, default = 1, help="Weight of gene density term")
 	parser.add_argument("--alpha2", nargs='?', const = 1, type=int, default = 1, help="Weight of GC content term")
+	parser.add_argument("--rmiter", nargs='?', const = 1, type=int, default = 50, help="Number of iterations to remove circular components")
+
 	args = parser.parse_args()
 
 	output_dir = args.out
@@ -40,6 +42,7 @@ if __name__ == "__main__":
 	seeds_file = args.seeds
 	alpha1 = args.alpha1
 	alpha2 = args.alpha2
+	rmiter = args.rmiter
 
 	#Naming and creating output files
 	ratios = str(alpha1) + '.' + str(alpha2)
@@ -415,7 +418,7 @@ if __name__ == "__main__":
 					m.addConstr(expr <= len(chosen_seq) - 1, "circular")
 							
 					i += 1
-			if i >= 50:
+			if i >= rmiter:
 				break	
 	#_______________
 	#
