@@ -28,13 +28,12 @@ Additional arguments
 --min_gd			Minimum gene density necessary for a contig to be considered as a seed. (default:.45)                              
 --max_len 			Gene-containing contigs longer than max_length are not used as seeds. (default: 1750000)
 ```
-4. Weight for the gene density term and GC content term in the objective function.
+
 
 ### Usage
 ```
 python plasmids_iterative.py --ag assembly.gfa --map mapping.csv --seeds seed_contigs.csv \
 				--out output_dir --alpha1 alpha_1 --alpha2 alpha_2 --rmiter rmiter
-```
 ```
 Additional arguments
 ```
