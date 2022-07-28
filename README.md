@@ -2,6 +2,8 @@
 PlasBin is a tool that uses a mixed integer linear programming (MILP) based tool for plasmid binning. It uses a hybrid approach that incorporates ideas from both de novo and reference-based methods to identify plasmid bins. PlasBin considers several features associated with a contig such as
 its %GC content, sequencing coverage, length and plasmid gene density.
 
+*Citation:* Aniket Mane, Mahsa Faizrahnemoon & Cedric Chauve; "A Mixed Integer Linear Programming Algorithm for Plasmid Binning", RECOMB International Workshop on Comparative Genomics 2022, Lecture Notes in Bioinformatics 13234:279–292; https://doi.org/10.1007/978-3-031-06220-9_16
+
 ## Overview
 The code/ directory contains the source code of PlasBin. The requirements to run PlasBin have been listed below. It also contains the script to designate seed contigs, which is an input for PlasBin. The results/ directory contains the results of PlasBin, plasmidSPAdes, MOB-recon, HyAsP and gplas.
 
